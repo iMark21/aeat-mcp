@@ -1,0 +1,219 @@
+{
+  "year": 2025,
+  "verified_date": "2026-03-20",
+  "title": "Pension compensatoria y anualidades por alimentos en el IRPF",
+  "source_urls": [
+    "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c13-determinacion-renta-contribuyente-sujeta-gravamen/reducciones-base-imponible-general/reducciones-pensiones-compensatorias.html",
+    "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c02-irpf-cuestiones-generales/sujecion-irpf-aspectos-materiales/delimitacion-negativa-hecho-imponible-rentas-sujetas/rentas-exentas-articulo-7-ley-irpf/anualidades-alimentos-favor-hijos.html",
+    "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2023/c15-calculo-impuesto-determinacion-cuotas-integras/especialidades-determinacion-cuota-integra-estatal-autonomica/anualidades-alimentos-favor-hijos/especialidad-tratamiento-anualidades-alimentos.html",
+    "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c03-rendimientos-trabajo/concepto/rendimientos-trabajo-expresa-disposicion-legal/f-pensiones-compensatorias-recibidas-conyuge.html"
+  ],
+
+  "pension_compensatoria": {
+    "concepto": "Prestacion economica a favor de uno de los conyuges tras la separacion o divorcio, cuando este causa un desequilibrio economico en relacion con la posicion del otro (art. 97 Codigo Civil).",
+    "articulo_principal": "art. 55 Ley 35/2006 LIRPF",
+
+    "tratamiento_pagador": {
+      "tipo": "Reduccion de la base imponible general",
+      "descripcion": "La pension compensatoria satisfecha reduce la base imponible general del pagador. Si la base imponible general queda en cero (no puede ser negativa), el exceso reduce la base imponible del ahorro, que tampoco puede resultar negativa.",
+      "limites": [
+        "La base imponible general no puede resultar negativa como consecuencia de esta reduccion",
+        "El exceso reduce la base imponible del ahorro, que tampoco puede resultar negativa"
+      ],
+      "casillas_modelo_100": {
+        "note": "La pension compensatoria pagada se consigna en la seccion de reducciones de la base imponible general (seccion 8.2 del modelo 100). Se debe indicar: (1) NIF del receptor, (2) importe satisfecho en el ejercicio.",
+        "casilla_importe": "0480",
+        "seccion": "Base liquidable general y base liquidable del ahorro - Pensiones compensatorias"
+      }
+    },
+
+    "tratamiento_receptor": {
+      "tipo": "Rendimiento del trabajo",
+      "descripcion": "Para el receptor, la pension compensatoria recibida del conyuge tiene la consideracion de rendimiento del trabajo personal (art. 17.2.f LIRPF). NO esta sujeta a retencion a cuenta por parte del pagador (es una obligacion entre particulares, no del tipo empleador-empleado).",
+      "articulo": "art. 17.2.f) Ley 35/2006 LIRPF",
+      "retencion": false,
+      "casillas_modelo_100": {
+        "note": "El receptor declara la pension recibida como rendimiento del trabajo en retribuciones dinerarias.",
+        "casilla_importe": "0003",
+        "seccion": "Rendimientos del trabajo - Retribuciones dinerarias"
+      }
+    },
+
+    "requisitos": [
+      "Debe estar fijada en resolucion judicial de separacion o divorcio",
+      "O acordada por los conyuges en convenio regulador aprobado judicialmente (art. 90 Codigo Civil)",
+      "O formalizada en escritura publica ante Notario o ante el Letrado de la Administracion de Justicia (desde 2015, Ley 15/2015 de jurisdiccion voluntaria)",
+      "No es suficiente un acuerdo privado entre las partes sin intervencion judicial/notarial"
+    ],
+
+    "jurisprudencia": {
+      "nota": "El TS (STS 1.369/2024, 1.397/2024, 54/2025) ha determinado que la reduccion se aplica desde la fecha de firma del convenio regulador, siempre que la sentencia judicial posterior que lo ratifique no modifique lo pactado."
+    }
+  },
+
+  "anualidades_alimentos_hijos": {
+    "concepto": "Cantidades que un progenitor paga al otro (o directamente a los hijos) en concepto de alimentos por decision judicial tras la separacion o divorcio.",
+    "articulo_principal_pagador": "art. 64 y 75 Ley 35/2006 LIRPF",
+    "articulo_principal_receptor": "art. 7.k) Ley 35/2006 LIRPF",
+
+    "tratamiento_pagador": {
+      "tipo": "Tributacion separada especial (NO reduccion de base)",
+      "descripcion": "Las anualidades por alimentos a favor de los hijos NO reducen la base imponible general del pagador. Sin embargo, cuando se cumplen los requisitos, el importe de las anualidades tributa por separado aplicando la escala del impuesto de forma independiente al resto de la base liquidable general, lo que limita la progresividad y reduce la cuota integra.",
+      "articulos": "art. 64 (cuota estatal) y art. 75 (cuota autonomica) Ley 35/2006 LIRPF",
+
+      "requisitos_tributacion_separada": [
+        "Las anualidades deben estar fijadas por decision judicial, convenio regulador aprobado judicialmente, o en escritura publica ante Notario o Letrado de la Administracion de Justicia",
+        "El importe de las anualidades debe ser INFERIOR a la base liquidable general del pagador",
+        "El pagador NO debe tener derecho a aplicar el minimo por descendientes (art. 58 LIRPF) respecto de esos hijos",
+        "Por tanto, solo beneficia al progenitor que NO tiene la custodia (o al que, teniendo custodia compartida, no aplica minimo por descendientes)"
+      ],
+
+      "calculo_5_pasos": {
+        "descripcion": "Procedimiento de calculo de las cuotas integras estatal y autonomica cuando se aplican las anualidades por alimentos (art. 64 y 75 LIRPF)",
+        "pasos": [
+          {
+            "paso": 1,
+            "descripcion": "Separar la base liquidable general en dos partes: Base A = importe de las anualidades por alimentos; Base B = resto de la base liquidable general"
+          },
+          {
+            "paso": 2,
+            "descripcion": "Aplicar las escalas general estatal y autonomica POR SEPARADO a cada base (A y B), obteniendo 4 cuotas parciales: cuota1_estatal(A), cuota2_autonomica(A), cuota3_estatal(B), cuota4_autonomica(B)"
+          },
+          {
+            "paso": 3,
+            "descripcion": "Sumar las cuotas parciales: Cuota5_estatal = cuota1 + cuota3; Cuota6_autonomica = cuota2 + cuota4"
+          },
+          {
+            "paso": 4,
+            "descripcion": "Aplicar las escalas al minimo personal y familiar incrementado en 1.980 EUR anuales, obteniendo cuota7_estatal y cuota8_autonomica"
+          },
+          {
+            "paso": 5,
+            "descripcion": "Cuota integra estatal final = cuota5 - cuota7 (minimo 0); Cuota integra autonomica final = cuota6 - cuota8 (minimo 0)"
+          }
+        ],
+        "incremento_minimo": {
+          "importe": 1980,
+          "nota": "Se suman 1.980 EUR al minimo personal y familiar antes de calcular las cuotas 7 y 8. Este incremento sustituye al minimo por descendientes que el pagador no puede aplicar."
+        }
+      },
+
+      "casillas_modelo_100": {
+        "note": "Las anualidades por alimentos a favor de los hijos se consignan en la seccion especifica del modelo 100. Se debe indicar: (1) NIF de los hijos, (2) importe total satisfecho, (3) NIF del otro progenitor.",
+        "casilla_importe": "0527",
+        "seccion": "Anualidades por alimentos a favor de los hijos satisfechas por decision judicial"
+      }
+    },
+
+    "tratamiento_receptor_hijos": {
+      "tipo": "Renta exenta",
+      "descripcion": "Las anualidades por alimentos percibidas por los hijos de sus padres constituyen renta exenta del IRPF, siempre que sean recibidas en virtud de decision judicial o convenio regulador.",
+      "articulo": "art. 7.k) Ley 35/2006 LIRPF",
+      "requisitos_exencion": [
+        "Deben percibirse en virtud de decision judicial",
+        "O en virtud de convenio regulador aprobado judicialmente (art. 90 Codigo Civil)",
+        "O formalizado ante el Letrado de la Administracion de Justicia o en escritura publica ante Notario",
+        "Se extiende a convenios equivalentes bajo leyes autonomicas con las mismas formalidades"
+      ],
+      "casillas_modelo_100": {
+        "nota": "Los hijos que perciben anualidades por alimentos exentas generalmente no estan obligados a declarar si esa es su unica renta. Si declaran, la renta exenta no se incluye en la base imponible."
+      }
+    },
+
+    "custodia_compartida": {
+      "nota": "En casos de custodia compartida, las resoluciones del TEAC establecen que: (1) Ambos progenitores aplican el minimo por descendientes prorrateado al 50%; (2) NO pueden aplicar simultaneamente el regimen de anualidades por alimentos; (3) Solo el progenitor sin custodia (o sin minimo descendientes) puede usar el regimen especial de tributacion separada."
+    }
+  },
+
+  "anualidades_alimentos_otras_personas": {
+    "concepto": "Cantidades satisfechas en concepto de alimentos a favor de personas distintas de los hijos (ej: padres, hermanos), fijadas por decision judicial.",
+    "articulo": "art. 55 Ley 35/2006 LIRPF",
+
+    "tratamiento_pagador": {
+      "tipo": "Reduccion de la base imponible general",
+      "descripcion": "Las anualidades por alimentos a favor de personas distintas de los hijos, siempre que esten fijadas por decision judicial, reducen la base imponible general del pagador (mismo tratamiento que la pension compensatoria).",
+      "limites": [
+        "La base imponible general no puede resultar negativa",
+        "El exceso reduce la base imponible del ahorro, que tampoco puede resultar negativa"
+      ]
+    },
+
+    "tratamiento_receptor": {
+      "tipo": "Rendimiento del trabajo",
+      "descripcion": "Para el receptor, las anualidades recibidas constituyen rendimiento del trabajo personal no sujeto a retencion.",
+      "articulo": "art. 17.2.f) Ley 35/2006 LIRPF"
+    }
+  },
+
+  "supuesto_especial_indistinguible": {
+    "descripcion": "Cuando la resolucion judicial o el convenio regulador establece una obligacion de pago unica sin especificar que parte corresponde a pension compensatoria y que parte a anualidades por alimentos, no es posible determinar el importe de la pension compensatoria. En consecuencia, no se puede aplicar la reduccion de la base imponible general por ese concepto.",
+    "efecto": "No cabe reduccion por pension compensatoria. Las cantidades se tratan integramente como anualidades por alimentos (si los perceptores son hijos, aplica el regimen especial de tributacion separada; si son otras personas, se trata como reduccion por anualidades).",
+    "recomendacion": "Es conveniente que la resolucion judicial o convenio regulador desglose claramente las cantidades correspondientes a pension compensatoria y a anualidades por alimentos."
+  },
+
+  "diferencias_clave": {
+    "tabla_resumen": [
+      {
+        "concepto": "Pension compensatoria al conyuge",
+        "pagador": "Reduce base imponible general (art. 55 LIRPF)",
+        "receptor": "Rendimiento del trabajo sin retencion (art. 17.2.f)",
+        "requisito": "Decision judicial o convenio regulador"
+      },
+      {
+        "concepto": "Anualidades por alimentos a hijos",
+        "pagador": "NO reduce base. Tributacion separada especial (arts. 64/75 LIRPF) si no tiene minimo descendientes",
+        "receptor": "Renta EXENTA (art. 7.k LIRPF)",
+        "requisito": "Decision judicial o convenio regulador"
+      },
+      {
+        "concepto": "Anualidades por alimentos a otras personas",
+        "pagador": "Reduce base imponible general (art. 55 LIRPF)",
+        "receptor": "Rendimiento del trabajo sin retencion (art. 17.2.f)",
+        "requisito": "Decision judicial"
+      }
+    ]
+  },
+
+  "casillas_resumen": {
+    "pagador": {
+      "pension_compensatoria": {
+        "casilla": "0480",
+        "descripcion": "Importe de la pension compensatoria satisfecha al conyuge"
+      },
+      "anualidades_alimentos_hijos": {
+        "casilla": "0527",
+        "descripcion": "Importe de anualidades por alimentos a favor de los hijos satisfechas por decision judicial"
+      },
+      "anualidades_alimentos_otros": {
+        "casilla": "0480",
+        "descripcion": "Se incluye junto con la pension compensatoria como reduccion de la base imponible general"
+      }
+    },
+    "receptor": {
+      "pension_compensatoria_recibida": {
+        "casilla": "0003",
+        "descripcion": "Rendimientos del trabajo - retribuciones dinerarias (se incluye con el resto de rendimientos del trabajo)"
+      },
+      "anualidades_hijos_recibidas": {
+        "casilla": "N/A",
+        "descripcion": "Renta exenta - no se declara si es la unica renta. Si el hijo declara, la exencion se aplica automaticamente"
+      }
+    },
+    "nota": "Los numeros de casilla corresponden al Modelo 100 del ejercicio 2025. El pagador debe consignar adicionalmente el NIF del receptor y, en el caso de anualidades a hijos, el NIF del otro progenitor."
+  },
+
+  "ejemplo_aeat": {
+    "nota": "La AEAT no proporciona un ejemplo numerico especifico en el manual 2025 para pension compensatoria. Para anualidades por alimentos, el procedimiento de 5 pasos descrito arriba se ilustra asi:",
+    "ejemplo_anualidades": {
+      "supuesto": "Contribuyente con base liquidable general de 40.000 EUR, que paga 6.000 EUR/anio de anualidades por alimentos a sus dos hijos menores por decision judicial. No tiene custodia ni aplica minimo por descendientes.",
+      "calculo": {
+        "paso_1": "Base A (anualidades) = 6.000; Base B (resto) = 34.000",
+        "paso_2": "Se aplica la escala estatal y autonomica por separado a 6.000 y a 34.000",
+        "paso_3": "Se suman las cuotas parciales",
+        "paso_4": "Se aplica la escala al minimo personal y familiar + 1.980 EUR (ej: 5.550 + 1.980 = 7.530)",
+        "paso_5": "La cuota final = suma cuotas parciales - cuota del minimo incrementado",
+        "efecto": "Al tributar 6.000 por separado (empieza desde el tipo mas bajo de la escala), se evita que esos 6.000 se graven al tipo marginal mas alto del contribuyente, ahorrando la diferencia."
+      }
+    }
+  }
+}

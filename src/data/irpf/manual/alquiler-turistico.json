@@ -1,0 +1,327 @@
+{
+  "year": 2025,
+  "chapter": "4 (Rendimientos del capital inmobiliario) / Seccion especifica alquiler turistico",
+  "title": "Tributacion del alquiler de apartamentos turisticos",
+  "source": "AEAT — Tributacion del alquiler de apartamentos turisticos",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/vivienda-otros-inmuebles/tributacion-arrendador-viviendas-otros-inmuebles/tributacion-alquiler-apartamentos-turisticos_.html",
+  "verified_date": "2026-03-20",
+  "legal_basis": "Arts. 22-25 LIRPF (capital inmobiliario), art. 27 LIRPF (actividad economica), art. 85 LIRPF (imputacion rentas), art. 20.Uno.23 LIVA (exencion IVA arrendamientos vivienda)",
+
+  "classification": {
+    "title": "Clasificacion fiscal del alquiler turistico",
+    "general_rule": {
+      "classification": "Rendimientos del capital inmobiliario",
+      "description": "Con caracter general, los rendimientos derivados del alquiler de apartamentos turisticos se clasifican como rendimientos del capital inmobiliario.",
+      "condition": "Cuando el arrendador se limita a poner a disposicion del arrendatario el inmueble durante ciertos periodos, sin prestar servicios propios de la industria hotelera.",
+      "source": "art. 22 LIRPF"
+    },
+    "exception_actividad_economica": {
+      "classification": "Rendimientos de actividades economicas",
+      "conditions": [
+        {
+          "condition": "Disponer de al menos una persona empleada con contrato laboral y jornada completa para gestionar la actividad de alquiler.",
+          "source": "art. 27.2 LIRPF"
+        },
+        {
+          "condition": "Prestar servicios propios de la industria hotelera, aunque no se tenga empleado.",
+          "source": "art. 27.1 LIRPF, DGT"
+        }
+      ],
+      "consequence": "Si se califica como actividad economica, se aplican las reglas de rendimientos de actividades economicas (alta IAE, pagos fraccionados, libros de ingresos/gastos, etc.)."
+    },
+
+    "servicios_hoteleros": {
+      "title": "Que constituyen servicios propios de la industria hotelera",
+      "are_hotel_services": [
+        "Recepcion y atencion permanente y continuada al cliente en un espacio destinado a tal fin",
+        "Limpieza periodica del inmueble y del alojamiento durante la estancia",
+        "Cambio periodico de ropa de cama y bano durante la estancia",
+        "Servicios de alimentacion y restauracion",
+        "Servicios complementarios: lavanderia, custodia de maletas, prensa, reservas, etc."
+      ],
+      "are_NOT_hotel_services": [
+        "Limpieza del apartamento a la entrada y a la salida del periodo contratado (una sola vez)",
+        "Cambio de ropa de cama y bano a la entrada y salida (una sola vez)",
+        "Limpieza de las zonas comunes del edificio (portal, escaleras, ascensores)",
+        "Asistencia tecnica y mantenimiento puntual ante averias (fontaneria, electricidad, electrodomesticos)"
+      ],
+      "key_distinction": "La mera puesta a disposicion del inmueble con limpieza de entrada/salida NO constituye actividad hotelera. Los servicios deben extender la atencion al huesped mas alla de facilitar el uso del inmueble."
+    }
+  },
+
+  "no_reduccion_vivienda": {
+    "title": "NO aplica reduccion por arrendamiento de vivienda",
+    "description": "Los rendimientos del alquiler turistico NO tienen derecho a la reduccion del rendimiento neto positivo prevista para arrendamientos de vivienda (50%, 60%, 70% o 90%), ya que el arrendamiento turistico no satisface la necesidad permanente de vivienda del arrendatario sino una necesidad temporal de alojamiento.",
+    "reductions_excluded": [
+      { "percent": 90, "condition": "Zona tensionada con bajada de renta >5%" },
+      { "percent": 70, "condition": "Arrendatario joven (18-35) o alquiler social" },
+      { "percent": 60, "condition": "Inmueble rehabilitado" },
+      { "percent": 50, "condition": "Reduccion general vivienda" }
+    ],
+    "source": "art. 23.2 LIRPF — reduccion excluye expresamente arrendamiento turistico"
+  },
+
+  "calculo_rendimiento": {
+    "title": "Calculo del rendimiento neto del alquiler turistico",
+
+    "rendimiento_integro": {
+      "description": "Importe total que satisface el arrendatario por todos los conceptos (alquiler, limpieza de entrada/salida, ropa de cama, etc.), excluido el IVA o IGIC si procede.",
+      "casillas": "0100-0102"
+    },
+
+    "gastos_deducibles": {
+      "principio_general": "Son deducibles todos los gastos necesarios para la obtencion de los rendimientos, siempre que esten directamente relacionados con la actividad de alquiler.",
+      "proportional_rule": "Los gastos solo son deducibles en proporcion al numero de dias del periodo impositivo en los que el inmueble haya estado efectivamente alquilado.",
+      "formula": "Gasto deducible = Gasto anual total * (Dias alquilado / 365)",
+
+      "categories": [
+        {
+          "id": "intereses_financiacion",
+          "name": "Intereses y gastos de financiacion",
+          "description": "Intereses de prestamos hipotecarios u otros creditos destinados a la adquisicion o mejora del inmueble.",
+          "proportional": true,
+          "limit": "Junto con conservacion/reparacion: no pueden exceder los rendimientos integros del inmueble. Exceso diferible 4 anos.",
+          "casilla": "0103"
+        },
+        {
+          "id": "conservacion_reparacion",
+          "name": "Gastos de conservacion y reparacion",
+          "description": "Pintura, reparaciones de instalaciones, arreglos por desgaste. NO incluye mejoras ni ampliaciones.",
+          "proportional": true,
+          "limit": "Junto con intereses: no pueden exceder los rendimientos integros. Exceso diferible 4 anos.",
+          "casilla": "0107"
+        },
+        {
+          "id": "tributos",
+          "name": "Tributos y tasas",
+          "description": "IBI, tasas de basuras, alumbrado, limpieza. NO incluye sanciones.",
+          "proportional": true,
+          "casilla": "0111"
+        },
+        {
+          "id": "seguros",
+          "name": "Primas de seguros",
+          "description": "Seguros de responsabilidad civil, incendio, robo, multirriesgo del hogar.",
+          "proportional": true,
+          "casilla": "0127"
+        },
+        {
+          "id": "servicios_profesionales",
+          "name": "Servicios profesionales y de gestion",
+          "description": "Comisiones de plataformas (Airbnb, Booking), gastos de gestion inmobiliaria, honorarios profesionales.",
+          "proportional": true,
+          "casilla": "0119"
+        },
+        {
+          "id": "comunidad",
+          "name": "Comunidad de propietarios",
+          "description": "Cuotas de la comunidad de propietarios.",
+          "proportional": true,
+          "casilla": "0123"
+        },
+        {
+          "id": "suministros",
+          "name": "Suministros",
+          "description": "Agua, electricidad, gas, internet — solo si los paga el arrendador.",
+          "proportional": true,
+          "casilla": "0131"
+        },
+        {
+          "id": "amortizacion",
+          "name": "Amortizacion del inmueble y bienes cedidos",
+          "description": "3% sobre el mayor de: coste de adquisicion (sin suelo) o valor catastral de la construccion (sin suelo). Mobiliario: 10% anual.",
+          "proportional": true,
+          "casillas": "0135-0148",
+          "source": "art. 23.1.b LIRPF, arts. 13.h y 14 RIRPF"
+        },
+        {
+          "id": "limpieza_cambio_ropa",
+          "name": "Gastos de limpieza y cambio de ropa de cama entre huespedes",
+          "description": "Gastos directos de preparacion del inmueble entre estancias (si no se cobran aparte al huesped).",
+          "proportional": false,
+          "note": "Al ser gastos directamente vinculados a cada estancia, se deducen integramente sin prorrateo."
+        }
+      ]
+    },
+
+    "rendimiento_neto": {
+      "formula": "Rendimiento neto = Rendimiento integro - Gastos deducibles (prorrateados por dias alquilados)",
+      "casilla": "0149",
+      "no_reduction": "NO se aplica reduccion por arrendamiento de vivienda.",
+      "source": "art. 23.1 LIRPF"
+    }
+  },
+
+  "imputacion_rentas_dias_no_alquilados": {
+    "title": "Imputacion de rentas inmobiliarias por dias no alquilados",
+    "description": "Por los dias del ejercicio en que el inmueble NO esta alquilado ni es la vivienda habitual del contribuyente, se debe imputar una renta inmobiliaria presunta, proporcional a los dias de no ocupacion.",
+    "formula": "Renta imputada = (Valor catastral * Porcentaje aplicable) * (Dias no alquilados / 365)",
+
+    "rates": {
+      "general": {
+        "percent": 2,
+        "applies_when": "Valor catastral NO revisado mediante procedimiento de valoracion colectiva con entrada en vigor desde 01/01/2012."
+      },
+      "revised": {
+        "percent": 1.1,
+        "applies_when": "Valor catastral revisado con entrada en vigor a partir de 01/01/2012."
+      },
+      "no_catastral_value": {
+        "percent": 1.1,
+        "base": "50% del mayor de: valor comprobado por la Administracion o precio de adquisicion."
+      }
+    },
+
+    "integration": "Base imponible general",
+    "no_deductible_expenses": true,
+    "note": "NO se pueden deducir gastos contra la imputacion de rentas inmobiliarias. Los gastos del inmueble solo son deducibles contra los rendimientos integros del periodo alquilado.",
+
+    "casillas": {
+      "valor_catastral": "0063",
+      "renta_imputada": "0089"
+    },
+
+    "source": "art. 85 LIRPF"
+  },
+
+  "iva_alquiler_turistico": {
+    "title": "IVA en el alquiler turistico",
+
+    "sin_servicios_hoteleros": {
+      "iva_applies": false,
+      "description": "El arrendamiento turistico SIN servicios propios de la industria hotelera esta EXENTO de IVA.",
+      "consequence": "El arrendador no debe presentar ni ingresar IVA. La operacion queda sujeta a Transmisiones Patrimoniales Onerosas (ITP) a cargo del arrendatario (en la practica, raramente liquidado en alquileres de corta duracion).",
+      "source": "art. 20.Uno.23 LIVA"
+    },
+
+    "con_servicios_hoteleros": {
+      "iva_applies": true,
+      "rate": 10,
+      "description": "Si el arrendador presta servicios propios de la industria hotelera (recepcion permanente, limpieza periodica, cambio de ropa periodico, alimentacion), el alquiler NO esta exento de IVA y tributa al tipo reducido del 10% como establecimiento hotelero.",
+      "obligations": [
+        "Darse de alta en el Censo de Empresarios (Modelo 036/037)",
+        "Expedir facturas con IVA",
+        "Presentar declaraciones trimestrales de IVA (Modelo 303)",
+        "Presentar resumen anual de IVA (Modelo 390)"
+      ],
+      "source": "art. 91.Uno.2.2 LIVA (tipo reducido 10% servicios hosteleria)"
+    },
+
+    "iae": {
+      "description": "El arrendador de inmuebles turisticos debe estar dado de alta en el IAE (Impuesto sobre Actividades Economicas), aunque este exento de pago si su cifra de negocio no supera 1.000.000 EUR.",
+      "epigrafes": [
+        "Epigrafe 861.1: Alquiler de viviendas (sin servicios hoteleros)",
+        "Epigrafe 685: Alojamientos turisticos extrahoteleros (con servicios complementarios)"
+      ],
+      "source": "https://sede.agenciatributaria.gob.es/Sede/vivienda-otros-inmuebles/tributacion-arrendador-viviendas-otros-inmuebles/tributacion-alquiler-apartamentos-turisticos/impuesto-sobre-actividades-economicas.html"
+    }
+  },
+
+  "dac7_modelo_238": {
+    "title": "Obligaciones de informacion de plataformas digitales (DAC7 / Modelo 238)",
+    "description": "La Directiva (UE) 2021/514 (DAC7) impone a los operadores de plataformas digitales (Airbnb, Booking, Vrbo, etc.) la obligacion de comunicar a las autoridades fiscales informacion sobre los vendedores/arrendadores que operan en sus plataformas.",
+
+    "what_platforms_report": [
+      "Datos identificativos del arrendador (nombre, NIF/NIE, domicilio, fecha de nacimiento)",
+      "Numero de identificacion fiscal",
+      "Contraprestacion total pagada o acreditada al arrendador en cada trimestre",
+      "Numero de operaciones (reservas) por las que se pago contraprestacion",
+      "Identificacion del inmueble (direccion, numero de registro catastral si disponible)",
+      "Numero de dias que el inmueble estuvo arrendado"
+    ],
+
+    "modelo_238": {
+      "title": "Modelo 238 — Declaracion informativa para la comunicacion de informacion por parte de operadores de plataformas",
+      "who_presents": "Los operadores de plataformas digitales obligados (no el arrendador individual).",
+      "legal_basis": "Directiva (UE) 2021/514 (DAC7), transpuesta en Espana"
+    },
+
+    "modelo_179": {
+      "title": "Modelo 179 — Declaracion informativa trimestral de cesion de uso de viviendas con fines turisticos",
+      "who_presents": "Intermediarios (plataformas) que intermedien en la cesion de uso de viviendas con fines turisticos.",
+      "frequency": "Trimestral",
+      "legal_basis": "Orden HAC/612/2021, Orden HFP/188/2023"
+    },
+
+    "impact_for_arrendador": "El arrendador debe ser consciente de que AEAT recibe datos de las plataformas automaticamente. Las rentas no declaradas seran detectadas mediante cruces de informacion.",
+    "source": "Directiva (UE) 2021/514, Orden HFP/887/2023"
+  },
+
+  "ejemplo_calculo": {
+    "title": "Ejemplo simplificado de calculo",
+    "description": "Apartamento turistico alquilado 120 dias al ano, sin servicios hoteleros.",
+    "datos": {
+      "ingresos_brutos_anuales": 18000,
+      "valor_catastral": 150000,
+      "valor_catastral_construccion": 100000,
+      "catastro_revisado_post_2012": true,
+      "gastos_anuales": {
+        "ibi": 800,
+        "comunidad": 1200,
+        "seguro": 400,
+        "suministros": 1800,
+        "comisiones_plataforma": 2700,
+        "limpieza_entre_huespedes": 1500
+      }
+    },
+    "calculo": {
+      "dias_alquilado": 120,
+      "dias_no_alquilado": 245,
+      "factor_prorrateo": 0.329,
+
+      "rendimiento_integro": 18000,
+      "gastos_prorrateados": {
+        "ibi": 263,
+        "comunidad": 395,
+        "seguro": 132,
+        "suministros": 592,
+        "comisiones_plataforma": 2700,
+        "limpieza_entre_huespedes": 1500,
+        "amortizacion": "100000 * 3% * (120/365) = 986"
+      },
+      "total_gastos_deducibles": 6568,
+      "rendimiento_neto": 11432,
+      "reduccion_vivienda": "NO APLICA (alquiler turistico)",
+
+      "imputacion_rentas": {
+        "formula": "150000 * 1.1% * (245/365)",
+        "importe": 1108,
+        "integration": "base_general"
+      },
+
+      "resultado_total_irpf": "11.432 EUR como rendimiento capital inmobiliario (base general) + 1.108 EUR imputacion de rentas (base general)"
+    },
+    "note": "Este ejemplo es ilustrativo. Las comisiones de plataforma se deducen integramente (son directas por estancia). La limpieza entre huespedes tambien es directa. Los demas gastos se prorratean por dias."
+  },
+
+  "common_mistakes": [
+    {
+      "mistake": "Aplicar la reduccion por arrendamiento de vivienda al alquiler turistico",
+      "explanation": "El alquiler turistico esta expresamente excluido de la reduccion del 50-90%. Solo aplica a arrendamientos que satisfacen la necesidad permanente de vivienda."
+    },
+    {
+      "mistake": "No declarar la imputacion de rentas por los dias no alquilados",
+      "explanation": "Por los dias en que el inmueble no esta alquilado ni es vivienda habitual, se debe imputar el 2% (o 1.1%) del valor catastral proporcionalmente."
+    },
+    {
+      "mistake": "Deducir gastos sin prorratear por dias de alquiler",
+      "explanation": "Los gastos generales anuales (IBI, comunidad, seguros, suministros, amortizacion) solo son deducibles proporcionalmente a los dias alquilados."
+    },
+    {
+      "mistake": "No darse de alta en el IAE",
+      "explanation": "El arrendador de inmuebles turisticos debe estar dado de alta en el IAE, aunque probablemente este exento de pago."
+    },
+    {
+      "mistake": "Cobrar IVA cuando no se prestan servicios hoteleros",
+      "explanation": "Si no se prestan servicios propios de hosteleria, el alquiler esta exento de IVA y no se debe repercutir."
+    },
+    {
+      "mistake": "No declarar ingresos confiando en que la plataforma no informa",
+      "explanation": "Las plataformas digitales estan obligadas a informar a AEAT mediante los Modelos 179 y 238 (DAC7). AEAT realiza cruces automaticos."
+    },
+    {
+      "mistake": "Considerar el alquiler turistico como actividad economica sin empleado ni servicios hoteleros",
+      "explanation": "El mero alquiler de un inmueble sin empleado a jornada completa y sin servicios hoteleros es rendimiento del capital inmobiliario, no actividad economica."
+    }
+  ]
+}

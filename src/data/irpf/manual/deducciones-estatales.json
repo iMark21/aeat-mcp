@@ -1,0 +1,394 @@
+{
+  "year": 2025,
+  "chapter": 16,
+  "title": "Deducciones generales de la cuota",
+  "source": "AEAT Manual Practico Renta 2025, Capitulo 16",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/introduccion/deducciones-generales-autonomicas-aplicables.html",
+  "verified_date": "2026-03-20",
+
+  "general_rule": "La aplicacion de deducciones generales y autonomicas no puede dar lugar a cuota liquida negativa",
+
+  "deductions": [
+    {
+      "id": "vivienda_habitual_transitorio",
+      "name": "Inversion en vivienda habitual (regimen transitorio)",
+      "status": "active_transitional",
+      "description": "Deduccion por adquisicion, construccion, rehabilitacion o ampliacion de vivienda habitual. Suprimida desde 01-01-2013, pero mantiene regimen transitorio para contribuyentes que aplicaron la deduccion antes de esa fecha",
+      "percentage": {
+        "state": 7.5,
+        "autonomous": 7.5,
+        "total": 15
+      },
+      "max_base": 9040,
+      "max_deduction": 1356,
+      "requirements": [
+        "Haber adquirido la vivienda habitual antes del 01-01-2013",
+        "Haber aplicado efectivamente la deduccion por dicha vivienda en un periodo impositivo anterior a 2013",
+        "Para construccion: cantidades depositadas antes del 01-01-2013 y finalizacion en plazo"
+      ],
+      "includes": [
+        "Adquisicion de vivienda habitual",
+        "Construccion de vivienda habitual",
+        "Rehabilitacion de vivienda habitual",
+        "Ampliacion de vivienda habitual",
+        "Cantidades depositadas en cuenta vivienda (si se abrio antes de 01-01-2013)"
+      ],
+      "base_calculation": "Cantidades satisfechas en el ejercicio (amortizacion principal + intereses + gastos), netas de subvenciones",
+      "casillas": "0698-0710",
+      "source": "arts. 68.1, 78 LIRPF (redaccion 31-12-2012), DT 18 LIRPF"
+    },
+    {
+      "id": "inversion_empresa_nueva",
+      "name": "Inversion en empresas de nueva o reciente creacion (Business Angels)",
+      "status": "active",
+      "description": "Deduccion por suscripcion de acciones o participaciones en empresas de nueva o reciente creacion",
+      "percentage": 50,
+      "max_base": 100000,
+      "max_deduction": 50000,
+      "split": "100% estatal (no se reparte con autonomica)",
+      "requirements": [
+        "Entidad constituida como SA, SL, SAL o SLL",
+        "No cotizada en mercados organizados",
+        "Fondos propios de la entidad no superiores a 400.000 EUR al inicio del periodo en que se adquieran las acciones",
+        "Entidad que ejerce actividad economica (no gestion de patrimonio)",
+        "Participacion del contribuyente no superior al 40% (sumando conyuge y parientes hasta 2.o grado)",
+        "Mantenimiento minimo 3 anos, maximo 12 anos"
+      ],
+      "from_year": 2013,
+      "max_base_increased_2023": "Base maxima incrementada de 60.000 a 100.000 EUR y porcentaje de 30% a 50% desde 01-01-2023 (Ley 28/2022 de startups)",
+      "casillas": "0716-0717",
+      "source": "art. 68.1 LIRPF, modificado por Ley 28/2022 de startups"
+    },
+    {
+      "id": "donativos_ley_49_2002",
+      "name": "Donativos a entidades beneficiarias de mecenazgo (Ley 49/2002)",
+      "status": "active",
+      "description": "Deduccion por donativos, donaciones y aportaciones a entidades incluidas en el ambito de la Ley 49/2002 (fundaciones, ONGs, etc.)",
+      "rates": {
+        "first_250_eur": {
+          "percentage": 80,
+          "description": "Los primeros 250 EUR de donativos"
+        },
+        "rest": {
+          "percentage": 40,
+          "description": "Exceso sobre 250 EUR"
+        },
+        "recurrent": {
+          "percentage": 45,
+          "description": "Si se ha donado a la misma entidad por importe igual o superior en los 2 ejercicios anteriores (3 anos consecutivos)",
+          "condition": "Donaciones en 2023 y 2024 a la misma entidad por importes >= a los de los anos anteriores"
+        }
+      },
+      "limit_base": "10% de la base liquidable del contribuyente",
+      "limit_base_prioritaria": "15% para actividades prioritarias de mecenazgo",
+      "split": "50% estatal + 50% autonomica",
+      "casilla": "0723",
+      "source": "art. 68.3 LIRPF, art. 19 Ley 49/2002, modificado por Ley 7/2024"
+    },
+    {
+      "id": "donativos_no_ley_49_2002",
+      "name": "Donativos a entidades NO incluidas en Ley 49/2002",
+      "status": "active",
+      "description": "Deduccion por donativos a fundaciones legalmente reconocidas y asociaciones de utilidad publica no incluidas en Ley 49/2002",
+      "percentage": 10,
+      "limit_base": "10% de la base liquidable",
+      "split": "50% estatal + 50% autonomica",
+      "casillas": "0722-0724",
+      "source": "art. 68.3.b) LIRPF"
+    },
+    {
+      "id": "maternidad",
+      "name": "Deduccion por maternidad",
+      "status": "active",
+      "description": "Deduccion por cada hijo menor de 3 anos para madres/progenitores trabajadores con alta en SS o mutualidad",
+      "amount": 1200,
+      "amount_per": "hijo menor de 3 anos / ano",
+      "monthly_calculation": "100 EUR/mes, proporcional a los meses que se cumplan los requisitos",
+      "additional_nursery": {
+        "amount": 1000,
+        "description": "Incremento adicional por gastos de custodia en guarderia/centro de educacion infantil autorizado",
+        "condition": "Gastos satisfechos a guarderia o centro educacion infantil autorizado por la CA"
+      },
+      "requirements": [
+        "Mujer con hijos menores de 3 anos (o ambos progenitores si familia monoparental)",
+        "Alta en la Seguridad Social o mutualidad (trabajadora por cuenta ajena o propia)",
+        "Desde 2023: tambien mujeres que percibieron prestacion por desempleo o tengan cotizaciones SS minimas sin estar en alta",
+        "No percibir complemento de ayuda para la infancia del IMV (excepto si derecho anterior a 01-01-2023)"
+      ],
+      "advance_payment": "Modelo 140 para solicitar abono anticipado (100 EUR/mes)",
+      "split": "Minora cuota diferencial (no se reparte estado/autonomia)",
+      "casillas": "0611-0613",
+      "source": "art. 81 LIRPF, modificado por Ley 6/2023"
+    },
+    {
+      "id": "familia_numerosa",
+      "name": "Deduccion por familia numerosa",
+      "status": "active",
+      "description": "Deduccion para ascendientes (o hermanos huerfanos) que formen parte de familia numerosa segun Ley 40/2003",
+      "amounts": {
+        "general_category": {
+          "annual": 1200,
+          "monthly": 100,
+          "description": "Familia numerosa de categoria general (3 hijos)"
+        },
+        "special_category": {
+          "annual": 2400,
+          "monthly": 200,
+          "description": "Familia numerosa de categoria especial (5+ hijos)"
+        },
+        "additional_per_child": {
+          "amount": 600,
+          "description": "Incremento por cada hijo que exceda del minimo exigido para cada categoria"
+        }
+      },
+      "requirements": [
+        "Titulo de familia numerosa en vigor",
+        "Contribuyente con alta SS/mutualidad, o perceptor de prestaciones del sistema de proteccion de desempleo, o pensionista"
+      ],
+      "compatible_with": ["maternidad", "discapacidad_a_cargo"],
+      "advance_payment": "Modelo 143",
+      "casillas": "0660-0662",
+      "source": "art. 81 bis LIRPF, art. 60 bis y 72 RIRPF"
+    },
+    {
+      "id": "discapacidad_descendiente",
+      "name": "Deduccion por descendiente con discapacidad a cargo",
+      "status": "active",
+      "description": "Deduccion por cada descendiente con discapacidad (grado >= 33%) con derecho a aplicar el minimo por descendientes",
+      "amount": 1200,
+      "amount_per": "descendiente con discapacidad / ano",
+      "monthly": 100,
+      "requirements": [
+        "Descendiente con grado de discapacidad >= 33%",
+        "Derecho a aplicar minimo por descendientes",
+        "Contribuyente con alta SS/mutualidad o perceptor prestaciones desempleo/pensionista"
+      ],
+      "advance_payment": "Modelo 143",
+      "source": "art. 81 bis LIRPF"
+    },
+    {
+      "id": "discapacidad_ascendiente",
+      "name": "Deduccion por ascendiente con discapacidad a cargo",
+      "status": "active",
+      "description": "Deduccion por cada ascendiente con discapacidad (grado >= 33%) con derecho a aplicar el minimo por ascendientes",
+      "amount": 1200,
+      "amount_per": "ascendiente con discapacidad / ano",
+      "monthly": 100,
+      "requirements": [
+        "Ascendiente con grado de discapacidad >= 33%",
+        "Derecho a aplicar minimo por ascendientes",
+        "Contribuyente con alta SS/mutualidad o perceptor prestaciones desempleo/pensionista"
+      ],
+      "advance_payment": "Modelo 143",
+      "source": "art. 81 bis LIRPF"
+    },
+    {
+      "id": "conyuge_discapacidad",
+      "name": "Deduccion por conyuge no separado legalmente con discapacidad",
+      "status": "active",
+      "description": "Deduccion por conyuge no separado legalmente con discapacidad (grado >= 33%) que no tenga rentas anuales superiores a 8.000 EUR (excluidas exentas)",
+      "amount": 1200,
+      "amount_per": "ano",
+      "requirements": [
+        "Conyuge no separado legalmente con discapacidad >= 33%",
+        "Rentas anuales del conyuge no superiores a 8.000 EUR (excluidas exentas)",
+        "Contribuyente con alta SS/mutualidad o perceptor prestaciones desempleo/pensionista"
+      ],
+      "source": "art. 81 bis LIRPF"
+    },
+    {
+      "id": "ceuta_melilla",
+      "name": "Deduccion por rentas obtenidas en Ceuta o Melilla",
+      "status": "active",
+      "description": "Deduccion del 60% de la parte de cuota integra que proporcionalmente corresponda a rentas obtenidas en Ceuta o Melilla",
+      "percentage": 60,
+      "modalities": {
+        "resident_under_3_years": {
+          "scope": "Solo rentas generadas en Ceuta/Melilla",
+          "rate": 60
+        },
+        "resident_3_plus_years": {
+          "scope": "Todas las rentas (incluidas las de fuera de Ceuta/Melilla)",
+          "rate": 60,
+          "condition": "Al menos 1/3 del patrimonio neto situado en Ceuta/Melilla",
+          "limit": "Rentas de fuera no pueden exceder las rentas netas de Ceuta/Melilla"
+        },
+        "non_resident": {
+          "scope": "Solo rentas positivas de Ceuta/Melilla",
+          "rate": 60,
+          "exclusions": [
+            "Rentas de IIC (salvo 100% activos en Ceuta/Melilla)",
+            "Rendimientos del trabajo",
+            "Ganancias capital mobiliario",
+            "Depositos en entidades financieras"
+          ]
+        }
+      },
+      "max_limit": "60% de la suma de cuotas integras (estatal + autonomica)",
+      "split": "50% estatal + 50% autonomica",
+      "source": "art. 68.4 LIRPF, art. 58 RIRPF"
+    },
+    {
+      "id": "eficiencia_energetica_20",
+      "name": "Obras de reduccion demanda calefaccion/refrigeracion (20%)",
+      "status": "active_temporal",
+      "description": "Deduccion por obras que reduzcan al menos un 7% la demanda de calefaccion y refrigeracion de la vivienda",
+      "percentage": 20,
+      "max_base": 5000,
+      "max_deduction": 1000,
+      "valid_period": "06-10-2021 a 31-12-2025",
+      "requirements": [
+        "Certificado de eficiencia energetica posterior a las obras que acredite reduccion >= 7% en demanda calefaccion/refrigeracion",
+        "Certificado expedido por tecnico competente y registrado segun RD 390/2021",
+        "Vivienda habitual del contribuyente, o vivienda arrendada/destinada a arrendamiento antes de 31-12-2027"
+      ],
+      "exclusions": "Plazas garaje, trasteros, jardines, piscinas, instalaciones deportivas, zonas afectas a actividad economica",
+      "deduction_period": "Ejercicio en que se expide el certificado posterior a las obras",
+      "source": "DA 50 LIRPF"
+    },
+    {
+      "id": "eficiencia_energetica_40",
+      "name": "Obras de mejora consumo energia primaria no renovable (40%)",
+      "status": "active_temporal",
+      "description": "Deduccion por obras que reduzcan al menos un 30% el consumo de energia primaria no renovable, o alcancen calificacion A o B",
+      "percentage": 40,
+      "max_base": 7500,
+      "max_deduction": 3000,
+      "valid_period": "06-10-2021 a 31-12-2025",
+      "requirements": [
+        "Certificado de eficiencia energetica que acredite reduccion >= 30% consumo energia primaria no renovable O calificacion energetica A o B",
+        "Certificado expedido dentro de los 2 anos siguientes al certificado anterior a las obras",
+        "Vivienda habitual o arrendada/destinada a arrendamiento antes de 31-12-2027"
+      ],
+      "exclusions": "Plazas garaje, trasteros, jardines, piscinas, zonas afectas a actividad economica",
+      "source": "DA 50 LIRPF"
+    },
+    {
+      "id": "eficiencia_energetica_60",
+      "name": "Obras de rehabilitacion energetica de edificios (60%)",
+      "status": "active_temporal",
+      "description": "Deduccion por obras de rehabilitacion energetica de edificios de uso predominante residencial",
+      "percentage": 60,
+      "max_base_annual": 5000,
+      "max_base_cumulative": 15000,
+      "max_deduction_annual": 3000,
+      "valid_period": "06-10-2021 a 31-12-2025",
+      "carry_forward": "Cantidades no deducidas por exceder la base maxima anual pueden deducirse en los 4 ejercicios siguientes, respetando el limite acumulado de 15.000 EUR",
+      "requirements": [
+        "Obras en edificio de uso predominante residencial",
+        "Certificado que acredite reduccion >= 30% consumo energia primaria no renovable O calificacion A o B",
+        "Certificado antes de 01-01-2026"
+      ],
+      "casillas": "1677, 1777-1778",
+      "source": "DA 50 LIRPF, RD 390/2021"
+    },
+    {
+      "id": "vehiculo_electrico",
+      "name": "Adquisicion de vehiculo electrico enchufable o pila de combustible",
+      "status": "active_temporal",
+      "description": "Deduccion por adquisicion de vehiculos electricos enchufables y de pila de combustible nuevos",
+      "percentage": 15,
+      "max_base": 20000,
+      "max_deduction": 3000,
+      "valid_period": "30-06-2023 a 31-12-2025",
+      "requirements": [
+        "Vehiculo nuevo (no matriculado previamente)",
+        "Enchufable (BEV/PHEV) o pila de combustible (FCEV)",
+        "Categorias M1 o L (segun Anexo III RD 266/2021)",
+        "Precio no superior al establecido en Anexo III RD 266/2021 (MOVES III)",
+        "No afecto a actividad economica",
+        "Matriculacion antes de fin del segundo ejercicio posterior al pago (si pago anticipado >= 25%)"
+      ],
+      "deduction_period": "Ejercicio de matriculacion del vehiculo",
+      "source": "DA 58 LIRPF"
+    },
+    {
+      "id": "punto_recarga_electrico",
+      "name": "Instalacion de punto de recarga para vehiculos electricos",
+      "status": "active_temporal",
+      "description": "Deduccion por instalacion de sistema de recarga de baterias para vehiculos electricos en inmueble del contribuyente",
+      "percentage": 15,
+      "max_base": 4000,
+      "max_deduction": 600,
+      "valid_period": "30-06-2023 a 31-12-2025",
+      "requirements": [
+        "Instalacion en inmueble propiedad del contribuyente",
+        "No afecta a actividad economica",
+        "Instalacion realizada por empresa habilitada"
+      ],
+      "source": "DA 58 LIRPF"
+    },
+    {
+      "id": "patrimonio_historico",
+      "name": "Actuaciones para proteccion del Patrimonio Historico Espanol y ciudades Patrimonio Mundial",
+      "status": "active",
+      "description": "Deduccion por inversiones y gastos en bienes declarados de interes cultural o inscritos en inventario general",
+      "percentage": 15,
+      "split": "50% estatal + 50% autonomica",
+      "source": "art. 68.5 LIRPF"
+    },
+    {
+      "id": "alquiler_vivienda_transitorio",
+      "name": "Alquiler de vivienda habitual (regimen transitorio)",
+      "status": "active_transitional",
+      "description": "Deduccion por alquiler de vivienda habitual. Suprimida desde 01-01-2015, con regimen transitorio para contribuyentes con contratos anteriores y base imponible < 24.107,20 EUR",
+      "percentage": 10.05,
+      "max_base": 9040,
+      "requirements": [
+        "Contrato de arrendamiento anterior al 01-01-2015",
+        "Haber aplicado la deduccion antes de 2015",
+        "Base imponible inferior a 24.107,20 EUR"
+      ],
+      "source": "DT 15 LIRPF"
+    },
+    {
+      "id": "residencia_la_palma",
+      "name": "Residencia habitual en La Palma",
+      "status": "active_temporal",
+      "description": "Deduccion para contribuyentes con residencia habitual y efectiva en la isla de La Palma",
+      "valid_period": "2022-2025",
+      "split": "50% estatal + 50% autonomica",
+      "source": "art. 68.4.2 LIRPF (anadido por RDL 20/2021)"
+    },
+    {
+      "id": "planes_pensiones",
+      "name": "Reduccion en base imponible por aportaciones a planes de pensiones",
+      "status": "active",
+      "type": "reduccion_base",
+      "note": "NO es deduccion de cuota sino reduccion de base imponible general. Se incluye aqui por su importancia practica",
+      "description": "Reduccion de la base imponible general por aportaciones y contribuciones a sistemas de prevision social (planes de pensiones, mutualidades, PPA, seguros colectivos)",
+      "limits": {
+        "individual": {
+          "max_annual": 1500,
+          "description": "Aportaciones individuales a planes de pensiones individuales"
+        },
+        "employment_plans": {
+          "additional": 4250,
+          "description": "Incremento por aportaciones a planes de pensiones de empleo, sectoriales, o del promotor autonomo",
+          "total_with_individual": 5750
+        },
+        "spouse": {
+          "max_annual": 1000,
+          "description": "Aportaciones al plan del conyuge con rentas del trabajo/AE < 8.000 EUR",
+          "condition": "Conyuge con rendimientos netos del trabajo y AE inferiores a 8.000 EUR"
+        },
+        "overall_limit": "El menor de: las cuantias anteriores o el 30% de la suma de rendimientos netos del trabajo y actividades economicas"
+      },
+      "excess_carry_forward": "Si la reduccion no se puede aplicar por insuficiencia de base, el exceso se aplica en los 5 ejercicios siguientes",
+      "casillas": "0427-0438",
+      "source": "arts. 51, 52, 53 LIRPF"
+    }
+  ],
+
+  "deductions_for_business_activities": {
+    "note": "Contribuyentes en estimacion directa pueden aplicar deducciones del Impuesto sobre Sociedades (IS) previstas en capitulo IV titulo VI LIS",
+    "main_deductions": [
+      "I+D e innovacion tecnologica (25%-42%)",
+      "Producciones cinematograficas y espectaculos en vivo",
+      "Creacion de empleo para trabajadores con discapacidad",
+      "Vehiculos electricos para flotas (FAN)",
+      "Actividades de I+D (personal investigador)"
+    ],
+    "source": "art. 68.2 LIRPF, capitulo IV titulo VI LIS"
+  }
+}

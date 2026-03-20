@@ -1,0 +1,415 @@
+{
+  "chapter": "Procedimiento para corregir la declaracion de la Renta",
+  "year": 2025,
+  "source": "Manual Practico Renta 2025 — AEAT (sede.agenciatributaria.gob.es) + Ley 58/2003 General Tributaria (boe.es)",
+  "verified_date": "2026-03-20",
+  "overview": {
+    "description": "A partir de la campana IRPF 2024 (presentada desde 14 de marzo de 2025), la autoliquidacion rectificativa sustituye el sistema dual anterior (complementaria + solicitud de rectificacion) como procedimiento unico para corregir declaraciones ya presentadas. Para ejercicios anteriores a 2024, sigue aplicandose el regimen de autoliquidacion complementaria (art. 122 LGT).",
+    "source": "Orden HAC/242/2025, de 13 de marzo; art. 120.3 y 120.4 LGT (mod. Ley 13/2023)",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/irpf/campana-renta/modificacion-declaracion-renta-2025-presentada.html"
+  },
+  "autoliquidacion_rectificativa": {
+    "definition": "Sistema unico de correccion de autoliquidaciones del IRPF, introducido por la Ley 13/2023, de 24 de mayo, que modifica los articulos 120.3 y 120.4 de la Ley General Tributaria. Permite al obligado tributario rectificar, completar o modificar una autoliquidacion previamente presentada, independientemente de si el resultado es a ingresar mas, a devolver o a menor devolucion.",
+    "source": "art. 120.3 y 120.4 LGT (redaccion Ley 13/2023, de 24 de mayo, BOE-A-2023-12204)",
+    "exact_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-12204",
+    "applies_from": "Ejercicio 2024 en adelante (para IRPF, desde la campana que se presenta en abril-junio 2025)",
+    "activation_order": {
+      "description": "Orden HAC/242/2025, de 13 de marzo, configura la autoliquidacion rectificativa como sistema unico para IRPF 2024",
+      "source": "Orden HAC/242/2025",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c18-cuota-liquida-resultante-autoliquidacion/regularizacion-situaciones-tributarias/general.html"
+    },
+    "casillas_modelo_100": {
+      "casilla_103": "Marcar X para indicar autoliquidacion rectificativa",
+      "casilla_104": "Numero de justificante de la autoliquidacion anterior que se rectifica",
+      "casillas_108_a_121": "Motivo concreto de la correccion cuando resulta mayor importe a ingresar",
+      "casilla_107": "Otros motivos no comprendidos en casillas 108-121",
+      "casilla_122": "Discrepancia de criterio administrativo (interpretacion sin vulneracion de norma superior)",
+      "casilla_0669": "Uso excepcional para discrepancia administrativa cuando no sea posible ajustar mediante otras casillas",
+      "source": "Manual Practico IRPF 2024, Cap. 18",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c18-cuota-liquida-resultante-autoliquidacion/regularizacion-situaciones-tributarias/general.html"
+    },
+    "supuestos": [
+      {
+        "id": "mayor_ingreso",
+        "description": "El resultado de la rectificativa supone un importe a ingresar mayor o una devolucion menor que la autoliquidacion originaria",
+        "regime": "Se aplica el regimen del art. 122.2 LGT y art. 119 RGAT",
+        "payment_splitting": "El ingreso adicional NUNCA podra fraccionarse en dos plazos (60/40)",
+        "must_indicate_reason": true,
+        "source": "art. 122.2 LGT, art. 119 RGAT",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/irpf/campana-renta/modificacion-declaracion-renta-2025-presentada/resultado-autoliquidacion-rectificativa-ingresar-mayor-importe.html"
+      },
+      {
+        "id": "menor_ingreso_o_mayor_devolucion",
+        "description": "El resultado de la rectificativa supone un importe a ingresar menor o una devolucion mayor que la autoliquidacion originaria",
+        "regime": "Inicia procedimiento de devolucion (arts. 124-127 LGT)",
+        "refund_deadline_months": 6,
+        "source": "arts. 124-127 LGT",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/irpf/campana-renta/modificacion-declaracion-renta-2025-presentada.html"
+      },
+      {
+        "id": "minoracion_sin_devolucion",
+        "description": "Reduce la cuota pero no genera derecho a devolucion (solo minora la deuda pendiente)",
+        "regime": "Mantiene obligacion de pago hasta el importe resultante de la rectificativa. Si deuda aplazada/fraccionada, se solicita modificacion automaticamente (art. 52 RD 939/2005)",
+        "source": "art. 52 Real Decreto 939/2005",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c18-cuota-liquida-resultante-autoliquidacion/regularizacion-situaciones-tributarias/general.html"
+      }
+    ],
+    "exceptions_vulneracion_norma": {
+      "description": "Cuando la rectificacion se fundamenta en vulneracion de norma de rango superior (legal, constitucional, Derecho de la UE o Tratado internacional), el contribuyente puede optar entre la autoliquidacion rectificativa o los procedimientos de los arts. 126-128 RGAT (RD 1065/2007)",
+      "source": "art. 120.3 LGT, arts. 126-128 RGAT",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c18-cuota-liquida-resultante-autoliquidacion/regularizacion-situaciones-tributarias/general.html"
+    },
+    "restrictions": [
+      "No permite la presentacion de documentacion adjunta",
+      "No produce efectos sobre elementos ya regularizados mediante liquidacion definitiva o provisional (art. 126.2-3 RD 1065/2007)"
+    ],
+    "how_to_present": {
+      "description": "Acceder a Renta Web en la sede electronica de la AEAT, seleccionar 'Modificar declaracion Renta ya presentada', realizar las correcciones necesarias, y seleccionar la opcion de autoliquidacion rectificativa",
+      "source": "Sede electronica AEAT",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/irpf/campana-renta/modificacion-declaracion-renta-2025-presentada.html"
+    }
+  },
+  "autoliquidacion_complementaria": {
+    "definition": "Sistema de correccion de autoliquidaciones vigente para ejercicios anteriores a 2024. Solo procede cuando el resultado de la nueva autoliquidacion es una cantidad a ingresar superior o una cantidad a devolver inferior a la resultante de la autoliquidacion anterior. Se incorporan todos los datos (nuevos y anteriores correctos) y se ingresa la diferencia.",
+    "source": "art. 122 LGT",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/Ayuda/20Manual/200/2_Complementaria.shtml",
+    "when_applies": "Solo cuando mayor cuota o menor devolucion. NUNCA para solicitar devolucion o reducir cuota (para eso, solicitud de rectificacion art. 120.3 LGT antiguo)",
+    "requirements": [
+      "Incorporar todos los datos de la declaracion (nuevos + anteriores correctos)",
+      "Indicar el numero de justificante de la declaracion anterior",
+      "Ingresar exclusivamente la diferencia entre la nueva cuota y la anterior"
+    ],
+    "payment_splitting": "El ingreso de complementarias NO admite fraccionamiento en dos plazos (60/40)",
+    "still_valid_for": "Ejercicios anteriores a 2024 (Renta 2023 y anteriores no prescritos)",
+    "exact_url_manual": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2022/8-cumplimentacion-irpf/8_10-modificar-declaracion/8_10_1-declaracion-complementaria-hacienda-publica.html"
+  },
+  "differences_complementaria_vs_rectificativa": {
+    "source": "art. 120.3-4 LGT (Ley 13/2023), art. 122 LGT, Orden HAC/242/2025",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c18-cuota-liquida-resultante-autoliquidacion/regularizacion-situaciones-tributarias/general.html",
+    "comparison": [
+      {
+        "aspect": "Ambito de aplicacion",
+        "complementaria": "Solo mayor cuota / menor devolucion",
+        "rectificativa": "Cualquier supuesto: mayor cuota, menor cuota, solicitar devolucion, corregir errores"
+      },
+      {
+        "aspect": "Solicitar devolucion o reducir cuota",
+        "complementaria": "NO — requeria solicitud de rectificacion separada (art. 120.3 LGT antiguo)",
+        "rectificativa": "SI — en un unico procedimiento"
+      },
+      {
+        "aspect": "Ejercicios aplicables",
+        "complementaria": "Hasta ejercicio 2023 inclusive",
+        "rectificativa": "Desde ejercicio 2024 en adelante"
+      },
+      {
+        "aspect": "Fraccionamiento 60/40",
+        "complementaria": "NO permitido",
+        "rectificativa": "NO permitido (el ingreso adicional nunca admite fraccionamiento)"
+      },
+      {
+        "aspect": "Documentacion adjunta",
+        "complementaria": "Permitida",
+        "rectificativa": "NO permitida"
+      },
+      {
+        "aspect": "Base legal principal",
+        "complementaria": "art. 122 LGT",
+        "rectificativa": "art. 120.3 y 120.4 LGT (Ley 13/2023)"
+      },
+      {
+        "aspect": "Sistema",
+        "complementaria": "Dual: complementaria (mas a pagar) + solicitud rectificacion (menos a pagar)",
+        "rectificativa": "Unificado: un unico procedimiento para todos los supuestos"
+      }
+    ]
+  },
+  "recargos_extemporanea": {
+    "description": "Cuando la autoliquidacion rectificativa o complementaria se presenta fuera del plazo voluntario de declaracion sin requerimiento previo de la Administracion, se aplican recargos por presentacion extemporanea. El regimen vigente fue modificado sustancialmente por la Ley 11/2021, de 9 de julio.",
+    "source": "art. 27 LGT (Ley 58/2003), modificado por art. 13.3 Ley 11/2021, de 9 de julio",
+    "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "exact_url_ley_11_2021": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11473",
+    "effective_date_new_regime": "2021-07-11",
+    "regime_current": {
+      "description": "Recargo de 1% mas un 1% adicional por cada mes completo de retraso, sin intereses de demora, hasta los 12 meses. Superados los 12 meses: recargo del 15% mas intereses de demora desde el dia siguiente al transcurso de los 12 meses.",
+      "source": "art. 27.2 LGT (redaccion Ley 11/2021)",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2021/capitulo-18-cuota-liquida-cuota-autoliquidacion/regularizacion-situaciones-tributarias/regularizacion-mediante-presentacion-autoliquidacion-complementaria/recargos-aplicables.html",
+      "tramos": [
+        {
+          "delay": "Hasta 1 mes completo",
+          "surcharge_pct": 1,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 2 meses completos",
+          "surcharge_pct": 2,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 3 meses completos",
+          "surcharge_pct": 3,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 4 meses completos",
+          "surcharge_pct": 4,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 5 meses completos",
+          "surcharge_pct": 5,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 6 meses completos",
+          "surcharge_pct": 6,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 7 meses completos",
+          "surcharge_pct": 7,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 8 meses completos",
+          "surcharge_pct": 8,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 9 meses completos",
+          "surcharge_pct": 9,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 10 meses completos",
+          "surcharge_pct": 10,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 11 meses completos",
+          "surcharge_pct": 11,
+          "late_interest": false
+        },
+        {
+          "delay": "Hasta 12 meses completos",
+          "surcharge_pct": 12,
+          "late_interest": false
+        },
+        {
+          "delay": "Mas de 12 meses",
+          "surcharge_pct": 15,
+          "late_interest": true,
+          "late_interest_from": "Desde el dia siguiente al transcurso de los 12 meses hasta la fecha de presentacion"
+        }
+      ]
+    },
+    "reduction_25_pct": {
+      "description": "El recargo por extemporanea puede reducirse en un 25% si se cumplen las condiciones del art. 27.5 LGT: pago total de la deuda tributaria y del recargo en el plazo del art. 62.2 LGT abierto con la notificacion de la liquidacion del recargo",
+      "source": "art. 27.5 LGT",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"
+    },
+    "no_sanctions": {
+      "description": "Las declaraciones extemporaneas presentadas voluntariamente (sin requerimiento previo) excluyen la imposicion de sanciones. Solo se aplican los recargos del art. 27 LGT.",
+      "source": "art. 27.1 LGT",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2022/8-cumplimentacion-irpf/8_10-modificar-declaracion/8_10_1-declaracion-complementaria-hacienda-publica/declaraciones-complementarias-sin-sancion.html"
+    }
+  },
+  "pago_en_dos_plazos": {
+    "description": "El importe resultante de la autoliquidacion del IRPF puede fraccionarse, sin intereses ni recargos, en dos plazos: el 60% al presentar la declaracion y el 40% restante en el plazo que se determine (habitualmente 5 de noviembre). Este fraccionamiento solo se aplica a la declaracion originaria presentada en plazo voluntario. NO es aplicable a autoliquidaciones complementarias ni al ingreso adicional de rectificativas.",
+    "source": "art. 97.2 LIRPF (Ley 35/2006) y art. 62.2 RIRPF (RD 439/2007)",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c01-campana-declaracion-renta/pago-deuda-tributaria-irpf/opciones-pago/pago-dos-plazos.html",
+    "first_installment": {
+      "percentage": 60,
+      "deadline": "Al presentar la declaracion (dentro del plazo voluntario)"
+    },
+    "second_installment": {
+      "percentage": 40,
+      "deadline": "5 de noviembre del ano de la campana (ej: 5 de noviembre de 2026 para Renta 2025)"
+    },
+    "conditions": [
+      "Declaracion presentada dentro del plazo voluntario",
+      "NO es autoliquidacion complementaria",
+      "El 60% debe pagarse al momento de la presentacion"
+    ],
+    "failure_to_pay_first": {
+      "description": "La falta de ingreso del primer plazo en el periodo voluntario determinara el inicio del periodo ejecutivo por la totalidad del importe a ingresar resultante de la autoliquidacion",
+      "source": "art. 161 LGT",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c01-campana-declaracion-renta/pago-deuda-tributaria-irpf/opciones-pago/pago-dos-plazos.html"
+    },
+    "not_available_for": [
+      "Autoliquidaciones complementarias (ejercicios anteriores a 2024)",
+      "Ingreso adicional de autoliquidaciones rectificativas (ejercicio 2024 en adelante)",
+      "Declaraciones presentadas fuera de plazo"
+    ]
+  },
+  "devolucion": {
+    "description": "Cuando la autoliquidacion del IRPF resulta a devolver, la Administracion tiene un plazo de 6 meses para practicar la liquidacion provisional y ordenar el pago de la devolucion. Transcurrido ese plazo sin haberse ordenado el pago por causa imputable a la Administracion, se aplicaran intereses de demora automaticamente.",
+    "source": "art. 103 LIRPF (Ley 35/2006), art. 31 LGT (Ley 58/2003)",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c01-campana-declaracion-renta/devoluciones-derivadas-normativa-irpf/general-devoluciones-derivadas-normativa-irpf.html",
+    "deadline_months": 6,
+    "deadline_start": "Desde el termino del plazo de presentacion de las declaraciones (30 de junio), o desde la fecha de presentacion si la declaracion fue presentada fuera de plazo",
+    "late_refund_interest": {
+      "description": "Si transcurridos 6 meses no se ha ordenado la devolucion por causa imputable a la Administracion, se aplica el interes de demora tributario desde el dia siguiente a la finalizacion del plazo de 6 meses hasta la fecha en que se ordene el pago, sin necesidad de que el contribuyente lo reclame",
+      "source": "art. 31 LGT",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"
+    },
+    "silent_approval": {
+      "description": "Si la Administracion no practica la liquidacion provisional en el plazo de 6 meses, se entendera acordada la devolucion por silencio positivo y procedera a devolver de oficio el exceso de pagos a cuenta sobre la cuota autoliquidada",
+      "source": "art. 103 LIRPF",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c01-campana-declaracion-renta/devoluciones-derivadas-normativa-irpf/general-devoluciones-derivadas-normativa-irpf.html"
+    },
+    "exceptions_not_imputable_to_admin": [
+      "La declaracion no fue correctamente cumplimentada en todos sus extremos",
+      "No se acompano la documentacion requerida",
+      "Faltan o son incorrectos los datos de la cuenta bancaria para la transferencia"
+    ],
+    "rectificativa_refund": {
+      "description": "Cuando la autoliquidacion rectificativa genera derecho a devolucion, se inicia un nuevo procedimiento de devolucion (arts. 124-127 LGT). El plazo de 6 meses se computa desde la finalizacion del plazo de declaracion (30 junio) o desde la presentacion de la rectificativa si es posterior.",
+      "source": "arts. 124-127 LGT",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c18-cuota-liquida-resultante-autoliquidacion/regularizacion-situaciones-tributarias/general.html"
+    }
+  },
+  "prescripcion": {
+    "description": "Prescriben a los 4 anos los siguientes derechos: (a) el derecho de la Administracion para determinar la deuda tributaria mediante la oportuna liquidacion; (b) el derecho de la Administracion para exigir el pago de las deudas tributarias liquidadas y autoliquidadas; (c) el derecho a solicitar las devoluciones derivadas de la normativa de cada tributo, las devoluciones de ingresos indebidos y el reembolso del coste de las garantias; (d) el derecho a obtener las devoluciones derivadas de la normativa de cada tributo, las devoluciones de ingresos indebidos y el reembolso del coste de las garantias.",
+    "source": "art. 66 LGT (Ley 58/2003, de 17 de diciembre)",
+    "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "period_years": 4,
+    "practical_implication": "Solo se puede presentar autoliquidacion rectificativa o complementaria de un ejercicio si no ha prescrito el derecho de la Administracion a liquidar (4 anos desde el dia siguiente a la finalizacion del plazo voluntario de declaracion). Para Renta 2025 (plazo hasta 30-jun-2026), prescribiria el 30-jun-2030.",
+    "interruption_causes": {
+      "description": "La prescripcion se interrumpe por cualquier accion de la Administracion realizada con conocimiento formal del obligado tributario conducente al reconocimiento, regularizacion, comprobacion, inspeccion, aseguramiento y liquidacion de todos o parte de los elementos de la obligacion tributaria. Tambien por la interposicion de reclamaciones o recursos, o por cualquier actuacion fehaciente del obligado tributario conducente a la liquidacion o autoliquidacion de la deuda tributaria.",
+      "source": "art. 68 LGT",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"
+    },
+    "special_10_years": {
+      "description": "El art. 66 bis LGT establece un plazo de prescripcion de 10 anos para comprobar bases o cuotas compensadas o pendientes de compensacion, asi como deducciones aplicadas o pendientes de aplicacion.",
+      "source": "art. 66 bis LGT (anadido por Ley 34/2015)",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10143"
+    }
+  },
+  "aplazamiento_fraccionamiento": {
+    "description": "Las deudas tributarias que se encuentren en periodo voluntario o ejecutivo podran aplazarse o fraccionarse, previa solicitud del obligado tributario, cuando su situacion economico-financiera le impida de forma transitoria efectuar el pago en los plazos establecidos. Es un mecanismo distinto del fraccionamiento 60/40 del art. 97.2 LIRPF: aqui se requiere solicitud motivada y puede exigirse garantia.",
+    "source": "art. 65 LGT (Ley 58/2003, de 17 de diciembre)",
+    "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "exact_url_procedure": "https://sede.agenciatributaria.gob.es/Sede/procedimientos/RB01.shtml",
+    "conditions": [
+      "Dificultad economico-financiera transitoria del obligado tributario",
+      "Solicitud presentada dentro del plazo voluntario (para deudas en voluntaria) o antes de la notificacion del acuerdo de enajenacion (para deudas en ejecutiva)"
+    ],
+    "guarantee_exemption": {
+      "description": "Se exime de la obligacion de aportar garantia cuando la deuda total aplazada/fraccionada no supere los 50.000 euros",
+      "threshold_euros": 50000,
+      "source": "Orden HFP/311/2023, de 28 de marzo (eleva el limite anterior de 30.000 euros)",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/procedimientos/RB01.shtml"
+    },
+    "excluded_debts": [
+      "Deudas cuya exaccion se realice por medio de efectos timbrados",
+      "Obligaciones de retencion e ingresos a cuenta (salvo excepciones reglamentarias)"
+    ],
+    "interest": {
+      "description": "Las cantidades aplazadas o fraccionadas devengan interes de demora (art. 26 LGT). Si se aporta garantia distinta de aval o certificado de seguro de caucion, se aplica el interes de demora; si se aporta aval o certificado, se aplica el interes legal del dinero.",
+      "source": "art. 65.5 LGT",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"
+    },
+    "resolution_deadline_months": 6,
+    "applicable_to_rectificativas": true,
+    "note": "El aplazamiento/fraccionamiento del art. 65 LGT es compatible con el ingreso adicional de una autoliquidacion rectificativa o complementaria (a diferencia del fraccionamiento especial 60/40 que solo aplica a la declaracion originaria en plazo)"
+  },
+  "anulacion_declaracion": {
+    "description": "Para ejercicio 2025 en adelante, existe la posibilidad de solicitar que una autoliquidacion rectificativa se tenga por no presentada cuando no existia obligacion de declarar.",
+    "source": "Novedades IRPF 2025, sede AEAT",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/irpf/campana-renta/modificacion-declaracion-renta-2025-presentada/solicitud-anulacion-declaracion-presentada-no-declarar.html"
+  },
+  "cambios_opcion": {
+    "description": "El cambio entre tributacion individual y conjunta es irrevocable una vez finalizado el plazo reglamentario de declaracion, como regla general. Se tramita como un procedimiento separado de la autoliquidacion rectificativa.",
+    "source": "Sede AEAT, campana Renta 2025",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/irpf/campana-renta/modificacion-declaracion-renta-2025-presentada/cambios-opcion.html"
+  },
+  "plazo_presentacion": {
+    "description": "La autoliquidacion rectificativa puede presentarse tanto dentro como fuera del plazo de declaracion, pero siempre antes de que prescriba el derecho de la Administracion para determinar la deuda tributaria (4 anos, art. 66 LGT). Si se presenta fuera de plazo: tiene caracter extemporaneo y se aplican los recargos del art. 27 LGT.",
+    "source": "art. 67 bis RIRPF, art. 66 LGT",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c18-cuota-liquida-resultante-autoliquidacion/regularizacion-situaciones-tributarias/general.html"
+  },
+  "legal_references_index": [
+    {
+      "law": "Ley 58/2003, de 17 de diciembre, General Tributaria",
+      "abbreviation": "LGT",
+      "boe_id": "BOE-A-2003-23186",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+      "relevant_articles": [
+        "art. 26 — Interes de demora",
+        "art. 27 — Recargos por declaracion extemporanea sin requerimiento previo",
+        "art. 31 — Devolucion de ingresos indebidos",
+        "art. 62 — Plazos para el pago en periodo voluntario",
+        "art. 65 — Aplazamiento y fraccionamiento del pago",
+        "art. 66 — Plazos de prescripcion (4 anos)",
+        "art. 66 bis — Derecho a comprobar e investigar (10 anos)",
+        "art. 68 — Interrupcion de los plazos de prescripcion",
+        "art. 120 — Autoliquidaciones (con apartados 3 y 4 mod. Ley 13/2023)",
+        "art. 122 — Declaraciones complementarias y sustitutivas",
+        "art. 161 — Recaudacion en periodo ejecutivo"
+      ]
+    },
+    {
+      "law": "Ley 35/2006, de 28 de noviembre, del IRPF",
+      "abbreviation": "LIRPF",
+      "boe_id": "BOE-A-2006-20764",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "relevant_articles": [
+        "art. 97.2 — Fraccionamiento del pago en dos plazos (60/40)",
+        "art. 103 — Devoluciones derivadas de la normativa del IRPF"
+      ]
+    },
+    {
+      "law": "Ley 13/2023, de 24 de mayo (modifica LGT — autoliquidacion rectificativa)",
+      "boe_id": "BOE-A-2023-12204",
+      "exact_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-12204"
+    },
+    {
+      "law": "Ley 11/2021, de 9 de julio (modifica art. 27 LGT — recargos extemporanea)",
+      "boe_id": "BOE-A-2021-11473",
+      "exact_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11473"
+    },
+    {
+      "law": "Ley 34/2015, de 21 de septiembre (modifica LGT — art. 66 bis prescripcion 10 anos)",
+      "boe_id": "BOE-A-2015-10143",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10143"
+    },
+    {
+      "law": "Real Decreto 439/2007, de 30 de marzo, Reglamento del IRPF",
+      "abbreviation": "RIRPF",
+      "boe_id": "BOE-A-2007-6820",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+      "relevant_articles": [
+        "art. 62.2 — Fraccionamiento del pago (desarrollo del art. 97.2 LIRPF)",
+        "art. 67 bis — Autoliquidacion rectificativa del IRPF"
+      ]
+    },
+    {
+      "law": "Real Decreto 1065/2007, de 27 de julio, Reglamento de Gestion e Inspeccion Tributaria",
+      "abbreviation": "RGAT",
+      "boe_id": "BOE-A-2007-15984",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984",
+      "relevant_articles": [
+        "art. 119 — Complementarias",
+        "arts. 126-128 — Procedimiento de vulneracion de norma superior"
+      ]
+    },
+    {
+      "law": "Real Decreto 939/2005, de 29 de julio, Reglamento General de Recaudacion",
+      "boe_id": "BOE-A-2005-14803",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2005-14803",
+      "relevant_articles": [
+        "art. 44-54 — Aplazamiento y fraccionamiento",
+        "art. 52 — Modificacion de condiciones de aplazamiento/fraccionamiento"
+      ]
+    },
+    {
+      "law": "Orden HAC/242/2025, de 13 de marzo (activa rectificativa para IRPF 2024)",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c18-cuota-liquida-resultante-autoliquidacion/regularizacion-situaciones-tributarias/general.html"
+    },
+    {
+      "law": "Orden HFP/311/2023, de 28 de marzo (eleva exencion garantia a 50.000 euros)",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/procedimientos/RB01.shtml"
+    }
+  ]
+}

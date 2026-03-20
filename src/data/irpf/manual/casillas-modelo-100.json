@@ -1,0 +1,435 @@
+{
+  "year": 2025,
+  "model": 100,
+  "title": "Casillas clave del Modelo 100 IRPF",
+  "source": "AEAT Manual Practico Renta 2025 + Manual de Ayuda a la Presentacion 2025",
+  "source_urls": [
+    "https://sede.agenciatributaria.gob.es/Sede/Ayuda/25Manual/100.html",
+    "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/7-cumplimentacion-irpf.html"
+  ],
+  "verified_date": "2026-03-20",
+  "note": "Casillas verificadas contra Manual Practico 2025 y datos fiscales reales. Las casillas con (*) pueden variar ligeramente entre ejercicios.",
+
+  "casillas": [
+    {
+      "number": "0003",
+      "name": "Retribuciones dinerarias",
+      "section": "Rendimientos del trabajo",
+      "source": "art. 17.1 LIRPF"
+    },
+    {
+      "number": "0007",
+      "name": "Contribuciones empresariales a planes de pensiones (imputadas)",
+      "section": "Rendimientos del trabajo",
+      "source": "art. 17.1.f) LIRPF"
+    },
+    {
+      "number": "0008",
+      "name": "Contribuciones empresariales a seguros colectivos de dependencia",
+      "section": "Rendimientos del trabajo",
+      "source": "art. 17.1.f) LIRPF"
+    },
+    {
+      "number": "0011",
+      "name": "Reducciones por rendimientos irregulares (30%, max 300.000 EUR)",
+      "section": "Rendimientos del trabajo",
+      "source": "art. 18.2 LIRPF"
+    },
+    {
+      "number": "0012",
+      "name": "Total ingresos integros computables del trabajo",
+      "section": "Rendimientos del trabajo",
+      "source": "art. 17 LIRPF"
+    },
+    {
+      "number": "0013",
+      "name": "Cotizaciones a la Seguridad Social y mutualidades obligatorias",
+      "section": "Rendimientos del trabajo - Gastos deducibles",
+      "source": "art. 19.2.a) LIRPF"
+    },
+    {
+      "number": "0014",
+      "name": "Cuotas satisfechas a sindicatos",
+      "section": "Rendimientos del trabajo - Gastos deducibles",
+      "source": "art. 19.2.c) LIRPF"
+    },
+    {
+      "number": "0015",
+      "name": "Cuotas satisfechas a colegios profesionales (max 500 EUR)",
+      "section": "Rendimientos del trabajo - Gastos deducibles",
+      "source": "art. 19.2.d) LIRPF"
+    },
+    {
+      "number": "0016",
+      "name": "Gastos de defensa juridica (max 300 EUR)",
+      "section": "Rendimientos del trabajo - Gastos deducibles",
+      "source": "art. 19.2.e) LIRPF"
+    },
+    {
+      "number": "0017",
+      "name": "Rendimiento neto previo del trabajo",
+      "section": "Rendimientos del trabajo",
+      "source": "art. 19 LIRPF"
+    },
+    {
+      "number": "0022",
+      "name": "Rendimiento neto del trabajo",
+      "section": "Rendimientos del trabajo",
+      "source": "art. 19 LIRPF"
+    },
+    {
+      "number": "0025",
+      "name": "Rendimiento neto reducido del trabajo",
+      "section": "Rendimientos del trabajo",
+      "source": "art. 20 LIRPF"
+    },
+    {
+      "number": "0027",
+      "name": "Intereses de cuentas, depositos y activos financieros",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 25.2 LIRPF"
+    },
+    {
+      "number": "0029",
+      "name": "Dividendos y participaciones en beneficios de entidades",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 25.1 LIRPF"
+    },
+    {
+      "number": "0030",
+      "name": "Intereses de Letras del Tesoro",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 25.2 LIRPF"
+    },
+    {
+      "number": "0031",
+      "name": "Rendimientos de otros activos financieros (bonos, obligaciones, pagares)",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 25.2 LIRPF"
+    },
+    {
+      "number": "0032",
+      "name": "Rendimientos de contratos de seguros de vida o invalidez",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 25.3 LIRPF"
+    },
+    {
+      "number": "0035",
+      "name": "Rendimientos de PIAS y seguros de ahorro sistematico",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 25.3 LIRPF, DA 3 LIRPF"
+    },
+    {
+      "number": "0036",
+      "name": "Total ingresos integros del capital mobiliario (ahorro)",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 25 LIRPF"
+    },
+    {
+      "number": "0037",
+      "name": "Gastos fiscalmente deducibles (administracion y deposito de valores)",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 26.1.a) LIRPF"
+    },
+    {
+      "number": "0038",
+      "name": "Rendimiento neto del capital mobiliario (ahorro)",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 26 LIRPF"
+    },
+    {
+      "number": "0041",
+      "name": "Suma de rendimientos del capital mobiliario (ahorro)",
+      "section": "Rendimientos del capital mobiliario (ahorro)",
+      "source": "art. 46 LIRPF"
+    },
+    {
+      "number": "0045",
+      "name": "Arrendamiento de bienes muebles, negocios o minas",
+      "section": "Rendimientos del capital mobiliario (general)",
+      "source": "art. 25.4.a) LIRPF"
+    },
+    {
+      "number": "0046",
+      "name": "Cesion de derechos de imagen",
+      "section": "Rendimientos del capital mobiliario (general)",
+      "source": "art. 25.4.d) LIRPF"
+    },
+    {
+      "number": "0047",
+      "name": "Propiedad intelectual (no siendo el autor)",
+      "section": "Rendimientos del capital mobiliario (general)",
+      "source": "art. 25.4.b) LIRPF"
+    },
+    {
+      "number": "0060",
+      "name": "Suma de rendimientos del capital mobiliario (general)",
+      "section": "Rendimientos del capital mobiliario (general)",
+      "source": "art. 45 LIRPF"
+    },
+    {
+      "number": "0100",
+      "name": "Ingresos integros por arrendamiento de inmuebles",
+      "section": "Rendimientos del capital inmobiliario",
+      "source": "art. 22 LIRPF"
+    },
+    {
+      "number": "0103",
+      "name": "Gastos deducibles - Intereses de capitales ajenos (financiacion)",
+      "section": "Rendimientos del capital inmobiliario",
+      "source": "art. 23.1.a) LIRPF"
+    },
+    {
+      "number": "0107",
+      "name": "Gastos deducibles - Conservacion y reparacion",
+      "section": "Rendimientos del capital inmobiliario",
+      "source": "art. 23.1.a) LIRPF"
+    },
+    {
+      "number": "0111",
+      "name": "Gastos deducibles - Tributos y recargos no estatales (IBI, tasas)",
+      "section": "Rendimientos del capital inmobiliario",
+      "source": "art. 23.1.a) LIRPF"
+    },
+    {
+      "number": "0127",
+      "name": "Gastos deducibles - Primas de seguros",
+      "section": "Rendimientos del capital inmobiliario",
+      "source": "art. 23.1.a) LIRPF"
+    },
+    {
+      "number": "0149",
+      "name": "Rendimiento neto del capital inmobiliario",
+      "section": "Rendimientos del capital inmobiliario",
+      "source": "art. 23 LIRPF"
+    },
+    {
+      "number": "0150",
+      "name": "Reduccion por arrendamiento de vivienda habitual del inquilino",
+      "section": "Rendimientos del capital inmobiliario",
+      "source": "art. 23.2 LIRPF"
+    },
+    {
+      "number": "0154",
+      "name": "Rendimiento neto reducido del capital inmobiliario",
+      "section": "Rendimientos del capital inmobiliario",
+      "source": "art. 23.2 LIRPF"
+    },
+    {
+      "number": "0155",
+      "name": "Renta inmobiliaria imputada (1,1% o 2% valor catastral)",
+      "section": "Imputaciones de rentas inmobiliarias",
+      "source": "art. 85 LIRPF"
+    },
+    {
+      "number": "0301",
+      "name": "Bono social termico y otras ayudas energeticas",
+      "section": "Ganancias patrimoniales - Base general (F1)",
+      "source": "art. 33.1, 45 LIRPF"
+    },
+    {
+      "number": "0303",
+      "name": "Bono Alquiler Joven (250 EUR/mes, max 2 anos, <= 35 anos)",
+      "section": "Ganancias patrimoniales - Base general (F1)",
+      "source": "art. 33.1, 45 LIRPF"
+    },
+    {
+      "number": "0304",
+      "name": "Otras ganancias patrimoniales no derivadas de transmisiones",
+      "section": "Ganancias patrimoniales - Base general (F1)",
+      "source": "art. 33.1, 45 LIRPF"
+    },
+    {
+      "number": "0318",
+      "name": "Ganancia patrimonial derivada de transmision de elementos patrimoniales",
+      "section": "Ganancias patrimoniales - Base del ahorro (F2)",
+      "source": "art. 34-37 LIRPF"
+    },
+    {
+      "number": "0319",
+      "name": "Perdida patrimonial derivada de transmision de elementos patrimoniales",
+      "section": "Ganancias patrimoniales - Base del ahorro (F2)",
+      "source": "art. 34-37 LIRPF"
+    },
+    {
+      "number": "0327",
+      "name": "Ganancias por transmision de acciones negociadas en mercados regulados",
+      "section": "Ganancias patrimoniales - Base del ahorro (F2)",
+      "source": "art. 37.1.a) LIRPF"
+    },
+    {
+      "number": "0341",
+      "name": "Ganancias por transmision de derechos de suscripcion preferente",
+      "section": "Ganancias patrimoniales - Base del ahorro (F2)",
+      "source": "art. 37.1.a) LIRPF"
+    },
+    {
+      "number": "0356",
+      "name": "Ayuda directa 200 EUR (baja renta, baja patrimonio)",
+      "section": "Ganancias patrimoniales - Base general (F1)",
+      "source": "art. 33.1 LIRPF, RDL 11/2022"
+    },
+    {
+      "number": "0385",
+      "name": "Saldo neto de ganancias y perdidas patrimoniales base general",
+      "section": "Integracion y compensacion",
+      "source": "art. 48 LIRPF"
+    },
+    {
+      "number": "0400",
+      "name": "Saldo neto de ganancias y perdidas patrimoniales base del ahorro",
+      "section": "Integracion y compensacion",
+      "source": "art. 49 LIRPF"
+    },
+    {
+      "number": "0427",
+      "name": "Reduccion por aportaciones a planes de pensiones (individual)",
+      "section": "Reducciones base imponible",
+      "source": "arts. 51-52 LIRPF"
+    },
+    {
+      "number": "0435",
+      "name": "Base liquidable general",
+      "section": "Base liquidable",
+      "source": "art. 50 LIRPF"
+    },
+    {
+      "number": "0460",
+      "name": "Base liquidable general sometida a gravamen",
+      "section": "Calculo del impuesto",
+      "source": "art. 63 LIRPF"
+    },
+    {
+      "number": "0525",
+      "name": "Rentas exentas para tipo de gravamen (base del ahorro, solo convenios)",
+      "section": "Rentas exentas",
+      "source": "Convenios de doble imposicion"
+    },
+    {
+      "number": "0526",
+      "name": "Rentas exentas para tipo de gravamen (base general, solo convenios)",
+      "section": "Rentas exentas",
+      "source": "Convenios de doble imposicion"
+    },
+    {
+      "number": "0564",
+      "name": "Total deducciones autonomicas",
+      "section": "Deducciones autonomicas",
+      "source": "art. 77 y ss. LIRPF"
+    },
+    {
+      "number": "0596",
+      "name": "Retenciones e ingresos a cuenta del trabajo",
+      "section": "Retenciones y pagos a cuenta",
+      "source": "art. 99 LIRPF"
+    },
+    {
+      "number": "0597",
+      "name": "Retenciones del capital mobiliario",
+      "section": "Retenciones y pagos a cuenta",
+      "source": "art. 99 LIRPF"
+    },
+    {
+      "number": "0599",
+      "name": "Retenciones de actividades economicas",
+      "section": "Retenciones y pagos a cuenta",
+      "source": "art. 99 LIRPF"
+    },
+    {
+      "number": "0600",
+      "name": "Retenciones del arrendamiento de inmuebles urbanos",
+      "section": "Retenciones y pagos a cuenta",
+      "source": "art. 99 LIRPF"
+    },
+    {
+      "number": "0601",
+      "name": "Retenciones sobre ganancias patrimoniales",
+      "section": "Retenciones y pagos a cuenta",
+      "source": "art. 99 LIRPF"
+    },
+    {
+      "number": "0609",
+      "name": "Total retenciones y demas pagos a cuenta",
+      "section": "Retenciones y pagos a cuenta",
+      "source": "art. 99 LIRPF"
+    },
+    {
+      "number": "0610",
+      "name": "Cuota diferencial (resultado de la declaracion antes de deducciones familiares)",
+      "section": "Resultado de la declaracion",
+      "source": "art. 79 LIRPF"
+    },
+    {
+      "number": "0611",
+      "name": "Deduccion por maternidad (importe general 1.200 EUR/hijo)",
+      "section": "Deducciones de la cuota - Maternidad",
+      "source": "art. 81 LIRPF"
+    },
+    {
+      "number": "0613",
+      "name": "Incremento deduccion maternidad por gastos guarderia (hasta 1.000 EUR)",
+      "section": "Deducciones de la cuota - Maternidad",
+      "source": "art. 81 LIRPF"
+    },
+    {
+      "number": "0660",
+      "name": "Deduccion por familia numerosa (general: 1.200, especial: 2.400)",
+      "section": "Deducciones de la cuota - Familia",
+      "source": "art. 81 bis LIRPF"
+    },
+    {
+      "number": "0698",
+      "name": "Deduccion por inversion en vivienda habitual (regimen transitorio) - Parte estatal",
+      "section": "Deducciones de la cuota - Vivienda",
+      "source": "DT 18 LIRPF, art. 68.1 (redaccion 31-12-2012)"
+    },
+    {
+      "number": "0710",
+      "name": "Deduccion por inversion en vivienda habitual (regimen transitorio) - Total",
+      "section": "Deducciones de la cuota - Vivienda",
+      "source": "DT 18 LIRPF"
+    },
+    {
+      "number": "0716",
+      "name": "Deduccion por inversion en empresa nueva creacion - Base",
+      "section": "Deducciones de la cuota - Empresas",
+      "source": "art. 68.1 LIRPF"
+    },
+    {
+      "number": "0723",
+      "name": "Deduccion por donativos a entidades Ley 49/2002 (mecenazgo)",
+      "section": "Deducciones de la cuota - Donativos",
+      "source": "art. 68.3 LIRPF, Ley 49/2002"
+    },
+    {
+      "number": "1624",
+      "name": "Ganancias por transmision bienes usados en plataformas digitales",
+      "section": "Ganancias patrimoniales - Base del ahorro",
+      "source": "art. 33.1 LIRPF, Modelo 238"
+    },
+    {
+      "number": "1677",
+      "name": "Deduccion rehabilitacion energetica edificios 60% - Cantidades satisfechas",
+      "section": "Deducciones de la cuota - Eficiencia energetica",
+      "source": "DA 50 LIRPF"
+    },
+    {
+      "number": "1802",
+      "name": "Identificacion moneda virtual transmitida (tipo)",
+      "section": "Ganancias patrimoniales - Criptomonedas",
+      "source": "art. 37.1.l) LIRPF"
+    },
+    {
+      "number": "1804",
+      "name": "Valor de transmision de monedas virtuales",
+      "section": "Ganancias patrimoniales - Criptomonedas",
+      "source": "art. 37.1.l) LIRPF"
+    },
+    {
+      "number": "1806",
+      "name": "Valor de adquisicion de monedas virtuales",
+      "section": "Ganancias patrimoniales - Criptomonedas",
+      "source": "art. 37.1.l) LIRPF"
+    }
+  ]
+}

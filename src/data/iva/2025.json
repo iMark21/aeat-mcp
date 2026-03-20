@@ -1,0 +1,53 @@
+{
+  "year": 2025,
+  "territory": "peninsular",
+  "verified_date": "2026-03-20",
+  "rates": [
+    {
+      "type": "general",
+      "rate": 21,
+      "source": "Ley 37/1992, art. 90"
+    },
+    {
+      "type": "reducido",
+      "rate": 10,
+      "applies_to": "Alimentos no basicos, hosteleria, transporte, obras vivienda, productos sanitarios, aceites de semilla, pasta",
+      "source": "Ley 37/1992, art. 91.Uno"
+    },
+    {
+      "type": "superreducido",
+      "rate": 4,
+      "applies_to": "Pan, leche, huevos, fruta, verdura, cereales, queso, aceite de oliva, libros, medicamentos, vivienda proteccion oficial, protesis, leches fermentadas",
+      "source": "Ley 37/1992, art. 91.Dos. RDL 4/2024 art. 2 (aceite de oliva permanente)"
+    }
+  ],
+  "surcharges": [
+    { "vat_rate": 21, "surcharge_rate": 5.2, "source": "Ley 37/1992, art. 161.Dos" },
+    { "vat_rate": 10, "surcharge_rate": 1.4, "source": "Ley 37/1992, art. 161.Dos" },
+    { "vat_rate": 4, "surcharge_rate": 0.5, "source": "Ley 37/1992, art. 161.Dos" },
+    { "vat_rate_label": "tabaco", "surcharge_rate": 1.75, "source": "Ley 37/1992, art. 161.Cinco" }
+  ],
+  "exemptions": [
+    { "category": "Servicios medicos y sanitarios", "source": "Ley 37/1992, art. 20.Uno.3" },
+    { "category": "Ensenanza", "source": "Ley 37/1992, art. 20.Uno.9" },
+    { "category": "Operaciones de seguro", "source": "Ley 37/1992, art. 20.Uno.16" },
+    { "category": "Servicios financieros", "source": "Ley 37/1992, art. 20.Uno.18" },
+    { "category": "Arrendamiento de vivienda", "source": "Ley 37/1992, art. 20.Uno.23" }
+  ],
+  "igic": {
+    "territory": "canarias",
+    "rates": [
+      { "type": "general", "rate": 7 },
+      { "type": "reducido", "rate": 3 },
+      { "type": "cero", "rate": 0 },
+      { "type": "incrementado", "rate": 9.5 },
+      { "type": "especial_incrementado", "rate": 15 }
+    ],
+    "source": "Ley 20/1991 (Canarias)"
+  },
+  "ipsi": {
+    "territory": "ceuta_melilla",
+    "rates_range": "0.5% - 10%",
+    "source": "Ley 8/1991 (IPSI Ceuta y Melilla)"
+  }
+}

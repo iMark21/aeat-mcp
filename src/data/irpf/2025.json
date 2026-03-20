@@ -1,0 +1,69 @@
+{
+  "year": 2025,
+  "verified_date": "2026-03-20",
+  "general_brackets": {
+    "state": [
+      { "from": 0, "to": 12450, "rate": 9.5 },
+      { "from": 12450, "to": 20200, "rate": 12 },
+      { "from": 20200, "to": 35200, "rate": 15 },
+      { "from": 35200, "to": 60000, "rate": 18.5 },
+      { "from": 60000, "to": 300000, "rate": 22.5 },
+      { "from": 300000, "to": null, "rate": 24.5 }
+    ],
+    "source": "Ley 35/2006, art. 63.1. Escala estatal vigente desde 2021"
+  },
+  "savings_brackets": {
+    "state": [
+      { "from": 0, "to": 6000, "rate": 9.5 },
+      { "from": 6000, "to": 50000, "rate": 10.5 },
+      { "from": 50000, "to": 200000, "rate": 11.5 },
+      { "from": 200000, "to": 300000, "rate": 13.5 },
+      { "from": 300000, "to": null, "rate": 15 }
+    ],
+    "source": "Ley 35/2006, art. 66. Modificado por Ley 7/2024: tramo >300K pasa de 14% a 15% estatal (28% a 30% total) desde 2025"
+  },
+  "personal_minimums": {
+    "taxpayer": {
+      "general": 5550,
+      "age_65_plus": 6700,
+      "age_75_plus": 8100,
+      "source": "Ley 35/2006, art. 57"
+    },
+    "descendants": {
+      "first": 2400,
+      "second": 2700,
+      "third": 4000,
+      "fourth_and_beyond": 4500,
+      "under_3_additional": 2800,
+      "source": "Ley 35/2006, art. 58"
+    },
+    "ascendants": {
+      "age_65_plus": 1150,
+      "age_75_plus": 2550,
+      "source": "Ley 35/2006, art. 59"
+    },
+    "disability": {
+      "33_to_65_percent": 3000,
+      "65_plus_percent": 9000,
+      "mobility_assistance": 3000,
+      "source": "Ley 35/2006, art. 60"
+    }
+  },
+  "work_income_reduction": {
+    "scale": [
+      { "net_income_up_to": 14852, "reduction": 7302 },
+      { "net_income_from": 14852, "net_income_up_to": 17673.52, "reduction_formula": "7302 - 1.75 * (net_income - 14852)" },
+      { "net_income_from": 17673.52, "net_income_up_to": 19747.5, "reduction_formula": "2364.34 - 1.14 * (net_income - 17673.52)" },
+      { "net_income_above": 19747.5, "reduction": 0 }
+    ],
+    "new_2025_deduction": {
+      "amount": 340,
+      "max_gross_income": 16576,
+      "phase_out_limit": 18276,
+      "phase_out_formula": "340 - 0.2 * (gross_income - 16576)",
+      "other_income_max": 6500,
+      "source": "Ley 5/2025, de 24 de julio. DA 61.a LIRPF"
+    },
+    "source": "Ley 35/2006, art. 20. Modificado por RDL 4/2024 (coeficientes 1.75 y 1.14, vigentes desde 2024)"
+  }
+}

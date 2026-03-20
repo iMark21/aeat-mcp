@@ -1,0 +1,492 @@
+{
+  "chapter": 5,
+  "title": "Rendimientos del capital mobiliario",
+  "year": 2025,
+  "verified_date": "2026-03-20",
+  "source": "AEAT Manual Practico Renta 2025 — Capitulo 5",
+  "legal_basis": "Arts. 25-26 Ley 35/2006 (LIRPF), Arts. 17-21 RD 439/2007 (RIRPF)",
+
+  "definition": {
+    "concept": "Rendimientos dinerarios o en especie que procedan, directa o indirectamente, de elementos patrimoniales de naturaleza mobiliaria de los que sea titular el contribuyente y que no se hallen afectos a actividades economicas.",
+    "classification_by_base": {
+      "base_del_ahorro": "Rendimientos de art. 25.1, 25.2 y 25.3 LIRPF (participacion en fondos propios, cesion de capitales, seguros de vida/invalidez)",
+      "base_general": "Rendimientos de art. 25.4 LIRPF (propiedad intelectual/industrial, asistencia tecnica, arrendamiento de muebles, subarrendamiento, cesion de derechos de imagen)"
+    },
+    "source_articles": ["art. 25 LIRPF", "art. 46 LIRPF"]
+  },
+
+  "base_del_ahorro": {
+    "participacion_fondos_propios": {
+      "title": "Rendimientos obtenidos por la participacion en los fondos propios de cualquier tipo de entidad",
+      "article": "art. 25.1 LIRPF",
+      "casilla": "0029",
+      "types": [
+        {
+          "type": "Dividendos",
+          "description": "Dividendos, primas de asistencia a juntas y participaciones en los beneficios de cualquier tipo de entidad."
+        },
+        {
+          "type": "Rendimientos de acciones/participaciones sin derecho a voto, estatutarios o preferentes",
+          "description": "Rendimientos procedentes de cualquier clase de activos que representen una participacion en fondos propios."
+        },
+        {
+          "type": "Retribuciones por prestamos participativos",
+          "description": "Cuando el prestamista participa en los beneficios del prestatario."
+        },
+        {
+          "type": "Rendimientos en especie",
+          "description": "Uso gratuito de bienes de la sociedad por socios/participes. Si el bien es de la actividad habitual de la empresa: art. 41 LIRPF. Si fue adquirido especificamente para el socio: art. 25.1.d LIRPF."
+        }
+      ],
+      "distribucion_prima_emision": {
+        "rule": "Se computa como rendimiento del capital mobiliario el exceso de la distribucion de la prima de emision sobre el valor de adquisicion de las acciones/participaciones.",
+        "note": "El exceso no tributado minora el valor de adquisicion de las acciones."
+      },
+      "reduccion_capital_devolucion_aportaciones": {
+        "rule": "Las cantidades recibidas que excedan del valor de adquisicion se computan como rendimiento del capital mobiliario.",
+        "cotizadas": "Se aplica regla especial basada en reservas y fondos propios.",
+        "no_cotizadas": "Se considera rendimiento el exceso sobre el valor teorico de las participaciones."
+      },
+      "acciones_liberadas": {
+        "totalmente_liberadas": "No tributan en el momento de la entrega. Se distribuye el valor de adquisicion originario entre las acciones antiguas y las nuevas.",
+        "parcialmente_liberadas": "El desembolso realizado es el valor de adquisicion de las nuevas."
+      },
+      "exencion_1500_euros": {
+        "status": "ELIMINADA desde 01/01/2015",
+        "note": "La exencion de 1.500 EUR para dividendos fue suprimida por la Ley 26/2014."
+      },
+      "gastos_deducibles": {
+        "types": ["Gastos de administracion y deposito de valores negociables"],
+        "excludes": "No son deducibles las cuantias que supongan la contraprestacion de una gestion discrecional e individualizada de carteras de inversion.",
+        "casilla": "0037"
+      },
+      "withholding_rate_percent": 19,
+      "source_articles": ["art. 25.1 LIRPF", "art. 75.3.a RIRPF"]
+    },
+
+    "cesion_capitales_terceros": {
+      "title": "Rendimientos procedentes de la cesion a terceros de capitales propios",
+      "article": "art. 25.2 LIRPF",
+      "concept": "Contraprestaciones de todo tipo, cualquiera que sea su denominacion o naturaleza, dinerarias o en especie, derivadas de la cesion a terceros de capitales propios.",
+      "casillas": {
+        "intereses_cuentas_depositos": "0027",
+        "contraprestaciones_cesion": "0028",
+        "letras_tesoro": "0030",
+        "otros_activos_financieros": "0031"
+      },
+      "types": [
+        {
+          "type": "Intereses de cuentas corrientes y depositos bancarios",
+          "casilla": "0027"
+        },
+        {
+          "type": "Letras del Tesoro",
+          "casilla": "0030",
+          "note": "Rendimiento implicito: diferencia entre valor de reembolso y precio de adquisicion."
+        },
+        {
+          "type": "Bonos y obligaciones del Estado",
+          "casilla": "0031"
+        },
+        {
+          "type": "Pagares de empresa",
+          "casilla": "0031"
+        },
+        {
+          "type": "Prestamos entre particulares",
+          "casilla": "0028"
+        },
+        {
+          "type": "Rendimientos de repos (cesiones temporales de activos financieros)",
+          "casilla": "0028"
+        },
+        {
+          "type": "Rendimientos de cuentas basadas en operaciones sobre activos financieros",
+          "casilla": "0028"
+        }
+      ],
+      "implicit_vs_explicit": {
+        "explicit": "Rendimientos cuya cuantia es conocida en el momento de la emision (intereses periodicos, cupones).",
+        "implicit": "Rendimientos generados por la diferencia entre el valor de reembolso/transmision y el de adquisicion/suscripcion.",
+        "mixed": "Activos con ambos componentes: se aplican las reglas de rendimientos implicitos al componente implicito."
+      },
+      "linked_entity_special_rule": {
+        "rule": "Intereses percibidos por cesion de capitales propios a una entidad vinculada (art. 25.2, parrafo 2) se integran en la base del ahorro, pero con valoracion obligatoria a valor de mercado.",
+        "excess_over_3x_equity": "Si los capitales cedidos exceden 3 veces los fondos propios de la entidad, el exceso de intereses puede recalificarse."
+      },
+      "anti_abuse_homogeneous_securities": {
+        "rule": "Si se generan rendimientos negativos por transmision y se adquieren valores homogeneos en los 2 meses anteriores o posteriores, la integracion del rendimiento negativo se difiere hasta la transmision de los valores homogeneos.",
+        "source": "art. 25.2 ultimo parrafo LIRPF"
+      },
+      "gastos_deducibles": {
+        "types": ["Gastos de administracion y deposito de valores negociables"],
+        "excludes": "No son deducibles las cuantias por gestion discrecional e individualizada de carteras.",
+        "casilla": "0037"
+      },
+      "withholding_rate_percent": 19,
+      "exceptions_withholding": [
+        "Letras del Tesoro (exentas de retencion)",
+        "Transmision de activos financieros con rendimiento explicito negociados en mercados secundarios oficiales (exentas)"
+      ],
+      "source_articles": ["art. 25.2 LIRPF", "art. 75.3.b RIRPF"]
+    },
+
+    "seguros_capitalizacion": {
+      "title": "Rendimientos procedentes de operaciones de capitalizacion y de contratos de seguro de vida o invalidez",
+      "article": "art. 25.3 LIRPF",
+      "casillas": {
+        "seguros_vida_invalidez": "0032",
+        "pias_seguros_ahorro": "0035"
+      },
+
+      "capital_diferido": {
+        "title": "Seguros de capital diferido",
+        "formula": "Rendimiento = Capital percibido (CP) - Primas satisfechas (PS)",
+        "mixed_insurance": {
+          "formula": "Rendimiento = CP - PS - Prima del componente de riesgo (PCR)",
+          "pcr_limit": "PCR no puede exceder el 5% de la provision matematica"
+        },
+        "invalidez": {
+          "formula": "Rendimiento = CP - PS"
+        },
+        "capitalizacion": {
+          "formula": "Rendimiento = CP - PS (capital diferido)"
+        }
+      },
+
+      "rentas_vitalicias_inmediatas": {
+        "title": "Rentas vitalicias inmediatas",
+        "description": "Porcentaje de la anualidad que se considera rendimiento del capital mobiliario, en funcion de la edad del rentista al constituirse la renta.",
+        "table": [
+          { "age": "Menos de 40 anos", "taxable_percent": 40 },
+          { "age": "De 40 a 49 anos", "taxable_percent": 35 },
+          { "age": "De 50 a 59 anos", "taxable_percent": 28 },
+          { "age": "De 60 a 65 anos", "taxable_percent": 24 },
+          { "age": "De 66 a 69 anos", "taxable_percent": 20 },
+          { "age": "70 anos o mas", "taxable_percent": 8 }
+        ],
+        "note": "El porcentaje permanece constante durante toda la vida de la renta. La edad relevante es la del rentista en el momento de constitucion."
+      },
+
+      "rentas_temporales_inmediatas": {
+        "title": "Rentas temporales inmediatas",
+        "description": "Porcentaje de la anualidad que se considera rendimiento, en funcion de la duracion de la renta.",
+        "table": [
+          { "duration": "Igual o inferior a 5 anos", "taxable_percent": 12 },
+          { "duration": "Superior a 5 e inferior o igual a 10 anos", "taxable_percent": 16 },
+          { "duration": "Superior a 10 e inferior o igual a 15 anos", "taxable_percent": 20 },
+          { "duration": "Superior a 15 anos", "taxable_percent": 25 }
+        ]
+      },
+
+      "rentas_diferidas": {
+        "title": "Rentas vitalicias o temporales diferidas",
+        "formula": "Rendimiento = a + [(VA - PS) / N]",
+        "where": {
+          "a": "Parte de la anualidad que corresponderia segun las tablas de rentas inmediatas",
+          "VA": "Valor actuarial de la renta en el momento de constitucion",
+          "PS": "Primas satisfechas",
+          "N": "Numero de anos de la renta. Para vitalicias, maximo 10 anos."
+        },
+        "gratuitous_acquisition": "Si se adquiere gratuitamente, se aplican solo los porcentajes de rentas inmediatas (sin la parte diferida)."
+      },
+
+      "pias": {
+        "title": "Planes Individuales de Ahorro Sistematico (PIAS)",
+        "description": "Contratos de seguro de vida individual celebrados con entidades aseguradoras para constituir una renta vitalicia asegurada.",
+        "limits": {
+          "annual_max_euros": 8000,
+          "total_max_euros": 240000
+        },
+        "tax_benefit": "Si el capital acumulado se destina a constituir una renta vitalicia, los rendimientos generados durante la fase de acumulacion quedan exentos.",
+        "requirements": [
+          "Antigueedad minima de la primera prima: 5 anos",
+          "El capital se convierte en renta vitalicia",
+          "No se supera el limite de 240.000 EUR de primas acumuladas",
+          "Contratante, asegurado y beneficiario de la renta son la misma persona"
+        ],
+        "rescue_anticipado": "Si se rescata antes de los 5 anos o no se constituye renta vitalicia, tributan como capital diferido normal.",
+        "source_articles": ["DA 3.a LIRPF"]
+      },
+
+      "sialp": {
+        "title": "Seguros Individuales de Ahorro a Largo Plazo (SIALP)",
+        "description": "Seguros de vida individuales en los que el contribuyente es contratante, asegurado y beneficiario.",
+        "limits": {
+          "annual_max_euros": 5000,
+          "note": "Limite conjunto con las cuentas individuales de ahorro a largo plazo (CIALP)"
+        },
+        "tax_benefit": "Los rendimientos positivos generados quedan exentos si se mantiene al menos 5 anos sin disposicion anticipada total o parcial.",
+        "requirements": [
+          "No disponer del capital antes de 5 anos",
+          "No superar 5.000 EUR de aportacion anual",
+          "Un unico SIALP o CIALP por contribuyente"
+        ],
+        "rescue_anticipado": "Si se dispone antes de 5 anos, tributan los rendimientos generados como capital diferido.",
+        "source_articles": ["DA 26.a LIRPF"]
+      },
+
+      "transitional_pre_1999": {
+        "title": "Regimen transitorio para primas anteriores al 31/12/1994",
+        "description": "Para seguros de capital diferido cuya primera prima es anterior al 31/12/1994.",
+        "reduction_annual_percent": 14.28,
+        "condition": "Solo la parte del rendimiento generada antes del 20/01/2006.",
+        "max_capital_since_2015_euros": 400000,
+        "note": "Limite de 400.000 EUR acumulado desde 01/01/2015 para el conjunto de seguros con derecho a regimen transitorio.",
+        "source_articles": ["DT 4.a LIRPF"]
+      },
+
+      "unit_linked": {
+        "title": "Seguros unit-linked",
+        "description": "Seguros de vida en los que el tomador asume el riesgo de inversion.",
+        "general_rule": "Tributan como capital diferido normal (CP - PS).",
+        "special_temporal_imputation": "Si no se cumplen determinados requisitos de diversificacion o control de inversiones, se aplica regla especial de imputacion temporal (rendimiento se imputa anualmente, no al rescate).",
+        "source_articles": ["art. 14.2.h LIRPF"]
+      },
+
+      "withholding_rate_percent": 19,
+      "reduction": "No se aplica reduccion del 30% a los rendimientos de seguros (excepto regimen transitorio pre-1999).",
+      "source_articles": ["art. 25.3 LIRPF"]
+    },
+
+    "gastos_deducibles_ahorro": {
+      "title": "Gastos deducibles comunes a los rendimientos de la base del ahorro",
+      "types": [
+        {
+          "type": "Gastos de administracion y deposito de valores negociables",
+          "description": "Comisiones de custodia, mantenimiento y administracion de cuentas de valores.",
+          "casilla": "0037"
+        }
+      ],
+      "excludes": "No se consideran gastos de administracion y deposito los importes satisfechos por gestion discrecional e individualizada de carteras de inversion, en la que el gestor decide las operaciones de compraventa.",
+      "source_articles": ["art. 26.1.a LIRPF"]
+    },
+
+    "rendimiento_neto_ahorro": {
+      "formula": "Rendimiento neto = Rendimientos integros (0036) - Gastos deducibles (0037)",
+      "casillas": {
+        "total_ingresos_integros": "0036",
+        "gastos_deducibles": "0037",
+        "rendimiento_neto": "0038",
+        "rendimiento_neto_reducido": "0040",
+        "suma_rendimientos_ahorro": "0041"
+      },
+      "reduction": "No se aplica reduccion del 30% a los rendimientos de la base del ahorro (solo al regimen transitorio pre-1999 de seguros)."
+    }
+  },
+
+  "base_general": {
+    "title": "Rendimientos del capital mobiliario a integrar en la base imponible general",
+    "article": "art. 25.4 LIRPF",
+
+    "types": [
+      {
+        "id": "propiedad_intelectual",
+        "name": "Propiedad intelectual (cuando el contribuyente no sea el autor)",
+        "casilla": "0047",
+        "description": "Rendimientos derivados de la propiedad intelectual cuando el perceptor no sea el autor. Si es el autor: rendimientos del trabajo (si los derechos se explotan) o actividad economica.",
+        "withholding_rate_percent": 15,
+        "reduced_withholding": {
+          "rate_percent": 7,
+          "conditions": [
+            "Ingresos brutos del ejercicio anterior inferiores a 15.000 EUR",
+            "Tales ingresos representen mas del 75% de los ingresos totales de trabajo + actividades economicas",
+            "Anticipos a cuenta de la cesion de derechos de autor repartidos en varios anos"
+          ]
+        }
+      },
+      {
+        "id": "propiedad_industrial",
+        "name": "Propiedad industrial no afecta a actividades economicas",
+        "casilla": "0051",
+        "description": "Rendimientos de la cesion de patentes, marcas, disenos, etc., siempre que la propiedad industrial no este afecta a actividades economicas del contribuyente.",
+        "withholding_rate_percent": 19
+      },
+      {
+        "id": "asistencia_tecnica",
+        "name": "Prestacion de asistencia tecnica",
+        "casilla": "0048",
+        "description": "Rendimientos por prestacion de asistencia tecnica, salvo que se preste en el ambito de una actividad economica.",
+        "withholding_rate_percent": 19
+      },
+      {
+        "id": "arrendamiento_muebles",
+        "name": "Arrendamiento de bienes muebles, negocios o minas",
+        "casilla": "0045",
+        "description": "Rendimientos procedentes del arrendamiento de bienes muebles, negocios o minas. Si el arrendamiento constituye actividad economica, tributa como tal.",
+        "note_negocio_vs_local": "Arrendamiento de negocio = capital mobiliario. Arrendamiento de local = capital inmobiliario.",
+        "note_muebles_con_inmueble": "Si los bienes muebles se arriendan conjuntamente con un inmueble, los rendimientos se califican como capital inmobiliario.",
+        "withholding_rate_percent": 19
+      },
+      {
+        "id": "subarrendamiento_muebles",
+        "name": "Subarrendamiento de bienes muebles",
+        "casilla": "0045",
+        "description": "Rendimientos percibidos por el subarrendador, siempre que no constituyan actividad economica. Los del arrendador original = capital mobiliario.",
+        "withholding_rate_percent": 19
+      },
+      {
+        "id": "cesion_derechos_imagen",
+        "name": "Cesion de derechos de imagen",
+        "casilla": "0046",
+        "description": "Rendimientos derivados de la cesion del derecho a la explotacion de la imagen, salvo que se obtengan en el ambito de una actividad economica.",
+        "note": "Regimen especial de imputacion en Capitulo 10 (art. 92 LIRPF).",
+        "withholding_rate_percent": 24,
+        "source_articles": ["art. 25.4.e LIRPF", "art. 92 LIRPF"]
+      },
+      {
+        "id": "exceso_capitales_vinculadas",
+        "name": "Exceso de capitales cedidos a entidades vinculadas",
+        "casilla": "0051",
+        "description": "Rendimientos por cesion de capitales propios a entidades vinculadas que excedan el triple de los fondos propios de la entidad.",
+        "withholding_rate_percent": 19
+      }
+    ],
+
+    "gastos_deducibles_general": {
+      "concept": "Son deducibles los gastos necesarios para la obtencion de los rendimientos y el importe del deterioro sufrido por los bienes o derechos de que procedan los ingresos.",
+      "rules": [
+        "Mismas categorias que para capital inmobiliario (intereses, conservacion, tributos, seguros, etc.)",
+        "Los intereses y gastos de financiacion NO tienen el limite del rendimiento integro (a diferencia del capital inmobiliario): pueden generar rendimiento neto negativo.",
+        "En caso de subarrendamiento, no se puede deducir amortizacion (el subarrendador no es propietario)."
+      ],
+      "casilla": "0053",
+      "source_articles": ["art. 26.1.b LIRPF", "art. 20 RIRPF"]
+    },
+
+    "reduccion_irregulares": {
+      "percent": 30,
+      "max_base_euros": 300000,
+      "conditions": [
+        "Rendimientos netos con periodo de generacion superior a 2 anos, imputados a un unico periodo impositivo",
+        "Rendimientos netos obtenidos de forma notoriamente irregular en el tiempo"
+      ],
+      "irregular_types": [
+        "Cantidades obtenidas por traspaso o cesion de contrato de arrendamiento",
+        "Indemnizaciones percibidas del arrendatario por danos o desperfectos",
+        "Importes por constitucion o cesion de derechos de uso o disfrute de caracter vitalicio"
+      ],
+      "proportional_distribution": "Si hay varios rendimientos del mismo tipo que superen 300.000 EUR, la reduccion se distribuye proporcionalmente.",
+      "transitional_pre_2015": "Rendimientos percibidos fraccionadamente antes del 01/01/2015: se aplica si anos de generacion / periodos de fraccionamiento > 2.",
+      "source_articles": ["art. 26.2 LIRPF", "art. 21 RIRPF", "DT 25.a LIRPF"]
+    },
+
+    "rendimiento_neto_general": {
+      "formula": "Rendimiento neto = Ingresos integros (0052) - Gastos deducibles (0053)",
+      "casillas": {
+        "total_ingresos_integros": "0052",
+        "gastos_deducibles": "0053",
+        "rendimiento_neto": "0056",
+        "suma_rendimientos_general": "0060"
+      }
+    }
+  },
+
+  "valoracion_en_especie": {
+    "concept": "Rendimientos del capital mobiliario percibidos en especie.",
+    "formula": "Rendimiento integro = Valor de mercado del bien/derecho/servicio recibido + Ingreso a cuenta (si no se repercute al perceptor)",
+    "ingreso_a_cuenta": {
+      "base": "Coste de adquisicion del bien/servicio incrementado en un 20%",
+      "formula": "(Coste de adquisicion x 1.20) x Tipo de retencion",
+      "rate_percent": 19
+    },
+    "source_articles": ["art. 43.2 LIRPF", "art. 103 RIRPF"]
+  },
+
+  "individualizacion": {
+    "rule": "Los rendimientos del capital mobiliario corresponden a los contribuyentes que sean titulares de los elementos patrimoniales (bienes o derechos) de que provengan.",
+    "proof_of_ownership": "A falta de prueba, se considera titular a quien figure en registros fiscales u otros registros publicos.",
+    "co_ownership": "En caso de cotitularidad, cada cotitular declara la parte proporcional a su participacion.",
+    "gananciales": "En regimen de gananciales, los rendimientos de bienes comunes se atribuyen al 50% a cada conyuge.",
+    "separacion_bienes": "Los rendimientos de bienes privativos pertenecen integramente al conyuge titular.",
+    "source_articles": ["art. 11.3 LIRPF"]
+  },
+
+  "imputacion_temporal": {
+    "general_rule": "Se imputan al periodo impositivo en que resulten exigibles por su perceptor (principio de devengo/exigibilidad).",
+    "special_rules": {
+      "judicial_pending": "Rentas pendientes de resolucion judicial: se imputan al periodo en que la sentencia adquiera firmeza (art. 14.2.a LIRPF).",
+      "copyright_royalties": "Anticipos a cuenta de derechos de autor repartidos en varios anos: el contribuyente puede optar por imputarlos a medida que se devenguen. Marcar casilla 0049 (art. 7.3 RIRPF).",
+      "negative_homogeneous_securities": "Rendimientos negativos por transmision de activos financieros: si se adquieren valores homogeneos en los 2 meses anteriores o posteriores, la integracion negativa se difiere hasta la transmision de los homogeneos (art. 25.2 LIRPF).",
+      "insurance": "Seguros de vida/invalidez: se imputan cuando el beneficio resulte exigible tras producirse la contingencia cubierta.",
+      "unit_linked": "Si no cumplen requisitos de diversificacion: imputacion anual del rendimiento, no al rescate (art. 14.2.h LIRPF).",
+      "in_kind_estimated": "Rendimientos en especie estimados: se imputan al periodo en que se entienden producidos (art. 14.2.f LIRPF)."
+    },
+    "death": "Fallecimiento del contribuyente: se integran en la base del ultimo periodo impositivo los rendimientos pendientes de imputacion (art. 14.4 LIRPF).",
+    "change_of_residence": "Perdida de residencia fiscal: rendimientos pendientes se imputan en la ultima declaracion como residente (art. 14.3 LIRPF)."
+  },
+
+  "retenciones": {
+    "general_rate_percent": 19,
+    "casilla": "0597",
+    "exceptions": [
+      {
+        "type": "Letras del Tesoro",
+        "rate_percent": 0,
+        "note": "Exentas de retencion."
+      },
+      {
+        "type": "Transmision de activos financieros con rendimiento explicito en mercados secundarios oficiales",
+        "rate_percent": 0,
+        "note": "Exentas de retencion."
+      },
+      {
+        "type": "Propiedad intelectual (no autor) — tarifa reducida",
+        "rate_percent": 7,
+        "condition": "Ingresos brutos del ejercicio anterior < 15.000 EUR y > 75% del total de ingresos de trabajo + actividades."
+      },
+      {
+        "type": "Cesion de derechos de imagen",
+        "rate_percent": 24
+      }
+    ],
+    "source_articles": ["art. 75 RIRPF", "art. 100 RIRPF"]
+  },
+
+  "compensacion_rendimientos_negativos": {
+    "base_del_ahorro": {
+      "rule": "Los rendimientos negativos del capital mobiliario de la base del ahorro se compensan con rendimientos positivos del capital mobiliario de la base del ahorro del mismo ejercicio.",
+      "if_still_negative": "El saldo negativo se compensa con hasta el 25% de las ganancias patrimoniales de la base del ahorro.",
+      "carry_forward_years": 4,
+      "source_articles": ["art. 49 LIRPF"]
+    },
+    "base_general": {
+      "rule": "Los rendimientos negativos del capital mobiliario de la base general se integran en la base general junto con los rendimientos del trabajo, actividades economicas e imputaciones de rentas.",
+      "if_still_negative": "Se compensa con el 25% de los rendimientos positivos restantes de la base general.",
+      "carry_forward_years": 4,
+      "source_articles": ["art. 48 LIRPF"]
+    }
+  },
+
+  "casillas_summary": {
+    "base_del_ahorro": {
+      "0027": "Intereses de cuentas, depositos y activos financieros",
+      "0028": "Contraprestaciones de cesion de uso de capital ajeno",
+      "0029": "Dividendos y participaciones en beneficios",
+      "0030": "Letras del Tesoro",
+      "0031": "Otros activos financieros (bonos, obligaciones, pagares)",
+      "0032": "Seguros de vida o invalidez",
+      "0035": "PIAS y seguros de ahorro",
+      "0036": "Total ingresos integros (base del ahorro)",
+      "0037": "Gastos fiscalmente deducibles (administracion y deposito de valores)",
+      "0038": "Rendimiento neto (base del ahorro)",
+      "0040": "Rendimiento neto reducido (base del ahorro)",
+      "0041": "Suma rendimientos capital mobiliario (base del ahorro)"
+    },
+    "base_general": {
+      "0045": "Arrendamiento de bienes muebles, negocios, minas",
+      "0046": "Cesion de derechos de imagen",
+      "0047": "Propiedad intelectual (no autor)",
+      "0048": "Asistencia tecnica",
+      "0049": "Opcion imputacion temporal derechos de autor",
+      "0051": "Otros rendimientos capital mobiliario (propiedad industrial, exceso vinculadas, etc.)",
+      "0052": "Total ingresos integros (base general)",
+      "0053": "Gastos deducibles (base general)",
+      "0056": "Rendimiento neto (base general)",
+      "0060": "Suma rendimientos capital mobiliario (base general)"
+    },
+    "retenciones": {
+      "0597": "Retenciones sobre rendimientos del capital mobiliario"
+    }
+  }
+}

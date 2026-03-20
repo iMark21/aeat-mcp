@@ -1,0 +1,878 @@
+{
+  "chapter": "Rentas exentas",
+  "chapter_number": 2,
+  "section": "2.3.2",
+  "year": 2025,
+  "source": "Manual Practico Renta 2025 — AEAT (sede.agenciatributaria.gob.es)",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c02-irpf-cuestiones-generales/sujecion-irpf-aspectos-materiales/delimitacion-negativa-hecho-imponible-rentas-sujetas/rentas-exentas-articulo-7-ley-irpf.html",
+  "verified_date": "2026-03-20",
+  "legal_basis": {
+    "primary": "art. 7 LIRPF (Ley 35/2006)",
+    "regulation": "arts. 1-6 RIRPF (RD 439/2007)",
+    "supplementary": "DA 33 Ley 35/2006 (premios loterias)"
+  },
+  "general_rule": "Las rentas exentas no computan en la base imponible (ni general ni del ahorro). Tampoco computan para determinar la obligacion de declarar (art. 96 LIRPF). Aparecen en los datos fiscales a titulo informativo (Modelo 190, Clave L)",
+
+  "exemptions": [
+    {
+      "id": "7a_terrorismo",
+      "article": "art. 7.a) LIRPF",
+      "letter": "a",
+      "title": "Prestaciones publicas extraordinarias por actos de terrorismo",
+      "description": "Quedan exentas las prestaciones publicas extraordinarias por actos de terrorismo y las pensiones derivadas de medallas y condecoraciones concedidas por actos de terrorismo",
+      "what_is_exempt": [
+        "Prestaciones publicas extraordinarias por actos de terrorismo",
+        "Pensiones derivadas de medallas y condecoraciones por actos terroristas",
+        "Pensiones extraordinarias de la SS (RD 1576/1990)",
+        "Pensiones extraordinarias del regimen de Clases Pasivas (RD 851/1992)",
+        "Indemnizaciones y ayudas economicas de la Ley 32/1999 (Solidaridad con las Victimas del Terrorismo)",
+        "Prestaciones de la Ley 29/2011 (danos personales, materiales, responsabilidad civil, proteccion social, pensiones extraordinarias)",
+        "Pensiones de la medalla de la Orden del Merito de la Guardia Civil/Cruz Roja, cuando esten acreditadas por actos de terrorismo",
+        "Pensiones excepcionales por atentados terroristas (RDL 6/2006)"
+      ],
+      "limits": "Sin limite — exencion total",
+      "modelo_190_subclave": "L-02",
+      "source_regulations": [
+        "RD 1576/1990, de 7 de diciembre",
+        "RD 851/1992, de 10 de julio",
+        "Ley 32/1999, de 8 de octubre",
+        "Ley 29/2011, de 22 de septiembre",
+        "RDL 6/2006, de 23 de junio"
+      ]
+    },
+    {
+      "id": "7a_vih",
+      "article": "art. 7.a) LIRPF (por remision)",
+      "letter": "a",
+      "title": "Ayudas percibidas por afectados por el VIH",
+      "description": "Quedan exentas las ayudas de cualquier clase percibidas por las personas afectadas por el Virus de Inmunodeficiencia Humana (VIH), reguladas en el RDL 9/1993",
+      "what_is_exempt": [
+        "Ayudas economicas a afectados por el VIH, de cualquier clase",
+        "Importes revalorizados anualmente conforme a la Ley de Presupuestos"
+      ],
+      "limits": "Sin limite — exencion total",
+      "modelo_190_subclave": "L-03",
+      "source_regulations": [
+        "RDL 9/1993, de 28 de mayo (BOE 1 de junio)"
+      ]
+    },
+    {
+      "id": "7b_guerra_civil",
+      "article": "art. 7.b) LIRPF",
+      "letter": "b",
+      "title": "Pensiones reconocidas por lesiones o mutilaciones de la Guerra Civil 1936-1939",
+      "description": "Quedan exentas las pensiones reconocidas a favor de aquellas personas que sufrieron lesiones o mutilaciones con ocasion o como consecuencia de la Guerra Civil 1936/1939",
+      "what_is_exempt": [
+        "Pensiones de mutilados excombatientes de la zona republicana (Ley 35/1980)",
+        "Pensiones de mutilados civiles de guerra (Ley 6/1982)",
+        "Pensiones reconocidas por el regimen de Clases Pasivas del Estado (RD 670/1976)"
+      ],
+      "limits": "Sin limite — exencion total",
+      "modelo_190_subclave": "L-04",
+      "source_regulations": [
+        "Ley 35/1980, de 26 de junio",
+        "Ley 6/1982, de 29 de marzo",
+        "RD 670/1976, de 5 de marzo"
+      ]
+    },
+    {
+      "id": "7c_not_used",
+      "article": "art. 7.c) LIRPF",
+      "letter": "c",
+      "title": "Pensiones por lesiones o mutilaciones de la Guerra Civil",
+      "description": "NOTA: En la numeracion original de la Ley 35/2006, las letras a), b) y c) formaban parte de los primeros parrafos del art. 7. Actualmente, la letra c) esta integrada en el contenido del art. 7.b) relativo a pensiones de la Guerra Civil. En el Manual AEAT 2025 se trata como parte del mismo concepto de pensiones de guerra civil",
+      "status": "integrated_in_7b"
+    },
+    {
+      "id": "7d_danos_personales",
+      "article": "art. 7.d) LIRPF",
+      "letter": "d",
+      "title": "Indemnizaciones por danos fisicos o psiquicos a personas fisicas",
+      "description": "Quedan exentas las indemnizaciones como consecuencia de responsabilidad civil y las procedentes de contratos de seguro de accidentes, en la cuantia legal o judicialmente reconocida",
+      "subcategories": [
+        {
+          "id": "7d_responsabilidad_civil",
+          "title": "Indemnizaciones por responsabilidad civil",
+          "what_is_exempt": "Indemnizaciones por danos personales (fisicos, psiquicos o morales) derivados de responsabilidad civil de un tercero",
+          "limit": "La cuantia legal o judicialmente reconocida. La exencion alcanza hasta el importe reconocido por sentencia judicial, resolucion administrativa o acuerdo extrajudicial (baremo Ley 35/2015 para accidentes de circulacion)",
+          "conditions": [
+            "Que la indemnizacion derive de responsabilidad civil del causante del dano",
+            "Que sea por danos personales (no materiales ni lucro cesante)",
+            "Que no exceda la cuantia legal o judicialmente reconocida"
+          ]
+        },
+        {
+          "id": "7d_seguros_accidentes",
+          "title": "Indemnizaciones de seguros de accidentes",
+          "what_is_exempt": "Indemnizaciones percibidas por contratos de seguro de accidentes por danos personales",
+          "limit": "La cuantia legal o judicialmente reconocida. En ausencia de baremo legal, se aplica la cuantia que resulte de la resolucion judicial o del convenio alcanzado",
+          "conditions": [
+            "Que el seguro cubra danos personales por accidente",
+            "Que la cuantia no exceda la legal o judicialmente reconocida",
+            "El exceso tributa como rendimiento del trabajo o del capital mobiliario segun proceda"
+          ]
+        }
+      ],
+      "regulation": "art. 7.d) LIRPF, art. 1 RIRPF",
+      "note": "Las indemnizaciones por lucro cesante o dano patrimonial NO estan exentas"
+    },
+    {
+      "id": "7e_despido",
+      "article": "art. 7.e) LIRPF",
+      "letter": "e",
+      "title": "Indemnizaciones por despido o cese del trabajador",
+      "description": "Quedan exentas las indemnizaciones por despido o cese del trabajador, en la cuantia establecida con caracter obligatorio en el Estatuto de los Trabajadores, con el limite de 180.000 EUR",
+      "what_is_exempt": [
+        "Despido improcedente (art. 56 ET): 33 dias por ano de servicio, max 24 mensualidades (o 45 dias para periodo anterior a 12-02-2012, max 42 mensualidades)",
+        "Despido colectivo por causas economicas, tecnicas, organizativas o de produccion (art. 51 ET): 20 dias por ano, max 12 mensualidades — exento si el despido es declarado improcedente en cuantia de 33/45 dias",
+        "Despido objetivo (art. 52 ET): 20 dias por ano, max 12 mensualidades — exento hasta dicha cuantia",
+        "Extincion por muerte, jubilacion o incapacidad del empresario (art. 49.1.g ET): 1 mes de salario",
+        "Extincion por voluntad del trabajador por causa justificada (arts. 40, 41.3, 50 ET): cuantia equivalente a despido improcedente",
+        "Extincion de contratos temporales por introduccion de clausulas abusivas"
+      ],
+      "limits": {
+        "general_cap": {
+          "amount": 180000,
+          "currency": "EUR",
+          "description": "Limite maximo absoluto de la exencion, independientemente de la cuantia obligatoria del ET"
+        },
+        "obligatory_amounts": {
+          "improcedente_post_2012": "33 dias/ano, max 24 mensualidades",
+          "improcedente_pre_2012": "45 dias/ano, max 42 mensualidades (periodo anterior a 12-02-2012)",
+          "objetivo_colectivo": "20 dias/ano, max 12 mensualidades"
+        }
+      },
+      "requirements": [
+        "Real y efectiva desvinculacion del trabajador con la empresa",
+        "Si el trabajador vuelve a prestar servicios a la misma empresa (o vinculada) en los 3 anos siguientes, se presume incumplimiento",
+        "La nueva prestacion puede ser laboral, mercantil o profesional — igualmente incumple",
+        "Carga de la prueba: corresponde al trabajador demostrar la desvinculacion"
+      ],
+      "jurisprudence": [
+        "RTEAC 22/04/2021: la ausencia de intencion defraudatoria no otorga la exencion si hay recontratacion",
+        "STS 276/2022: el trabajador debe probar que no volvio a prestar servicios",
+        "STS 1245/2025: la exencion por despido es independiente de la reduccion del 30% por irregularidad"
+      ],
+      "modelo_190_subclave": "L-05",
+      "regulation": "art. 7.e) LIRPF, arts. 1 y 73 RIRPF"
+    },
+    {
+      "id": "7f_incapacidad_permanente",
+      "article": "art. 7.f) LIRPF",
+      "letter": "f",
+      "title": "Prestaciones por incapacidad permanente absoluta o gran invalidez de la Seguridad Social",
+      "description": "Quedan exentas las prestaciones reconocidas al contribuyente por la Seguridad Social o por las entidades que la sustituyan como consecuencia de incapacidad permanente absoluta o gran invalidez",
+      "what_is_exempt": [
+        "Prestaciones de la SS en modalidad contributiva por incapacidad permanente absoluta",
+        "Prestaciones de la SS por gran invalidez (requiere asistencia de otra persona para actos esenciales)",
+        "Prestaciones de fuentes extranjeras cuando el grado de incapacidad sea equiparable a absoluta o gran invalidez y la entidad pagadora sustituya a la SS de su pais",
+        "Prestaciones de mutualidades de prevision social de profesionales no integrados en el regimen especial de autonomos, en situaciones identicas a las de incapacidad permanente absoluta o gran invalidez"
+      ],
+      "limits": {
+        "general": "La cuantia exenta tiene como limite el importe de la prestacion maxima que reconozca la Seguridad Social por el concepto que corresponda",
+        "excess": "El exceso sobre la prestacion maxima de la SS tributa como rendimiento del trabajo"
+      },
+      "excludes": [
+        "Prestaciones de entidades privadas o empresas — tributan en todo caso",
+        "Incapacidad permanente parcial — no exenta",
+        "Incapacidad permanente total para la profesion habitual — no exenta"
+      ],
+      "modelo_190_subclave": "L-06",
+      "regulation": "art. 7.f) LIRPF"
+    },
+    {
+      "id": "7g_clases_pasivas",
+      "article": "art. 7.g) LIRPF",
+      "letter": "g",
+      "title": "Pensiones por inutilidad o incapacidad permanente del regimen de Clases Pasivas",
+      "description": "Quedan exentas las pensiones de inutilidad o incapacidad permanente del regimen de Clases Pasivas, siempre que la lesion o enfermedad que las cause inhabilite por completo al perceptor para toda profesion u oficio",
+      "what_is_exempt": [
+        "Pensiones del regimen de Clases Pasivas del Estado cuando la incapacidad inhabilite por completo para cualquier profesion u oficio",
+        "Incrementos de pension por agravamiento de la discapacidad cuando impida toda actividad profesional"
+      ],
+      "conditions": [
+        "La lesion o enfermedad debe inhabilitarle por completo para toda profesion u oficio",
+        "Evaluacion medica conforme a la Orden de 22 de noviembre de 1996",
+        "Posibilidad de reevaluacion si la condicion empeora (Ley 2/2008)"
+      ],
+      "limits": "Sin limite — exencion total si se cumple la condicion de inhabilitacion completa",
+      "jurisprudence": [
+        "STS 1706/2023, de 15 de diciembre: los incrementos de pension por reevaluacion estan exentos desde el primer dia del mes siguiente a la solicitud"
+      ],
+      "modelo_190_subclave": "L-07",
+      "regulation": "art. 7.g) LIRPF, art. 28.1 RDLeg 670/1987, RD 710/2009 arts. 1-8"
+    },
+    {
+      "id": "7h_maternidad_paternidad",
+      "article": "art. 7.h) LIRPF",
+      "letter": "h",
+      "title": "Prestaciones por maternidad o paternidad y prestaciones familiares no contributivas",
+      "description": "Quedan exentas las prestaciones por maternidad o paternidad de la Seguridad Social y las familiares no contributivas, asi como las de regimenes publicos y mutualidades equivalentes",
+      "what_is_exempt": [
+        "Prestaciones por maternidad/paternidad de la SS (regimen contributivo y no contributivo)",
+        "Prestaciones familiares no contributivas de la LGSS",
+        "Pensiones y haberes pasivos de orfandad y a favor de nietos y hermanos menores de 22 anos o incapacitados",
+        "Prestaciones de mutualidades de prevision social de profesionales no integrados en RETA, en situaciones identicas a maternidad/paternidad — limite: prestacion maxima de la SS",
+        "Retribuciones percibidas por empleados publicos durante permisos por nacimiento, adopcion, guarda o acogimiento, cuando su regimen no conceda prestaciones de maternidad/paternidad — limite: prestacion maxima de la SS",
+        "Demas prestaciones publicas por nacimiento, parto o adopcion multiple, adopcion, hijos a cargo y orfandad"
+      ],
+      "limits": {
+        "general_ss": "Sin limite para prestaciones directas de la SS",
+        "mutualidades_y_empleados_publicos": "Limite: prestacion maxima de la SS para el concepto correspondiente. Para 2025: 4.909,50 EUR/mes (base cotizacion maxima)",
+        "excess": "El exceso tributa como rendimiento del trabajo"
+      },
+      "excludes": [
+        "Retribucion durante permiso de lactancia — NO exenta, tributa como rendimiento del trabajo"
+      ],
+      "jurisprudence": [
+        "STS 3/10/2018 (ROJ: STS 3256/2018): establecio que las prestaciones por maternidad estan exentas",
+        "RDL 27/2018 (vigente 30/12/2018): codifico la doctrina del TS y extendio la exencion a paternidad"
+      ],
+      "modelo_190_subclave": "L-27",
+      "regulation": "art. 7.h) LIRPF (redaccion por RDL 27/2018)"
+    },
+    {
+      "id": "7i_acogimiento",
+      "article": "art. 7.i) LIRPF",
+      "letter": "i",
+      "title": "Prestaciones publicas por acogimiento de personas con discapacidad, mayores de 65 anos o menores",
+      "description": "Quedan exentas las prestaciones economicas percibidas de instituciones publicas por acogimiento de personas con discapacidad, mayores de 65 anos, o menores, en las modalidades simple, permanente o preadoptiva, o equivalentes segun legislacion autonomica",
+      "what_is_exempt": [
+        "Prestaciones publicas por acogimiento de personas con discapacidad",
+        "Prestaciones publicas por acogimiento de mayores de 65 anos",
+        "Prestaciones publicas por acogimiento de menores (acogimiento de urgencia, temporal, permanente)",
+        "Ayudas economicas de organismos publicos para personas con discapacidad >= 65% o mayores de 65 anos, cuando financien estancias en residencias o centros de dia"
+      ],
+      "limits": {
+        "general": "Sin limite para las prestaciones de acogimiento",
+        "residencias_centros_dia": "Exenta solo si los demas rendimientos del beneficiario no superan el doble del IPREM (2 x 8.400 = 16.800 EUR para 2025)"
+      },
+      "modelo_190_subclave": "L-09",
+      "regulation": "art. 7.i) LIRPF, Ley 26/2015 (actualizacion categorias acogimiento)"
+    },
+    {
+      "id": "7j_becas",
+      "article": "art. 7.j) LIRPF",
+      "letter": "j",
+      "title": "Becas publicas y de entidades sin animo de lucro para estudios reglados y formacion de investigadores",
+      "description": "Quedan exentas las becas publicas y las concedidas por entidades sin animo de lucro y fundaciones bancarias para cursar estudios reglados y para investigacion, con los limites establecidos reglamentariamente",
+      "what_is_exempt": [
+        "Becas para estudios reglados (todos los niveles y grados del sistema educativo hasta doctorado)",
+        "Becas para formacion de investigadores (pre y postdoctoral)"
+      ],
+      "grantors": [
+        "Administraciones Publicas (Estado, CCAA, Entidades Locales)",
+        "Entidades sin animo de lucro (fundaciones, asociaciones declaradas de utilidad publica)",
+        "Fundaciones bancarias reguladas por la Ley 26/2013",
+        "Organismos internacionales"
+      ],
+      "limits": {
+        "estudios_reglados": {
+          "primer_ciclo": {
+            "general": 3000,
+            "compensatoria": 15000,
+            "description": "Hasta 3.000 EUR anuales con caracter general. Hasta 15.000 EUR anuales cuando la beca tenga por objeto compensar gastos de transporte y alojamiento"
+          },
+          "segundo_ciclo_master": {
+            "general": 3000,
+            "compensatoria_espana": 18000,
+            "compensatoria_extranjero": 21000,
+            "description": "Hasta 3.000 EUR general. Hasta 18.000 EUR con componente compensatorio en Espana. Hasta 21.000 EUR con componente compensatorio en el extranjero"
+          },
+          "tercer_ciclo_doctorado": {
+            "general": 21000,
+            "extranjero": 24600,
+            "description": "Hasta 21.000 EUR en Espana. Hasta 24.600 EUR en el extranjero"
+          }
+        },
+        "investigadores": {
+          "amount": 24600,
+          "extranjero": 27600,
+          "description": "Hasta 24.600 EUR anuales para formacion de investigadores. Hasta 27.600 EUR si incluye estancia en el extranjero"
+        }
+      },
+      "modelo_190_subclave": "L-10",
+      "regulation": "art. 7.j) LIRPF, art. 2 RIRPF"
+    },
+    {
+      "id": "7k_anualidades_alimentos",
+      "article": "art. 7.k) LIRPF",
+      "letter": "k",
+      "title": "Anualidades por alimentos percibidas de los padres en virtud de decision judicial",
+      "description": "Las anualidades por alimentos a favor de los hijos percibidas en virtud de decision judicial estan exentas para el hijo perceptor. IMPORTANTE: no estan exentas 'per se' para el pagador — el pagador tributa por separado mediante la aplicacion de la escala del impuesto de forma independiente",
+      "what_is_exempt": [
+        "Anualidades por alimentos percibidas de los padres, cuando se perciban por decision judicial",
+        "Incluye las percibidas en virtud de convenio regulador aprobado judicialmente, formalizado ante el letrado de la administracion de justicia, o en escritura publica ante notario"
+      ],
+      "treatment_for_payer": {
+        "description": "El pagador de la anualidad por alimentos no puede reducir su base imponible por estos importes. Sin embargo, cuando no tenga derecho al minimo por descendientes, las anualidades se someten a la escala del impuesto por separado del resto de la base liquidable general. Esto produce un efecto de reduccion del tipo medio efectivo",
+        "condition": "Que el pagador no aplique el minimo por descendientes por los mismos hijos",
+        "source": "art. 64 LIRPF"
+      },
+      "custody_special_cases": [
+        "Custodia compartida: ambos progenitores tienen derecho al minimo por descendientes prorrateado — NO aplica el regimen de anualidades",
+        "Custodia exclusiva (pagador no custodio): puede usar regimen anualidades PERO no el minimo por descendientes",
+        "Contribuyente que mantiene economicamente al hijo sin sentencia judicial: puede prorratear el minimo por descendientes"
+      ],
+      "limits": "Sin limite cuantitativo — exenta la totalidad percibida por el hijo",
+      "modelo_190_subclave": "No aplica directamente (no es Clave L)",
+      "regulation": "art. 7.k) LIRPF, art. 64 LIRPF",
+      "jurisprudence": [
+        "RTEAC mayo 2023: criterios de custodia compartida y minimo por descendientes"
+      ]
+    },
+    {
+      "id": "7l_premios_literarios",
+      "article": "art. 7.l) LIRPF",
+      "letter": "l",
+      "title": "Premios literarios, artisticos o cientificos relevantes, y Premios Princesa de Asturias",
+      "description": "Quedan exentos los premios que reconozcan el merito de obras o actividades literarias, artisticas o cientificas, siempre que cumplan los requisitos reglamentarios",
+      "what_is_exempt": [
+        "Premios literarios, artisticos o cientificos relevantes de caracter nacional o internacional",
+        "Premios Princesa de Asturias en todas sus modalidades (exencion automatica)"
+      ],
+      "requirements": [
+        "La convocatoria debe tener caracter nacional o internacional",
+        "No puede restringir la participacion por razones ajenas a la esencia del premio",
+        "Debe haber publicacion en el BOE o Boletin Oficial de la CCAA Y en al menos un periodico de tirada nacional (excepcion: premios de organizaciones extranjeras o internacionales)",
+        "Las obras o actividades deben ser anteriores a la convocatoria del premio",
+        "No se incluyen becas, subvenciones o ayudas para realizar trabajos futuros o en curso",
+        "La exencion debe ser declarada formalmente por el Director General de Gestion Tributaria de la AEAT",
+        "Valida para sucesivas convocatorias si las condiciones no se modifican"
+      ],
+      "limits": "Sin limite — exencion total del importe del premio",
+      "modelo_190_subclave": "L-11",
+      "regulation": "art. 7.l) LIRPF, art. 3 RIRPF, Orden EHA/3525/2008 de 20 de noviembre"
+    },
+    {
+      "id": "7m_deportistas",
+      "article": "art. 7.m) LIRPF",
+      "letter": "m",
+      "title": "Ayudas economicas a deportistas de alto nivel",
+      "description": "Quedan exentas las ayudas de contenido economico a deportistas de alto nivel ajustadas a los programas de preparacion establecidos por el Consejo Superior de Deportes con las federaciones deportivas espanolas u organismos olimpicos, con el limite de 60.100 EUR anuales",
+      "what_is_exempt": [
+        "Ayudas economicas de formacion y tecnificacion deportiva",
+        "Ayudas del Consejo Superior de Deportes",
+        "Ayudas de la Asociacion de Deportes Olimpicos",
+        "Ayudas del Comite Olimpico Espanol",
+        "Ayudas del Comite Paralimpico Espanol"
+      ],
+      "requirements": [
+        "El beneficiario debe tener reconocimiento oficial como deportista de alto nivel conforme al RD 971/2007",
+        "Las ayudas deben ajustarse a los programas de preparacion del Consejo Superior de Deportes"
+      ],
+      "limits": {
+        "amount": 60100,
+        "currency": "EUR",
+        "period": "anual",
+        "excess": "El exceso tributa como rendimiento del trabajo"
+      },
+      "modelo_190_subclave": "L-12",
+      "regulation": "art. 7.m) LIRPF, art. 4 RIRPF, RD 971/2007 de 13 de julio"
+    },
+    {
+      "id": "7n_desempleo_pago_unico",
+      "article": "art. 7.n) LIRPF",
+      "letter": "n",
+      "title": "Prestaciones por desempleo percibidas en modalidad de pago unico (capitalizacion)",
+      "description": "Quedan exentas las prestaciones por desempleo cuando se perciban en la modalidad de pago unico establecida en el RD 1044/1985, cualquiera que sea su importe, siempre que las cantidades se destinen a las finalidades y en los supuestos previstos",
+      "what_is_exempt": [
+        "Capitalizacion total del desempleo para iniciar actividad como trabajador autonomo",
+        "Capitalizacion para incorporarse como socio trabajador a una cooperativa (nueva o existente)",
+        "Capitalizacion para constituir o incorporarse a una sociedad laboral como socio trabajador",
+        "Capitalizacion para aportar capital a una entidad mercantil de nueva creacion o creada en los 12 meses anteriores, con control efectivo y actividad profesional (alta en RETA o RETM)"
+      ],
+      "limits": "Sin limite cuantitativo — exenta la totalidad del pago unico",
+      "requirements": [
+        "Las cantidades deben destinarse a las finalidades del RD 1044/1985",
+        "Mantenimiento de la participacion en cooperativas o sociedades laborales durante 5 anos",
+        "Mantenimiento de la actividad autonoma durante 5 anos"
+      ],
+      "modelo_190_subclave": "L-13",
+      "regulation": "art. 7.n) LIRPF, RD 1044/1985, art. 34.1 Ley 20/2007 (Estatuto del Trabajo Autonomo)"
+    },
+    {
+      "id": "7n_planes_ahorro_largo_plazo",
+      "article": "art. 7.n) LIRPF (segundo parrafo)",
+      "letter": "n",
+      "title": "Rendimientos positivos de Planes de Ahorro a Largo Plazo (PALP)",
+      "description": "Quedan exentos los rendimientos positivos de seguros de vida, depositos y contratos financieros que instrumenten Planes de Ahorro a Largo Plazo, siempre que no se disponga del capital antes de 5 anos",
+      "what_is_exempt": [
+        "Rendimientos positivos de Seguros Individuales de Ahorro a Largo Plazo (SIALP)",
+        "Rendimientos positivos de Cuentas Individuales de Ahorro a Largo Plazo (CIALP)"
+      ],
+      "requirements": [
+        "No disponer del capital resultante del Plan antes de 5 anos desde la primera aportacion",
+        "Limite de aportaciones: 5.000 EUR anuales",
+        "Un unico Plan por contribuyente (no acumular SIALP + CIALP)",
+        "Las primas o depositos anuales no pueden superar 5.000 EUR"
+      ],
+      "limits": {
+        "minimum_holding_period": "5 anos",
+        "max_annual_contribution": 5000,
+        "breach_consequence": "Si se dispone antes de 5 anos, los rendimientos generados tributan en el periodo impositivo en que se produce el incumplimiento"
+      },
+      "negative_returns": "Los rendimientos negativos se imputan al periodo en que se produzcan y son deducibles solo en la medida que excedan los rendimientos positivos que hubieran estado exentos",
+      "regulation": "art. 7.n) LIRPF, DA 26 Ley 35/2006",
+      "note": "Ver capitulo 5 del Manual para tratamiento detallado"
+    },
+    {
+      "id": "7o_misiones_paz",
+      "article": "art. 7.o) LIRPF",
+      "letter": "o",
+      "title": "Gratificaciones extraordinarias por participacion en misiones internacionales de paz o humanitarias",
+      "description": "Quedan exentas las gratificaciones extraordinarias y las indemnizaciones por danos personales que respondan al desempeno de misiones internacionales de paz o humanitarias, asi como las compensaciones a los participantes en operaciones internacionales de paz y seguridad",
+      "what_is_exempt": [
+        "Gratificaciones extraordinarias de cualquier naturaleza vinculadas al desempeno de la mision",
+        "Indemnizaciones por danos personales sufridos en las misiones",
+        "Compensaciones por participacion en operaciones internacionales de paz y seguridad (RDL 8/2004)"
+      ],
+      "beneficiaries": [
+        "Militares espanoles en operaciones de paz, asistencia humanitaria u otras aprobadas internacionalmente (incluye tripulaciones de transporte bajo el Ministerio de Defensa)",
+        "Miembros de las Fuerzas y Cuerpos de Seguridad del Estado participantes en dichas operaciones",
+        "Personal de las Administraciones Publicas (incluido personal contratado individualmente) desplegado para estas operaciones"
+      ],
+      "limits": "Sin limite — exencion total de las gratificaciones e indemnizaciones vinculadas a la mision",
+      "modelo_190_subclave": "L-14",
+      "regulation": "art. 7.o) LIRPF, art. 5 RIRPF, RDL 8/2004 de 5 de noviembre, LO 7/2007"
+    },
+    {
+      "id": "7p_trabajo_extranjero",
+      "article": "art. 7.p) LIRPF",
+      "letter": "p",
+      "title": "Rendimientos del trabajo percibidos por trabajos efectivamente realizados en el extranjero",
+      "description": "Quedan exentos los rendimientos del trabajo percibidos por trabajos efectivamente realizados en el extranjero, con el limite de 60.100 EUR anuales, siempre que se cumplan los requisitos establecidos",
+      "what_is_exempt": [
+        "Rendimientos del trabajo por servicios efectivamente prestados en el extranjero",
+        "La cuantia exenta se calcula proporcionalmente: retribucion diaria x dias efectivos en el extranjero (incluidos dias de desplazamiento)"
+      ],
+      "requirements": [
+        "Desplazamiento fisico real al extranjero (trabajos efectivamente realizados fuera de Espana)",
+        "Los servicios deben prestarse para una empresa o entidad no residente, o un establecimiento permanente en el extranjero",
+        "Para entidades del grupo: el servicio debe producir ventaja o utilidad al destinatario no residente",
+        "El territorio donde se realiza el trabajo debe aplicar un impuesto de naturaleza identica o analoga al IRPF (no ser jurisdiccion no cooperativa)",
+        "Presuncion: se cumple si Espana tiene CDI con clausula de intercambio de informacion con dicho pais"
+      ],
+      "limits": {
+        "amount": 60100,
+        "currency": "EUR",
+        "period": "anual",
+        "calculation": "Se calcula proporcionalmente en base a dias de trabajo efectivo en el extranjero sobre el total de retribucion",
+        "multiple_employers": "Si hay varios empleadores, se calcula la exencion por separado y se aplica el tope agregado de 60.100 EUR"
+      },
+      "incompatibilities": [
+        "INCOMPATIBLE con el regimen de excesos del art. 9.A.3.b) RIRPF — el contribuyente debe elegir uno u otro",
+        "COMPATIBLE con las dietas exentas por desplazamiento del art. 9.A.3.a) RIRPF (gastos de locomocion, manutención y estancia)"
+      ],
+      "modelo_190_subclave": "L-15",
+      "regulation": "art. 7.p) LIRPF, art. 6 RIRPF"
+    },
+    {
+      "id": "7q_indemnizaciones_aapp",
+      "article": "art. 7.q) LIRPF",
+      "letter": "q",
+      "title": "Indemnizaciones satisfechas por las Administraciones Publicas por danos personales",
+      "description": "Quedan exentas las indemnizaciones satisfechas por las Administraciones Publicas por danos personales (fisicos, psiquicos o morales) como consecuencia del funcionamiento de los servicios publicos, siguiendo los procedimientos legalmente establecidos",
+      "what_is_exempt": [
+        "Indemnizaciones por responsabilidad patrimonial de la Administracion",
+        "Indemnizaciones por funcionamiento normal o anormal de los servicios publicos",
+        "Intereses indemnizatorios por retraso en el pago (como obligacion accesoria, adoptan la condicion exenta de la indemnizacion principal)"
+      ],
+      "requirements": [
+        "Los danos deben ser personales (fisicos, psiquicos o morales)",
+        "Deben derivar del funcionamiento de los servicios publicos",
+        "Debe seguirse el procedimiento de la Ley 39/2015 (arts. 65, 67, 81, 86.5, 91, 92) y la Ley 40/2015 (arts. 32-37)"
+      ],
+      "limits": "Sin limite — exencion total",
+      "jurisprudence": [
+        "RTEAC 10 mayo 2018: los intereses indemnizatorios por retraso adoptan la condicion de ganancia patrimonial exenta"
+      ],
+      "regulation": "art. 7.q) LIRPF, Ley 39/2015, Ley 40/2015 (arts. 32-37)"
+    },
+    {
+      "id": "7r_entierro_sepelio",
+      "article": "art. 7.r) LIRPF",
+      "letter": "r",
+      "title": "Prestaciones percibidas por entierro o sepelio",
+      "description": "Quedan exentas las prestaciones percibidas por entierro o sepelio, con el limite del importe total de los gastos incurridos",
+      "what_is_exempt": [
+        "Prestaciones percibidas por concepto de entierro o sepelio",
+        "Aplicable a prestaciones de trabajadores, funcionarios, entidades publicas, colegios de huerfanos, instituciones similares y empresas privadas"
+      ],
+      "limits": {
+        "general": "Exenta hasta el importe total de los gastos reales incurridos por el entierro o sepelio",
+        "excess": "El exceso sobre los gastos reales se considera rendimiento del trabajo obtenido de forma notoriamente irregular en el tiempo, con reduccion del 30% si se imputa en un unico periodo impositivo"
+      },
+      "modelo_190_subclave": "L-16",
+      "regulation": "art. 7.r) LIRPF, art. 12.1.d) RIRPF"
+    },
+    {
+      "id": "7s_hemofilia_hepatitis",
+      "article": "art. 7.s) LIRPF",
+      "letter": "s",
+      "title": "Ayudas economicas a personas con hemofilia u otras coagulopatias congenitas que hayan desarrollado hepatitis C",
+      "description": "Quedan exentas las ayudas economicas reguladas en la Ley 14/2002, percibidas por personas con hemofilia u otras coagulopatias congenitas que hayan desarrollado hepatitis C como consecuencia de tratamientos con factores de coagulacion en el sistema sanitario publico",
+      "what_is_exempt": [
+        "Ayuda economica de pago unico de 18.030,36 EUR",
+        "Ayudas a beneficiarios derivados (hijos menores, incapacitados, conyuge, padres) en caso de fallecimiento"
+      ],
+      "beneficiaries": [
+        "Personas con hemofilia o coagulopatias congenitas incluidas en el censo definitivo de la Ley 55/1999 que desarrollaron hepatitis C por tratamientos con factores de coagulacion del sistema sanitario publico",
+        "En caso de fallecimiento del beneficiario: hijos menores e incapacitados a partes iguales; en su defecto, conyuge o pareja de hecho (2+ anos de convivencia); en su defecto, los padres"
+      ],
+      "limits": {
+        "amount": 18030.36,
+        "currency": "EUR",
+        "type": "pago unico"
+      },
+      "compatibility": "Compatible con cualquier pension publica que perciba el beneficiario",
+      "modelo_190_subclave": "L-17",
+      "regulation": "art. 7.s) LIRPF, Ley 14/2002 de 5 de junio, RD 377/2003 de 28 de marzo"
+    },
+    {
+      "id": "7t_cobertura_tipo_interes",
+      "article": "art. 7.t) LIRPF",
+      "letter": "t",
+      "title": "Rentas derivadas de instrumentos de cobertura del riesgo de incremento del tipo de interes variable de prestamos hipotecarios para vivienda habitual",
+      "description": "Quedan exentas las rentas que se pongan de manifiesto en la constitucion de instrumentos de cobertura que cubran exclusivamente el riesgo de incremento del tipo de interes variable de prestamos hipotecarios destinados a la adquisicion de la vivienda habitual",
+      "what_is_exempt": [
+        "Rentas derivadas de instrumentos de cobertura (swaps, caps, floors, collars) que cubran exclusivamente el riesgo de subida del tipo de interes variable",
+        "El prestamo hipotecario subyacente debe ser para adquisicion de vivienda habitual"
+      ],
+      "requirements": [
+        "El instrumento debe cubrir exclusivamente el riesgo de incremento del tipo de interes variable",
+        "El prestamo hipotecario debe ser para la adquisicion de vivienda habitual del contribuyente"
+      ],
+      "limits": "Sin limite — exencion total de la renta generada por el instrumento de cobertura",
+      "regulation": "art. 7.t) LIRPF, DA 23 Ley 35/2006, art. 41 bis RIRPF, Ley 36/2003 de 11 de noviembre (art. 19)"
+    },
+    {
+      "id": "7u_privacion_libertad",
+      "article": "art. 7.u) LIRPF",
+      "letter": "u",
+      "title": "Indemnizaciones del Estado y CCAA por privacion de libertad",
+      "description": "Quedan exentas las indemnizaciones del Estado y de las Comunidades Autonomas que compensen la privacion de libertad en establecimientos penitenciarios, en los supuestos contemplados en la Ley de Amnistia 46/1977",
+      "what_is_exempt": [
+        "Indemnizaciones por privacion de libertad en las condiciones de la Ley 46/1977 (Amnistia)",
+        "Indemnizaciones ampliadas por la Ley 52/2007 (Memoria Historica) a personas previamente excluidas que sufrieron prision durante la Guerra Civil y la dictadura",
+        "Reparaciones economicas mantenidas por la Ley 20/2022 (Memoria Democratica), que derogo la Ley 52/2007 pero preservo las medidas de reparacion economica"
+      ],
+      "limits": "Sin limite — exencion total",
+      "regulation": "art. 7.u) LIRPF, Ley 46/1977 de 15 de octubre, Ley 52/2007 de 26 de diciembre, Ley 20/2022 de 19 de octubre"
+    },
+    {
+      "id": "7v_pias",
+      "article": "art. 7.v) LIRPF",
+      "letter": "v",
+      "title": "Rentas vitalicias de Planes Individuales de Ahorro Sistematico (PIAS)",
+      "description": "Quedan exentas las rentas que se pongan de manifiesto en el momento de la constitucion de rentas vitalicias aseguradas resultantes de los Planes Individuales de Ahorro Sistematico (PIAS), siempre que se cumplan los requisitos de la DA 3 de la Ley 35/2006",
+      "what_is_exempt": [
+        "Rentas generadas en el momento de constitucion de la renta vitalicia asegurada de un PIAS",
+        "Rentas derivadas de la transformacion de determinados contratos de seguro de vida en PIAS (DT 14 Ley 35/2006)"
+      ],
+      "requirements": [
+        "Antigüedad minima de la primera prima: 5 anos antes de la constitucion de la renta vitalicia",
+        "Limite de aportacion: 8.000 EUR anuales",
+        "Limite total de primas acumuladas: 240.000 EUR",
+        "La prestacion debe percibirse en forma de renta vitalicia asegurada",
+        "El contratante, asegurado y beneficiario deben ser la misma persona"
+      ],
+      "limits": {
+        "max_annual_premium": 8000,
+        "max_total_premiums": 240000,
+        "min_holding_period": "5 anos desde la primera prima"
+      },
+      "regulation": "art. 7.v) LIRPF, DA 3 Ley 35/2006, DT 14 Ley 35/2006",
+      "note": "Ver capitulo 5 del Manual para tratamiento detallado de la renta vitalicia"
+    },
+    {
+      "id": "7w_discapacidad_patrimonios_protegidos",
+      "article": "art. 7.w) LIRPF",
+      "letter": "w",
+      "title": "Rendimientos del trabajo de personas con discapacidad derivados de prestaciones en forma de renta de patrimonios protegidos y planes de pensiones",
+      "description": "Quedan exentas las prestaciones en forma de renta derivadas de planes de pensiones para personas con discapacidad y de patrimonios protegidos, hasta un limite de 3 veces el IPREM anual",
+      "what_is_exempt": [
+        "Rendimientos del trabajo en forma de renta de planes de pensiones constituidos a favor de personas con discapacidad",
+        "Rendimientos del trabajo en forma de renta de patrimonios protegidos de personas con discapacidad (Ley 41/2003)"
+      ],
+      "beneficiaries": {
+        "discapacidad_fisica_sensorial": ">= 65%",
+        "discapacidad_psiquica": ">= 33%",
+        "incapacidad_judicial": "Personas judicialmente incapacitadas"
+      },
+      "limits": {
+        "amount": 25200,
+        "currency": "EUR",
+        "period": "anual",
+        "calculation": "3 x IPREM anual (3 x 8.400 = 25.200 EUR para 2025)",
+        "application": "El limite se aplica de forma individual y separada a cada fuente (planes de pensiones y patrimonios protegidos) desde el 01-01-2015",
+        "excess": "El exceso tributa como rendimiento del trabajo"
+      },
+      "conditions": [
+        "Las aportaciones deben haberse realizado bajo el regimen especial para personas con discapacidad",
+        "Si la discapacidad psiquica baja del 33% cuando se perciben las prestaciones, NO aplica la exencion aunque las aportaciones se hicieran bajo el regimen especial",
+        "Las prestaciones de planes de pensiones por el regimen general NO pueden acogerse a esta exencion, independientemente de la discapacidad del beneficiario"
+      ],
+      "modelo_190_subclave": "L-21 (patrimonios protegidos)",
+      "regulation": "art. 7.w) LIRPF, art. 53 LIRPF, Ley 41/2003"
+    },
+    {
+      "id": "7x_dependencia",
+      "article": "art. 7.x) LIRPF",
+      "letter": "x",
+      "title": "Prestaciones economicas publicas vinculadas al servicio, para cuidados en el entorno familiar y de asistencia personalizada (Ley de Dependencia)",
+      "description": "Quedan exentas las prestaciones economicas publicas vinculadas al servicio para cuidados en el entorno familiar y de asistencia personalizada que se derivan de la Ley 39/2006 de Promocion de la Autonomia Personal y Atencion a las personas en situacion de dependencia",
+      "what_is_exempt": [
+        "Prestaciones economicas vinculadas al servicio",
+        "Prestaciones para cuidados en el entorno familiar",
+        "Prestaciones de asistencia personalizada"
+      ],
+      "regulation_framework": [
+        "Ley 39/2006, de 14 de diciembre (Ley de Dependencia)",
+        "RD 1051/2013, de 27 de diciembre (modificado por RD 675/2023 de 18 de julio — incremento cuantias maximas y establecimiento de cuantias minimas)",
+        "RDL 20/2012, de 13 de julio (DT 10 — cuantias maximas para prestaciones de cuidado familiar, asistencia personalizada y vinculadas al servicio)"
+      ],
+      "limits": "Sin limite — exencion total de la prestacion",
+      "regulation": "art. 7.x) LIRPF"
+    },
+    {
+      "id": "7y_imv_insercion_victimas",
+      "article": "art. 7.y) LIRPF",
+      "letter": "y",
+      "title": "Ingreso Minimo Vital, rentas minimas de insercion y ayudas a victimas de delitos violentos y de violencia de genero",
+      "description": "Quedan exentas las prestaciones del Ingreso Minimo Vital, las rentas minimas de insercion de las CCAA y Entidades Locales, y las ayudas a victimas de delitos violentos y violencia de genero",
+      "subcategories": [
+        {
+          "id": "7y_imv",
+          "title": "Ingreso Minimo Vital (IMV)",
+          "what_is_exempt": [
+            "El Ingreso Minimo Vital de la Seguridad Social (Ley 19/2021, vigente desde 01-01-2022)",
+            "El Complemento de Ayuda a la Infancia: menores de 3 anos (100 EUR/mes), de 3 a 5 anos (70 EUR/mes), de 6 a 17 anos (50 EUR/mes)"
+          ],
+          "conditions": [
+            "Renta del hogar en el ejercicio anterior inferior al 300% de la renta garantizada",
+            "Patrimonio inferior al 150% de los limites del IMV"
+          ],
+          "source": "Ley 19/2021"
+        },
+        {
+          "id": "7y_insercion",
+          "title": "Rentas minimas de insercion",
+          "what_is_exempt": [
+            "Prestaciones de CCAA y Entidades Locales que proporcionen recursos basicos de subsistencia a colectivos vulnerables",
+            "Incluye ayudas de emergencia, necesidades de vivienda, alimentacion, escolarizacion y atencion a menores o personas con discapacidad"
+          ],
+          "source": "art. 7.y) LIRPF"
+        },
+        {
+          "id": "7y_victimas",
+          "title": "Ayudas a victimas de delitos violentos y violencia de genero",
+          "what_is_exempt": [
+            "Ayudas reguladas en la Ley 35/1995 para victimas de delitos violentos y contra la libertad sexual",
+            "Ayudas previstas en la LO 1/2004 de medidas de proteccion integral contra la violencia de genero",
+            "Todas las ayudas publicas concedidas a victimas de violencia de genero por tal condicion"
+          ],
+          "source": "Ley 35/1995, LO 1/2004"
+        }
+      ],
+      "limits": {
+        "joint_annual_cap": {
+          "amount": 12600,
+          "currency": "EUR",
+          "calculation": "1,5 x IPREM anual (1,5 x 8.400 = 12.600 EUR para 2025)",
+          "scope": "Limite conjunto para la suma de IMV + rentas minimas de insercion"
+        },
+        "victimas_violencia": "Sin limite cuantitativo"
+      },
+      "modelo_190_subclave": "L-22 (IMV y renta insercion), L-23 (victimas delitos violentos)",
+      "regulation": "art. 7.y) LIRPF",
+      "note": "IMPORTANTE: todos los miembros de la unidad de convivencia del IMV estan obligados a declarar (DA 50 Ley 35/2006)"
+    },
+    {
+      "id": "7z_prestaciones_familiares",
+      "article": "art. 7.z) LIRPF",
+      "letter": "z",
+      "title": "Prestaciones y ayudas familiares vinculadas a nacimiento, adopcion, acogimiento o cuidado de menores",
+      "description": "Quedan exentas las prestaciones y ayudas familiares percibidas de cualquiera de las Administraciones Publicas, vinculadas a nacimiento, adopcion, acogimiento o cuidado de hijos menores",
+      "what_is_exempt": [
+        "Prestaciones y ayudas familiares publicas por nacimiento, adopcion, acogimiento o cuidado de menores",
+        "Prestaciones economicas por cuidado de menores afectados por cancer u otra enfermedad grave (RD 1148/2011)",
+        "Prestaciones economicas por corresponsabilidad en el cuidado del lactante (arts. 183-185 RDLeg 8/2015)"
+      ],
+      "excludes": [
+        "Retribuciones de funcionarios publicos que mantienen su salario durante la reduccion de jornada por cuidado de menor con cancer — NO exentas, tributan como rendimiento del trabajo"
+      ],
+      "limits": "Sin limite — exencion total de la prestacion publica",
+      "modelo_190_subclave": "L-20",
+      "regulation": "art. 7.z) LIRPF"
+    },
+    {
+      "id": "7_extincion_deuda",
+      "article": "art. 33.4.d) LIRPF (remision desde art. 7)",
+      "letter": "n/a",
+      "title": "Rentas derivadas de la extincion de deudas en procedimientos concursales y ejecuciones hipotecarias de vivienda habitual",
+      "description": "Quedan exentas las ganancias patrimoniales que se pongan de manifiesto con ocasion de la dacion en pago o ejecucion hipotecaria de la vivienda habitual, y las rentas derivadas de quitas y dacion en pago en concursos de acreedores",
+      "what_is_exempt": [
+        "Ganancia patrimonial por transmision de vivienda habitual en dacion en pago para cancelar deudas hipotecarias con entidades de credito o prestamistas profesionales, cuando el propietario no disponga de otros bienes suficientes para satisfacer la totalidad de la deuda",
+        "Ganancia patrimonial por ejecucion hipotecaria judicial o notarial de la vivienda habitual en las mismas condiciones",
+        "Rentas obtenidas por el deudor en procedimientos concursales: quitas y perdones de deuda del convenio aprobado judicialmente, del acuerdo de refinanciacion judicialmente homologado, o del acuerdo extrajudicial de pagos"
+      ],
+      "conditions": [
+        "Las deudas no deben derivar del ejercicio de actividades economicas",
+        "La vivienda debe ser la vivienda habitual del contribuyente",
+        "El deudor no debe disponer de otros bienes o derechos suficientes para satisfacer la totalidad de la deuda"
+      ],
+      "limits": "Sin limite — exencion total",
+      "regulation": "art. 33.4.d) LIRPF, DA 43 y 44 LIRPF, Ley 25/2015"
+    },
+    {
+      "id": "7_dana_desastres_naturales",
+      "article": "Normativa especial — RDL vigentes (DANA 2024)",
+      "letter": "n/a",
+      "title": "Ayudas excepcionales por desastres naturales (DANA)",
+      "description": "Quedan exentas las ayudas excepcionales percibidas como consecuencia de desastres naturales, en particular las derivadas de la DANA de Valencia de octubre de 2024, reguladas por Real Decreto-ley especifico",
+      "what_is_exempt": [
+        "Ayudas extraordinarias de empleadores a empleados y/o familiares para sufragar danos personales y materiales (vivienda, enseres, vehiculos) por la DANA",
+        "Ayudas por destruccion de elementos patrimoniales, incluida la indemnizacion del Consorcio de Compensacion de Seguros",
+        "Ayudas directas a empresarios y profesionales — exentas tanto en IRPF como en IS",
+        "Ayudas publicas por desalojo temporal o definitivo de vivienda habitual o local de actividad economica por inundacion"
+      ],
+      "conditions": [
+        "Las ayudas para reparacion de bienes solo se integran como ganancia patrimonial cuando excedan del coste real de reparacion"
+      ],
+      "limits": "Sin limite — exencion total",
+      "regulation": "RDL 6/2024, RDL 7/2024, RDL 8/2024, RDL 16/2025 y normativa complementaria"
+    }
+  ],
+
+  "da33_premios_loterias": {
+    "title": "Gravamen especial sobre los premios de determinadas loterias y apuestas",
+    "article": "DA 33 Ley 35/2006 (LIRPF)",
+    "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c02-irpf-cuestiones-generales/sujecion-irpf-aspectos-materiales/delimitacion-negativa-hecho-imponible-rentas-sujetas/gravamen-especial-sobre-premios-determinadas-apuestas.html",
+    "description": "Los premios de loterias y apuestas de los organismos y entidades senalados NO se integran en la base imponible del IRPF. Los premios de hasta 40.000 EUR estan exentos. El exceso tributa a un gravamen especial del 20%",
+    "qualifying_lotteries": [
+      "Sociedad Estatal Loterias y Apuestas del Estado (SELAE) — Loteria Nacional, Primitiva, Bonoloto, Euromillones, El Gordo, etc.",
+      "Organismos de loterias de las Comunidades Autonomas",
+      "Cruz Roja Espanola (sorteos autorizados)",
+      "Organizacion Nacional de Ciegos Espanoles (ONCE) — cupones y juegos autorizados",
+      "Entidades analogas de caracter social sin animo de lucro de ambito europeo (UE/EEE)"
+    ],
+    "exemption_threshold": {
+      "amount": 40000,
+      "currency": "EUR",
+      "description": "Premios de cuantia igual o inferior a 40.000 EUR estan exentos en su totalidad"
+    },
+    "taxation_above_threshold": {
+      "rate_percent": 20,
+      "base": "Cuantia del premio que excede de 40.000 EUR",
+      "withholding": "El organizador practica retencion del 20% sobre el exceso al momento del pago",
+      "example": "Premio de 100.000 EUR: base gravamen = 60.000 EUR, retencion = 12.000 EUR, neto = 88.000 EUR"
+    },
+    "shared_prizes": {
+      "description": "Si el premio es compartido entre varios cotitulares, la cuantia exenta de 40.000 EUR se prorratea entre los cotitulares en proporcion a su participacion"
+    },
+    "minimum_ticket_cost": {
+      "amount": 0.50,
+      "currency": "EUR",
+      "description": "La exencion requiere que el coste del decimo o apuesta sea al menos de 0,50 EUR. Si es inferior, la exencion se reduce proporcionalmente"
+    },
+    "irpf_treatment": "Los premios sujetos al gravamen especial NO se integran en la base imponible del IRPF. Si la retencion ya se ha practicado, el contribuyente no necesita presentar ninguna declaracion adicional por este concepto",
+    "historical_evolution": [
+      {
+        "period": "Hasta 2012",
+        "threshold": 0,
+        "note": "Exencion total — los premios de loterias no tributaban"
+      },
+      {
+        "period": "2013-2017",
+        "threshold": 2500,
+        "note": "Se introduce el gravamen especial con exencion de 2.500 EUR"
+      },
+      {
+        "period": "2018",
+        "threshold": 10000,
+        "note": "Se eleva la exencion a 10.000 EUR"
+      },
+      {
+        "period": "2019",
+        "threshold": 20000,
+        "note": "Se eleva la exencion a 20.000 EUR"
+      },
+      {
+        "period": "2020 en adelante",
+        "threshold": 40000,
+        "note": "Se eleva la exencion a 40.000 EUR (vigente para 2025)"
+      }
+    ]
+  },
+
+  "modelo_190_subclave_mapping": {
+    "description": "Correspondencia entre las subclaves del Modelo 190 Clave L y los articulos del art. 7 LIRPF",
+    "subclaves": [
+      {"subclave": "L-01", "description": "Dietas y gastos de viaje exceptuados de gravamen", "article": "art. 9 RIRPF"},
+      {"subclave": "L-02", "description": "Prestaciones y pensiones por actos de terrorismo", "article": "art. 7.a)"},
+      {"subclave": "L-03", "description": "Ayudas percibidas por afectados por el VIH", "article": "art. 7.a)"},
+      {"subclave": "L-04", "description": "Pensiones por lesiones/mutilaciones de la Guerra Civil", "article": "art. 7.b)"},
+      {"subclave": "L-05", "description": "Indemnizaciones por despido o cese del trabajador", "article": "art. 7.e)"},
+      {"subclave": "L-06", "description": "Prestaciones por incapacidad permanente absoluta/gran invalidez (SS)", "article": "art. 7.f)"},
+      {"subclave": "L-07", "description": "Pensiones por inutilidad/incapacidad permanente (clases pasivas)", "article": "art. 7.g)"},
+      {"subclave": "L-08", "description": "Otras pensiones y prestaciones exentas", "article": "art. 7 (varios)"},
+      {"subclave": "L-09", "description": "Prestaciones publicas por acogimiento (discapacidad, mayores 65, menores)", "article": "art. 7.i)"},
+      {"subclave": "L-10", "description": "Becas exentas", "article": "art. 7.j)"},
+      {"subclave": "L-11", "description": "Premios literarios, artisticos o cientificos", "article": "art. 7.l)"},
+      {"subclave": "L-12", "description": "Ayudas a deportistas de alto nivel (max 60.100 EUR/ano)", "article": "art. 7.m)"},
+      {"subclave": "L-13", "description": "Prestaciones por desempleo en pago unico", "article": "art. 7.n)"},
+      {"subclave": "L-14", "description": "Gratificaciones por misiones internacionales de paz", "article": "art. 7.o)"},
+      {"subclave": "L-15", "description": "Rendimientos del trabajo en el extranjero (max 60.100 EUR)", "article": "art. 7.p)"},
+      {"subclave": "L-16", "description": "Prestaciones por entierro o sepelio", "article": "art. 7.r)"},
+      {"subclave": "L-17", "description": "Ayudas a personas con hemofilia/coagulopatias con hepatitis C", "article": "art. 7.s)"},
+      {"subclave": "L-18", "description": "Prestaciones economicas vinculadas a discapacidad", "article": "art. 7.f)"},
+      {"subclave": "L-19", "description": "Prestaciones publicas por cuidados en el entorno familiar (Dependencia)", "article": "art. 7.x)"},
+      {"subclave": "L-20", "description": "Prestaciones y ayudas por nacimiento, adopcion, acogimiento", "article": "art. 7.z)"},
+      {"subclave": "L-21", "description": "Aportaciones a patrimonios protegidos de personas con discapacidad", "article": "art. 7.w)"},
+      {"subclave": "L-22", "description": "Renta minima de insercion / Ingreso Minimo Vital", "article": "art. 7.y)"},
+      {"subclave": "L-23", "description": "Ayudas a victimas de delitos violentos", "article": "art. 7.y)"},
+      {"subclave": "L-24", "description": "Retribuciones en especie del trabajo exentas (dinerarias)", "article": "art. 42.3 LIRPF"},
+      {"subclave": "L-25", "description": "Otras rentas exentas (no clasificadas)", "article": "art. 7 (varios)"},
+      {"subclave": "L-26", "description": "Retribuciones en especie del trabajo exentas (en especie)", "article": "art. 42.3 LIRPF"},
+      {"subclave": "L-27", "description": "Prestaciones por maternidad/paternidad", "article": "art. 7.h)"},
+      {"subclave": "L-28", "description": "Otras rentas exentas no clasificadas", "article": "art. 7 (varios)"}
+    ]
+  },
+
+  "casillas_relevantes": {
+    "note": "Las rentas exentas NO aparecen en la base imponible del Modelo 100. Se reflejan en casillas informativas",
+    "casillas": [
+      {
+        "casilla": "0003",
+        "description": "Rendimientos integros del trabajo (NO incluye rentas exentas)",
+        "relevance": "Las rentas exentas se excluyen de esta casilla"
+      },
+      {
+        "casilla": "0525",
+        "description": "Rentas exentas por CDI con progresividad — contribuyente",
+        "relevance": "Rentas exentas por Convenio de Doble Imposicion que afectan al tipo de gravamen (casilla informativa)"
+      },
+      {
+        "casilla": "0526",
+        "description": "Rentas exentas por CDI con progresividad — conyuge",
+        "relevance": "Misma funcion para el conyuge en declaracion conjunta"
+      }
+    ]
+  },
+
+  "implementation_notes": {
+    "for_simulator": [
+      "Las rentas exentas NO se anaden a la base imponible (ni general ni del ahorro)",
+      "Aparecen en los datos fiscales del contribuyente como informativas (Modelo 190, Clave L)",
+      "Para indemnizacion por despido: validar limite de 180.000 EUR",
+      "Para becas: aplicar limites segun tipo (primer ciclo, segundo ciclo, tercer ciclo, investigadores)",
+      "Para trabajo en el extranjero (art. 7.p): validar limite 60.100 EUR y calcular proporcionalmente",
+      "Para deportistas alto nivel: validar limite 60.100 EUR",
+      "Para IMV + rentas insercion: validar limite conjunto 12.600 EUR (1,5 x IPREM)",
+      "Para prestaciones discapacidad (art. 7.w): validar limite 25.200 EUR (3 x IPREM)",
+      "Para anualidades por alimentos: marcar como exentas para el hijo, pero aplicar escala separada para el pagador (art. 64 LIRPF)",
+      "Los premios de loterias (DA 33) NO se integran en la base imponible — tratamiento separado"
+    ]
+  }
+}

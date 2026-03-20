@@ -1,0 +1,810 @@
+{
+  "chapter": "Retenciones e ingresos a cuenta del IRPF",
+  "year": 2025,
+  "source": "AEAT (sede.agenciatributaria.gob.es) + BOE (boe.es) — Real Decreto 439/2007 (RIRPF), Ley 35/2006 (LIRPF)",
+  "verified_date": "2026-03-20",
+  "legal_basis": {
+    "primary_law": "Ley 35/2006, de 28 de noviembre, del IRPF (arts. 99-101)",
+    "primary_law_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "regulation": "Real Decreto 439/2007, de 30 de marzo, RIRPF (Titulo VII, arts. 74-111)",
+    "regulation_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "last_modification": "Real Decreto 142/2024, de 6 de febrero (retenciones e ingresos a cuenta)",
+    "last_modification_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2249"
+  },
+
+  "procedimiento_general_calculo": {
+    "title": "Procedimiento general para determinar el importe de la retencion sobre rendimientos del trabajo",
+    "source": "art. 82 RIRPF",
+    "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "description": "El importe de la retencion sobre rendimientos del trabajo se determina mediante las siguientes operaciones sucesivas:",
+    "steps": [
+      {
+        "step": 1,
+        "operation": "Determinar la base para calcular el tipo de retencion",
+        "reference": "art. 83 RIRPF"
+      },
+      {
+        "step": 2,
+        "operation": "Determinar el minimo personal y familiar para calcular el tipo de retencion",
+        "reference": "art. 84 RIRPF"
+      },
+      {
+        "step": 3,
+        "operation": "Determinar la cuota de retencion",
+        "reference": "art. 85 RIRPF"
+      },
+      {
+        "step": 4,
+        "operation": "Determinar el tipo de retencion",
+        "reference": "art. 86 RIRPF"
+      },
+      {
+        "step": 5,
+        "operation": "El importe de la retencion sera el resultado de aplicar el tipo de retencion a la cuantia total de las retribuciones que se satisfagan o abonen, teniendo en cuenta las regularizaciones que procedan",
+        "reference": "art. 87 RIRPF"
+      }
+    ]
+  },
+
+  "base_retencion": {
+    "title": "Base para calcular el tipo de retencion",
+    "source": "art. 83 RIRPF",
+    "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "description": "La base para calcular el tipo de retencion es la diferencia positiva entre la cuantia total de las retribuciones del trabajo y determinados gastos deducibles.",
+
+    "retribuciones_totales": {
+      "description": "Suma de las retribuciones dinerarias y en especie que vaya normalmente a percibir el contribuyente en el ano natural, con exclusion de las contribuciones empresariales a planes de pensiones y de los atrasos correspondientes a ejercicios anteriores",
+      "source": "art. 83.1 RIRPF",
+      "regla_especial_jornaleros": "Cuando se trate de trabajadores manuales que perciban sus retribuciones por peonadas o jornales diarios, se multiplicara el jornal diario por 100"
+    },
+
+    "gastos_deducibles": {
+      "source": "art. 83.2 RIRPF",
+      "items": [
+        {
+          "letter": "a",
+          "concept": "Reduccion por rendimientos irregulares",
+          "description": "Reducciones previstas en el art. 18, apartados 2 y 3 de la LIRPF (rendimientos con periodo de generacion superior a 2 anos o notoriamente irregulares)",
+          "source": "art. 83.2.a RIRPF"
+        },
+        {
+          "letter": "b",
+          "concept": "Cotizaciones a la Seguridad Social, mutualidades y derechos pasivos",
+          "description": "Cotizaciones a la Seguridad Social, a mutualidades generales obligatorias de funcionarios, detracciones por derechos pasivos y cotizaciones a colegios de huerfanos o instituciones similares",
+          "source": "art. 83.2.b RIRPF"
+        },
+        {
+          "letter": "c",
+          "concept": "Otros gastos deducibles (art. 19.2 LIRPF)",
+          "description": "Cuantia de 2.000 EUR anuales de otros gastos, con limite maximo del saldo resultante de minorar la cuantia total de las retribuciones por los conceptos a) y b)",
+          "amount_eur": 2000,
+          "source": "art. 83.2.c RIRPF",
+          "note": "Incrementados en caso de movilidad geografica (hasta 2.000 EUR adicionales) y discapacidad del trabajador (3.500 EUR o 7.750 EUR si acredita movilidad reducida o grado >= 65%)"
+        },
+        {
+          "letter": "d",
+          "concept": "Reduccion por obtencion de rendimientos del trabajo (rentas bajas)",
+          "description": "Reduccion para rendimientos netos del trabajo inferiores a 19.747,50 EUR, conforme al art. 20 LIRPF y modificado por RD 142/2024",
+          "source": "art. 83.3.d RIRPF (redaccion RD 142/2024)",
+          "exact_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2249",
+          "brackets": [
+            {
+              "net_income_up_to_eur": 14852.00,
+              "reduction_eur": 7302.00,
+              "formula": "7.302 EUR"
+            },
+            {
+              "net_income_from_eur": 14852.00,
+              "net_income_up_to_eur": 17673.52,
+              "reduction_formula": "7.302 - 1,75 x (rendimiento neto - 14.852)",
+              "formula": "7302 - 1.75 * (RN - 14852)"
+            },
+            {
+              "net_income_from_eur": 17673.52,
+              "net_income_up_to_eur": 19747.50,
+              "reduction_formula": "2.364,34 - 1,14 x (rendimiento neto - 17.673,52)",
+              "formula": "2364.34 - 1.14 * (RN - 17673.52)"
+            }
+          ]
+        },
+        {
+          "letter": "e",
+          "concept": "Reducciones especiales adicionales",
+          "items": [
+            {
+              "concept": "Pensionistas con dos o mas descendientes a cargo",
+              "amount_eur": 600,
+              "source": "art. 83.3.e RIRPF"
+            },
+            {
+              "concept": "Perceptores de prestaciones o subsidios de desempleo",
+              "amount_eur": 1200,
+              "source": "art. 83.3.e RIRPF"
+            }
+          ]
+        },
+        {
+          "letter": "f",
+          "concept": "Pensiones compensatorias al conyuge y anualidades por alimentos",
+          "description": "El importe de las pensiones compensatorias al conyuge y de las anualidades por alimentos, con excepcion de las fijadas a favor de los hijos, satisfechas ambas por decision judicial, podra minorar la base para calcular el tipo de retencion",
+          "source": "art. 83.3.f RIRPF"
+        }
+      ]
+    }
+  },
+
+  "minimo_personal_familiar_retencion": {
+    "title": "Minimo personal y familiar para calcular el tipo de retencion",
+    "source": "art. 84 RIRPF (remision al Titulo V de la LIRPF, arts. 57-61)",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/minimo-personal-familiar/cuantias-minimos.html",
+    "description": "El minimo personal y familiar para calcular el tipo de retencion se determina con arreglo a lo dispuesto en el Titulo V de la LIRPF, con las especialidades del art. 84 RIRPF: los descendientes se computan por mitad, salvo que el perceptor tenga derecho exclusivo al minimo completo",
+
+    "minimo_contribuyente": {
+      "base_eur": 5550,
+      "over_65_supplement_eur": 1150,
+      "over_75_supplement_eur": 1400,
+      "source": "art. 57 LIRPF",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/minimo-personal-familiar/cuantias-minimos.html"
+    },
+
+    "minimo_descendientes": {
+      "source": "art. 58 LIRPF",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/minimo-personal-familiar/minimo-descendientes.html",
+      "conditions": "Menor de 25 anos (o con discapacidad >= 33% sin limite de edad), convivencia con el contribuyente, rentas anuales no superiores a 8.000 EUR excluidas las exentas, que no presente declaracion con rentas > 1.800 EUR",
+      "amounts": [
+        {
+          "order": 1,
+          "label": "Primer descendiente",
+          "annual_eur": 2400
+        },
+        {
+          "order": 2,
+          "label": "Segundo descendiente",
+          "annual_eur": 2700
+        },
+        {
+          "order": 3,
+          "label": "Tercer descendiente",
+          "annual_eur": 4000
+        },
+        {
+          "order": 4,
+          "label": "Cuarto y siguientes descendientes",
+          "annual_eur": 4500
+        }
+      ],
+      "under_3_supplement_eur": 2800,
+      "under_3_note": "Se incrementa en 2.800 EUR anuales por cada descendiente menor de 3 anos"
+    },
+
+    "minimo_ascendientes": {
+      "source": "art. 59 LIRPF",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/minimo-personal-familiar/minimos-ascendientes.html",
+      "conditions": "Mayor de 65 anos o con discapacidad >= 33%, convivencia al menos la mitad del periodo impositivo, rentas anuales no superiores a 8.000 EUR excluidas las exentas, que no presente declaracion con rentas > 1.800 EUR",
+      "base_eur": 1150,
+      "over_75_supplement_eur": 1400
+    },
+
+    "minimo_discapacidad": {
+      "source": "art. 60 LIRPF",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c14-adecuacion-impuesto-circunstancias-personales/cuadro-resumen-minimo-personal-familiar.html",
+      "description": "Aplica tanto al contribuyente como a sus descendientes y ascendientes con discapacidad",
+      "brackets": [
+        {
+          "disability_grade_from_pct": 33,
+          "disability_grade_to_pct": 64,
+          "annual_eur": 3000
+        },
+        {
+          "disability_grade_from_pct": 65,
+          "disability_grade_to_pct": 100,
+          "annual_eur": 9000
+        }
+      ],
+      "assistance_supplement_eur": 3000,
+      "assistance_note": "Se incrementa en 3.000 EUR anuales cuando acredite necesitar ayuda de terceras personas, movilidad reducida, o grado de discapacidad >= 65%"
+    },
+
+    "regla_retencion": {
+      "description": "A efectos de retenciones (art. 84 RIRPF), los descendientes se computan por mitad salvo que el perceptor tenga derecho exclusivo al minimo completo. El retenedor no tendra en cuenta las circunstancias del art. 61.2 LIRPF (tributacion conjunta)",
+      "source": "art. 84 RIRPF"
+    }
+  },
+
+  "escala_retencion": {
+    "title": "Escala para calcular la cuota de retencion",
+    "source": "art. 85.1 RIRPF (escala del art. 101.1 LIRPF)",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_1-cuadro-relacion-tipos-retencion-porcentaje.html",
+    "description": "La cuota de retencion se obtiene aplicando sucesivamente esta escala a la base para calcular el tipo de retencion (art. 83), y reduciendo el resultado por la aplicacion de la misma escala al minimo personal y familiar para calcular el tipo de retencion (art. 84). El resultado no puede ser negativo.",
+    "note": "Esta escala coincide con la suma de la escala estatal (art. 63 LIRPF) y la escala de retencion complementaria. Es la escala que se aplica especificamente para retenciones, no para la liquidacion del impuesto.",
+    "brackets": [
+      {
+        "base_up_to_eur": 0.00,
+        "quota_eur": 0.00,
+        "remaining_base_up_to_eur": 12450.00,
+        "marginal_rate_pct": 19.0
+      },
+      {
+        "base_up_to_eur": 12450.00,
+        "quota_eur": 2365.50,
+        "remaining_base_up_to_eur": 7750.00,
+        "marginal_rate_pct": 24.0
+      },
+      {
+        "base_up_to_eur": 20200.00,
+        "quota_eur": 4225.50,
+        "remaining_base_up_to_eur": 15000.00,
+        "marginal_rate_pct": 30.0
+      },
+      {
+        "base_up_to_eur": 35200.00,
+        "quota_eur": 8725.50,
+        "remaining_base_up_to_eur": 24800.00,
+        "marginal_rate_pct": 37.0
+      },
+      {
+        "base_up_to_eur": 60000.00,
+        "quota_eur": 17901.50,
+        "remaining_base_up_to_eur": 240000.00,
+        "marginal_rate_pct": 45.0
+      },
+      {
+        "base_up_to_eur": 300000.00,
+        "quota_eur": 125901.50,
+        "remaining_base_up_to_eur": null,
+        "marginal_rate_pct": 47.0
+      }
+    ],
+    "limit_43_pct": {
+      "description": "Cuando la cuantia total de las retribuciones no supere 35.200 EUR anuales, la cuota de retencion tendra como limite maximo el 43% de la diferencia positiva entre la cuantia total de las retribuciones y el importe minimo excluido de retencion segun el art. 81",
+      "threshold_eur": 35200,
+      "max_pct": 43,
+      "source": "art. 85.3 RIRPF"
+    },
+    "child_support_rule": {
+      "description": "Cuando el perceptor estuviera obligado por resolucion judicial a satisfacer anualidades por alimentos a favor de sus hijos y no tenga derecho a la aplicacion del minimo por descendientes, la escala se aplica separadamente al importe de las anualidades y al resto de base",
+      "source": "art. 85.2 RIRPF"
+    }
+  },
+
+  "tipo_retencion": {
+    "title": "Determinacion del tipo de retencion",
+    "source": "art. 86 RIRPF",
+    "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "formula": "Tipo retencion = (Cuota de retencion / Cuantia total de las retribuciones del art. 83.2) x 100",
+    "result_format": "Se expresa con dos decimales",
+    "zero_rule": "Cuando la diferencia entre la base para calcular el tipo de retencion y el minimo personal y familiar sea cero o negativa, el tipo de retencion sera cero",
+
+    "reduccion_vivienda": {
+      "description": "Para perceptores con retribuciones anuales inferiores a 33.007,20 EUR que comuniquen al pagador que destinan cantidades a la adquisicion o rehabilitacion de su vivienda habitual con financiacion ajena y tengan derecho a deduccion, el tipo de retencion se reduce en 2 puntos porcentuales",
+      "threshold_eur": 33007.20,
+      "reduction_points": 2,
+      "cannot_be_negative": true,
+      "source": "art. 86.1 ultimo parrafo RIRPF",
+      "note": "Solo aplicable a adquisiciones anteriores al 01-01-2013 (DT 18 LIRPF)"
+    },
+
+    "tipos_minimos": {
+      "source": "art. 86.2 RIRPF",
+      "items": [
+        {
+          "concept": "Contratos o relaciones de duracion inferior al ano",
+          "rate_pct": 2,
+          "source": "art. 86.2 RIRPF"
+        },
+        {
+          "concept": "Relaciones laborales especiales de caracter dependiente",
+          "rate_pct": 15,
+          "source": "art. 86.2 RIRPF"
+        }
+      ],
+      "ceuta_melilla_minimums": {
+        "temporary_contracts_pct": 0.8,
+        "special_labor_pct": 6,
+        "source": "art. 86.2 RIRPF",
+        "note": "Los tipos minimos del 2% y 15% se reducen al 60%, resultando 0,8% y 6% respectivamente, para perceptores de Ceuta y Melilla"
+      },
+      "exceptions": {
+        "description": "Los tipos minimos del 6% y 15% no se aplican a: retribuciones de penados en instituciones penitenciarias, ni a relaciones laborales especiales de personas con discapacidad",
+        "source": "art. 86.2 RIRPF"
+      }
+    }
+  },
+
+  "situaciones_contribuyente": {
+    "title": "Situaciones del contribuyente para retenciones",
+    "source": "art. 81 RIRPF y Modelo 145",
+    "exact_url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Procedimiento_ayuda/G603/mod145_es_es.pdf",
+    "situations": [
+      {
+        "code": 1,
+        "label": "Situacion 1",
+        "description": "Contribuyente soltero/a, viudo/a, divorciado/a o separado/a legalmente, con hijos solteros menores de 18 anos o incapacitados judicialmente sujetos a patria potestad prorrogada o rehabilitada, que convivan exclusivamente con el contribuyente, sin convivir tambien con el otro progenitor",
+        "note": "Es la situacion de 'familia monoparental'"
+      },
+      {
+        "code": 2,
+        "label": "Situacion 2",
+        "description": "Contribuyente casado/a y no separado/a legalmente cuyo conyuge no obtiene rentas anuales superiores a 1.500 EUR, excluidas las exentas",
+        "spouse_income_limit_eur": 1500
+      },
+      {
+        "code": 3,
+        "label": "Situacion 3",
+        "description": "Situacion familiar distinta de las dos anteriores: solteros sin hijos, casados cuyo conyuge obtiene rentas superiores a 1.500 EUR, separados, etc.",
+        "note": "Situacion residual (todas las demas)"
+      }
+    ]
+  },
+
+  "exclusion_retencion": {
+    "title": "Limite cuantitativo excluyente de la obligacion de retener",
+    "source": "art. 81 RIRPF (redaccion RD 142/2024)",
+    "exact_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2249",
+    "description": "No se practicara retencion sobre los rendimientos del trabajo cuya cuantia no supere el importe anual establecido en la siguiente tabla, en funcion del numero de hijos y otros descendientes y de la situacion del contribuyente",
+    "effective_date": "2024-02-08",
+
+    "thresholds_eur": {
+      "header_columns": ["situacion", "0_hijos", "1_hijo", "2_o_mas_hijos"],
+      "rows": [
+        {
+          "situacion": 1,
+          "label": "Soltero/a, viudo/a, divorciado/a, separado/a legalmente (monoparental)",
+          "0_hijos": null,
+          "1_hijo": 17644,
+          "2_o_mas_hijos": 18694,
+          "note": "Situacion 1 requiere al menos 1 hijo"
+        },
+        {
+          "situacion": 2,
+          "label": "Casado/a, conyuge con rentas <= 1.500 EUR",
+          "0_hijos": 17197,
+          "1_hijo": 18130,
+          "2_o_mas_hijos": 19262
+        },
+        {
+          "situacion": 3,
+          "label": "Otras situaciones",
+          "0_hijos": 15876,
+          "1_hijo": 16342,
+          "2_o_mas_hijos": 16867
+        }
+      ]
+    },
+
+    "increments_especiales": [
+      {
+        "concept": "Pensiones pasivas de la SS y prestaciones pasivas",
+        "increment_eur": 600,
+        "source": "art. 81.1 RIRPF"
+      },
+      {
+        "concept": "Prestaciones y subsidios por desempleo",
+        "increment_eur": 1200,
+        "source": "art. 81.1 RIRPF"
+      }
+    ],
+
+    "exclusion_note": "Esta exclusion no se aplica cuando correspondan tipos fijos o minimos de retencion conforme a los arts. 80 y 86 del RIRPF",
+
+    "previous_thresholds_until_2024_02_07": {
+      "note": "Umbrales vigentes hasta el 07-02-2024 (antes de RD 142/2024)",
+      "rows": [
+        {
+          "situacion": 1,
+          "0_hijos": null,
+          "1_hijo": 17270,
+          "2_o_mas_hijos": 18617
+        },
+        {
+          "situacion": 2,
+          "0_hijos": 16696,
+          "1_hijo": 17894,
+          "2_o_mas_hijos": 19241
+        },
+        {
+          "situacion": 3,
+          "0_hijos": 15000,
+          "1_hijo": 15599,
+          "2_o_mas_hijos": 16272
+        }
+      ]
+    }
+  },
+
+  "tipos_fijos_retencion": {
+    "title": "Tipos fijos de retencion por clase de renta",
+    "source": "art. 80 RIRPF, art. 101 LIRPF",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_1-cuadro-relacion-tipos-retencion-porcentaje.html",
+    "cuadro_aeat_url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2025/Cuadro_tipos_retenciones_IRPF2025.pdf",
+
+    "rendimientos_trabajo": {
+      "general": {
+        "description": "Rendimientos del trabajo en general (relaciones laborales y estatutarias)",
+        "rate": "Variable (procedimiento general arts. 82-87 RIRPF)",
+        "source": "art. 80.1.1 RIRPF"
+      },
+      "pensiones_publicas": {
+        "description": "Pensiones y haberes pasivos del regimen publico de SS y Clases Pasivas",
+        "rate": "Procedimiento especial art. 89.A RIRPF",
+        "source": "art. 80.1.2 RIRPF"
+      },
+      "administradores": {
+        "description": "Retribuciones por la condicion de administradores y miembros de consejos de administracion",
+        "rate_general_pct": 35,
+        "rate_small_entity_pct": 19,
+        "small_entity_threshold_eur": 100000,
+        "small_entity_note": "Entidades con importe neto de cifra de negocios del ultimo periodo impositivo < 100.000 EUR",
+        "source": "art. 80.1.3 RIRPF, art. 101.2 LIRPF"
+      },
+      "cursos_conferencias": {
+        "description": "Rendimientos derivados de impartir cursos, conferencias, coloquios, seminarios y similares, o derivados de la elaboracion de obras literarias, artisticas o cientificas",
+        "rate_pct": 15,
+        "source": "art. 80.1.4 RIRPF, art. 101.3 LIRPF"
+      },
+      "obras_literarias_reducido": {
+        "description": "Rendimientos de obras literarias, artisticas o cientificas cuando ingresos del ejercicio anterior < 15.000 EUR y sean > 75% de la suma de rendimientos del trabajo y actividades economicas",
+        "rate_pct": 7,
+        "income_limit_eur": 15000,
+        "income_proportion_pct": 75,
+        "source": "art. 80.1.4 RIRPF, art. 101.3 LIRPF"
+      },
+      "atrasos": {
+        "description": "Rendimientos del trabajo que se perciban por atrasos (correspondan a ejercicios anteriores)",
+        "rate_pct": 15,
+        "source": "art. 80.1.5 RIRPF"
+      },
+      "regimen_desplazados": {
+        "description": "Rendimientos sujetos al regimen especial de trabajadores desplazados a territorio espanol (art. 93 LIRPF / Ley Beckham)",
+        "rates": [
+          {
+            "income_up_to_eur": 600000,
+            "rate_pct": 24
+          },
+          {
+            "income_over_eur": 600000,
+            "rate_pct": 47
+          }
+        ],
+        "source": "art. 80.1.6 RIRPF, art. 93.2.f LIRPF"
+      }
+    },
+
+    "actividades_profesionales": {
+      "general": {
+        "description": "Actividades profesionales (estimacion directa)",
+        "rate_pct": 15,
+        "source": "art. 101.5.a LIRPF, art. 95.1 RIRPF"
+      },
+      "nuevos_profesionales": {
+        "description": "Profesionales en el periodo impositivo de inicio de la actividad y en los dos siguientes",
+        "rate_pct": 7,
+        "source": "art. 101.5.a LIRPF, art. 95.1 RIRPF"
+      },
+      "recaudadores_municipales": {
+        "description": "Recaudadores municipales, mediadores de seguros con nivel de comisiones, delegados de SELAE",
+        "rate_pct": 7,
+        "source": "art. 101.5.a LIRPF"
+      },
+      "artistas_tecnicos": {
+        "description": "Profesionales de artes escenicas y tecnicos auxiliares (ingresos ejercicio anterior < 15.000 EUR y > 75% de la suma de rendimientos del trabajo y actividades economicas)",
+        "rate_pct": 7,
+        "income_limit_eur": 15000,
+        "income_proportion_pct": 75,
+        "source": "art. 101.5.a LIRPF (redaccion Ley 31/2022)"
+      }
+    },
+
+    "actividades_economicas_otras": {
+      "agricolas_ganaderas": {
+        "description": "Actividades agricolas y ganaderas en general",
+        "rate_pct": 2,
+        "source": "art. 101.5.b LIRPF, art. 95.4 RIRPF"
+      },
+      "engorde_porcino_avicultura": {
+        "description": "Actividades de engorde de porcino y avicultura",
+        "rate_pct": 1,
+        "source": "art. 101.5.b LIRPF, art. 95.4 RIRPF"
+      },
+      "forestales": {
+        "description": "Actividades forestales",
+        "rate_pct": 2,
+        "source": "art. 101.5.c LIRPF, art. 95.5 RIRPF"
+      },
+      "estimacion_objetiva_modulos": {
+        "description": "Actividades empresariales en estimacion objetiva (modulos) — rendimientos a que se refiere art. 95.6 RIRPF",
+        "rate_pct": 1,
+        "source": "art. 101.5.d LIRPF, art. 95.6 RIRPF"
+      },
+      "derechos_imagen": {
+        "description": "Cesion de derechos de imagen o consentimiento para su uso (art. 75.2.b RIRPF)",
+        "rate_pct": 24,
+        "source": "art. 101.10 LIRPF, art. 92.8 RIRPF"
+      }
+    },
+
+    "capital_mobiliario": {
+      "general": {
+        "description": "Rendimientos del capital mobiliario en general (dividendos, intereses, seguros de vida, rentas vitalicias de capital mobiliario, etc.)",
+        "rate_pct": 19,
+        "source": "art. 101.4 LIRPF, art. 90 RIRPF"
+      },
+      "propiedad_intelectual_no_autor": {
+        "description": "Rendimientos procedentes de la propiedad intelectual cuando el contribuyente no sea el autor",
+        "rate_pct": 15,
+        "source": "art. 101.4 LIRPF"
+      },
+      "propiedad_industrial_asistencia_tecnica": {
+        "description": "Rendimientos procedentes de la propiedad industrial, prestacion de asistencia tecnica, arrendamiento de bienes muebles, negocios o minas",
+        "rate_pct": 19,
+        "source": "art. 101.9 LIRPF, art. 90 RIRPF"
+      }
+    },
+
+    "ganancias_patrimoniales": {
+      "fondos_inversion": {
+        "description": "Ganancias patrimoniales derivadas del reembolso o transmision de participaciones en fondos de inversion",
+        "rate_pct": 19,
+        "source": "art. 101.6 LIRPF, art. 97 RIRPF"
+      },
+      "premios": {
+        "description": "Premios en metalico derivados de juegos, concursos, rifas o combinaciones aleatorias",
+        "rate_pct": 19,
+        "source": "art. 101.7 LIRPF, art. 99 RIRPF"
+      },
+      "aprovechamientos_forestales": {
+        "description": "Ganancias patrimoniales por aprovechamientos forestales en montes publicos",
+        "rate_pct": 19,
+        "source": "art. 101.6 LIRPF"
+      },
+      "derechos_suscripcion": {
+        "description": "Transmision de derechos de suscripcion",
+        "rate_pct": 19,
+        "source": "art. 101.6 LIRPF"
+      }
+    },
+
+    "arrendamiento_inmuebles": {
+      "description": "Rendimientos procedentes del arrendamiento o subarrendamiento de inmuebles urbanos",
+      "rate_pct": 19,
+      "source": "art. 101.8 LIRPF, art. 100 RIRPF",
+      "note": "No aplica cuando la actividad del arrendador este clasificada como actividad economica en el IAE"
+    },
+
+    "imputacion_rentas_imagen": {
+      "description": "Imputacion de rentas por derechos de imagen (art. 92 LIRPF)",
+      "rate_pct": 19,
+      "source": "art. 92.8 LIRPF, art. 107 RIRPF"
+    }
+  },
+
+  "regularizacion": {
+    "title": "Regularizacion del tipo de retencion",
+    "source": "art. 87 RIRPF",
+    "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "description": "Procede regularizar (recalcular) el tipo de retencion cuando, en el curso del ano natural, se produzcan determinadas variaciones en las circunstancias personales, familiares o economicas del perceptor",
+
+    "circunstancias_regularizacion": [
+      {
+        "number": 1,
+        "description": "Si al cumplirse un ano de relacion laboral el trabajador continuase prestando servicios al mismo empleador, o reanude la relacion dentro del mismo ano natural"
+      },
+      {
+        "number": 2,
+        "description": "Si el perceptor de prestaciones de desempleo pasara a percibir el subsidio por desempleo, o reanude la prestacion"
+      },
+      {
+        "number": 3,
+        "description": "Si se produjera un aumento o disminucion de las retribuciones o gastos deducibles por disposicion general, convenio, sentencia judicial, promocion, cambio de puesto u otras circunstancias"
+      },
+      {
+        "number": 4,
+        "description": "Si el pensionista comenzase a percibir nuevas pensiones o se incrementasen las ya percibidas"
+      },
+      {
+        "number": 5,
+        "description": "Si el contribuyente cambiase de residencia por motivos laborales a nuevo municipio (movilidad geografica)"
+      },
+      {
+        "number": 6,
+        "description": "Si aumentase el numero de descendientes o variaran sus circunstancias, sobreviniera la condicion de discapacitado o aumentase su grado"
+      },
+      {
+        "number": 7,
+        "description": "Si por resolucion judicial quedase obligado a satisfacer una pension compensatoria al conyuge o anualidades por alimentos"
+      },
+      {
+        "number": 8,
+        "description": "Si el conyuge del contribuyente obtuviese rentas superiores a 1.500 EUR anuales (excluidas exentas)"
+      },
+      {
+        "number": 9,
+        "description": "Si el contribuyente cambiase su residencia de/a Ceuta-Melilla, Navarra, Pais Vasco u otro territorio"
+      },
+      {
+        "number": 10,
+        "description": "Si variaran las circunstancias de los ascendientes que afecten al minimo personal y familiar"
+      },
+      {
+        "number": 11,
+        "description": "Si el contribuyente comunicase que destina cantidades a la adquisicion o rehabilitacion de su vivienda habitual utilizando financiacion ajena"
+      }
+    ],
+
+    "procedimiento": {
+      "description": "Se calcula una nueva cuota previa de retencion segun el procedimiento del art. 82-85, teniendo en cuenta las circunstancias que motivan la regularizacion. Se minora dicha cuota por las retenciones ya practicadas. El resultado se divide entre la cuantia total de retribuciones pendientes de satisfacer y se expresa en porcentaje con dos decimales",
+      "source": "art. 87 RIRPF"
+    },
+
+    "limitaciones": {
+      "max_rate_pct": 47,
+      "max_rate_ceuta_melilla_pct": 19,
+      "cannot_increase_when": "Las regularizaciones por circunstancias que exclusivamente determinen una disminucion de la diferencia positiva entre la base para calcular el tipo de retencion y el minimo personal y familiar no pueden suponer un aumento del tipo de retencion",
+      "notification_deadline_days": 5,
+      "notification_note": "El trabajador debe comunicar las variaciones al pagador al menos 5 dias antes del procesamiento de la nomina",
+      "source": "art. 87 RIRPF"
+    }
+  },
+
+  "ceuta_melilla": {
+    "title": "Reduccion por residencia en Ceuta y Melilla",
+    "source": "art. 68.4 LIRPF, art. 80 RIRPF, art. 86 RIRPF, art. 101 LIRPF",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_1-cuadro-relacion-tipos-retencion-porcentaje.html",
+    "description": "Los tipos de retencion se reducen en un 60% cuando las rentas se hayan obtenido en Ceuta o Melilla y tengan derecho a la deduccion prevista en el art. 68.4 LIRPF",
+    "reduction_pct": 60,
+    "examples": [
+      {
+        "concept": "Profesionales (general 15%)",
+        "normal_pct": 15,
+        "ceuta_melilla_pct": 6
+      },
+      {
+        "concept": "Capital mobiliario (general 19%)",
+        "normal_pct": 19,
+        "ceuta_melilla_pct": 7.6
+      },
+      {
+        "concept": "Administradores (general 35%)",
+        "normal_pct": 35,
+        "ceuta_melilla_pct": 14
+      },
+      {
+        "concept": "Minimo contratos temporales (general 2%)",
+        "normal_pct": 2,
+        "ceuta_melilla_pct": 0.8
+      },
+      {
+        "concept": "Minimo relaciones laborales especiales (general 15%)",
+        "normal_pct": 15,
+        "ceuta_melilla_pct": 6
+      }
+    ]
+  },
+
+  "modelo_145": {
+    "title": "Modelo 145 — Comunicacion de datos al pagador (retenedor)",
+    "source": "art. 88 RIRPF, Resolucion DGT de 03-01-2011",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G603.shtml",
+    "form_pdf_url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Procedimiento_ayuda/G603/mod145_es_es.pdf",
+    "description": "Formulario mediante el cual el perceptor de rendimientos del trabajo comunica a su pagador (empresa/empleador) su situacion personal y familiar, para que este pueda calcular correctamente el tipo de retencion a practicar",
+    "tramitacion": "El interesado lo presenta directamente ante el pagador de las retribuciones. No se tramita electronicamente ante la AEAT",
+
+    "data_communicated": [
+      "NIF y datos identificativos del perceptor",
+      "Situacion familiar (1, 2 o 3)",
+      "Discapacidad del contribuyente (grado y movilidad reducida o ayuda terceras personas)",
+      "Datos de hijos y otros descendientes (fecha nacimiento, discapacidad, computo entero o por mitad)",
+      "Datos de ascendientes mayores de 65 anos o con discapacidad",
+      "Pensiones compensatorias a favor del conyuge y anualidades por alimentos a favor de los hijos",
+      "Pago por adquisicion o rehabilitacion de vivienda habitual con financiacion ajena (si aplica DT 18 LIRPF)"
+    ],
+
+    "obligation": "El trabajador esta obligado a comunicar al pagador su situacion personal y familiar al inicio de la relacion laboral, y a comunicar las variaciones que se produzcan posteriormente",
+
+    "consequences_false_data": {
+      "description": "La inclusion de datos falsos, incompletos o inexactos en esta comunicacion, asi como la falta de comunicacion de variaciones que hubieran determinado una retencion superior, constituye infraccion tributaria sancionable",
+      "penalty": "Multa pecuniaria proporcional del 35% al 150% de las cantidades que se hubieran dejado de retener",
+      "source": "art. 205 y 206 LGT"
+    }
+  },
+
+  "servicio_calculo_aeat": {
+    "title": "Servicio de calculo de retenciones IRPF de la AEAT",
+    "source": "AEAT — Departamento de Informatica Tributaria",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/descarga-programas-ayuda/retenciones/ejercicio-2025.html",
+    "simulator_url": "https://www2.agenciatributaria.gob.es/wlpl/PRET-R200/R250/index.zul",
+    "algorithm_pdf_url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2025/AlgoritmoRetenciones_2025__27-nov.pdf",
+    "web_service_spec_url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2025/espeSWRET_2025_v1.pdf",
+    "xml_schema_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/descarga-programas-ayuda/retenciones/ejercicio-2025.html",
+    "description": "La AEAT ofrece un servicio web de calculo de retenciones sobre rendimientos del trabajo que no requiere autenticacion. Desde 2025 solo esta disponible como servicio web (ya no como .JAR descargable). Vigente del 1 de enero al 26 de noviembre de 2025",
+    "note": "El algoritmo implementa el procedimiento de los arts. 82-87 RIRPF incluyendo todas las casuisticas: procedimiento general, regularizaciones, tipos minimos, Ceuta/Melilla, regimen de desplazados, pensiones, etc."
+  },
+
+  "pagos_fraccionados": {
+    "title": "Pagos fraccionados de actividades economicas",
+    "source": "art. 101.11 LIRPF",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_1-cuadro-relacion-tipos-retencion-porcentaje.html",
+    "note": "No son retenciones propiamente dichas sino autoliquidaciones trimestrales (Modelo 130/131), pero se incluyen por completitud",
+    "rates": [
+      {
+        "concept": "Estimacion directa (normal y simplificada)",
+        "rate_pct": 20,
+        "source": "art. 101.11 LIRPF"
+      },
+      {
+        "concept": "Estimacion objetiva — con 1 asalariado",
+        "rate_pct": 3,
+        "source": "art. 101.11 LIRPF"
+      },
+      {
+        "concept": "Estimacion objetiva — sin asalariados",
+        "rate_pct": 2,
+        "source": "art. 101.11 LIRPF"
+      },
+      {
+        "concept": "Estimacion objetiva — general",
+        "rate_pct": 4,
+        "source": "art. 101.11 LIRPF"
+      },
+      {
+        "concept": "Actividades agricolas, ganaderas, forestales y pesqueras",
+        "rate_pct": 2,
+        "source": "art. 101.11 LIRPF"
+      }
+    ]
+  },
+
+  "metadata": {
+    "total_sources_consulted": 12,
+    "primary_sources": [
+      {
+        "name": "RIRPF — Real Decreto 439/2007 (texto consolidado)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"
+      },
+      {
+        "name": "LIRPF — Ley 35/2006 (texto consolidado)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
+      },
+      {
+        "name": "RD 142/2024 (modificacion art. 81 y 83 RIRPF)",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2249"
+      },
+      {
+        "name": "Cuadro tipos retencion IRPF 2025 — AEAT",
+        "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2025/Cuadro_tipos_retenciones_IRPF2025.pdf"
+      },
+      {
+        "name": "Cuadro relacion tipos retencion — AEAT",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_1-cuadro-relacion-tipos-retencion-porcentaje.html"
+      },
+      {
+        "name": "Porcentajes de retencion aplicables — AEAT",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/irpf/retenciones-ingresos-cuenta-pagos-fraccionados/retenciones-ingresos-cuenta/porcentajes-retencion-aplicables-distintas-rentas.html"
+      },
+      {
+        "name": "Minimo personal y familiar cuantias — AEAT",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/minimo-personal-familiar/cuantias-minimos.html"
+      },
+      {
+        "name": "Modelo 145 — AEAT",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G603.shtml"
+      },
+      {
+        "name": "Algoritmo calculo retenciones 2025 — AEAT",
+        "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2025/AlgoritmoRetenciones_2025__27-nov.pdf"
+      },
+      {
+        "name": "Servicio calculo retenciones 2025 — AEAT",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/descarga-programas-ayuda/retenciones/ejercicio-2025.html"
+      },
+      {
+        "name": "Simulador retenciones IRPF 2025 — AEAT",
+        "url": "https://www2.agenciatributaria.gob.es/wlpl/PRET-R200/R250/index.zul"
+      },
+      {
+        "name": "Nota aclaratoria Modelo 145 — AEAT",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-145-irpf______tos-trabajo-comunicacion-pagador_/nota-aclaratoria.html"
+      }
+    ]
+  }
+}

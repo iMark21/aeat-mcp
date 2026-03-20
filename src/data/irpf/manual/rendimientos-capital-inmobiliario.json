@@ -1,0 +1,388 @@
+{
+  "chapter": 4,
+  "title": "Rendimientos del capital inmobiliario",
+  "year": 2025,
+  "verified_date": "2026-03-20",
+  "source": "AEAT Manual Practico Renta 2025 — Capitulo 4",
+  "legal_basis": "Arts. 22-25 Ley 35/2006 (LIRPF), Arts. 13-16 RD 439/2007 (RIRPF)",
+
+  "definition": {
+    "concept": "Rendimientos procedentes de la titularidad de bienes inmuebles rusticos y urbanos o de derechos reales que recaigan sobre ellos, derivados del arrendamiento o de la constitucion o cesion de derechos o facultades de uso o disfrute sobre aquellos.",
+    "includes": [
+      "Arrendamiento de inmuebles urbanos y rusticos",
+      "Constitucion o cesion de derechos de uso sobre inmuebles",
+      "Subarrendamiento (para el propietario, la participacion que le corresponda)",
+      "Cesion de derechos de traspaso (para el propietario)"
+    ],
+    "excludes": [
+      "Inmuebles afectos a actividades economicas del contribuyente",
+      "Arrendamiento de negocio (capital mobiliario, art. 25.4.c LIRPF)",
+      "Subarrendamiento — renta del subarrendatario se califica como capital mobiliario"
+    ],
+    "source_articles": ["art. 22 LIRPF", "art. 25.4.c LIRPF"]
+  },
+
+  "rendimientos_integros": {
+    "concept": "Importe total que por todos los conceptos deba satisfacer el adquirente, cesionario, arrendatario o subarrendatario, incluido el correspondiente a todos los bienes cedidos con el inmueble, excluido el IVA o IGIC.",
+    "casillas": {
+      "ingresos_integros": "0100-0102"
+    },
+    "rules": [
+      {
+        "rule": "Rentas no cobradas",
+        "detail": "Los alquileres impagados deben declararse como ingreso aunque no se hayan cobrado (principio de exigibilidad), salvo que se califiquen como saldo de dudoso cobro."
+      },
+      {
+        "rule": "Modificacion de renta",
+        "detail": "Si se pacta una nueva renta, las cantidades pactadas son los ingresos integros del periodo afectado."
+      },
+      {
+        "rule": "Aplazamiento pactado",
+        "detail": "Si las partes pactan un aplazamiento, no se computa ingreso durante el periodo aplazado."
+      }
+    ],
+    "source_articles": ["art. 22.2 LIRPF", "STS 1467/2021"]
+  },
+
+  "operaciones_vinculadas": {
+    "concept": "Cuando la cesion del inmueble se realice a una entidad vinculada (art. 18 LIS), el contribuyente debe valorar la operacion a valor de mercado.",
+    "market_value_definition": "Precio que habrian acordado personas o entidades independientes en condiciones de libre competencia.",
+    "documentation": "Obligaciones de documentacion segun arts. 13-16 del Reglamento del Impuesto sobre Sociedades (RD 634/2015).",
+    "source_articles": ["art. 41 LIRPF", "art. 18 Ley 27/2014 (LIS)"]
+  },
+
+  "gastos_deducibles": {
+    "principio_general": "Son deducibles todos los gastos necesarios para la obtencion de los rendimientos y las cantidades destinadas a la amortizacion del inmueble y demas bienes cedidos con este, siempre que respondan a su depreciacion efectiva.",
+    "exclusion_iva": "Los gastos deducibles se computan sin incluir el IVA o IGIC.",
+    "limitacion_temporal": "Unicamente son deducibles los gastos correspondientes al periodo de tiempo en que el inmueble este arrendado (STS 270/2021).",
+
+    "categories": [
+      {
+        "id": "intereses_financiacion",
+        "name": "Intereses y demas gastos de financiacion",
+        "description": "Intereses de capitales ajenos invertidos en la adquisicion o mejora del inmueble. Incluye primas de seguros de vida vinculados al prestamo hipotecario cuando sean condicion para su concesion.",
+        "casilla": "0103",
+        "limit": "Junto con gastos de conservacion y reparacion, no pueden exceder los rendimientos integros de cada bien o derecho.",
+        "carry_forward": "El exceso se puede deducir en los 4 ejercicios siguientes, con el mismo limite.",
+        "casilla_pending_prior": "0104",
+        "casilla_current_deductible": "0107",
+        "casilla_pending_future": "0108",
+        "exclusion": "No son deducibles los intereses del periodo anterior a la formalizacion del contrato de arrendamiento.",
+        "floor_clause_2025": "No son deducibles los intereses pagados en 2025 por clausulas suelo si se ha alcanzado acuerdo de devolucion, sentencia judicial o laudo arbitral antes del 30/06/2026.",
+        "source_articles": ["art. 23.1.a).1 LIRPF", "art. 13.a RIRPF"]
+      },
+      {
+        "id": "conservacion_reparacion",
+        "name": "Gastos de conservacion y reparacion",
+        "description": "Gastos de mantenimiento regular (pintura, reparaciones, arreglo de instalaciones) y sustitucion de elementos (calefaccion, ascensores, puertas de seguridad).",
+        "casilla": "0107",
+        "limit": "Junto con intereses, no pueden exceder los rendimientos integros de cada bien o derecho.",
+        "carry_forward": "El exceso se puede deducir en los 4 ejercicios siguientes.",
+        "excludes": "No son deducibles las cantidades destinadas a ampliacion o mejora (se activan como mayor valor de adquisicion).",
+        "distinction": "Conservacion = mantener vida util y capacidad productiva. Mejora = alterar el inmueble aumentando eficiencia productiva (Resolucion ICAC 1/03/2013).",
+        "source_articles": ["art. 23.1.a).1 LIRPF", "art. 13.a RIRPF"]
+      },
+      {
+        "id": "tributos_recargos",
+        "name": "Tributos, recargos y tasas",
+        "description": "Tributos y recargos no estatales, y tasas y recargos estatales. Incluye IBI, tasas de basuras, alumbrado, limpieza.",
+        "casilla": "0111",
+        "excludes": "No son deducibles las sanciones ni los recargos de caracter sancionador.",
+        "source_articles": ["art. 23.1.a).2 LIRPF", "art. 13.b RIRPF"]
+      },
+      {
+        "id": "saldos_dudoso_cobro",
+        "name": "Saldos de dudoso cobro",
+        "description": "Saldos adeudados por los arrendatarios cuando esten suficientemente justificados.",
+        "conditions": [
+          "Que el deudor este en situacion de concurso",
+          "Que hayan transcurrido mas de 6 meses entre la primera gestion de cobro y el fin del periodo impositivo sin que se haya producido renovacion del credito"
+        ],
+        "recovery_rule": "Si el saldo se cobra posteriormente, se computa como ingreso en el ejercicio del cobro.",
+        "prerequisite": "El saldo debe haberse incluido previamente como rendimiento integro del capital inmobiliario.",
+        "source_articles": ["art. 23.1.a).3 LIRPF", "art. 13.c RIRPF"]
+      },
+      {
+        "id": "seguros",
+        "name": "Primas de seguros",
+        "description": "Primas de contratos de seguro de responsabilidad civil, incendio, robo, rotura de cristales u otros de naturaleza analoga sobre los bienes o derechos productores de rendimientos.",
+        "casilla": "0127",
+        "source_articles": ["art. 23.1.a).2 LIRPF", "art. 13.d RIRPF"]
+      },
+      {
+        "id": "servicios_personales",
+        "name": "Servicios y suministros",
+        "description": "Gastos de administracion, vigilancia, porteria, jardineria y cuotas de la comunidad de propietarios.",
+        "casilla_servicios": "0119",
+        "casilla_comunidad": "0123",
+        "source_articles": ["art. 23.1.a).2 LIRPF", "art. 13.e RIRPF"]
+      },
+      {
+        "id": "suministros",
+        "name": "Suministros",
+        "description": "Agua, electricidad, gas, internet, solo si son soportados y pagados de forma efectiva por el arrendador.",
+        "casilla": "0131",
+        "note": "Si los paga el arrendatario, no son deducibles por el arrendador. Si se repercuten al arrendatario, son ingreso integro pero tambien gasto deducible.",
+        "source_articles": ["art. 23.1.a).2 LIRPF", "art. 13.f RIRPF"]
+      },
+      {
+        "id": "formalizacion_contrato",
+        "name": "Gastos de formalizacion de contrato",
+        "description": "Gastos de formalizacion del arrendamiento, subarrendamiento, cesion o constitucion de derechos.",
+        "source_articles": ["art. 23.1.a).2 LIRPF", "art. 13.f RIRPF"]
+      },
+      {
+        "id": "defensa_juridica",
+        "name": "Gastos de defensa juridica",
+        "description": "Gastos de defensa de caracter juridico relativos a los bienes, derechos o rendimientos.",
+        "source_articles": ["art. 23.1.a).2 LIRPF", "art. 13.g RIRPF"]
+      },
+      {
+        "id": "amortizacion",
+        "name": "Amortizacion del inmueble y bienes cedidos",
+        "description": "Cantidades destinadas a la amortizacion del inmueble y de los demas bienes cedidos con este, siempre que respondan a su depreciacion efectiva.",
+        "casillas": "0135-0148",
+        "rules": {
+          "inmuebles": {
+            "rate_percent": 3,
+            "base": "El mayor de: (a) coste de adquisicion satisfecho (sin incluir valor del suelo), o (b) valor catastral de la construccion (sin incluir valor del suelo).",
+            "acquisition_cost_onerous": "Precio de compra + gastos notariales, registro, IVA/ITP no deducible, agencia, etc.",
+            "acquisition_cost_gratuitous": "Valor declarado en ISD + gastos y tributos inherentes a la adquisicion.",
+            "accumulated_limit": "La amortizacion acumulada no puede exceder el valor de adquisicion del inmueble (arts. 35-36 LIRPF).",
+            "flexibility_range": "STS 1502/2025 (20/11): permite rango 1-3%."
+          },
+          "bienes_muebles": {
+            "description": "Mobiliario, instalaciones y enseres con vida util superior a un ano.",
+            "rate_percent": 10,
+            "table": "Tabla de amortizacion simplificada (Orden 27/03/1998)."
+          },
+          "derechos_duracion_determinada": {
+            "formula": "Coste de adquisicion / numero de anos de duracion del derecho."
+          },
+          "derechos_vitalicios": {
+            "rate_percent": 3,
+            "base": "Coste de adquisicion del derecho."
+          }
+        },
+        "source_articles": ["art. 23.1.b LIRPF", "arts. 13.h y 14 RIRPF", "STS 1130/2021", "STS 1502/2025"]
+      }
+    ],
+
+    "gastos_no_deducibles": [
+      {
+        "concept": "Pagos por siniestros",
+        "detail": "Cantidades destinadas a pagos por siniestros que supongan disminucion del valor del patrimonio."
+      },
+      {
+        "concept": "Mejoras",
+        "detail": "Cantidades destinadas a ampliacion o mejora del inmueble. Se recuperan via amortizacion como mayor valor de adquisicion.",
+        "source": "Resolucion ICAC 01/03/2013"
+      }
+    ]
+  },
+
+  "rendimiento_neto": {
+    "formula": "Rendimiento neto = Rendimientos integros - Gastos deducibles",
+    "casilla": "0149",
+    "note": "Puede ser negativo si los gastos superan los ingresos (excepto para intereses + conservacion, cuyo exceso se difiere).",
+    "source_articles": ["art. 23.1 LIRPF"]
+  },
+
+  "reducciones": {
+    "arrendamiento_vivienda": {
+      "concept": "Reduccion del rendimiento neto positivo por arrendamiento de inmuebles destinados a vivienda.",
+      "only_positive": true,
+      "requires_self_assessment": "Solo se aplica si se declara antes del inicio de un procedimiento de verificacion de datos, comprobacion limitada o inspeccion.",
+      "tourist_rental_excluded": true,
+
+      "contracts_from_2023_05_26": {
+        "description": "Contratos de arrendamiento de vivienda celebrados a partir del 26/05/2023 (entrada en vigor de la Ley 12/2023 de Vivienda).",
+        "reductions": [
+          {
+            "percent": 90,
+            "condition": "Nuevo contrato que sustituye a un contrato anterior sobre la misma vivienda en zona de mercado residencial tensionado, con reduccion de renta superior al 5% respecto al contrato anterior.",
+            "source": "art. 23.2 letra a) LIRPF"
+          },
+          {
+            "percent": 70,
+            "conditions": [
+              "Arrendatario entre 18 y 35 anos, primera vivienda alquilada del arrendador en zona tensionada",
+              "Arrendamiento a Administracion publica o entidad sin fines lucrativos para alquiler social o alojamiento de colectivos vulnerables"
+            ],
+            "source": "art. 23.2 letra b) LIRPF"
+          },
+          {
+            "percent": 60,
+            "condition": "Inmueble rehabilitado en los 2 anos anteriores a la celebracion del contrato.",
+            "rehabilitation_definition": "Segun apartado 1 del articulo 41 del RIRPF.",
+            "source": "art. 23.2 letra c) LIRPF"
+          },
+          {
+            "percent": 50,
+            "condition": "Reduccion general para cualquier arrendamiento de vivienda no incluido en los supuestos anteriores.",
+            "source": "art. 23.2 LIRPF"
+          }
+        ],
+        "zona_tensionada": {
+          "definition": "Zona de mercado residencial tensionado declarada por la administracion competente.",
+          "consultation": "mivau.gob.es"
+        }
+      },
+
+      "contracts_before_2023_05_26": {
+        "description": "Contratos celebrados antes del 26/05/2023.",
+        "reduction_percent": 60,
+        "source": "Disposicion transitoria Ley 12/2023"
+      },
+
+      "exclusions": [
+        "Arrendamiento turistico",
+        "Contratos que incumplan art. 17.6 LAU (renta superior al limite en zona tensionada)",
+        "Rentas no declaradas o gastos indebidamente deducidos descubiertos en procedimiento de comprobacion"
+      ],
+
+      "casillas": "0150-0153"
+    },
+
+    "rendimientos_irregulares": {
+      "concept": "Reduccion del 30% sobre rendimientos netos con periodo de generacion superior a 2 anos u obtenidos de forma notoriamente irregular en el tiempo, imputados a un unico periodo impositivo.",
+      "percent": 30,
+      "max_base_euros": 300000,
+      "irregular_types": [
+        "Cantidades obtenidas por traspaso o cesion de contrato de arrendamiento de locales de negocio",
+        "Indemnizaciones por danos en el inmueble",
+        "Derechos de uso o disfrute de caracter vitalicio"
+      ],
+      "proportional_distribution": "Si hay varios rendimientos irregulares del mismo tipo que superen 300.000 EUR, la reduccion maxima se distribuye proporcionalmente.",
+      "transitional_pre_2015": "Rendimientos percibidos fraccionadamente antes del 01/01/2015: se aplica si anos de generacion / periodos de fraccionamiento > 2.",
+      "source_articles": ["art. 23.3 LIRPF", "art. 15 RIRPF", "DT 25.a LIRPF"]
+    }
+  },
+
+  "rendimiento_minimo_computable_parentesco": {
+    "concept": "Cuando el adquirente, cesionario, arrendatario o subarrendatario sea el conyuge o un pariente (incluidos afines) hasta el tercer grado inclusive, el rendimiento neto total no puede ser inferior a la renta imputada que corresponderia al inmueble.",
+    "minimum": "Mayor de: (a) rendimiento neto reducido calculado, o (b) imputacion de rentas inmobiliarias que corresponderia (2% o 1.1% del valor catastral).",
+    "casilla": "0152",
+    "source_articles": ["art. 24 LIRPF", "art. 85 LIRPF"]
+  },
+
+  "rendimiento_neto_reducido": {
+    "formula": "Rendimiento neto reducido = Rendimiento neto - Reduccion vivienda - Reduccion irregulares",
+    "casilla": "0154",
+    "parentesco_check": "Para parentesco: el rendimiento neto reducido declarado no puede ser inferior a la imputacion de rentas inmobiliarias."
+  },
+
+  "individualizacion": {
+    "rule": "Los rendimientos del capital inmobiliario se atribuyen a los contribuyentes que sean titulares de los bienes inmuebles o de los derechos reales sobre los mismos.",
+    "usufruct": "Si existe usufructo, el rendimiento integro lo declara el usufructuario, no el nudo propietario.",
+    "co_ownership": "En copropiedad, cada titular declara la parte proporcional a su porcentaje de participacion.",
+    "gananciales": "En regimen de gananciales, los rendimientos de bienes comunes se atribuyen al 50% a cada conyuge.",
+    "proof_of_ownership": "A falta de prueba de titularidad, se considera titular a quien figure en registros fiscales u otros registros publicos.",
+    "source_articles": ["art. 11.3 LIRPF", "CC arts. 1346-1347"]
+  },
+
+  "imputacion_temporal": {
+    "general_rule": "Los rendimientos e ingresos se imputan al periodo impositivo en que resulten exigibles por su perceptor, independientemente del momento de cobro efectivo.",
+    "pending_judicial": "Rentas pendientes de resolucion judicial: se imputan al periodo en que la sentencia adquiera firmeza.",
+    "death": "En caso de fallecimiento, los rendimientos pendientes se integran en la base del ultimo periodo impositivo.",
+    "change_of_residence": "Rendimientos pendientes se imputan en la ultima declaracion como residente.",
+    "source_articles": ["art. 14.1.a LIRPF", "art. 14.2.a LIRPF", "art. 14.3 LIRPF", "art. 14.4 LIRPF"]
+  },
+
+  "imputacion_rentas_inmobiliarias": {
+    "concept": "Regimen especial para inmuebles urbanos no arrendados ni afectos a actividades economicas, excluida la vivienda habitual. Se imputa una renta presunta.",
+    "legal_basis": "art. 85 LIRPF",
+    "integration": "Base imponible general",
+    "no_deductible_expenses": true,
+    "no_withholding": true,
+
+    "applicable_properties": [
+      "Inmuebles urbanos no arrendados ni cedidos a terceros",
+      "Inmuebles rusticos con construcciones no indispensables para la explotacion agropecuaria o forestal",
+      "Derechos reales de aprovechamiento por turno sobre bienes inmuebles urbanos (si duracion > 2 semanas/ano)"
+    ],
+
+    "excluded_properties": [
+      "Vivienda habitual (incluye hasta 2 plazas de garaje adquiridas conjuntamente)",
+      "Vivienda asignada al ex-conyuge o hijos por separacion/divorcio (art. 96 CC)",
+      "Suelo no edificado",
+      "Inmuebles en construccion",
+      "Inmuebles que no sean susceptibles de uso por razones urbanisticas",
+      "Inmuebles ocupados ilegalmente (una vez iniciados procedimientos de desahucio, STS 910/2021)"
+    ],
+
+    "rates": {
+      "general": {
+        "percent": 2,
+        "base": "Valor catastral del inmueble (recibo IBI del ejercicio 2025)",
+        "applies_when": "Valor catastral no revisado desde 01/01/2012"
+      },
+      "revised": {
+        "percent": 1.1,
+        "base": "Valor catastral del inmueble",
+        "applies_when": "Valor catastral revisado mediante procedimiento de valoracion colectiva general con entrada en vigor a partir del 01/01/2012"
+      },
+      "no_catastral_value": {
+        "percent": 1.1,
+        "base": "50% del mayor de: (a) valor comprobado por la Administracion a efectos de otros tributos, o (b) precio o contraprestacion de adquisicion"
+      }
+    },
+
+    "proportional_rules": {
+      "partial_year": "Se prorratea por dias de disponibilidad efectiva del inmueble durante 2025.",
+      "partial_ownership": "Se aplica el porcentaje de titularidad del contribuyente."
+    },
+
+    "timeshare": {
+      "rule": "Mismos porcentajes sobre el valor catastral prorrateado por la duracion anual del derecho.",
+      "exclusion": "No procede imputacion si la duracion del aprovechamiento no excede de 2 semanas al ano."
+    },
+
+    "casillas": {
+      "proporcion_disponible": "0087",
+      "dias_computables": "0085",
+      "dias_simultaneos": "0086",
+      "dias_computables_simultaneo": "0088",
+      "renta_imputada": "0089",
+      "renta_imputada_resumen": "0155"
+    },
+
+    "source_articles": ["art. 85 LIRPF", "STS 910/2021"]
+  },
+
+  "retenciones": {
+    "general_rate_percent": 19,
+    "casilla": "0600",
+    "concept": "El arrendatario u obligado a retener practica retencion del 19% sobre los rendimientos del capital inmobiliario satisfechos.",
+    "exceptions": [
+      "Arrendamiento de vivienda habitual del arrendatario (exento de retencion)",
+      "Rentas satisfechas a contribuyentes acogidos a estimacion objetiva (modulos) por arrendamiento de inmuebles deducibles"
+    ],
+    "source_articles": ["art. 100 RIRPF"]
+  },
+
+  "casillas_summary": {
+    "0085": "Dias computables del inmueble no arrendado",
+    "0086": "Indicador uso simultaneo parcial",
+    "0087": "Proporcion del inmueble disponible (%)",
+    "0088": "Dias computables en uso simultaneo",
+    "0089": "Renta inmobiliaria imputada (por inmueble)",
+    "0100-0102": "Ingresos integros del arrendamiento",
+    "0103": "Gastos deducibles — intereses y gastos de financiacion",
+    "0104": "Exceso de intereses + conservacion pendiente de ejercicios anteriores (2021-2024)",
+    "0107": "Gastos deducibles — conservacion y reparacion (deducible en el ejercicio)",
+    "0108": "Exceso 2025 pendiente para ejercicios futuros",
+    "0111": "Gastos deducibles — tributos (IBI, tasas, etc.)",
+    "0119": "Gastos deducibles — servicios personales (administracion, vigilancia, porteria)",
+    "0123": "Gastos deducibles — cuotas comunidad de propietarios",
+    "0127": "Gastos deducibles — primas de seguros",
+    "0131": "Gastos deducibles — suministros (si los paga el arrendador)",
+    "0135-0148": "Gastos deducibles — amortizacion del inmueble y bienes cedidos",
+    "0149": "Rendimiento neto",
+    "0150-0153": "Reduccion por arrendamiento de vivienda habitual",
+    "0152": "Rendimiento minimo computable en caso de parentesco",
+    "0154": "Rendimiento neto reducido",
+    "0155": "Renta inmobiliaria imputada (total resumen)",
+    "0600": "Retenciones del capital inmobiliario"
+  }
+}

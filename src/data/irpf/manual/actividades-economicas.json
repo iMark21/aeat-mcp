@@ -1,0 +1,1199 @@
+{
+  "chapter": "Rendimientos de actividades economicas",
+  "chapter_numbers": [7, 8],
+  "year": 2025,
+  "source": "Manual Practico Renta 2025 -- AEAT (sede.agenciatributaria.gob.es) + Ley 35/2006 IRPF (boe.es)",
+  "source_urls": [
+    "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c07-rendimientos-actividades-economicas-estimacion-directa.html",
+    "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c08-rendimientos-actividades-economicas-eo-fores.html",
+    "https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad.html",
+    "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas.html",
+    "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
+  ],
+  "verified_date": "2026-03-20",
+  "legal_basis": "Arts. 27-32 Ley 35/2006 (LIRPF), Arts. 28-39 RD 439/2007 (RIRPF), Orden HFP/1823/2024 (modulos 2025)",
+
+  "definition": {
+    "concept": "Se consideran rendimientos integros de actividades economicas aquellos que, procediendo del trabajo personal y del capital conjuntamente, o de uno solo de estos factores, supongan por parte del contribuyente la ordenacion por cuenta propia de medios de produccion y de recursos humanos o de uno de ambos, con la finalidad de intervenir en la produccion o distribucion de bienes o servicios.",
+    "source": "art. 27.1 LIRPF",
+    "includes": [
+      "Actividades empresariales (comercio, industria, hosteleria, transporte, construccion, etc.)",
+      "Actividades profesionales (abogados, medicos, arquitectos, consultores, etc.)",
+      "Actividades artisticas y deportivas",
+      "Actividades agricolas, ganaderas y forestales"
+    ],
+    "special_rules": {
+      "arrendamiento_inmuebles": {
+        "concept": "El arrendamiento de inmuebles se califica como actividad economica cuando se cuente, al menos, con un local exclusivamente destinado a la gestion y una persona empleada con contrato laboral y a jornada completa para dicha gestion",
+        "source": "art. 27.2 LIRPF"
+      },
+      "socio_profesional": {
+        "concept": "Los rendimientos de socios de entidades que realicen actividades profesionales incluidas en la Seccion Segunda de las Tarifas del IAE se consideran rendimientos de actividades economicas cuando el socio este incluido en el RETA o en una mutualidad alternativa",
+        "source": "art. 27.1, parrafo 3, LIRPF"
+      }
+    }
+  },
+
+  "metodos_determinacion": {
+    "overview": "Existen tres metodos para determinar el rendimiento neto de actividades economicas: estimacion directa normal, estimacion directa simplificada y estimacion objetiva (modulos). La estimacion directa normal es el metodo general. La simplificada y la objetiva son voluntarias y requieren cumplir ciertos requisitos.",
+    "source": "arts. 16, 28-31 LIRPF",
+    "hierarchy": [
+      "Estimacion directa normal: metodo general, se aplica por defecto",
+      "Estimacion directa simplificada: se aplica si cifra de negocios < 600.000 EUR y no se renuncia",
+      "Estimacion objetiva (modulos): se aplica si la actividad esta incluida en la Orden y no se renuncia ni se superen los limites"
+    ],
+    "incompatibilities": {
+      "rule": "Si el contribuyente determina el rendimiento neto de alguna actividad por estimacion directa normal, debera determinar todas sus actividades por dicho metodo. La estimacion directa (normal o simplificada) es incompatible con la estimacion objetiva para un mismo contribuyente en el mismo periodo.",
+      "source": "art. 28 LIRPF"
+    }
+  },
+
+  "estimacion_directa": {
+    "normal": {
+      "ambito": {
+        "concept": "Se aplica con caracter general a todos los contribuyentes que realicen actividades economicas, salvo que esten acogidos a la modalidad simplificada o a la estimacion objetiva",
+        "obligatorio_cuando": [
+          "La cifra de negocios del conjunto de actividades supere 600.000 EUR en el ano anterior",
+          "Se haya renunciado a la modalidad simplificada",
+          "Se haya sido excluido de la modalidad simplificada en alguno de los 3 anos anteriores"
+        ],
+        "source": "arts. 28, 30 LIRPF"
+      },
+      "calculo": {
+        "base": "Normativa del Impuesto sobre Sociedades (LIS), con las especialidades previstas en la LIRPF",
+        "formula": "Rendimiento neto = Ingresos computables - Gastos deducibles",
+        "source": "art. 28.1 LIRPF"
+      },
+      "provisiones": {
+        "deductible": true,
+        "note": "En la modalidad normal, las provisiones fiscalmente deducibles se determinan conforme a la normativa del Impuesto sobre Sociedades (arts. 11-14 LIS)"
+      }
+    },
+    "simplificada": {
+      "ambito": {
+        "concept": "Se aplica a contribuyentes que cumplan los requisitos y no hayan renunciado ni esten excluidos",
+        "requisitos": [
+          "La cifra de negocios del conjunto de actividades no supere 600.000 EUR en el ano anterior",
+          "No estar acogido a la estimacion objetiva",
+          "No haber renunciado a esta modalidad",
+          "Ninguna actividad del contribuyente determine su rendimiento por estimacion directa normal"
+        ],
+        "renuncia": {
+          "plazo": "Diciembre del ano anterior (modelo 036/037) o al inicio de actividad",
+          "duracion": "Minimo 3 anos. Transcurridos, se entiende prorrogada tacitamente para cada ano siguiente salvo revocacion en diciembre",
+          "efecto": "Se aplica la modalidad normal"
+        },
+        "exclusion": {
+          "causa": "Superar 600.000 EUR de cifra de negocios",
+          "efecto": "Se aplica la modalidad normal en el ejercicio siguiente y los 3 siguientes"
+        },
+        "source": "art. 30 LIRPF, art. 28-29 RIRPF"
+      },
+      "diferencias_con_normal": [
+        "Amortizaciones: tabla simplificada especifica (Orden 27 marzo 1998), no las tablas del IS",
+        "Provisiones: NO son deducibles como tales. Se sustituyen por los gastos de dificil justificacion",
+        "Gastos de dificil justificacion: 5% del rendimiento neto positivo, con maximo de 2.000 EUR/ano",
+        "Contabilidad: no obligatoria (solo libros registro), salvo actividades mercantiles en normal"
+      ]
+    }
+  },
+
+  "ingresos_computables": {
+    "concept": "Constituyen ingresos integros de la actividad economica todos los que se deriven de las ventas, prestaciones de servicios y demas operaciones propias de la actividad",
+    "source": "art. 28.1 LIRPF, normativa IS",
+    "categories": [
+      {
+        "type": "Ingresos de explotacion",
+        "description": "Ventas de bienes, prestaciones de servicios y demas operaciones ordinarias de la actividad"
+      },
+      {
+        "type": "Autoconsumo",
+        "description": "Bienes o servicios de la actividad utilizados para necesidades privadas del titular o cesion gratuita. Se valoran a precio de mercado"
+      },
+      {
+        "type": "Subvenciones corrientes y de capital",
+        "description": "Ayudas publicas recibidas (las de capital se imputan segun amortizacion del bien financiado)"
+      },
+      {
+        "type": "Indemnizaciones",
+        "description": "Compensaciones recibidas por siniestros u otras causas"
+      },
+      {
+        "type": "Ingresos financieros de aplazamientos",
+        "description": "Intereses derivados de aplazamientos de cobros de la actividad"
+      },
+      {
+        "type": "Otros ingresos",
+        "description": "Variaciones de existencias positivas, excesos de amortizaciones de activos transmitidos, etc."
+      }
+    ]
+  },
+
+  "gastos_deducibles": {
+    "requisitos_generales": {
+      "concept": "Para que un gasto sea fiscalmente deducible debe cumplir tres condiciones simultaneamente",
+      "conditions": [
+        {
+          "name": "Vinculacion a la actividad",
+          "description": "El gasto debe estar vinculado a la actividad economica, siendo necesario para la obtencion de ingresos. Principio de correlacion ingresos-gastos."
+        },
+        {
+          "name": "Justificacion documental",
+          "description": "El gasto debe estar debidamente justificado, prioritariamente mediante factura que cumpla el reglamento de facturacion. Las facturas no son prueba absoluta; la Administracion puede exigir medios adicionales."
+        },
+        {
+          "name": "Registro contable",
+          "description": "El gasto debe estar registrado en la contabilidad o libros registro obligatorios."
+        }
+      ],
+      "source": "art. 28.1 LIRPF, normativa IS (Ley 27/2014)"
+    },
+    "categories": [
+      {
+        "number": 1,
+        "name": "Consumos de explotacion",
+        "description": "Compras de materias primas, mercaderias, materiales, combustibles, elementos y conjuntos incorporables, embalajes, envases y material de oficina. Se computan las compras netas mas/menos la variacion de existencias.",
+        "formula": "Consumos = Compras netas + Existencias iniciales - Existencias finales",
+        "source": "normativa IS, PGC"
+      },
+      {
+        "number": 2,
+        "name": "Sueldos y salarios",
+        "description": "Retribuciones al personal empleado: sueldos, pagas extraordinarias, retribuciones en especie, dietas, complementos salariales, indemnizaciones. Incluye contribuciones a planes de pensiones del empleado.",
+        "special_rules": {
+          "familiares": "Las retribuciones a conyuges e hijos menores que convivan con el titular y trabajen en la actividad son deducibles si: existe contrato laboral, estan afiliados a la SS, y la retribucion no excede el valor de mercado. La retribucion del conyuge/hijo no puede generar rendimiento neto negativo de la actividad."
+        },
+        "source": "art. 30.2.2a LIRPF"
+      },
+      {
+        "number": 3,
+        "name": "Seguridad Social a cargo de la empresa",
+        "description": "Cotizaciones empresariales a la Seguridad Social por los trabajadores empleados. Cuota patronal.",
+        "source": "normativa IS"
+      },
+      {
+        "number": 4,
+        "name": "Cotizaciones del titular (RETA)",
+        "description": "Cuotas a la Seguridad Social del propio autonomo (Regimen Especial de Trabajadores Autonomos). Desde 01-01-2023, las cotizaciones se basan en rendimientos netos anuales obtenidos.",
+        "rules": [
+          "Las cuotas del RETA son gasto deducible de la actividad",
+          "Si hay regularizacion posterior: cuotas adicionales = mayor gasto deducible del ejercicio siguiente; devoluciones = menor gasto deducible",
+          "En pluriactividad: unica inscripcion RETA, deducible contra rendimiento del trabajo o de la actividad"
+        ],
+        "source": "art. 30.2.1a LIRPF, RDL 13/2022"
+      },
+      {
+        "number": 5,
+        "name": "Mutualidades de Prevision Social",
+        "description": "Las cuotas a mutualidades de prevision social del titular NO son gasto deducible de la actividad, sino reduccion de la base imponible (Capitulo 13). Excepcion: profesionales no integrados en el RETA que coticen a una mutualidad alternativa al RETA.",
+        "exception": {
+          "concept": "Profesionales con mutualidad alternativa al RETA: deducible como gasto hasta la cuota maxima por contingencias comunes del RETA",
+          "limit_2024": "16.030,82 EUR/ano (0,283 x 4.720,50 x 12 meses)",
+          "source": "art. 30.2.1a LIRPF"
+        }
+      },
+      {
+        "number": 6,
+        "name": "Arrendamientos y canones",
+        "description": "Alquileres de locales, maquinaria, vehiculos y otros bienes afectos a la actividad. Canones y royalties. Si la vivienda habitual esta parcialmente afecta: deducible proporcionalmente (metros afectos / metros totales).",
+        "source": "normativa IS"
+      },
+      {
+        "number": 7,
+        "name": "Reparaciones y conservacion",
+        "description": "Gastos de mantenimiento, reparacion y conservacion de elementos afectos a la actividad. No incluye ampliaciones o mejoras (que se activan como mayor valor del inmovilizado).",
+        "source": "normativa IS"
+      },
+      {
+        "number": 8,
+        "name": "Servicios de profesionales independientes",
+        "description": "Honorarios de abogados, economistas, auditores, notarios, asesores fiscales y laborales, y otros profesionales independientes contratados para la actividad.",
+        "source": "normativa IS"
+      },
+      {
+        "number": 9,
+        "name": "Tributos fiscalmente deducibles",
+        "description": "Tributos y recargos no estatales, tasas, exacciones parafiscales, contribuciones especiales que afectan a la actividad y no tienen caracter sancionador.",
+        "deductible": [
+          "IAE (Impuesto sobre Actividades Economicas)",
+          "IBI (Impuesto sobre Bienes Inmuebles) del local o parte afecta de la vivienda",
+          "Tasas municipales (basuras, vado, etc.) del local",
+          "IVA soportado NO deducible en las liquidaciones de IVA (regimenes especiales)"
+        ],
+        "not_deductible": [
+          "IRPF (el propio impuesto)",
+          "IVA soportado que SI es deducible en las liquidaciones de IVA",
+          "Sanciones, multas y recargos de apremio",
+          "Recargos por declaracion extemporanea sin requerimiento previo"
+        ],
+        "note": "El IVA soportado en bienes de inversion que no sea deducible en IVA se capitaliza y se deduce via amortizacion (no como gasto directo).",
+        "source": "art. 15 LIS"
+      },
+      {
+        "number": 10,
+        "name": "Gastos financieros",
+        "description": "Intereses de prestamos y creditos destinados a financiar la actividad: descuento de efectos, prestamos bancarios, lineas de credito, intereses de aplazamientos de deudas tributarias vinculadas a la actividad.",
+        "limit": {
+          "general": "Los gastos financieros netos son deducibles con el limite del mayor de: 30% del beneficio operativo o 1.000.000 EUR",
+          "note": "Para actividades de duracion inferior al ano, el importe de 1.000.000 EUR se reduce proporcionalmente",
+          "source": "art. 16 LIS"
+        },
+        "source": "normativa IS"
+      },
+      {
+        "number": 11,
+        "name": "Amortizaciones",
+        "description": "Depreciacion del inmovilizado material, intangible e inversiones inmobiliarias afectos a la actividad. Ver seccion 'amortizaciones' para tablas y reglas detalladas.",
+        "see": "amortizaciones"
+      },
+      {
+        "number": 12,
+        "name": "Perdidas por deterioro de creditos (insolvencias)",
+        "description": "Perdidas por creditos total o parcialmente incobrables. Solo deducibles cuando concurra alguna de las siguientes circunstancias al cierre del ejercicio.",
+        "requirements_any_of": [
+          "Hayan transcurrido 6 meses desde el vencimiento de la obligacion",
+          "El deudor este declarado en concurso",
+          "El deudor este procesado por delito de alzamiento de bienes",
+          "Las obligaciones hayan sido reclamadas judicialmente o sean objeto de litigio"
+        ],
+        "not_deductible": [
+          "Creditos adeudados por entidades de derecho publico",
+          "Creditos afianzados o garantizados",
+          "Creditos de personas o entidades vinculadas (salvo insolvencia judicialmente declarada)"
+        ],
+        "source": "art. 13 LIS"
+      },
+      {
+        "number": 13,
+        "name": "Provisiones",
+        "description": "Solo deducibles en estimacion directa NORMAL. En simplificada, las provisiones se sustituyen por los gastos de dificil justificacion (5%, max 2.000 EUR).",
+        "deductible_normal": [
+          "Provisiones para actuaciones medioambientales (aprobadas por Administracion tributaria)",
+          "Provisiones para reparaciones y revisiones por garantias (limitadas al porcentaje historico de gastos de garantia sobre ventas)",
+          "Provisiones por devoluciones de ventas (con los mismos limites)",
+          "Contribuciones a planes de pensiones del personal",
+          "Contribuciones para cobertura de contingencias analogas a planes de pensiones"
+        ],
+        "not_deductible_normal": [
+          "Fondos internos para cubrir contingencias similares a pensiones",
+          "Dotaciones para obligaciones implicitas o tacitas",
+          "Provisiones por contratos onerosos",
+          "Provisiones para reestructuraciones (salvo obligaciones legales/contractuales)",
+          "Provisiones para riesgos de devoluciones de ventas",
+          "Provisiones para pagos basados en instrumentos de patrimonio"
+        ],
+        "simplified_replacement": "gastos_dificil_justificacion",
+        "source": "arts. 14, 14 bis LIS"
+      },
+      {
+        "number": 14,
+        "name": "Otros gastos deducibles",
+        "description": "Gastos no incluidos en categorias anteriores pero vinculados a la actividad.",
+        "includes": [
+          "Adquisicion de libros y suscripciones a revistas profesionales",
+          "Asistencia a cursos, conferencias y congresos relacionados con la actividad",
+          "Cuotas a corporaciones, camaras y asociaciones empresariales",
+          "Primas de seguros (responsabilidad civil, multiriesgo del local, enfermedad del titular y familia)",
+          "Publicidad, propaganda y relaciones publicas"
+        ],
+        "primas_seguros_enfermedad": {
+          "description": "Primas de seguro de enfermedad del titular, conyuge e hijos menores de 25 anos que convivan",
+          "limit": "500 EUR/persona/ano (1.500 EUR/persona con discapacidad)",
+          "source": "art. 30.2.5a LIRPF"
+        }
+      }
+    ],
+
+    "gastos_dificil_justificacion": {
+      "concept": "En la modalidad simplificada, las provisiones deducibles y los gastos de dificil justificacion se cuantifican exclusivamente aplicando un porcentaje sobre el rendimiento neto positivo (excluyendo este concepto), con un maximo anual.",
+      "percentage": {
+        "2023": "7%",
+        "2024_onwards": "5%"
+      },
+      "max_annual": "2.000 EUR",
+      "application": "Se aplica actividad por actividad, pero el limite de 2.000 EUR es conjunto para todas las actividades del contribuyente",
+      "joint_taxation": "En tributacion conjunta, el limite de 2.000 EUR es por unidad familiar",
+      "incompatibility": "Incompatible con la reduccion para autonomos economicamente dependientes o con unico cliente (art. 32.2.1o LIRPF). Si se aplica la reduccion TRADE, no se puede aplicar el 5%. El programa aplica la opcion mas favorable.",
+      "source": "art. 30.2.4a LIRPF, art. 30 RIRPF"
+    },
+
+    "suministros_vivienda": {
+      "concept": "Cuando la vivienda habitual se afecte parcialmente a la actividad economica, los gastos de suministros son deducibles aplicando el 30% sobre la proporcion de metros cuadrados afectos.",
+      "effective_date": "01-01-2018 (Ley 6/2017 de Reformas Urgentes del Trabajo Autonomo)",
+      "formula": "Gasto deducible = Gasto total x (m2 afectos / m2 totales) x 30%",
+      "supplies_covered": [
+        "agua",
+        "gas",
+        "electricidad",
+        "telefonia fija y movil",
+        "Internet"
+      ],
+      "example": {
+        "home_total_m2": 100,
+        "home_business_m2": 40,
+        "proportion": "40%",
+        "annual_supply_cost": 5000,
+        "deduction_rate": "30% x 40% = 12%",
+        "deductible_amount": 600
+      },
+      "distinction_from_ownership_expenses": {
+        "concept": "Los gastos derivados de la titularidad de la vivienda (IBI, comunidad de propietarios, amortizacion, seguro del inmueble) se deducen en proporcion directa a los metros afectos, sin aplicar el 30% adicional.",
+        "formula_ownership": "Gasto deducible = Gasto total x (m2 afectos / m2 totales)",
+        "note": "La vivienda habitual puede afectarse parcialmente, pero NO los dormitorios, banos ni zonas comunes de paso."
+      },
+      "source": "art. 30.2.5a.b) LIRPF"
+    },
+
+    "gastos_manutencion_titular": {
+      "concept": "Gastos de manutencion del propio titular de la actividad incurridos en el desarrollo de la actividad, siempre que se produzcan en establecimientos de restauracion y hosteleria y se abonen por medios electronicos.",
+      "limits_per_day": {
+        "spain_with_overnight": "53,34 EUR/dia",
+        "spain_no_overnight": "26,67 EUR/dia",
+        "abroad_with_overnight": "91,35 EUR/dia",
+        "abroad_no_overnight": "48,08 EUR/dia"
+      },
+      "requirements": [
+        "Producirse en municipio distinto al del domicilio del contribuyente y al del lugar de trabajo",
+        "Pago con tarjeta u otro medio electronico",
+        "En establecimiento de restauracion y hosteleria",
+        "Factura o justificante"
+      ],
+      "source": "art. 30.2.5a.c) LIRPF (Ley 6/2017)"
+    },
+
+    "gastos_no_deducibles": {
+      "concept": "Gastos que en ningun caso tienen la consideracion de fiscalmente deducibles",
+      "items": [
+        {
+          "name": "Retribucion del capital propio",
+          "description": "Distribuciones que representen retribucion de los fondos propios del contribuyente"
+        },
+        {
+          "name": "Multas, sanciones y recargos",
+          "description": "Sanciones administrativas y penales, recargos de apremio y recargos por declaracion extemporanea"
+        },
+        {
+          "name": "Perdidas del juego",
+          "description": "Perdidas derivadas de actividades de juego y apuestas"
+        },
+        {
+          "name": "Donativos y liberalidades",
+          "description": "Donaciones y regalos no correlacionados con ingresos. Excepcion: atenciones a clientes y proveedores (limite 1% cifra neta de negocios) y obsequios promocionales"
+        },
+        {
+          "name": "Gastos de actividades contrarias al ordenamiento juridico",
+          "description": "Gastos derivados de actuaciones contrarias a la ley"
+        },
+        {
+          "name": "Operaciones con paraisos fiscales",
+          "description": "Gastos de servicios con personas o entidades en jurisdicciones no cooperativas, salvo prueba de operacion real"
+        },
+        {
+          "name": "IRPF del contribuyente",
+          "description": "El propio Impuesto sobre la Renta no es gasto deducible"
+        },
+        {
+          "name": "IVA deducible",
+          "description": "El IVA soportado que es deducible en las liquidaciones de IVA no es gasto deducible en IRPF"
+        },
+        {
+          "name": "Indemnizaciones por extincion laboral excesivas",
+          "description": "Que excedan de 1.000.000 EUR o del importe obligatorio legalmente"
+        }
+      ],
+      "source": "art. 15 LIS, art. 15 bis LIS"
+    }
+  },
+
+  "amortizaciones": {
+    "concept": "Las amortizaciones constituyen un gasto deducible que refleja la depreciacion efectiva del inmovilizado material, intangible e inversiones inmobiliarias afectos a la actividad economica.",
+
+    "normal_mode": {
+      "method": "Se aplican las tablas de amortizacion del Impuesto sobre Sociedades (Anexo LIS). Se puede elegir entre los metodos de amortizacion de la LIS: lineal segun tablas, porcentaje constante, numeros digitos, plan de amortizacion aprobado por la Administracion, o segun depreciacion efectivamente justificada.",
+      "source": "arts. 12-13 LIS"
+    },
+
+    "simplified_mode": {
+      "method": "En la modalidad simplificada, las amortizaciones del inmovilizado material se practican exclusivamente de forma lineal segun la tabla simplificada (Orden 27 marzo 1998). Para inmovilizado intangible, se aplican las normas del IS.",
+      "table": {
+        "title": "Tabla de amortizacion simplificada (Orden 27 marzo 1998)",
+        "source": "art. 30.1a RIRPF, Orden 27-03-1998",
+        "groups": [
+          {
+            "group": 1,
+            "description": "Edificios y otras construcciones",
+            "max_coefficient_pct": 3,
+            "max_period_years": 68
+          },
+          {
+            "group": 2,
+            "description": "Instalaciones, mobiliario, enseres y resto del inmovilizado material",
+            "max_coefficient_pct": 10,
+            "max_period_years": 20
+          },
+          {
+            "group": 3,
+            "description": "Maquinaria",
+            "max_coefficient_pct": 12,
+            "max_period_years": 18
+          },
+          {
+            "group": 4,
+            "description": "Elementos de transporte",
+            "max_coefficient_pct": 16,
+            "max_period_years": 14
+          },
+          {
+            "group": 5,
+            "description": "Equipos para tratamiento de la informacion y sistemas y programas informaticos",
+            "max_coefficient_pct": 26,
+            "max_period_years": 10
+          },
+          {
+            "group": 6,
+            "description": "Utiles y herramientas",
+            "max_coefficient_pct": 30,
+            "max_period_years": 8
+          },
+          {
+            "group": 7,
+            "description": "Ganado vacuno, porcino, ovino y caprino",
+            "max_coefficient_pct": 16,
+            "max_period_years": 14
+          },
+          {
+            "group": 8,
+            "description": "Ganado equino y frutales no citricos",
+            "max_coefficient_pct": 8,
+            "max_period_years": 25
+          },
+          {
+            "group": 9,
+            "description": "Frutales citricos y vinedos",
+            "max_coefficient_pct": 4,
+            "max_period_years": 50
+          },
+          {
+            "group": 10,
+            "description": "Olivar",
+            "max_coefficient_pct": 2,
+            "max_period_years": 100
+          }
+        ],
+        "rules": [
+          "Se puede aplicar cualquier coeficiente entre el minimo (derivado del periodo maximo) y el maximo de la tabla",
+          "La amortizacion se inicia desde la puesta en funcionamiento del elemento",
+          "Se excluye el valor residual de la base amortizable",
+          "Para activos usados: el coeficiente maximo aplicable es el doble del fijado en la tabla"
+        ]
+      }
+    },
+
+    "freedom_of_amortization": {
+      "concept": "Supuestos en los que se permite la amortizacion libre (deducir la totalidad del coste en un solo ejercicio o en los que se desee).",
+      "cases": [
+        "Activos cuyo valor unitario no exceda de 300 EUR, con limite global de 25.000 EUR/ano",
+        "Empresas de reducida dimension con creacion de empleo (activos nuevos puestos a disposicion en periodos con incremento medio de plantilla respecto a los 12 meses anteriores)",
+        "Elementos de inmovilizado material nuevos para vehiculos electricos e infraestructuras de recarga (desde 2024)"
+      ],
+      "source": "art. 12.3 LIS, arts. 101-102 LIS"
+    },
+
+    "empresas_reducida_dimension": {
+      "concept": "Incentivos fiscales aplicables a empresas cuya cifra de negocios en el periodo anterior sea inferior a 10 millones de euros",
+      "amortizacion_acelerada": {
+        "description": "Los elementos nuevos del inmovilizado material y de las inversiones inmobiliarias, asi como los intangibles, pueden amortizarse multiplicando por 2 el coeficiente maximo de la tabla",
+        "source": "art. 103 LIS"
+      },
+      "libertad_amortizacion_empleo": {
+        "description": "Libertad de amortizacion para elementos nuevos de inmovilizado material e inversiones inmobiliarias puestos a disposicion en periodos con creacion de empleo (incremento medio de plantilla)",
+        "source": "art. 102 LIS"
+      },
+      "insolvencias": {
+        "description": "Provision global por insolvencias de deudores: deducible hasta el 1% sobre saldo de deudores al cierre del ejercicio (excluidos los individualmente dotados y los con administraciones publicas)",
+        "source": "art. 104 LIS"
+      },
+      "source": "arts. 101-106 LIS, aplicables por remision art. 28.1 LIRPF"
+    }
+  },
+
+  "rendimiento_neto_reducido": {
+    "phase_2": {
+      "concept": "Fase 2a: Determinacion del rendimiento neto reducido. Se aplican reducciones por rendimientos con periodo de generacion superior a 2 anos o obtenidos de forma notoriamente irregular.",
+      "reduccion_irregulares": {
+        "percentage": 30,
+        "max_base": 300000,
+        "applies_to": [
+          "Rendimientos netos cuyo periodo de generacion sea superior a 2 anos, cuando se imputen en un unico periodo impositivo",
+          "Rendimientos netos obtenidos de forma notoriamente irregular en el tiempo"
+        ],
+        "notoriamente_irregular": [
+          "Subvenciones de capital para la adquisicion de elementos del inmovilizado no amortizables",
+          "Indemnizaciones y ayudas por cese de actividades economicas",
+          "Premios literarios, artisticos o cientificos que no gocen de exencion",
+          "Indemnizaciones percibidas en sustitucion de derechos economicos de duracion indefinida"
+        ],
+        "exclusion": "No se aplica cuando los rendimientos se obtengan de forma regular o habitual en la actividad",
+        "multiple_items": "Cuando la suma de rendimientos irregulares exceda de 300.000 EUR, la reduccion se distribuye proporcionalmente",
+        "source": "art. 32.1 LIRPF"
+      }
+    }
+  },
+
+  "rendimiento_neto_reducido_total": {
+    "phase_3": {
+      "concept": "Fase 3a: Determinacion del rendimiento neto reducido total. Se aplican reducciones adicionales para determinados contribuyentes.",
+
+      "reduccion_TRADE": {
+        "name": "Reduccion para trabajadores autonomos economicamente dependientes o con unico cliente no vinculado",
+        "general_amount": 2000,
+        "additional_amounts": {
+          "condition": "Rendimientos netos de actividades economicas < 19.747,50 EUR y restantes rentas no exentas (excluidas las de la actividad) <= 6.500 EUR",
+          "amounts": [
+            {
+              "net_income_up_to": 14047.50,
+              "additional_reduction": 6498,
+              "total_max_reduction": 8498
+            },
+            {
+              "net_income_range": "14.047,50 - 19.747,50 EUR",
+              "formula": "6.498 - 1,14 x (Rendimiento neto actividades - 14.047,50)",
+              "total_reduction": "2.000 + resultado formula"
+            }
+          ]
+        },
+        "disability_increment": {
+          "standard": "3.500 EUR/ano (grado >= 33%)",
+          "enhanced": "7.750 EUR/ano (grado >= 65% o necesidad de tercera persona o movilidad reducida)"
+        },
+        "incompatibilities": [
+          "Incompatible con gastos de dificil justificacion del 5% (simplificada). Se aplica la opcion mas favorable.",
+          "Incompatible con la reduccion por rentas inferiores a 12.000 EUR"
+        ],
+        "source": "art. 32.2.1o LIRPF"
+      },
+
+      "reduccion_bajos_ingresos": {
+        "name": "Reduccion para contribuyentes con rentas no exentas inferiores a 12.000 EUR",
+        "amounts": [
+          {
+            "total_income_up_to": 8000,
+            "reduction": 1620
+          },
+          {
+            "total_income_range": "8.000,01 - 12.000 EUR",
+            "formula": "1.620 - 0,405 x (Rentas - 8.000)"
+          }
+        ],
+        "limit": "El rendimiento neto reducido total no puede ser negativo como consecuencia de esta reduccion",
+        "incompatibility": "Incompatible con la reduccion TRADE",
+        "source": "art. 32.2.2o LIRPF"
+      },
+
+      "reduccion_inicio_actividad": {
+        "name": "Reduccion en el rendimiento neto por inicio de actividad economica",
+        "percentage": 20,
+        "max_base": 100000,
+        "duration": "Se aplica en el primer periodo impositivo en que el rendimiento neto sea positivo y en el siguiente",
+        "requirements": [
+          "Iniciar una actividad economica y determinar su rendimiento neto por el metodo de estimacion directa",
+          "Inicio posterior al 01-01-2013",
+          "No haber ejercido actividad economica alguna en el ano anterior al inicio"
+        ],
+        "exclusion": "No se aplica cuando mas del 50% de los ingresos proceda de una persona o entidad de la que el contribuyente hubiera obtenido rendimientos del trabajo en el ano anterior al inicio",
+        "source": "art. 32.3 LIRPF"
+      }
+    }
+  },
+
+  "estimacion_objetiva": {
+    "concept": "Metodo de determinacion del rendimiento neto de ciertas actividades economicas basado en datos objetivos (modulos, signos e indices) en lugar de en ingresos y gastos reales.",
+    "source": "art. 31 LIRPF, art. 32-39 RIRPF",
+
+    "ambito_aplicacion": {
+      "requisitos": [
+        "La actividad debe estar incluida en la Orden ministerial anual (Orden HFP/1823/2024 para 2025)",
+        "No haber renunciado a su aplicacion (renuncia en diciembre via 036/037, minimo 3 anos)",
+        "No haber renunciado o estar excluido del regimen simplificado de IVA o del REAGP",
+        "No realizar actividades parcialmente fuera de Espana (excepto transporte urbano colectivo, taxis, transporte de mercancias y mudanzas)",
+        "No superar las magnitudes especificas de cada actividad fijadas en la Orden"
+      ],
+      "limits": {
+        "note": "Limites transitorios vigentes 2016-2026 (prorrogados sucesivamente)",
+        "non_agricultural": {
+          "total_revenue": "250.000 EUR/ano (volumen de rendimientos integros en el ano anterior para el conjunto de actividades economicas)",
+          "invoiced_revenue": "125.000 EUR/ano (volumen de rendimientos integros correspondientes a operaciones por las que esten obligados a expedir factura cuando el destinatario sea empresario o profesional)",
+          "purchases": "250.000 EUR/ano (volumen de compras en bienes y servicios, excluidas adquisiciones de inmovilizado)"
+        },
+        "agricultural": {
+          "total_revenue": "250.000 EUR/ano"
+        },
+        "excluded_from_revenue": [
+          "Subvenciones corrientes y de capital",
+          "Indemnizaciones",
+          "IVA repercutido y recargo de equivalencia",
+          "Desde 2025: compensaciones del regimen especial de agricultura, ganaderia y pesca (IVA)"
+        ]
+      },
+      "aggregation_rule": "Se computan no solo las operaciones del contribuyente sino tambien las del conyuge, descendientes y ascendientes cuando las actividades sean identicas (mismo grupo IAE) y exista direccion comun con medios compartidos."
+    },
+
+    "calculation_non_agricultural": {
+      "phases": [
+        {
+          "phase": 1,
+          "name": "Rendimiento neto previo",
+          "formula": "Suma de (unidades de modulo x rendimiento anual por unidad de modulo)",
+          "modules": "Personal asalariado, personal no asalariado, superficie del local, consumo de energia electrica, longitud de barra, mesas, maquinas recreativas, vehiculos, potencia electrica, etc. Varia segun actividad."
+        },
+        {
+          "phase": 2,
+          "name": "Rendimiento neto minorado",
+          "formula": "Rendimiento neto previo - Minoraciones (incentivos al empleo + incentivos a la inversion)",
+          "minoraciones": {
+            "empleo": "Reduccion por incremento de personal asalariado respecto al ano anterior",
+            "inversion": "Amortizacion del inmovilizado segun tabla de modulos"
+          }
+        },
+        {
+          "phase": 3,
+          "name": "Rendimiento neto de modulos",
+          "formula": "Rendimiento neto minorado x Indices correctores",
+          "indices_correctores": [
+            "Indice corrector especial (actividades de temporada)",
+            "Indice corrector de exceso (si indice de cuota de IRPF supera limite)",
+            "Indice corrector por inicio de actividad: 0,80 (primer ano), 0,90 (segundo ano)",
+            "Indice corrector de pequenas empresas (personal <= 2 unidades modulo asalariado)",
+            "Otros indices especificos por actividad"
+          ]
+        },
+        {
+          "phase": 4,
+          "name": "Rendimiento neto de la actividad",
+          "formula": "Rendimiento neto de modulos - Reducciones generales y especiales + Otros ingresos actividad",
+          "general_reduction": {
+            "2022": "15%",
+            "2023": "10%",
+            "2024_onwards": "5%"
+          },
+          "special_reductions": [
+            {
+              "name": "Lorca",
+              "percentage": "20%",
+              "vigencia": "hasta 2024"
+            },
+            {
+              "name": "La Palma",
+              "percentage": "20%",
+              "vigencia": "2022-2024"
+            },
+            {
+              "name": "Municipios afectados DANA",
+              "percentage": "25%",
+              "vigencia": "2024"
+            },
+            {
+              "name": "Gastos extraordinarios",
+              "description": "Por incendios, inundaciones, hundimientos u otras circunstancias excepcionales comunicadas a la Administracion en tiempo y forma"
+            }
+          ],
+          "other_income": "Se suman otros ingresos de la actividad (subvenciones corrientes, indemnizaciones, prestacion por cese de actividad, etc.)"
+        },
+        {
+          "phase": 5,
+          "name": "Rendimiento neto reducido de la actividad",
+          "formula": "Rendimiento neto de la actividad - Reduccion por rendimientos irregulares (30%, max 300.000 EUR)"
+        }
+      ]
+    },
+
+    "calculation_agricultural": {
+      "phases": [
+        {
+          "phase": 1,
+          "name": "Rendimiento neto previo",
+          "formula": "Ingresos totales x Indice de rendimiento neto (varia segun producto)",
+          "note": "Cuando las ayudas PAC sean el unico ingreso, el indice es 0,56. Desde 2023, si los ingresos agricolas no PAC son <25% del total, el indice 0,56 se aplica al todo; en otro caso, se aplica por agregacion."
+        },
+        {
+          "phase": 2,
+          "name": "Rendimiento neto minorado",
+          "formula": "Rendimiento neto previo - Minoraciones",
+          "minoraciones": [
+            "2022-2024: 35% del coste de adquisicion de gasoleo agricola",
+            "2022-2024: 15% del coste de adquisicion de fertilizantes",
+            "Amortizacion del inmovilizado (excepto silvicultura)"
+          ]
+        },
+        {
+          "phase": 3,
+          "name": "Rendimiento neto de modulos",
+          "formula": "Rendimiento neto minorado x Indices correctores"
+        },
+        {
+          "phase": 4,
+          "name": "Rendimiento neto de la actividad",
+          "formula": "Rendimiento neto de modulos - Reducciones",
+          "general_reduction": {
+            "2022": "25%",
+            "2023": "15%",
+            "2024_onwards": "5%"
+          },
+          "young_farmer_reduction": "25% adicional para agricultores jovenes (condiciones especificas)"
+        },
+        {
+          "phase": 5,
+          "name": "Rendimiento neto reducido",
+          "formula": "Rendimiento neto de la actividad - Reduccion por rendimientos irregulares (30%, max 300.000 EUR)"
+        }
+      ]
+    }
+  },
+
+  "pagos_fraccionados": {
+    "concept": "Los contribuyentes que ejerzan actividades economicas estan obligados, con caracter general, a efectuar pagos fraccionados a cuenta del IRPF trimestralmente.",
+    "source": "art. 99.7 LIRPF, arts. 109-112 RIRPF",
+
+    "modelo_130": {
+      "name": "Pago fraccionado - Estimacion directa (normal y simplificada)",
+      "who": "Empresarios y profesionales que determinen su rendimiento neto por el metodo de estimacion directa (normal o simplificada)",
+      "exemption": "Profesionales cuyas retenciones en el ano anterior representen al menos el 70% de los ingresos integros de la actividad profesional",
+      "calculation": {
+        "general": {
+          "rate": "20%",
+          "base": "Rendimiento neto acumulado desde el 1 de enero hasta el ultimo dia del trimestre",
+          "deductions": [
+            "Pagos fraccionados de trimestres anteriores del mismo ejercicio",
+            "Retenciones e ingresos a cuenta soportados desde el 1 de enero"
+          ]
+        },
+        "agricultural_livestock_forestry": {
+          "rate": "2%",
+          "base": "Volumen de ingresos del trimestre (excluidas subvenciones de capital e indemnizaciones)"
+        }
+      },
+      "low_income_deduction": {
+        "prior_year_net_income_up_to_9000": "Deduccion de 100 EUR del pago fraccionado",
+        "prior_year_net_income_9000_to_10000": "Deduccion de 75 EUR",
+        "prior_year_net_income_10000_to_11000": "Deduccion de 50 EUR",
+        "prior_year_net_income_11000_to_12000": "Deduccion de 25 EUR"
+      },
+      "mortgage_deduction": {
+        "description": "Deduccion por adquisicion de vivienda habitual con financiacion ajena (regimen transitorio, anterior a 01-01-2013)",
+        "rate": "2% del rendimiento neto acumulado",
+        "max_quarterly": "660,14 EUR"
+      }
+    },
+
+    "modelo_131": {
+      "name": "Pago fraccionado - Estimacion objetiva (modulos)",
+      "who": "Empresarios que determinen su rendimiento neto por el metodo de estimacion objetiva",
+      "calculation": {
+        "non_agricultural": {
+          "description": "Porcentaje del rendimiento neto calculado segun modulos (datos a 1 de enero)",
+          "rates": {
+            "general": "4%",
+            "one_or_more_employees": "3%",
+            "no_employees": "2%"
+          }
+        },
+        "agricultural_livestock_forestry": {
+          "rate": "2%",
+          "base": "Volumen de ingresos del trimestre"
+        }
+      }
+    },
+
+    "deadlines": {
+      "Q1": "1-20 abril",
+      "Q2": "1-20 julio",
+      "Q3": "1-20 octubre",
+      "Q4": "1-30 enero del ano siguiente"
+    },
+
+    "territorial_reductions": {
+      "ceuta_melilla": "60% de reduccion en los porcentajes de pago fraccionado",
+      "la_palma": "60% de reduccion (2022-2024)"
+    }
+  },
+
+  "retenciones": {
+    "concept": "Los rendimientos de actividades economicas estan sujetos, en determinados casos, a retencion o ingreso a cuenta por parte del pagador.",
+    "source": "art. 99 LIRPF, arts. 95, 101 RIRPF",
+
+    "tipos": [
+      {
+        "category": "Actividades profesionales (general)",
+        "rate_pct": 15,
+        "source": "art. 101.5.a) LIRPF"
+      },
+      {
+        "category": "Actividades profesionales (inicio actividad: ano de inicio + 2 siguientes)",
+        "rate_pct": 7,
+        "note": "El profesional debe comunicar al pagador que se encuentra en periodo de inicio",
+        "source": "art. 101.5.a) LIRPF"
+      },
+      {
+        "category": "Determinadas actividades profesionales de bajo rendimiento (recaudadores municipales, mediadores de seguros con nivel de comisiones bajo, delegados comerciales de Loterias)",
+        "rate_pct": 7,
+        "source": "art. 95.1 RIRPF"
+      },
+      {
+        "category": "Actividades empresariales en estimacion objetiva (cuando obligados a retener por su actividad IAE)",
+        "rate_pct": 1,
+        "source": "art. 101.5.b) LIRPF"
+      },
+      {
+        "category": "Actividades agricolas, ganaderas y forestales (general)",
+        "rate_pct": 2,
+        "source": "art. 101.5.d) LIRPF"
+      },
+      {
+        "category": "Actividades ganaderas de engorde de porcino y avicultura",
+        "rate_pct": 1,
+        "source": "art. 101.5.d) LIRPF"
+      },
+      {
+        "category": "Actividades forestales",
+        "rate_pct": 2,
+        "source": "art. 101.5.d) LIRPF"
+      },
+      {
+        "category": "Propiedad intelectual, industrial, asistencia tecnica (artistas, autores)",
+        "rate_pct": 15,
+        "source": "art. 101.4 LIRPF"
+      },
+      {
+        "category": "Derechos de imagen profesional",
+        "rate_pct": 24,
+        "source": "art. 101.4 LIRPF"
+      },
+      {
+        "category": "Arrendamiento de bienes inmuebles urbanos",
+        "rate_pct": 19,
+        "source": "art. 101.2 LIRPF"
+      }
+    ],
+
+    "ceuta_melilla_reduction": "Los tipos se reducen en un 60% para rendimientos obtenidos en Ceuta y Melilla",
+
+    "models": {
+      "model_111": {
+        "name": "Retenciones e ingresos a cuenta del IRPF sobre rendimientos del trabajo y de actividades economicas",
+        "periodicity": "Trimestral (abril, julio, octubre, enero). Mensual para grandes empresas.",
+        "deadline": "Primeros 20 dias del mes siguiente al trimestre (30 enero para Q4)"
+      },
+      "model_115": {
+        "name": "Retenciones e ingresos a cuenta sobre rentas o rendimientos procedentes del arrendamiento o subarrendamiento de inmuebles urbanos",
+        "periodicity": "Trimestral (mismos plazos que modelo 111)"
+      },
+      "model_190": {
+        "name": "Resumen anual de retenciones e ingresos a cuenta sobre rendimientos del trabajo y actividades economicas",
+        "deadline": "1-31 enero del ejercicio siguiente"
+      },
+      "model_180": {
+        "name": "Resumen anual de retenciones sobre arrendamientos",
+        "deadline": "1-31 enero del ejercicio siguiente"
+      }
+    }
+  },
+
+  "obligaciones_formales": {
+    "concept": "Los contribuyentes que ejerzan actividades economicas tienen obligaciones contables y registrales especificas segun el tipo de actividad y el metodo de determinacion del rendimiento.",
+    "source": "art. 104 LIRPF, art. 68 RIRPF, Orden HAC/773/2019",
+
+    "estimacion_directa_normal": {
+      "empresariales_mercantiles": {
+        "description": "Actividades empresariales de caracter mercantil (comercio, industria)",
+        "obligation": "Contabilidad ajustada al Codigo de Comercio y Plan General de Contabilidad",
+        "books": [
+          "Libro Diario",
+          "Libro de Inventarios y Cuentas Anuales"
+        ],
+        "note": "Ademas, estan obligados a llevar los libros registro de IVA si no estan en SII"
+      },
+      "empresariales_no_mercantiles": {
+        "description": "Actividades empresariales no mercantiles (agricolas, ganaderas, artesanales de escasa importancia)",
+        "books": [
+          "Libro registro de ventas e ingresos",
+          "Libro registro de compras y gastos",
+          "Libro registro de bienes de inversion"
+        ]
+      },
+      "profesionales": {
+        "description": "Actividades profesionales",
+        "books": [
+          "Libro registro de ingresos",
+          "Libro registro de gastos",
+          "Libro registro de bienes de inversion",
+          "Libro registro de provisiones de fondos y suplidos"
+        ]
+      }
+    },
+
+    "estimacion_directa_simplificada": {
+      "empresariales": {
+        "books": [
+          "Libro registro de ventas e ingresos",
+          "Libro registro de compras y gastos",
+          "Libro registro de bienes de inversion"
+        ],
+        "note": "No es obligatorio llevar contabilidad ajustada al Codigo de Comercio"
+      },
+      "profesionales": {
+        "books": [
+          "Libro registro de ingresos",
+          "Libro registro de gastos",
+          "Libro registro de bienes de inversion",
+          "Libro registro de provisiones de fondos y suplidos"
+        ]
+      }
+    },
+
+    "estimacion_objetiva": {
+      "books": [
+        "Libro registro de bienes de inversion (si se practican amortizaciones)",
+        "Libro registro de ventas e ingresos (si el rendimiento neto se determina por volumen de operaciones)"
+      ],
+      "documentation": [
+        "Conservar facturas emitidas (numeradas por fecha y agrupadas por trimestres)",
+        "Conservar facturas recibidas y justificantes de gastos",
+        "Conservar justificantes de los signos, indices o modulos aplicados"
+      ]
+    },
+
+    "common_requirements": {
+      "format": "Los libros pueden llevarse en soporte informatico o electronico. La AEAT proporciona formatos estandarizados en Excel.",
+      "content": "Deben contener: numero de factura, fecha de emision, NIF del tercero, concepto, importe. Para bienes de inversion: descripcion, fecha y valor de adquisicion, amortizacion anual.",
+      "preservation": "Deben conservarse durante el periodo de prescripcion (4 anos desde la finalizacion del plazo de presentacion de la declaracion)"
+    },
+
+    "facturacion": {
+      "obligation": "Los empresarios y profesionales estan obligados a expedir y entregar factura por las operaciones que realicen",
+      "regulation": "Reglamento de facturacion (RD 1619/2012)",
+      "types": [
+        {
+          "name": "Factura completa",
+          "required_for": "Operaciones con otros empresarios/profesionales"
+        },
+        {
+          "name": "Factura simplificada (ticket)",
+          "allowed_for": "Operaciones con consumidores finales, si el importe no supera 400 EUR (o 3.000 EUR en ciertos casos)"
+        }
+      ]
+    }
+  },
+
+  "casillas_modelo_100": {
+    "note": "Las casillas exactas pueden variar entre ejercicios. Se indican las casillas orientativas de los ejercicio 2025. Las actividades se declaran por cada actividad individualmente en paginas D1 del modelo.",
+    "retenciones_actividades": {
+      "casilla": "0599",
+      "name": "Retenciones e ingresos a cuenta de actividades economicas"
+    },
+    "pagos_fraccionados": {
+      "casilla": "0604",
+      "name": "Pagos fraccionados del conjunto de actividades economicas (modelos 130/131)"
+    },
+    "actividades_estimacion_directa": {
+      "description": "Cada actividad se declara individualmente con: tipo actividad, clave IAE, modalidad (normal/simplificada), criterio de imputacion temporal, y desglose de ingresos y gastos.",
+      "ingresos_integros": {
+        "includes": [
+          "Ingresos de explotacion",
+          "Otros ingresos (subvenciones, autoconsumo, etc.)"
+        ]
+      },
+      "gastos_deducibles": {
+        "includes": [
+          "Consumos de explotacion",
+          "Sueldos y salarios",
+          "Seguridad Social (empresa y titular)",
+          "Otros gastos de personal",
+          "Arrendamientos y canones",
+          "Reparaciones y conservacion",
+          "Servicios de profesionales independientes",
+          "Otros servicios exteriores (suministros, seguros, etc.)",
+          "Tributos fiscalmente deducibles",
+          "Gastos financieros",
+          "Amortizaciones",
+          "Perdidas por deterioro de creditos",
+          "Incentivos al mecenazgo",
+          "Otros gastos fiscalmente deducibles",
+          "Provisiones (solo normal)",
+          "Gastos de dificil justificacion (solo simplificada, 5%, max 2.000)"
+        ]
+      },
+      "rendimiento_neto": "Ingresos - Gastos = Rendimiento neto",
+      "reducciones": [
+        "Reduccion rendimientos irregulares (30%, max 300.000)",
+        "Reduccion TRADE o reduccion rentas < 12.000",
+        "Reduccion inicio actividad (20%, max 100.000)"
+      ],
+      "rendimiento_neto_reducido_total": "Rendimiento neto reducido - Reducciones Fase 3"
+    },
+    "actividades_estimacion_objetiva": {
+      "description": "Los modulos se calculan segun la Orden ministerial aplicable. La declaracion incluye los datos de modulos (unidades), rendimiento neto previo, minoraciones, indices correctores, reducciones y rendimiento neto final."
+    }
+  },
+
+  "cuadro_resumen_calculo": {
+    "estimacion_directa": {
+      "phases": [
+        {
+          "phase": "1a",
+          "name": "Rendimiento neto",
+          "formula": "(+) Ingresos computables\n(-) Gastos deducibles\n(-) Amortizaciones\n(-) Provisiones (solo normal) o Gastos dificil justificacion 5% (solo simplificada, max 2.000)\n= Rendimiento neto"
+        },
+        {
+          "phase": "2a",
+          "name": "Rendimiento neto reducido",
+          "formula": "Rendimiento neto\n(-) Reduccion rendimientos irregulares (30%, max base 300.000 EUR)\n= Rendimiento neto reducido"
+        },
+        {
+          "phase": "3a",
+          "name": "Rendimiento neto reducido total",
+          "formula": "Rendimiento neto reducido\n(-) Reduccion TRADE (2.000 + complementos) [incompatible con GDJ 5%]\n   O Reduccion rentas < 12.000 (max 1.620) [incompatible con TRADE]\n(-) Reduccion inicio actividad (20%, max base 100.000)\n= Rendimiento neto reducido total"
+        }
+      ]
+    },
+    "estimacion_objetiva_no_agricola": {
+      "phases": [
+        {
+          "phase": "1a",
+          "name": "Rendimiento neto previo",
+          "formula": "Suma (Unidades modulo x Rendimiento anual/unidad)"
+        },
+        {
+          "phase": "2a",
+          "name": "Rendimiento neto minorado",
+          "formula": "Rendimiento neto previo\n(-) Minoracion incentivo empleo\n(-) Minoracion incentivo inversion\n= Rendimiento neto minorado"
+        },
+        {
+          "phase": "3a",
+          "name": "Rendimiento neto de modulos",
+          "formula": "Rendimiento neto minorado x Indices correctores"
+        },
+        {
+          "phase": "4a",
+          "name": "Rendimiento neto de la actividad",
+          "formula": "Rendimiento neto de modulos\n(-) Reduccion general (5% desde 2024)\n(-) Reducciones especiales (gastos extraordinarios, DANA, etc.)\n(+) Otros ingresos de la actividad"
+        },
+        {
+          "phase": "5a",
+          "name": "Rendimiento neto reducido",
+          "formula": "Rendimiento neto de la actividad\n(-) Reduccion rendimientos irregulares (30%, max 300.000)"
+        }
+      ]
+    }
+  },
+
+  "regimen_cotizacion_autonomos_2023": {
+    "concept": "Desde 01-01-2023, los trabajadores autonomos cotizan al RETA en funcion de sus rendimientos netos anuales, en un sistema de tramos progresivo (RDL 13/2022).",
+    "rendimiento_neto_cotizacion": {
+      "formula": "Ingresos - Gastos deducibles de la actividad",
+      "deduccion_gastos_genericos": "7% sobre rendimiento neto (para autonomos personas fisicas; 3% para autonomos societarios)",
+      "source": "art. 308.1.c) LGSS (redaccion RDL 13/2022)"
+    },
+    "tramos_2025": {
+      "note": "Los tramos y bases de cotizacion se actualizan anualmente. Consultar la Orden de cotizacion vigente para el ejercicio 2025.",
+      "source": "Disposicion transitoria unica RDL 13/2022"
+    },
+    "regularizacion": {
+      "concept": "Anualmente, la Tesoreria General regulariza las cotizaciones comparando bases provisionales con el rendimiento neto real comunicado por Hacienda. Puede resultar en cuotas adicionales o devoluciones.",
+      "treatment": {
+        "additional_quota": "Gasto deducible del ejercicio siguiente",
+        "refund": "Menor gasto deducible del ejercicio siguiente (o ingreso si la devolucion excede las cuotas pagadas)"
+      }
+    }
+  },
+
+  "criterio_caja": {
+    "concept": "Los contribuyentes que cumplan los requisitos pueden optar por el criterio de caja (cobros y pagos) en lugar del criterio del devengo para la imputacion temporal de ingresos y gastos.",
+    "requirements": [
+      "Cifra de negocios del ano anterior no supere 600.000 EUR",
+      "No estar acogido a estimacion objetiva",
+      "Opcion en modelo 036/037 (diciembre anterior o inicio actividad)"
+    ],
+    "rules": [
+      "Los ingresos se imputan al ejercicio en que se cobran",
+      "Los gastos se imputan al ejercicio en que se pagan",
+      "Limite: los ingresos deben imputarse como maximo en el periodo en que fueran exigibles (no puede diferirse indefinidamente)"
+    ],
+    "source": "art. 7.2 RIRPF"
+  },
+
+  "elementos_afectos": {
+    "concept": "Bienes y derechos del patrimonio del contribuyente que se utilizan para la actividad economica. Solo generan rendimientos de la actividad (no del capital).",
+    "rules": [
+      "Los bienes inmuebles deben estar afectos de forma exclusiva, salvo vivienda habitual (afectacion parcial permitida)",
+      "Los bienes muebles (vehiculos, etc.) pueden afectarse parcialmente si se usan tambien para fines privados",
+      "Los vehiculos se presumen afectos al 50% salvo prueba de uso profesional superior (furgonetas, taxis, autoescuelas: presuncion al 100%)",
+      "La transmision de elementos afectos genera ganancia/perdida patrimonial (no rendimiento de actividades)"
+    ],
+    "source": "art. 29 LIRPF, art. 22 RIRPF"
+  },
+
+  "key_thresholds_summary": {
+    "cifra_negocios_simplificada": {
+      "limit": 600000,
+      "description": "Cifra de negocios maxima para acogerse a estimacion directa simplificada",
+      "source": "art. 30 LIRPF"
+    },
+    "revenue_estimacion_objetiva": {
+      "general": 250000,
+      "invoiced_to_businesses": 125000,
+      "agricultural": 250000,
+      "purchases": 250000,
+      "note": "Limites transitorios 2016-2026",
+      "source": "art. 31.1 LIRPF, DT 32a LIRPF"
+    },
+    "empresas_reducida_dimension": {
+      "cifra_negocios": 10000000,
+      "description": "Umbral de cifra de negocios para incentivos de empresa de reducida dimension",
+      "source": "art. 101 LIS"
+    },
+    "gastos_dificil_justificacion": {
+      "percentage": "5% (7% en 2023)",
+      "max": 2000,
+      "source": "art. 30.2.4a LIRPF"
+    },
+    "reduccion_irregulares": {
+      "percentage": 30,
+      "max_base": 300000,
+      "source": "art. 32.1 LIRPF"
+    },
+    "reduccion_inicio_actividad": {
+      "percentage": 20,
+      "max_base": 100000,
+      "source": "art. 32.3 LIRPF"
+    },
+    "retencion_profesionales": {
+      "general": 15,
+      "nuevos": 7,
+      "duracion_nuevos": "Ano de inicio + 2 siguientes",
+      "source": "art. 101.5 LIRPF"
+    },
+    "seguro_enfermedad_titular": {
+      "max_per_person": 500,
+      "max_per_person_disability": 1500,
+      "includes": "Titular, conyuge, hijos menores de 25 que convivan",
+      "source": "art. 30.2.5a LIRPF"
+    },
+    "manutencion_titular": {
+      "spain_with_overnight": 53.34,
+      "spain_no_overnight": 26.67,
+      "abroad_with_overnight": 91.35,
+      "abroad_no_overnight": 48.08,
+      "source": "art. 30.2.5a.c) LIRPF"
+    },
+    "pago_fraccionado_directa": {
+      "rate": "20%",
+      "source": "art. 110 RIRPF"
+    },
+    "pago_fraccionado_objetiva": {
+      "general": "4%",
+      "with_employees": "3%",
+      "no_employees": "2%",
+      "source": "art. 111 RIRPF"
+    }
+  }
+}

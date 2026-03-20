@@ -1,0 +1,28 @@
+{
+  "year": 2025,
+  "verified_date": "2026-03-20",
+  "indicators": {
+    "iprem": {
+      "daily": 20,
+      "monthly": 600,
+      "annual_12": 7200,
+      "annual_14": 8400,
+      "source": "Ley 31/2022, disposicion adicional nonagesima (DA 90.a). Presupuestos prorrogados art. 134.4 CE. BOE-A-2022-22128"
+    },
+    "smi": {
+      "daily": 39.47,
+      "monthly": 1184,
+      "annual_14": 16576,
+      "source": "RD 87/2025, de 11 de febrero. BOE-A-2025-2576"
+    },
+    "legal_interest_rate": {
+      "rate": 3.25,
+      "source": "Ley 31/2022 de PGE 2023, disposicion adicional cuadragesima segunda (DA 42.a). Prorrogada para 2025. BOE-A-2022-22128"
+    },
+    "late_payment_interest_rate": {
+      "rate": 4.0625,
+      "calculation": "legal_interest_rate * 1.25",
+      "source": "Ley 58/2003 LGT, art. 26.6"
+    }
+  }
+}

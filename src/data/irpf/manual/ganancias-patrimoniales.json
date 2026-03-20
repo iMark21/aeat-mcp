@@ -1,0 +1,422 @@
+{
+  "year": 2025,
+  "chapter": 11,
+  "title": "Ganancias y perdidas patrimoniales",
+  "source": "AEAT Manual Practico Renta 2025, Capitulo 11",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c11-ganancias-perdidas-patrimoniales.html",
+  "verified_date": "2026-03-20",
+
+  "definition": {
+    "concept": "Variaciones en el valor del patrimonio del contribuyente que se pongan de manifiesto con ocasion de cualquier alteracion en la composicion de aquel, salvo que la Ley las califique como rendimientos",
+    "source": "art. 33.1 LIRPF"
+  },
+
+  "types": [
+    {
+      "id": "transmisiones_onerosas",
+      "name": "Transmisiones onerosas",
+      "description": "Ventas de inmuebles, acciones, fondos de inversion, criptomonedas, etc.",
+      "integration": "base_del_ahorro",
+      "source": "art. 46 LIRPF"
+    },
+    {
+      "id": "transmisiones_lucrativas",
+      "name": "Transmisiones lucrativas",
+      "description": "Donaciones (solo para el donante; el donatario adquiere a valor de ISD)",
+      "integration": "base_del_ahorro",
+      "source": "art. 36 LIRPF"
+    },
+    {
+      "id": "premios",
+      "name": "Premios de concursos y juegos",
+      "description": "Premios en metalico o en especie (excluidos loterias del Estado/CCAA)",
+      "integration": "base_general",
+      "casilla": "0304",
+      "source": "art. 33.1 y 45 LIRPF"
+    },
+    {
+      "id": "subvenciones",
+      "name": "Subvenciones y ayudas publicas",
+      "description": "Subvenciones vivienda, bono alquiler joven, bono cultural joven, bono social termico, ayuda 200 EUR",
+      "integration": "base_general",
+      "casillas": {
+        "bono_alquiler_joven": "0303",
+        "bono_social_termico": "0301",
+        "bono_cultural_joven": "0323",
+        "ayudas_varias": "0304",
+        "ayuda_200": "0356"
+      },
+      "source": "art. 33.1 y 45 LIRPF"
+    },
+    {
+      "id": "intereses_demora",
+      "name": "Intereses de demora tributarios",
+      "description": "Intereses de demora pagados por la AEAT en devoluciones. TS 12-01-2023: ganancia patrimonial, no rendimiento capital",
+      "integration": "base_general",
+      "casilla": "0304",
+      "source": "STS 24/2023, art. 33.1 LIRPF"
+    },
+    {
+      "id": "aprovechamientos_forestales",
+      "name": "Aprovechamientos forestales en montes publicos",
+      "description": "Beneficios de montes publicos vecinales en mano comun",
+      "integration": "base_general",
+      "withholding_rate": 19,
+      "source": "art. 99.2 LIRPF"
+    },
+    {
+      "id": "criptomonedas",
+      "name": "Transmisiones de monedas virtuales",
+      "description": "Compraventa, permuta o intercambio de criptoactivos",
+      "integration": "base_del_ahorro",
+      "casillas": {
+        "identificacion": "1802-1803",
+        "valor_transmision": "1804",
+        "valor_adquisicion": "1806"
+      },
+      "source": "art. 37.1.l) LIRPF (desde 2023)"
+    },
+    {
+      "id": "ventas_plataformas_digitales",
+      "name": "Ventas de bienes usados en plataformas digitales",
+      "description": "Transmisiones de bienes usados por particulares a traves de plataformas",
+      "integration": "base_del_ahorro",
+      "casilla": "1624 y siguientes",
+      "source": "art. 33.1 LIRPF, Modelo 238"
+    }
+  ],
+
+  "integration_rules": {
+    "base_del_ahorro": {
+      "description": "Ganancias/perdidas derivadas de transmisiones de elementos patrimoniales",
+      "tax_rates_total": [
+        { "from": 0, "to": 6000, "state": 9.5, "autonomous": 9.5, "total": 19 },
+        { "from": 6000, "to": 50000, "state": 10.5, "autonomous": 10.5, "total": 21 },
+        { "from": 50000, "to": 200000, "state": 11.5, "autonomous": 11.5, "total": 23 },
+        { "from": 200000, "to": 300000, "state": 13.5, "autonomous": 13.5, "total": 27 },
+        { "from": 300000, "to": null, "state": 15, "autonomous": 15, "total": 30 }
+      ],
+      "source": "arts. 46, 66.1, 76 LIRPF. Tramo >300K: 30% total desde 2025 (Ley 7/2024)"
+    },
+    "base_general": {
+      "description": "Ganancias/perdidas NO derivadas de transmisiones (premios, subvenciones, etc.)",
+      "taxation": "Se suman al resto de rendimientos y se aplica la escala general progresiva (19%-47%)",
+      "source": "arts. 45, 48 LIRPF"
+    }
+  },
+
+  "calculation": {
+    "general_formula": "Ganancia/Perdida = Valor de Transmision - Valor de Adquisicion",
+    "valor_transmision": {
+      "formula": "Importe real (o valor comprobado si mayor, sin superar valor mercado) - Gastos y tributos del transmitente",
+      "components": [
+        "Precio pactado (o valor mercado si es mayor)",
+        "(-) Gastos inherentes a la transmision (comisiones, notaria, registro, plusvalia municipal)",
+        "(-) Tributos pagados por el transmitente (excluidos intereses)"
+      ],
+      "source": "art. 35.2 LIRPF"
+    },
+    "valor_adquisicion": {
+      "formula": "Importe real pagado + Inversiones/mejoras + Gastos y tributos de adquisicion - Amortizaciones",
+      "components": [
+        "Importe real de la adquisicion",
+        "(+) Inversiones y mejoras efectuadas",
+        "(+) Gastos inherentes a la adquisicion (notaria, registro, ITP/IVA, ISD)",
+        "(-) Amortizaciones fiscalmente deducibles (minimo computable obligatorio)"
+      ],
+      "amortization_minimums": {
+        "until_1998": 1.5,
+        "1999_to_2002": 2.0,
+        "from_2003": 3.0
+      },
+      "source": "art. 35.1 LIRPF, art. 40 RIRPF"
+    },
+    "gratuitous_acquisitions": {
+      "rule": "Valor declarado en ISD o valor de referencia catastral (el mayor), sin superar valor mercado",
+      "post_2022_rule": "Desde 01-01-2022: valor de referencia de la DGCatastro para ISD aplica como minimo",
+      "successory_pacts_post_2021": "Si beneficiario transmite en 5 anos: se usa valor y fecha del causante original",
+      "source": "art. 36 LIRPF"
+    },
+    "coeficientes_actualizacion": {
+      "status": "SUPRIMIDOS desde 01-01-2015",
+      "note": "Ya no se aplican coeficientes de actualizacion para inmuebles adquiridos antes de 31-12-1994. Solo quedan coeficientes de abatimiento (DT 9 LIRPF) para elementos adquiridos antes de 31-12-1994, con limite 400.000 EUR de valor transmision acumulado",
+      "source": "Ley 26/2014, DT 9 LIRPF"
+    }
+  },
+
+  "special_rules": {
+    "shares_fifo": {
+      "name": "Regla FIFO para valores homogeneos",
+      "rule": "Cuando se transmiten valores homogeneos y no todos, se entiende que los transmitidos son los adquiridos en primer lugar (First In, First Out)",
+      "source": "art. 37.2 LIRPF"
+    },
+    "listed_securities": {
+      "name": "Valores cotizados en mercados oficiales",
+      "valuation": "Valor de transmision = precio de cotizacion o precio pactado en fecha de transmision",
+      "minimum_value": "No puede ser inferior al mayor de: precio pactado o cotizacion media del trimestre anterior",
+      "source": "art. 37.1.a) LIRPF"
+    },
+    "unlisted_securities": {
+      "name": "Valores no cotizados",
+      "valuation": "Valor de transmision no puede ser inferior al mayor de: valor teorico contable del ultimo balance aprobado o resultado de capitalizar al 20% el promedio de los beneficios de los 3 ultimos ejercicios",
+      "source": "art. 37.1.b) LIRPF"
+    },
+    "investment_fund_transfer": {
+      "name": "Traspaso exento entre fondos de inversion (diferimiento)",
+      "rule": "Cuando el importe del reembolso se destina integramente a suscribir participaciones en otra IIC, NO se computa la ganancia/perdida. Las nuevas participaciones conservan el valor y fecha de adquisicion de las anteriores",
+      "conditions": [
+        "El importe no puede ponerse a disposicion del contribuyente",
+        "Aplica a fondos de inversion (no a SICAV de forma directa, salvo condiciones)",
+        "La entidad comercializadora gestiona el traspaso directamente"
+      ],
+      "source": "art. 94 LIRPF (regimen de diferimiento)"
+    },
+    "subscription_rights": {
+      "name": "Derechos de suscripcion preferente",
+      "rule_listed": "Desde 01-01-2017: la transmision de derechos de suscripcion de valores cotizados tributa como ganancia patrimonial en el ejercicio de la transmision",
+      "rule_unlisted": "Minora el valor de adquisicion de los valores de los que proceden, hasta anularlo. El exceso tributa como ganancia patrimonial",
+      "casilla": "0341",
+      "source": "art. 37.1.a) parrafo 4, LIRPF"
+    },
+    "property_coefficients": {
+      "name": "Coeficientes de abatimiento (regimen transitorio)",
+      "rule": "Para elementos adquiridos antes del 31-12-1994, la parte de ganancia generada hasta 20-01-2006 se reduce aplicando coeficientes de abatimiento segun tipo de activo",
+      "coefficients": {
+        "inmuebles": "11.11% por cada ano de permanencia que exceda de 2, completo hasta 19-01-2006",
+        "acciones_cotizadas": "25% por ano excedente de 2",
+        "resto_activos": "14.28% por ano excedente de 2"
+      },
+      "limit": "Aplica solo hasta 400.000 EUR acumulados de valor de transmision (desde 01-01-2015)",
+      "source": "DT 9 LIRPF"
+    }
+  },
+
+  "exempt_gains": [
+    {
+      "id": "reinversion_vivienda_habitual",
+      "name": "Reinversion en vivienda habitual",
+      "description": "Ganancia exenta si se reinvierte el importe obtenido en adquisicion de nueva vivienda habitual",
+      "conditions": [
+        "Ambas viviendas deben tener caracter de vivienda habitual (residencia efectiva y permanente 3 anos)",
+        "Reinversion en plazo de 2 anos (antes o despues de la transmision)",
+        "La nueva vivienda debe habitarse en 12 meses desde la adquisicion",
+        "Si reinversion parcial: exencion proporcional"
+      ],
+      "partial_formula": "Ganancia exenta = Ganancia total * (Importe reinvertido / Valor transmision)",
+      "reinvestment_amount": "El importe obtenido en la transmision menos el pendiente de amortizar del prestamo hipotecario",
+      "source": "art. 38.1 LIRPF, arts. 41 y 41 bis RIRPF"
+    },
+    {
+      "id": "mayores_65_vivienda",
+      "name": "Transmision vivienda habitual por mayores de 65 anos",
+      "description": "Exencion total de la ganancia sin necesidad de reinversion",
+      "conditions": [
+        "Contribuyente de 65 o mas anos, o en situacion de dependencia severa o gran dependencia",
+        "El inmueble debe ser vivienda habitual (residencia continuada minimo 3 anos)",
+        "Titularidad plena durante todo el periodo"
+      ],
+      "source": "art. 33.4.b) LIRPF, DA 15 LIRPF"
+    },
+    {
+      "id": "mayores_65_renta_vitalicia",
+      "name": "Reinversion en renta vitalicia por mayores de 65 anos",
+      "description": "Ganancia exenta si el importe obtenido se reinvierte en constituir una renta vitalicia asegurada",
+      "conditions": [
+        "Contribuyente de 65 o mas anos",
+        "Reinversion en plazo maximo de 6 meses desde la transmision",
+        "Maximo 240.000 EUR por contribuyente (acumulado de por vida)",
+        "Renta vitalicia con frecuencia maxima anual, inicio en 1 ano desde constitucion",
+        "Anualidades no pueden decrecer mas del 5% respecto al ano anterior",
+        "Contratos post 01-04-2019: restricciones adicionales en clausulas de reversion y contraseguro (maximo 10 anos plazo cierto, un solo beneficiario reversible)"
+      ],
+      "partial_formula": "Si reinvierte menos de lo obtenido: exencion proporcional",
+      "max_amount": 240000,
+      "source": "art. 38.3 LIRPF, DA 15 LIRPF"
+    },
+    {
+      "id": "dacion_en_pago",
+      "name": "Dacion en pago de vivienda habitual",
+      "description": "Exencion de la ganancia en ejecucion hipotecaria o dacion en pago de vivienda habitual",
+      "conditions": [
+        "Transmision de vivienda habitual",
+        "Ejecucion hipotecaria judicial/notarial o dacion en pago",
+        "Deuda garantizada con hipoteca sobre la misma vivienda",
+        "Acreedor: entidad de credito o entidad que profesionalmente realice prestamos",
+        "El deudor no debe disponer de otros bienes suficientes para satisfacer la deuda"
+      ],
+      "source": "art. 33.4.d) LIRPF"
+    },
+    {
+      "id": "donaciones_ley_49_2002",
+      "name": "Donaciones a entidades beneficiarias de mecenazgo",
+      "description": "Ganancia exenta en transmisiones lucrativas de bienes con derecho a deduccion en cuota",
+      "source": "art. 33.4.a) LIRPF, Ley 49/2002"
+    },
+    {
+      "id": "pago_bienes_patrimonio_historico",
+      "name": "Pago con bienes del Patrimonio Historico",
+      "description": "Ganancia exenta cuando se entregan bienes del Patrimonio Historico Espanol en pago de deuda tributaria",
+      "source": "art. 33.4.c) LIRPF, Ley 16/1985"
+    },
+    {
+      "id": "deudas_insolvencia",
+      "name": "Deudas en procedimientos de insolvencia",
+      "description": "Exencion de ganancias derivadas de quitas y daciones en pago en acuerdos judiciales o extrajudiciales de pagos",
+      "conditions": [
+        "Deudas no empresariales",
+        "Procedimientos de exoneracion del pasivo insatisfecho"
+      ],
+      "source": "DA 43 LIRPF"
+    },
+    {
+      "id": "subvenciones_rehabilitacion_energetica",
+      "name": "Ayudas publicas para rehabilitacion energetica",
+      "description": "Ganancias exentas por subvenciones de programas de rehabilitacion energetica de edificios",
+      "programs": "RD 691/2021, RD 737/2020, RD 853/2021, RD 477/2021",
+      "from_year": 2023,
+      "source": "DA 5.4 LIRPF"
+    },
+    {
+      "id": "inmuebles_urbanos_2012",
+      "name": "Inmuebles urbanos adquiridos entre mayo y diciembre 2012",
+      "description": "Exencion del 50% de la ganancia en transmisiones de inmuebles urbanos adquiridos entre 12-05-2012 y 31-12-2012",
+      "conditions": [
+        "Inmueble urbano",
+        "Adquirido entre 12-05-2012 y 31-12-2012",
+        "Transmision entre partes no vinculadas"
+      ],
+      "exemption_percentage": 50,
+      "source": "DA 37 LIRPF"
+    },
+    {
+      "id": "dividendo_digital",
+      "name": "Compensaciones por dividendo digital",
+      "description": "Exencion de ayudas por adaptacion de edificios al dividendo digital (TDT)",
+      "source": "DA 5 LIRPF, RD 920/2014"
+    }
+  ],
+
+  "non_computable_losses": [
+    {
+      "id": "consumo",
+      "name": "Perdidas por uso o consumo",
+      "description": "Depreciacion por uso normal de bienes (vehiculos, electrodomesticos, etc.)",
+      "source": "art. 33.5.b) LIRPF"
+    },
+    {
+      "id": "donaciones",
+      "name": "Perdidas en transmisiones lucrativas inter vivos",
+      "description": "Perdidas por donaciones no computan como perdida patrimonial",
+      "source": "art. 33.5.c) LIRPF"
+    },
+    {
+      "id": "juego",
+      "name": "Perdidas de juego que excedan las ganancias",
+      "description": "Solo se computan perdidas de juego hasta el importe de las ganancias del periodo. El exceso no computa. Excluidas loterias estatales y de CCAA",
+      "source": "art. 33.5.d) LIRPF"
+    },
+    {
+      "id": "recompra_cotizadas",
+      "name": "Recompra de valores cotizados en 2 meses (anti-abuse)",
+      "description": "Perdida NO computable si se recompran valores homogeneos admitidos a negociacion en mercados oficiales dentro de los 2 meses anteriores o posteriores a la transmision",
+      "window": "2 meses antes o despues",
+      "applies_to": "Valores cotizados en mercados regulados (Directiva 2014/65/UE)",
+      "deferred_integration": "La perdida se integra cuando se produzca la transmision definitiva de los valores recomprados",
+      "source": "art. 33.5.f) LIRPF"
+    },
+    {
+      "id": "recompra_no_cotizadas",
+      "name": "Recompra de valores no cotizados en 1 ano (anti-abuse)",
+      "description": "Perdida NO computable si se recompran valores o participaciones no cotizados dentro del ano anterior o posterior a la transmision",
+      "window": "1 ano antes o despues",
+      "applies_to": "Valores no admitidos a negociacion en mercados oficiales",
+      "deferred_integration": "La perdida se integra cuando se produzca la transmision definitiva de los valores recomprados",
+      "source": "art. 33.5.f) LIRPF"
+    },
+    {
+      "id": "recompra_otros_activos",
+      "name": "Recompra de otros elementos patrimoniales en 1 ano",
+      "description": "Perdida NO computable si se readquiere el elemento patrimonial transmitido dentro del ano posterior a la transmision",
+      "window": "1 ano despues de la transmision",
+      "applies_to": "Elementos patrimoniales distintos de valores (inmuebles, etc.)",
+      "deferred_integration": "La perdida se integra cuando se produzca la transmision definitiva del elemento recomprado",
+      "source": "art. 33.5.e) LIRPF"
+    }
+  ],
+
+  "non_taxable_changes": [
+    {
+      "name": "Division de la cosa comun",
+      "description": "No hay ganancia/perdida cuando se divide un bien en copropiedad y las adjudicaciones se corresponden con la cuota de titularidad",
+      "source": "art. 33.2 LIRPF"
+    },
+    {
+      "name": "Disolucion de la sociedad de gananciales",
+      "description": "No hay ganancia/perdida por la adjudicacion de bienes al disolverse la sociedad ganancial",
+      "source": "art. 33.2 LIRPF"
+    },
+    {
+      "name": "Reduccion de capital con devolucion de aportaciones",
+      "description": "Minora el valor de adquisicion de los valores afectados hasta anularlo. Solo el exceso es ganancia patrimonial",
+      "source": "art. 33.3.a) LIRPF"
+    },
+    {
+      "name": "Transmisiones lucrativas mortis causa",
+      "description": "No genera ganancia para el fallecido (plusvalia del muerto). El heredero adquiere a valor de ISD",
+      "source": "art. 33.3.b) LIRPF"
+    }
+  ],
+
+  "compensation_rules": {
+    "base_del_ahorro": {
+      "group_1": {
+        "name": "Rendimientos del capital mobiliario (ahorro)",
+        "positive": "Se integran en base del ahorro",
+        "negative": "Se compensa con saldo positivo del grupo 2, limite 25% del saldo positivo del grupo 2"
+      },
+      "group_2": {
+        "name": "Ganancias y perdidas patrimoniales de transmisiones",
+        "positive": "Se integran en base del ahorro",
+        "negative": "Se compensa con saldo positivo del grupo 1, limite 25% del saldo positivo del grupo 1"
+      },
+      "cross_compensation_limit": "25% del saldo positivo del otro grupo",
+      "carry_forward": "Saldos negativos pendientes se compensan en los 4 ejercicios siguientes",
+      "source": "art. 49 LIRPF, DA 39.1 LIRPF, DT 7.5 LIRPF"
+    },
+    "base_general": {
+      "group_1": {
+        "name": "Rendimientos e imputaciones de rentas",
+        "positive": "Se integran en base general",
+        "negative": "Se compensa libremente entre rendimientos"
+      },
+      "group_2": {
+        "name": "Ganancias y perdidas patrimoniales no de transmisiones",
+        "positive": "Se integran en base general",
+        "negative": "Se compensa con saldo positivo del grupo 1, limite 25% del saldo positivo del grupo 1"
+      },
+      "cross_compensation_limit": "25% del saldo positivo de rendimientos e imputaciones",
+      "carry_forward": "Saldos negativos pendientes se compensan en los 4 ejercicios siguientes",
+      "source": "art. 48 LIRPF"
+    }
+  },
+
+  "key_casillas": [
+    { "number": "0301", "concept": "Bono social termico y otras ayudas", "section": "F1 - Base general" },
+    { "number": "0303", "concept": "Bono Alquiler Joven (250 EUR/mes)", "section": "F1 - Base general" },
+    { "number": "0304", "concept": "Otras ganancias no derivadas de transmisiones", "section": "F1 - Base general" },
+    { "number": "0312-0314", "concept": "Valor de transmision (acciones/participaciones)", "section": "F2 - Base del ahorro" },
+    { "number": "0315-0317", "concept": "Valor de adquisicion (acciones/participaciones)", "section": "F2 - Base del ahorro" },
+    { "number": "0318", "concept": "Ganancia patrimonial (transmisiones)", "section": "F2 - Base del ahorro" },
+    { "number": "0319", "concept": "Perdida patrimonial (transmisiones)", "section": "F2 - Base del ahorro" },
+    { "number": "0323", "concept": "Bono Cultural Joven (hasta 400 EUR)", "section": "F1 - Base general" },
+    { "number": "0327-0328", "concept": "Transmisiones acciones negociadas en mercados", "section": "F2 - Base del ahorro" },
+    { "number": "0341", "concept": "Derechos de suscripcion preferente", "section": "F2 - Base del ahorro" },
+    { "number": "0356", "concept": "Ayuda directa 200 EUR (baja renta)", "section": "F1 - Base general" },
+    { "number": "0385-0400", "concept": "Sintesis ganancias/perdidas y saldos netos", "section": "Resumen" },
+    { "number": "0431-0455", "concept": "Compensacion de perdidas de ejercicios anteriores", "section": "Compensacion" },
+    { "number": "1624", "concept": "Ganancias ventas bienes usados plataformas digitales", "section": "F2 - Base del ahorro" },
+    { "number": "1802-1803", "concept": "Identificacion moneda virtual transmitida", "section": "F2 - Criptomonedas" },
+    { "number": "1804", "concept": "Valor de transmision (criptomonedas)", "section": "F2 - Criptomonedas" },
+    { "number": "1806", "concept": "Valor de adquisicion (criptomonedas)", "section": "F2 - Criptomonedas" }
+  ]
+}

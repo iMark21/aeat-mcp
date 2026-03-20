@@ -1,0 +1,431 @@
+{
+  "year": 2026,
+  "verified_date": "2026-03-20",
+  "source": "AEAT Calendario del Contribuyente 2026 — sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026.html",
+  "deadlines": [
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-01-20",
+      "modelo": "111",
+      "description": "Retenciones e ingresos a cuenta de rendimientos del trabajo y actividades economicas, Q4 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Enero, hasta el 20"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-01-20",
+      "modelo": "115",
+      "description": "Retenciones e ingresos a cuenta de rentas o rendimientos procedentes de arrendamiento de inmuebles urbanos, Q4 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Enero, hasta el 20"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-01-20",
+      "modelo": "123",
+      "description": "Retenciones e ingresos a cuenta de determinados rendimientos del capital mobiliario y determinadas rentas, Q4 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Enero, hasta el 20"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-01-20",
+      "modelo": "130",
+      "description": "IRPF. Pago fraccionado empresarios y profesionales en estimacion directa, Q4 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Enero, hasta el 30"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-01-30",
+      "modelo": "131",
+      "description": "IRPF. Pago fraccionado actividades en estimacion objetiva (modulos), Q4 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Enero, hasta el 30"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-01-30",
+      "modelo": "303",
+      "description": "IVA. Autoliquidacion, Q4 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Enero, hasta el 30"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-01-30",
+      "modelo": "349",
+      "description": "IVA. Declaracion recapitulativa de operaciones intracomunitarias, Q4 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Enero, hasta el 30"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-01-30",
+      "modelo": "390",
+      "description": "IVA. Declaracion resumen anual 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Enero, hasta el 30"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-02",
+      "modelo": "180",
+      "description": "Retenciones sobre arrendamientos de inmuebles urbanos. Resumen anual 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Febrero, hasta el 2"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-02",
+      "modelo": "190",
+      "description": "Retenciones e ingresos a cuenta de rendimientos del trabajo y actividades economicas. Resumen anual 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Febrero, hasta el 2"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-02",
+      "modelo": "193",
+      "description": "Retenciones e ingresos a cuenta del capital mobiliario. Resumen anual 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Febrero, hasta el 2"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-02",
+      "modelo": "184",
+      "description": "Declaracion informativa de entidades en regimen de atribucion de rentas. Anual 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Febrero, hasta el 2"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-02",
+      "modelo": "345",
+      "description": "Declaracion informativa de planes de pensiones, sistemas alternativos, mutualidades de prevision social, planes de prevision asegurados, planes individuales de ahorro sistematico, planes de prevision social empresarial y seguros de dependencia. Anual 2025",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Febrero, hasta el 2"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-02",
+      "modelo": "182",
+      "description": "Declaracion informativa de donativos, donaciones y aportaciones recibidas y disposiciones realizadas. Anual 2025",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Febrero, hasta el 2"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-03-02",
+      "modelo": "347",
+      "description": "Declaracion anual de operaciones con terceras personas, ejercicio 2025",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Marzo, hasta el 2"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-03-31",
+      "modelo": "720",
+      "description": "Declaracion informativa sobre bienes y derechos situados en el extranjero, ejercicio 2025",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Marzo, hasta el 31"
+    },
+    {
+      "date_start": "2026-01-01",
+      "date_end": "2026-03-31",
+      "modelo": "721",
+      "description": "Declaracion informativa sobre monedas virtuales situadas en el extranjero, ejercicio 2025",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Marzo, hasta el 31"
+    },
+    {
+      "date_start": "2026-04-01",
+      "date_end": "2026-04-20",
+      "modelo": "111",
+      "description": "Retenciones e ingresos a cuenta de rendimientos del trabajo y actividades economicas, Q1 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Abril, hasta el 20"
+    },
+    {
+      "date_start": "2026-04-01",
+      "date_end": "2026-04-20",
+      "modelo": "115",
+      "description": "Retenciones e ingresos a cuenta de arrendamientos de inmuebles urbanos, Q1 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Abril, hasta el 20"
+    },
+    {
+      "date_start": "2026-04-01",
+      "date_end": "2026-04-20",
+      "modelo": "123",
+      "description": "Retenciones e ingresos a cuenta del capital mobiliario, Q1 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Abril, hasta el 20"
+    },
+    {
+      "date_start": "2026-04-01",
+      "date_end": "2026-04-20",
+      "modelo": "130",
+      "description": "IRPF. Pago fraccionado estimacion directa, Q1 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Abril, hasta el 20"
+    },
+    {
+      "date_start": "2026-04-01",
+      "date_end": "2026-04-20",
+      "modelo": "131",
+      "description": "IRPF. Pago fraccionado estimacion objetiva (modulos), Q1 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Abril, hasta el 20"
+    },
+    {
+      "date_start": "2026-04-01",
+      "date_end": "2026-04-20",
+      "modelo": "303",
+      "description": "IVA. Autoliquidacion, Q1 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Abril, hasta el 20"
+    },
+    {
+      "date_start": "2026-04-01",
+      "date_end": "2026-04-20",
+      "modelo": "349",
+      "description": "IVA. Declaracion recapitulativa de operaciones intracomunitarias, Q1 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Abril, hasta el 20"
+    },
+    {
+      "date_start": "2026-04-01",
+      "date_end": "2026-04-20",
+      "modelo": "202",
+      "description": "Impuesto sobre Sociedades. Pago fraccionado regimen general",
+      "who": "sociedades",
+      "source": "AEAT Calendario Contribuyente 2026 — Abril, hasta el 20"
+    },
+    {
+      "date_start": "2026-04-08",
+      "date_end": "2026-06-30",
+      "modelo": "100",
+      "description": "IRPF. Declaracion anual de Renta 2025. Presentacion por Internet",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Campana Renta y Patrimonio"
+    },
+    {
+      "date_start": "2026-04-08",
+      "date_end": "2026-06-30",
+      "modelo": "714",
+      "description": "Impuesto sobre el Patrimonio. Declaracion anual 2025",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Campana Renta y Patrimonio"
+    },
+    {
+      "date_start": "2026-04-08",
+      "date_end": "2026-06-25",
+      "modelo": "100",
+      "description": "IRPF. Declaracion anual de Renta 2025 con resultado a ingresar con domiciliacion en cuenta",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Junio, hasta el 25"
+    },
+    {
+      "date_start": "2026-04-08",
+      "date_end": "2026-06-25",
+      "modelo": "714",
+      "description": "Impuesto sobre el Patrimonio 2025 con resultado a ingresar con domiciliacion en cuenta",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Junio, hasta el 25"
+    },
+    {
+      "date_start": "2026-05-06",
+      "date_end": "2026-06-30",
+      "modelo": "100",
+      "description": "IRPF. Declaracion anual de Renta 2025. Confeccion por telefono (cita previa desde 29 abril)",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Campana Renta y Patrimonio"
+    },
+    {
+      "date_start": "2026-06-01",
+      "date_end": "2026-06-30",
+      "modelo": "100",
+      "description": "IRPF. Declaracion anual de Renta 2025. Atencion presencial en oficinas (cita previa desde 29 mayo)",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Campana Renta y Patrimonio"
+    },
+    {
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-20",
+      "modelo": "111",
+      "description": "Retenciones e ingresos a cuenta de rendimientos del trabajo y actividades economicas, Q2 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Julio, hasta el 20"
+    },
+    {
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-20",
+      "modelo": "115",
+      "description": "Retenciones e ingresos a cuenta de arrendamientos de inmuebles urbanos, Q2 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Julio, hasta el 20"
+    },
+    {
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-20",
+      "modelo": "123",
+      "description": "Retenciones e ingresos a cuenta del capital mobiliario, Q2 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Julio, hasta el 20"
+    },
+    {
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-20",
+      "modelo": "130",
+      "description": "IRPF. Pago fraccionado estimacion directa, Q2 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Julio, hasta el 20"
+    },
+    {
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-20",
+      "modelo": "131",
+      "description": "IRPF. Pago fraccionado estimacion objetiva (modulos), Q2 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Julio, hasta el 20"
+    },
+    {
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-20",
+      "modelo": "303",
+      "description": "IVA. Autoliquidacion, Q2 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Julio, hasta el 20"
+    },
+    {
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-20",
+      "modelo": "349",
+      "description": "IVA. Declaracion recapitulativa de operaciones intracomunitarias, Q2 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Julio, hasta el 20"
+    },
+    {
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-27",
+      "modelo": "200",
+      "description": "Impuesto sobre Sociedades. Declaracion anual 2025 (entidades con ejercicio coincidente con ano natural)",
+      "who": "sociedades",
+      "source": "AEAT Calendario Contribuyente 2026 — Julio, hasta el 27"
+    },
+    {
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-31",
+      "modelo": "718",
+      "description": "Impuesto Temporal de Solidaridad de las Grandes Fortunas. Declaracion anual 2025",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Julio, hasta el 31"
+    },
+    {
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-20",
+      "modelo": "111",
+      "description": "Retenciones e ingresos a cuenta de rendimientos del trabajo y actividades economicas, Q3 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Octubre, hasta el 20"
+    },
+    {
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-20",
+      "modelo": "115",
+      "description": "Retenciones e ingresos a cuenta de arrendamientos de inmuebles urbanos, Q3 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Octubre, hasta el 20"
+    },
+    {
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-20",
+      "modelo": "123",
+      "description": "Retenciones e ingresos a cuenta del capital mobiliario, Q3 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Octubre, hasta el 20"
+    },
+    {
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-20",
+      "modelo": "130",
+      "description": "IRPF. Pago fraccionado estimacion directa, Q3 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Octubre, hasta el 20"
+    },
+    {
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-20",
+      "modelo": "131",
+      "description": "IRPF. Pago fraccionado estimacion objetiva (modulos), Q3 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Octubre, hasta el 20"
+    },
+    {
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-20",
+      "modelo": "303",
+      "description": "IVA. Autoliquidacion, Q3 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Octubre, hasta el 20"
+    },
+    {
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-20",
+      "modelo": "349",
+      "description": "IVA. Declaracion recapitulativa de operaciones intracomunitarias, Q3 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Octubre, hasta el 20"
+    },
+    {
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-20",
+      "modelo": "202",
+      "description": "Impuesto sobre Sociedades. Pago fraccionado regimen general, octubre",
+      "who": "sociedades",
+      "source": "AEAT Calendario Contribuyente 2026 — Octubre, hasta el 20"
+    },
+    {
+      "date_start": "2026-10-01",
+      "date_end": "2026-11-05",
+      "modelo": "102",
+      "description": "IRPF. Segundo plazo de la declaracion anual de Renta 2025 (si se fracciono el pago)",
+      "who": "todos",
+      "source": "AEAT Calendario Contribuyente 2026 — Noviembre, hasta el 5"
+    },
+    {
+      "date_start": "2026-12-01",
+      "date_end": "2026-12-21",
+      "modelo": "111",
+      "description": "Retenciones e ingresos a cuenta de rendimientos del trabajo y actividades economicas, noviembre 2026 (grandes empresas mensual)",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Diciembre, hasta el 21"
+    },
+    {
+      "date_start": "2026-12-01",
+      "date_end": "2026-12-21",
+      "modelo": "115",
+      "description": "Retenciones e ingresos a cuenta de arrendamientos de inmuebles urbanos, noviembre 2026 (grandes empresas mensual)",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Diciembre, hasta el 21"
+    },
+    {
+      "date_start": "2026-12-01",
+      "date_end": "2026-12-21",
+      "modelo": "202",
+      "description": "Impuesto sobre Sociedades. Pago fraccionado regimen general, diciembre",
+      "who": "sociedades",
+      "source": "AEAT Calendario Contribuyente 2026 — Diciembre, hasta el 21"
+    },
+    {
+      "date_start": "2026-12-01",
+      "date_end": "2026-12-21",
+      "modelo": "349",
+      "description": "IVA. Declaracion recapitulativa de operaciones intracomunitarias, noviembre 2026",
+      "who": "autonomos",
+      "source": "AEAT Calendario Contribuyente 2026 — Diciembre, hasta el 21"
+    }
+  ]
+}

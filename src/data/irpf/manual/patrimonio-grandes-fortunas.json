@@ -1,0 +1,533 @@
+{
+  "chapter": "Impuesto sobre el Patrimonio (Modelo 714) e Impuesto Temporal de Solidaridad de las Grandes Fortunas (Modelo 718)",
+  "year": 2025,
+  "source": "Manual Practico Patrimonio 2025 — AEAT + BOE (Ley 19/1991, Ley 38/2022, Ley 7/2024)",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/Ayuda/25Manual/714.shtml",
+  "verified_date": "2026-03-20",
+
+  "impuesto_patrimonio": {
+    "nombre": "Impuesto sobre el Patrimonio",
+    "modelo": "714",
+    "normativa_principal": "Ley 19/1991, de 6 de junio, del Impuesto sobre el Patrimonio",
+    "normativa_complementaria": [
+      "Real Decreto-ley 13/2011, de 16 de septiembre (restablecimiento temporal)",
+      "Orden HAC/242/2025, de 13 de marzo (modelos declaracion ejercicio 2024)",
+      "Ley 22/2009, de 18 de diciembre, art. 47 (competencias normativas CCAA)"
+    ],
+
+    "obligacion_declarar": {
+      "description": "Estan obligados a presentar declaracion del IP los sujetos pasivos cuya cuota tributaria resulte a ingresar, o cuando, no dandose esta circunstancia, el valor de sus bienes o derechos resulte superior a 2.000.000 EUR",
+      "condiciones": [
+        {
+          "id": "cuota_positiva",
+          "description": "La cuota tributaria, determinada de acuerdo con las normas reguladoras del impuesto, y una vez aplicadas las deducciones o bonificaciones que procedieren, resulte a ingresar",
+          "source": "art. 37.1 Ley 19/1991",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-1-campana-declaracion-i-patrimonio/quienes-estan-obligados-presentar-declaracion-ip.html"
+        },
+        {
+          "id": "patrimonio_bruto_superior_2M",
+          "description": "Cuando no resulte cuota a ingresar, el valor de los bienes o derechos del sujeto pasivo resulte superior a 2.000.000 EUR. Se computan todos los bienes y derechos, esten o no exentos, sin deducir cargas, gravamenes ni deudas personales",
+          "threshold": 2000000,
+          "currency": "EUR",
+          "source": "art. 37.2 Ley 19/1991",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-sobre-patrimonio/quienes-estan-obligados-presentar-declaracion-ipatrimonio.html"
+        }
+      ],
+      "no_obligacion": "No existe obligacion de declarar cuando la base imponible sea igual o inferior a 700.000 EUR (o el importe fijado por la CCAA), la cuota resultante sea cero tras deducciones/bonificaciones, y el patrimonio bruto no supere 2.000.000 EUR",
+      "source": "art. 37 Ley 19/1991",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-sobre-patrimonio/quienes-estan-obligados-presentar-declaracion-ipatrimonio.html"
+    },
+
+    "plazo_presentacion": {
+      "inicio": "2026-04-08",
+      "fin": "2026-06-30",
+      "domiciliacion_bancaria_fin": "2026-06-25",
+      "ejercicio": 2025,
+      "source": "Orden HAC/242/2025",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G611.shtml"
+    },
+
+    "exenciones": {
+      "vivienda_habitual": {
+        "description": "La vivienda habitual del contribuyente queda exenta hasta un importe maximo de 300.000 EUR",
+        "importe_maximo": 300000,
+        "currency": "EUR",
+        "condiciones": [
+          "Ser titular en plena propiedad, propiedad compartida o derecho real de uso o disfrute (usufructo, uso o habitacion)",
+          "No se aplica a la nuda propiedad (titularidad sin uso)",
+          "La residencia se considera habitual cuando el declarante ha residido en ella de forma continuada durante al menos 3 anos",
+          "Excepcion al plazo de 3 anos: fallecimiento, separacion matrimonial, traslado laboral, obtencion de primer empleo u otras circunstancias analogas"
+        ],
+        "source": "art. 4.Cuatro Ley 19/1991",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-2-cuestiones-generales/exenciones/exenciones-generales-articulo-4/vivienda-habitual-contribuyente.html"
+      },
+
+      "bienes_afectos_actividad_economica": {
+        "description": "Estan exentos los bienes y derechos de las personas fisicas necesarios para el desarrollo de su actividad empresarial o profesional",
+        "condiciones": [
+          "Los bienes deben estar afectos a la actividad economica conforme a la normativa del IRPF",
+          "El contribuyente debe ejercer la actividad de forma habitual, personal y directa",
+          "La actividad debe constituir su principal fuente de renta: al menos el 50% de la base imponible general del IRPF debe proceder de rendimientos empresariales o profesionales",
+          "No se computan para el calculo de fuente principal las retribuciones por funciones directivas en entidades con participaciones exentas",
+          "Para arrendamiento de inmuebles: requiere al menos un empleado con contrato laboral a tiempo completo",
+          "En caso de bienes comunes a ambos conyuges, basta con que uno de ellos ejerza la actividad",
+          "En entidades en regimen de atribucion de rentas, cada socio debe cumplir individualmente los requisitos",
+          "Jubilacion activa: no impide el cumplimiento si la actividad se ejerce de forma habitual y personal"
+        ],
+        "source": "art. 4.Ocho.Uno Ley 19/1991",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-2-cuestiones-generales/exenciones/exenciones-generales-articulo-4/patrimonio-empresarial-profesional.html"
+      },
+
+      "participaciones_entidades": {
+        "description": "Exencion de participaciones en entidades cuando se cumplen conjuntamente los requisitos de participacion, funciones de direccion y actividad de la entidad",
+        "requisitos": {
+          "participacion_minima": {
+            "individual": {
+              "porcentaje": 5,
+              "description": "Participacion individual de al menos el 5% del capital"
+            },
+            "grupo_familiar": {
+              "porcentaje": 20,
+              "description": "Participacion conjunta de al menos el 20% con conyuge, ascendientes, descendientes o colaterales de segundo grado, ya sea por parentesco, afinidad o adopcion"
+            }
+          },
+          "funciones_direccion": "El sujeto pasivo debe ejercer efectivamente funciones de direccion en la entidad, percibiendo por ello una remuneracion que represente mas del 50% de la totalidad de sus rendimientos empresariales, profesionales y de trabajo personal",
+          "actividad_entidad": "La entidad no debe tener como actividad principal la gestion de un patrimonio mobiliario o inmobiliario (conforme al art. 4.Ocho.Dos.a Ley 19/1991)"
+        },
+        "alcance_exencion": "La exencion solo alcanza a la parte del valor de la participacion que corresponda a bienes y derechos afectos a la actividad economica, determinada proporcionalmente sobre el patrimonio neto total de la entidad",
+        "normativa_desarrollo": "Real Decreto 1704/1999, articulos 4 a 6",
+        "source": "art. 4.Ocho.Dos Ley 19/1991",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-2-cuestiones-generales/exenciones/exenciones-generales-articulo-4/participaciones-determinadas-entidades.html"
+      },
+
+      "source_general": "art. 4 Ley 19/1991",
+      "exact_url_general": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-2-cuestiones-generales/exenciones/exenciones-generales-articulo-4.html"
+    },
+
+    "minimo_exento": {
+      "description": "La base imponible se reducira, en concepto de minimo exento, en el importe que haya sido aprobado por la Comunidad Autonoma. Si la CCAA no lo ha regulado, se aplica el minimo estatal de 700.000 EUR",
+      "importe_estatal": 700000,
+      "currency": "EUR",
+      "importes_por_ccaa": {
+        "estatal_supletorio": {
+          "importe": 700000,
+          "nota": "Aplica cuando la CCAA no ha regulado minimo propio. Tambien aplica a no residentes y contribuyentes por obligacion real"
+        },
+        "Andalucia": {
+          "general": 700000,
+          "discapacidad_33_pct_o_mas": "1.250.000 a 1.500.000 EUR segun grado"
+        },
+        "Aragon": {
+          "general": 700000
+        },
+        "Illes_Balears": {
+          "general": 3000000
+        },
+        "Canarias": {
+          "general": 700000
+        },
+        "Cataluna": {
+          "general": 500000
+        },
+        "Extremadura": {
+          "general": 500000,
+          "discapacidad_33_pct_o_mas": "600.000 a 800.000 EUR segun grado"
+        },
+        "La_Rioja": {
+          "general": 700000
+        },
+        "Comunitat_Valenciana": {
+          "general": 1000000
+        }
+      },
+      "nota": "Las CCAA no listadas aplican el minimo estatal supletorio de 700.000 EUR (Asturias, Cantabria, Castilla-La Mancha, Castilla y Leon, Galicia, Madrid, Murcia, Navarra, Pais Vasco)",
+      "source": "art. 28 Ley 19/1991",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-4-determinacion-base-liquidable-integra/determinacion-base-liquidable-patrimonio-no-gravamen/sujetos-pasivos-residentes-ccaa.html"
+    },
+
+    "tarifa_estatal": {
+      "description": "Escala estatal del Impuesto sobre el Patrimonio. Se aplica cuando la CCAA no ha aprobado escala propia. Consta de 8 tramos progresivos",
+      "tramos": [
+        {
+          "tramo": 1,
+          "base_liquidable_hasta": 0.00,
+          "cuota_integra": 0.00,
+          "resto_base_liquidable_hasta": 167129.45,
+          "tipo_aplicable_pct": 0.2
+        },
+        {
+          "tramo": 2,
+          "base_liquidable_hasta": 167129.45,
+          "cuota_integra": 334.26,
+          "resto_base_liquidable_hasta": 167123.43,
+          "tipo_aplicable_pct": 0.3
+        },
+        {
+          "tramo": 3,
+          "base_liquidable_hasta": 334252.88,
+          "cuota_integra": 835.63,
+          "resto_base_liquidable_hasta": 334246.87,
+          "tipo_aplicable_pct": 0.5
+        },
+        {
+          "tramo": 4,
+          "base_liquidable_hasta": 668499.75,
+          "cuota_integra": 2506.86,
+          "resto_base_liquidable_hasta": 668499.76,
+          "tipo_aplicable_pct": 0.9
+        },
+        {
+          "tramo": 5,
+          "base_liquidable_hasta": 1336999.51,
+          "cuota_integra": 8523.36,
+          "resto_base_liquidable_hasta": 1336999.50,
+          "tipo_aplicable_pct": 1.3
+        },
+        {
+          "tramo": 6,
+          "base_liquidable_hasta": 2673999.01,
+          "cuota_integra": 25904.35,
+          "resto_base_liquidable_hasta": 2673999.02,
+          "tipo_aplicable_pct": 1.7
+        },
+        {
+          "tramo": 7,
+          "base_liquidable_hasta": 5347998.03,
+          "cuota_integra": 71362.33,
+          "resto_base_liquidable_hasta": 5347998.03,
+          "tipo_aplicable_pct": 2.1
+        },
+        {
+          "tramo": 8,
+          "base_liquidable_hasta": 10695996.06,
+          "cuota_integra": 183670.29,
+          "resto_base_liquidable_hasta": null,
+          "tipo_aplicable_pct": 3.5,
+          "nota": "En adelante (sin limite superior)"
+        }
+      ],
+      "ccaa_con_escala_propia": [
+        "Andalucia",
+        "Principado de Asturias",
+        "Illes Balears",
+        "Cantabria",
+        "Cataluna",
+        "Extremadura",
+        "Galicia",
+        "Region de Murcia",
+        "Comunitat Valenciana"
+      ],
+      "nota_ccaa": "Las CCAA listadas tienen escalas propias aprobadas. Cataluna y Galicia aplican escalas transitorias mientras el ITSGF siga vigente. Murcia modifico su escala via Ley de Presupuestos 3/2025",
+      "source": "art. 30 Ley 19/1991",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-4-determinacion-base-liquidable-integra/determinacion-cuota-integra/regla-general/escala-estatal.html"
+    },
+
+    "limite_conjunto_ip_irpf": {
+      "description": "La cuota integra del IP, conjuntamente con las cuotas del IRPF, no podra exceder del 60% de la suma de las bases imponibles del IRPF para los sujetos pasivos sometidos al impuesto por obligacion personal",
+      "limite_porcentaje": 60,
+      "base_calculo": "Suma de las bases imponibles del IRPF (general + ahorro)",
+      "exclusiones": [
+        "Se excluyen de la base de ahorro las ganancias patrimoniales por transmision de elementos con mas de un ano de antigueedad",
+        "Se excluye la parte de la cuota del IP que corresponda a bienes que no sean susceptibles de producir rendimientos en el IRPF"
+      ],
+      "reduccion_maxima": {
+        "porcentaje": 80,
+        "description": "La reduccion de la cuota del IP por aplicacion del limite conjunto no podra superar el 80% de dicha cuota. Es decir, se pagara como minimo el 20% de la cuota integra del IP",
+        "cuota_minima_pct": 20
+      },
+      "tributacion_conjunta": "Cuando los conyuges tributen conjuntamente en IRPF, se acumularan las cuotas del IP de ambos y la reduccion se prorratea proporcionalmente a sus respectivas cuotas individuales del IP",
+      "sentencias_ts_2025": "Sentencias del Tribunal Supremo de noviembre de 2025: el limite del art. 31 se aplica tambien a contribuyentes no residentes (eliminacion de trato diferenciado por residencia)",
+      "source": "art. 31 Ley 19/1991",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/limite-cuota-integra-cuota-minima-patrimonio.html"
+    },
+
+    "bonificaciones_ccaa": {
+      "description": "Las CCAA pueden aprobar bonificaciones sobre la cuota del IP (art. 47 Ley 22/2009). Mientras el ITSGF este vigente, las CCAA que tenian bonificacion del 100% aplican un regimen transitorio",
+      "ccaa_con_bonificacion": [
+        {
+          "ccaa": "Madrid",
+          "bonificacion_general": "100% de la cuota",
+          "estado_actual": "Suspendida mientras el ITSGF este vigente (Disposicion transitoria septima, Decreto Legislativo 1/2010)",
+          "regimen_transitorio": "Bonificacion igual a la diferencia entre la cuota integra total del IP (tras aplicar art. 31 Ley 19/1991) y la cuota integra total del ITSGF (tras aplicar art. 3.12 Ley 38/2022)",
+          "casilla": "[50]",
+          "source": "DL 1/2010 Comunidad de Madrid, DT septima",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas/madrid.html"
+        },
+        {
+          "ccaa": "Andalucia",
+          "bonificacion_general": "100% de la cuota (art. 25 bis Ley 5/2021)",
+          "estado_actual": "Suspendida mientras el ITSGF este vigente (Disposicion transitoria quinta Ley 5/2021)",
+          "regimen_transitorio": "Bonificacion igual a la diferencia entre la cuota integra total del IP (tras aplicar art. 31) y la cuota integra total del ITSGF (tras aplicar art. 3.12 Ley 38/2022)",
+          "casilla": "[50]",
+          "source": "Ley 5/2021 Andalucia, DT quinta",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas/andalucia.html"
+        },
+        {
+          "ccaa": "Cantabria",
+          "bonificacion_general": "Regimen transitorio mientras ITSGF vigente (bonificacion por diferencia IP-ITSGF)",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+        },
+        {
+          "ccaa": "Galicia",
+          "bonificacion_general": "Escala transitoria y bonificacion mientras ITSGF vigente",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+        },
+        {
+          "ccaa": "Region de Murcia",
+          "bonificacion_general": "Regimen transitorio (bonificacion por diferencia IP-ITSGF). Escala modificada por Ley de Presupuestos 3/2025",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+        },
+        {
+          "ccaa": "La Rioja",
+          "bonificacion_general": "Regimen transitorio (bonificacion por diferencia IP-ITSGF)",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+        },
+        {
+          "ccaa": "Aragon",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+        },
+        {
+          "ccaa": "Extremadura",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+        },
+        {
+          "ccaa": "Principado de Asturias",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+        },
+        {
+          "ccaa": "Illes Balears",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+        },
+        {
+          "ccaa": "Cataluna",
+          "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+        }
+      ],
+      "source": "art. 47 Ley 22/2009 + Manual Patrimonio 2025 Cap. 5",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/deducciones-bonificaciones-autonomicas/bonificaciones-autonomicas.html"
+    },
+
+    "urls_aeat": {
+      "modelo_714_ficha": "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G611.shtml",
+      "impuesto_patrimonio_general": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-patrimonio.html",
+      "manual_patrimonio_2025": "https://sede.agenciatributaria.gob.es/Sede/Ayuda/25Manual/714.shtml",
+      "manual_patrimonio_2025_pdf": "https://sede.agenciatributaria.gob.es/static_files/Sede/Biblioteca/Manual/Practicos/Patrimonio/Patrimonio-2025/ManualPatrimonio2025_es_es.pdf",
+      "obligados_declarar": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-sobre-patrimonio/quienes-estan-obligados-presentar-declaracion-ipatrimonio.html",
+      "como_presentar": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-sobre-patrimonio/se-presenta-declaracion-impuesto-sobre-patrimonio.html"
+    },
+    "urls_boe": {
+      "ley_19_1991_consolidada": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+      "ley_19_1991_art_4": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392&p=20231228&tn=1#a4",
+      "ley_19_1991_art_28": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392&p=20231228&tn=1#a28",
+      "ley_19_1991_art_30": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392&p=20231228&tn=1#a30",
+      "ley_19_1991_art_31": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392&p=20231228&tn=1#a31",
+      "ley_19_1991_art_37": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392&p=20231228&tn=1#a37",
+      "rdl_13_2011": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-15050"
+    }
+  },
+
+  "impuesto_solidaridad_grandes_fortunas": {
+    "nombre": "Impuesto Temporal de Solidaridad de las Grandes Fortunas",
+    "modelo": "718",
+    "normativa_principal": "Ley 38/2022, de 27 de diciembre, art. 3",
+    "normativa_complementaria": [
+      "Orden HFP/587/2023, de 9 de junio (modelo 718, condiciones y plazos)",
+      "Real Decreto-ley 8/2023, de 27 de diciembre (prorroga indefinida)",
+      "Ley 7/2024, de 20 de diciembre, Disposicion final decimocuarta (modificacion Ley 38/2022)"
+    ],
+
+    "caracter_temporal_y_prorroga": {
+      "descripcion_original": "El art. 3, seccion Veintiocho de la Ley 38/2022 establecia que el impuesto seria aplicable en los dos primeros ejercicios en que se devengase (2022 y 2023)",
+      "prorroga_indefinida": "El Real Decreto-ley 8/2023, DA quinta, apartado 2, prorrogo la aplicacion del impuesto 'en tanto no se produzca la revision de la tributacion patrimonial en el contexto de la reforma del sistema de financiacion autonomica'",
+      "consolidacion_ley_7_2024": "La Disposicion final decimocuarta de la Ley 7/2024, de 20 de diciembre, modifico la Ley 38/2022 consolidando la vigencia indefinida del impuesto",
+      "estado_actual": "VIGENTE con caracter indefinido desde Ley 7/2024",
+      "source": "art. 3.Veintiocho Ley 38/2022 (redaccion vigente) + DA 5.2 RDL 8/2023 + DF 14 Ley 7/2024",
+      "exact_url_ley_38_2022": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684",
+      "exact_url_rdl_8_2023": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452",
+      "exact_url_ley_7_2024": "https://www.boe.es/eli/es/l/2024/12/20/7"
+    },
+
+    "umbral": {
+      "description": "La titularidad por el sujeto pasivo en el momento del devengo de un patrimonio neto superior a 3.000.000 EUR constituye el hecho imponible del impuesto",
+      "importe": 3000000,
+      "currency": "EUR",
+      "source": "art. 3.Tres Ley 38/2022",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684&p=20241221&tn=1#a3"
+    },
+
+    "minimo_exento": {
+      "description": "La base imponible se reducira, en concepto de minimo exento, en 700.000 EUR",
+      "importe": 700000,
+      "currency": "EUR",
+      "source": "art. 3.Nueve Ley 38/2022",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684&p=20241221&tn=1#a3"
+    },
+
+    "tarifa": {
+      "description": "Escala del ITSGF. Consta de 4 tramos. El primer tramo (hasta 3.000.000 EUR de base liquidable) tributa al 0%, por lo que solo tributan patrimonios netos superiores a 3.700.000 EUR (3M umbral efectivo tras minimo exento de 700.000)",
+      "tramos": [
+        {
+          "tramo": 1,
+          "base_liquidable_hasta": 0.00,
+          "cuota_integra": 0.00,
+          "resto_base_liquidable_hasta": 3000000.00,
+          "tipo_aplicable_pct": 0.0
+        },
+        {
+          "tramo": 2,
+          "base_liquidable_hasta": 3000000.00,
+          "cuota_integra": 0.00,
+          "resto_base_liquidable_hasta": 2347998.03,
+          "tipo_aplicable_pct": 1.7
+        },
+        {
+          "tramo": 3,
+          "base_liquidable_hasta": 5347998.03,
+          "cuota_integra": 39915.97,
+          "resto_base_liquidable_hasta": 5347998.03,
+          "tipo_aplicable_pct": 2.1
+        },
+        {
+          "tramo": 4,
+          "base_liquidable_hasta": 10695996.06,
+          "cuota_integra": 152223.93,
+          "resto_base_liquidable_hasta": null,
+          "tipo_aplicable_pct": 3.5,
+          "nota": "En adelante (sin limite superior)"
+        }
+      ],
+      "source": "art. 3.Once Ley 38/2022",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684&p=20241221&tn=1#a3"
+    },
+
+    "minoracion_cuota_ip": {
+      "description": "De la cuota resultante, el sujeto pasivo podra deducir la cuota del Impuesto sobre el Patrimonio del ejercicio efectivamente satisfecha. Es decir, el ITSGF solo se paga en la medida que exceda lo ya pagado por IP",
+      "mecanismo": "Cuota ITSGF final = Cuota integra ITSGF - Cuota IP efectivamente satisfecha",
+      "nota": "Si la cuota del IP es igual o superior a la del ITSGF, no hay cuota a ingresar por ITSGF",
+      "source": "art. 3.Quince Ley 38/2022",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684&p=20241221&tn=1#a3"
+    },
+
+    "limite_conjunto": {
+      "description": "La cuota integra del ITSGF, conjuntamente con las cuotas del IRPF y del IP, no podra exceder del 60% de la suma de las bases imponibles del IRPF",
+      "limite_porcentaje": 60,
+      "base_calculo": "Suma de las bases imponibles del IRPF (general + ahorro)",
+      "source": "art. 3.Doce Ley 38/2022",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684&p=20241221&tn=1#a3"
+    },
+
+    "deduccion_impuesto_extranjero": {
+      "description": "Aplica el regimen de deduccion por impuesto satisfecho en el extranjero en los mismos terminos que el Impuesto sobre el Patrimonio",
+      "source": "art. 3.Dieciseis Ley 38/2022",
+      "exact_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684&p=20241221&tn=1#a3"
+    },
+
+    "plazo_presentacion": {
+      "inicio": "2026-07-01",
+      "ejercicio": 2025,
+      "nota": "El plazo de presentacion comienza el 1 de julio. La fecha fin se establece en la orden ministerial correspondiente",
+      "source": "Orden HFP/587/2023 + AEAT",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-temporal-solidaridad-grandes-fortunas.html"
+    },
+
+    "ccaa_afectadas": {
+      "description": "El ITSGF es de naturaleza estatal y no esta cedido a las CCAA. Afecta especialmente a contribuyentes residentes en CCAA que bonificaban el IP al 100% (Madrid, Andalucia, Galicia, Cantabria), ya que el ITSGF no es bonificable",
+      "ccaa_con_impacto_principal": [
+        "Madrid",
+        "Andalucia",
+        "Galicia",
+        "Cantabria"
+      ],
+      "simulador_aeat": "https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/ayuda-tecnica-modelo-718/modelo-718-open-simulador.html",
+      "source": "art. 3 Ley 38/2022",
+      "exact_url": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-temporal-solidaridad-grandes-fortunas.html"
+    },
+
+    "sentencia_tc": {
+      "description": "El Tribunal Constitucional declaro constitucional el ITSGF en Sentencia 149/2023 de 7 de noviembre (recurso 616-2023 de la Comunidad de Madrid) y en Sentencias 189/2023 y 190/2023 (recursos de la Asamblea de Madrid y Region de Murcia)",
+      "source": "STC 149/2023, STC 189/2023, STC 190/2023",
+      "exact_url_stc_149_2023": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-25631",
+      "exact_url_stc_189_2023": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-990",
+      "exact_url_stc_190_2023": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-991"
+    },
+
+    "urls_aeat": {
+      "modelo_718_ficha": "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/GC62.shtml",
+      "itsgf_general": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-temporal-solidaridad-grandes-fortunas.html",
+      "calculo_itsgf": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-sobre-patrimonio/calculo-impuesto-temporal-solidaridad-grandes-fortunas.html",
+      "simulador_abierto": "https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/ayuda-tecnica-modelo-718/modelo-718-open-simulador.html",
+      "ayuda_tecnica_718": "https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/ayuda-tecnica-modelo-718.html"
+    },
+    "urls_boe": {
+      "ley_38_2022_consolidada": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684",
+      "ley_38_2022_original": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-22684",
+      "ley_38_2022_art_3": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684&p=20241221&tn=1#a3",
+      "rdl_8_2023": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452",
+      "ley_7_2024": "https://www.boe.es/eli/es/l/2024/12/20/7",
+      "orden_hfp_587_2023": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-14061",
+      "correccion_errores_ley_38_2022": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-5695"
+    }
+  },
+
+  "interaccion_ip_itsgf": {
+    "description": "Relacion entre el Impuesto sobre el Patrimonio y el ITSGF. Ambos gravan el patrimonio neto pero el ITSGF actua como complemento estatal, minorando su cuota por lo pagado en IP",
+    "mecanismo": [
+      "1. Se calcula la cuota del IP aplicando la tarifa estatal o autonomica, con minimo exento y exenciones",
+      "2. Se aplica el limite conjunto IP + IRPF (art. 31 LIP): maximo 60% BI IRPF, minimo 20% cuota IP",
+      "3. Se aplican bonificaciones autonomicas (ej: Madrid/Andalucia: diferencia IP-ITSGF)",
+      "4. Se calcula la cuota del ITSGF aplicando su tarifa (umbral 3M, 4 tramos)",
+      "5. Se aplica el limite conjunto ITSGF + IP + IRPF: maximo 60% BI IRPF (art. 3.12 Ley 38/2022)",
+      "6. Se minora la cuota ITSGF por la cuota del IP efectivamente satisfecha (art. 3.15)",
+      "7. Si cuota IP >= cuota ITSGF, no hay cuota ITSGF a ingresar"
+    ],
+    "efecto_practico": "En CCAA sin bonificacion IP (o con escala alta), la cuota del IP suele absorber la del ITSGF. En CCAA con bonificacion 100% (Madrid, Andalucia), el contribuyente paga ITSGF neto pero la bonificacion transitoria IP cubre la parte del IP que excede el ITSGF",
+    "source": "Manual Patrimonio 2025 + art. 3 Ley 38/2022",
+    "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-5-determinacion-cuota-ingresar/limite-cuota-integra-cuota-minima-patrimonio.html"
+  },
+
+  "novedades_2025": {
+    "description": "Principales novedades del ejercicio 2025 para Patrimonio e ITSGF",
+    "novedades": [
+      {
+        "novedad": "ITSGF vigente con caracter indefinido tras Ley 7/2024 y RDL 8/2023",
+        "source": "DF 14 Ley 7/2024 + DA 5.2 RDL 8/2023",
+        "exact_url": "https://www.boe.es/eli/es/l/2024/12/20/7"
+      },
+      {
+        "novedad": "Illes Balears: minimo exento elevado a 3.000.000 EUR",
+        "source": "Manual Patrimonio 2025",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-4-determinacion-base-liquidable-integra/determinacion-base-liquidable-patrimonio-no-gravamen/sujetos-pasivos-residentes-ccaa.html"
+      },
+      {
+        "novedad": "Comunitat Valenciana: minimo exento modificado a 1.000.000 EUR",
+        "source": "Manual Patrimonio 2025",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/c-4-determinacion-base-liquidable-integra/determinacion-base-liquidable-patrimonio-no-gravamen/sujetos-pasivos-residentes-ccaa.html"
+      },
+      {
+        "novedad": "La Rioja: minimo exento fijado en 700.000 EUR (desde 1 enero 2025)",
+        "source": "Manual Patrimonio 2025",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/principales-novedades.html"
+      },
+      {
+        "novedad": "Region de Murcia: escala autonomica modificada por Ley de Presupuestos 3/2025. Bonificacion transitoria mientras ITSGF vigente",
+        "source": "Manual Patrimonio 2025",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/principales-novedades.html"
+      },
+      {
+        "novedad": "Cataluna y Galicia: continuan aplicando escalas transitorias por vigencia del ITSGF",
+        "source": "Manual Patrimonio 2025",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/principales-novedades.html"
+      },
+      {
+        "novedad": "Comunitat Valenciana: nueva deduccion autonomica para inversores en empresas emergentes locales",
+        "source": "Manual Patrimonio 2025",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/principales-novedades.html"
+      },
+      {
+        "novedad": "Sentencias TS noviembre 2025: el limite conjunto art. 31 LIP se aplica tambien a no residentes (eliminacion de trato diferenciado)",
+        "source": "Manual Patrimonio 2025",
+        "exact_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/patrimonio-2025/principales-novedades.html"
+      }
+    ]
+  }
+}

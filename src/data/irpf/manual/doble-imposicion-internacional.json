@@ -1,0 +1,417 @@
+{
+  "year": 2025,
+  "chapter": 18,
+  "title": "Doble imposicion internacional",
+  "source": "AEAT Manual Practico Renta 2025, Capitulo 18 — Cuota liquida y resultante de la autoliquidacion",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/deducciones-cuota-liquida-total/deduccion-doble-imposicion-internacional.html",
+  "verified_date": "2026-03-20",
+
+  "deduction_art80": {
+    "id": "doble_imposicion_internacional_art80",
+    "name": "Deduccion por doble imposicion internacional, por razon de las rentas obtenidas y gravadas en el extranjero",
+    "legal_basis": "art. 80 Ley 35/2006 (LIRPF)",
+    "boe_reference": "BOE-A-2006-20764",
+    "status": "active",
+    "description": "Mecanismo para evitar que una renta obtenida en el extranjero por contribuyentes del IRPF este sujeta a este impuesto en Espana y tambien a un impuesto de naturaleza analoga en el extranjero. Se aplica tanto si existe convenio de doble imposicion (CDI) como si no existe.",
+    "casillas": {
+      "deduction_foreign_income": {
+        "casilla": "0588",
+        "description": "Deduccion por doble imposicion internacional, por razon de las rentas obtenidas y gravadas en el extranjero"
+      },
+      "deduction_transparency_regime": {
+        "casilla": "0589",
+        "description": "Deduccion por doble imposicion internacional en el regimen de transparencia fiscal internacional (art. 91.9 LIRPF)"
+      },
+      "deduction_image_rights": {
+        "casilla": "0590",
+        "description": "Deduccion por doble imposicion internacional en el regimen de imputacion de rentas por cesion de derechos de imagen"
+      }
+    },
+    "calculation": {
+      "rule": "La deduccion sera la MENOR de las dos cantidades siguientes",
+      "limit_a": {
+        "description": "El importe efectivo de lo satisfecho en el extranjero por razon de un impuesto de naturaleza identica o analoga al IRPF o al Impuesto sobre la Renta de no Residentes, como consecuencia de la obtencion de dichos rendimientos o ganancias patrimoniales",
+        "notes": [
+          "Debe tratarse de un impuesto de naturaleza identica o analoga al IRPF",
+          "Se considera el importe efectivamente pagado, no el meramente retenido si no se ha ingresado",
+          "Incluye retenciones en origen practicadas por el pais fuente",
+          "Si existe CDI, el limite puede ser el tipo reducido del convenio, no el tipo interno del pais fuente"
+        ]
+      },
+      "limit_b": {
+        "description": "El resultado de aplicar el tipo medio efectivo de gravamen a la parte de base liquidable gravada en el extranjero",
+        "formula": "TME x Base_liquidable_extranjero"
+      }
+    },
+    "tipo_medio_efectivo": {
+      "formula": "TME = (Cuota_liquida_total / Base_liquidable) x 100",
+      "precision": "Expresado con dos decimales",
+      "differentiation": "Se calcula separadamente para la base general y la base del ahorro",
+      "general_base": {
+        "formula": "TME_general = (Cuota_liquida_total x (Cuota_integra_general / Cuota_integra_total)) / Base_liquidable_general x 100",
+        "notes": "Se aplica a la parte de base liquidable general de fuente extranjera, sin desagregar entre rendimientos y ganancias"
+      },
+      "savings_base": {
+        "formula": "TME_ahorro = (Cuota_liquida_total x (Cuota_integra_ahorro / Cuota_integra_total)) / Base_liquidable_ahorro x 100",
+        "notes": "Se aplica a la parte de base liquidable del ahorro de fuente extranjera, distinguiendo si son rendimientos o ganancias patrimoniales"
+      }
+    },
+    "autonomous_community_split": {
+      "description": "Para el calculo del IRPF que corresponde a la Comunidad Autonoma, se resta el 50% de las casillas 0588, 0589 y 0590 de la cuota liquida autonomica incrementada (casilla 0586)",
+      "percentage_state": 50,
+      "percentage_autonomous": 50
+    },
+    "exclusion": "No se aplica el procedimiento de eliminacion de la doble imposicion previsto en el art. 22 de la Ley del Impuesto sobre Sociedades"
+  },
+
+  "applicable_income_types": [
+    {
+      "type": "Rendimientos del trabajo obtenidos en el extranjero",
+      "description": "Rentas del trabajo por servicios prestados en el extranjero, incluyendo la posible aplicacion de la exencion del art. 7.p LIRPF (hasta 60.100 EUR/ano si se cumplen requisitos). Si no aplica la exencion, los rendimientos se declaran y se deduce el impuesto pagado fuera.",
+      "tax_base": "general",
+      "casilla_income": "Rendimientos netos del trabajo (ingresos integros menos gastos deducibles) obtenidos en el extranjero",
+      "casilla_deduction": "0588",
+      "notes": "Si aplica exencion art. 7.p, la renta exenta no genera derecho a deduccion por doble imposicion (no esta gravada en Espana)",
+      "source": "art. 80 LIRPF, art. 7.p LIRPF"
+    },
+    {
+      "type": "Dividendos extranjeros",
+      "description": "Rendimientos del capital mobiliario obtenidos por participacion en fondos propios de entidades no residentes. Se declaran como rendimientos del ahorro. La retencion en origen practicada por el pais fuente puede deducirse con el limite del art. 80.",
+      "tax_base": "ahorro",
+      "casilla_income": "Rendimientos del capital mobiliario a integrar en base del ahorro",
+      "casilla_deduction": "0588",
+      "withholding_treatment": "Si existe CDI, la retencion en origen no puede superar el tipo del convenio. Si el pais fuente retiene mas del tipo convenido, el exceso debe reclamarse al pais fuente (no se deduce en Espana). Si no hay CDI, se deduce la retencion efectiva con el limite del TME espanol.",
+      "source": "art. 80 LIRPF, CDIs aplicables"
+    },
+    {
+      "type": "Intereses extranjeros",
+      "description": "Rendimientos del capital mobiliario por cesion a terceros de capitales propios (depositos, bonos, obligaciones) de fuente extranjera. Mismo tratamiento que dividendos en cuanto a la deduccion.",
+      "tax_base": "ahorro",
+      "casilla_income": "Rendimientos del capital mobiliario a integrar en base del ahorro",
+      "casilla_deduction": "0588",
+      "withholding_treatment": "Aplicar el tipo del CDI si existe. El exceso retenido se reclama al pais fuente.",
+      "source": "art. 80 LIRPF"
+    },
+    {
+      "type": "Canones / Royalties extranjeros",
+      "description": "Rendimientos derivados de la cesion del uso de propiedad intelectual, industrial, know-how, etc., de fuente extranjera.",
+      "tax_base": "general",
+      "casilla_income": "Rendimientos del capital mobiliario a integrar en base general o del ahorro segun tipo",
+      "casilla_deduction": "0588",
+      "source": "art. 80 LIRPF"
+    },
+    {
+      "type": "Ganancias patrimoniales de fuente extranjera",
+      "description": "Ganancias patrimoniales obtenidas en el extranjero (venta de acciones extranjeras, inmuebles en el extranjero, etc.). Pueden integrarse en base general (si no derivan de transmision) o en base del ahorro (si derivan de transmision).",
+      "tax_base": "ahorro_o_general",
+      "casilla_income": "Ganancias patrimoniales obtenidas en el extranjero",
+      "casilla_deduction": "0588",
+      "source": "art. 80 LIRPF"
+    },
+    {
+      "type": "Rendimientos de actividades economicas en el extranjero",
+      "description": "Rendimientos netos reducidos de actividades economicas realizadas en el extranjero.",
+      "tax_base": "general",
+      "casilla_income": "Rendimientos netos reducidos de actividades economicas obtenidos en el extranjero",
+      "casilla_deduction": "0588",
+      "source": "art. 80 LIRPF"
+    },
+    {
+      "type": "Rendimientos de capital inmobiliario de fuente extranjera",
+      "description": "Rendimientos por alquiler de inmuebles situados en el extranjero.",
+      "tax_base": "general",
+      "casilla_income": "Rendimientos netos reducidos del capital inmobiliario",
+      "casilla_deduction": "0588",
+      "source": "art. 80 LIRPF"
+    }
+  ],
+
+  "transparency_fiscal_internacional": {
+    "legal_basis": "art. 91 LIRPF (apartados 8, 9 y 10)",
+    "casilla": "0589",
+    "description": "Deduccion especifica cuando el contribuyente tiene rentas imputadas por el regimen de transparencia fiscal internacional (participacion en entidades no residentes en territorios de baja tributacion). La deduccion se aplica sobre el impuesto pagado en el extranjero por la entidad no residente o por la distribucion de dividendos.",
+    "calculation": "Impuesto o gravamen efectivamente satisfecho en el extranjero por razon de la distribucion de dividendos o participaciones en beneficios de la entidad no residente cuyas rentas positivas se imputan al contribuyente.",
+    "limit": "No puede exceder la cuota integra que en Espana corresponderia pagar por la renta positiva imputada",
+    "exclusions": [
+      "Impuestos pagados en jurisdicciones no cooperativas quedan excluidos de la deduccion"
+    ],
+    "dividend_non_integration": "No se integran en la base imponible del contribuyente los dividendos o participaciones en beneficios en la parte que corresponda a la renta positiva que haya sido previamente imputada (evita doble inclusion)",
+    "capital_gains_adjustment": "Al transmitir las participaciones, el importe de las rentas previamente imputadas se computa como mayor valor de adquisicion (art. 91.10 LIRPF)"
+  },
+
+  "image_rights_regime": {
+    "legal_basis": "art. 92 LIRPF",
+    "casilla": "0590",
+    "description": "Deduccion por doble imposicion en el regimen de imputacion de rentas por cesion de derechos de imagen. Tres conceptos deducibles: impuestos personales pagados por el primer cesionario, impuestos sobre distribucion de dividendos de la entidad no residente, e impuestos personales pagados por el titular de los derechos."
+  },
+
+  "treaty_countries": {
+    "source": "https://sede.agenciatributaria.gob.es/Sede/normativa-criterios-interpretativos/fiscalidad-internacional/convenios-doble-imposicion-firmados-espana.html",
+    "source_annex": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-tributacion-no-residentes/anexos/paises-convenio.html",
+    "total_approximate": 93,
+    "list": [
+      "Albania", "Alemania", "Andorra", "Arabia Saudi", "Argelia",
+      "Argentina", "Armenia", "Australia", "Austria", "Azerbaiyan",
+      "Barbados", "Belgica", "Bielorrusia", "Bolivia",
+      "Bosnia y Herzegovina", "Brasil", "Bulgaria",
+      "Cabo Verde", "Canada", "Catar", "Chequia", "Chile",
+      "China", "Chipre", "Colombia", "Corea del Sur", "Costa Rica",
+      "Croacia", "Cuba",
+      "Ecuador", "Egipto", "Emiratos Arabes Unidos",
+      "Eslovaquia", "Eslovenia", "Estados Unidos", "Estonia",
+      "Filipinas", "Finlandia", "Francia",
+      "Georgia", "Grecia",
+      "Hong Kong", "Hungria",
+      "India", "Indonesia", "Iran", "Irlanda", "Islandia", "Israel", "Italia",
+      "Jamaica", "Japon",
+      "Kazajistan", "Kuwait",
+      "Letonia", "Lituania", "Luxemburgo",
+      "Macedonia", "Malasia", "Malta", "Marruecos", "Mexico", "Moldavia",
+      "Nigeria", "Noruega", "Nueva Zelanda",
+      "Oman",
+      "Paises Bajos", "Pakistan", "Panama", "Paraguay", "Polonia", "Portugal",
+      "Reino Unido", "Republica Dominicana", "Rumania", "Federacion Rusa",
+      "El Salvador", "Senegal", "Serbia", "Singapur", "Sudafrica", "Suecia", "Suiza",
+      "Tailandia", "Trinidad y Tobago", "Tunez", "Turquia",
+      "Uruguay", "Uzbekistan",
+      "Venezuela", "Vietnam"
+    ],
+    "denounced_or_expired": [
+      {
+        "country": "Dinamarca",
+        "status": "Convenio denunciado. Sin efecto desde 01-01-2009"
+      },
+      {
+        "country": "Argentina (convenio antiguo)",
+        "status": "Convenio antiguo expirado 01-01-2013. Nuevo convenio firmado."
+      },
+      {
+        "country": "Turkmenistan",
+        "status": "Convenio de la antigua URSS perdio vigencia en 2000"
+      },
+      {
+        "country": "Kirguistan",
+        "status": "Convenio de la antigua URSS denunciado. Sin efecto desde 01-01-2023"
+      }
+    ]
+  },
+
+  "common_withholding_rates": {
+    "source": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-tributacion-no-residentes/anexos/limites-imposicion-convenios.html",
+    "description": "Tipos maximos de retencion en origen segun CDI. El pais fuente no puede retener mas de estos porcentajes. Tasas en porcentaje. Cuando hay dos tasas separadas por '/', la primera suele ser para participaciones significativas y la segunda para el resto, salvo que se indique lo contrario.",
+    "note": "Estos datos proceden del Anexo III del Manual de Tributacion de No Residentes de AEAT. Tasas multiples reflejan condiciones distintas segun el convenio (participacion, tipo de renta, etc.). Consultar el convenio especifico para el detalle.",
+    "rates": [
+      { "country": "Albania", "dividends_general": 10, "dividends_subsidiary": "10 (75% participacion)", "interest": "0/5", "royalties": "0/6" },
+      { "country": "Alemania (nuevo convenio)", "dividends_general": 15, "dividends_subsidiary": 10, "interest": 5, "royalties": 0 },
+      { "country": "Andorra", "dividends_general": 15, "dividends_subsidiary": 10, "interest": 5, "royalties": 5 },
+      { "country": "Arabia Saudi", "dividends_general": 5, "dividends_subsidiary": "5 (25% participacion)", "interest": 0, "royalties": "0/5" },
+      { "country": "Argelia", "dividends_general": 15, "dividends_subsidiary": 10, "interest": 5, "royalties": "0/5" },
+      { "country": "Argentina (nuevo)", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 10, "royalties": "0/12" },
+      { "country": "Armenia", "dividends_general": 10, "dividends_subsidiary": "10 (25% participacion)", "interest": 0, "royalties": "5/10" },
+      { "country": "Australia", "dividends_general": 15, "interest": null, "royalties": 10 },
+      { "country": "Austria", "dividends_general": 15, "dividends_subsidiary": "15 (50% participacion)", "interest": 10, "royalties": 5 },
+      { "country": "Azerbaiyan", "dividends_general": 10, "dividends_subsidiary": "10 (25% + >250.000 EUR)", "interest": 5, "royalties": "0/8" },
+      { "country": "Barbados", "dividends_general": 5, "dividends_subsidiary": "5 (25% participacion)", "interest": 0, "royalties": 0 },
+      { "country": "Belgica", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 0, "royalties": "0/10" },
+      { "country": "Bielorrusia", "dividends_general": 10, "dividends_subsidiary": 10, "interest": "5 (0 si inversion >1M EUR)", "royalties": "0/5" },
+      { "country": "Bolivia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 10, "royalties": "0/15" },
+      { "country": "Bosnia y Herzegovina", "dividends_general": 10, "dividends_subsidiary": "10 (20% participacion)", "interest": 5, "royalties": "0/7" },
+      { "country": "Brasil", "dividends_general": 15, "interest": null, "royalties": "10/15" },
+      { "country": "Bulgaria", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": 0 },
+      { "country": "Cabo Verde", "dividends_general": 10, "dividends_subsidiary": "10 (25% participacion)", "interest": 0, "royalties": "0/5" },
+      { "country": "Canada", "dividends_general": "15/0", "dividends_subsidiary": 10, "interest": 5, "royalties": "0/10/15" },
+      { "country": "Catar", "dividends_general": 5, "interest": 0, "royalties": 0 },
+      { "country": "Chequia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": "0/5" },
+      { "country": "Chile", "dividends_general": 10, "dividends_subsidiary": "10 (20% participacion)", "interest": 5, "royalties": "5/15" },
+      { "country": "China (nuevo)", "dividends_general": "10/0", "dividends_subsidiary": "10 (25% participacion)", "interest": 5, "royalties": "0/10" },
+      { "country": "Chipre", "dividends_general": 5, "dividends_subsidiary": "5 (10% participacion)", "interest": 0, "royalties": 0 },
+      { "country": "Colombia", "dividends_general": 5, "dividends_subsidiary": "5 (20% participacion)", "interest": 0, "royalties": 10 },
+      { "country": "Corea del Sur", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 10, "royalties": 10 },
+      { "country": "Costa Rica", "dividends_general": 12, "dividends_subsidiary": "12 (20% participacion)", "interest": 5, "royalties": "0/5/10" },
+      { "country": "Croacia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 0, "royalties": "0/8" },
+      { "country": "Cuba", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": 10 },
+      { "country": "Ecuador", "dividends_general": 15, "interest": null, "royalties": "5/10" },
+      { "country": "Egipto", "dividends_general": 12, "dividends_subsidiary": "12 (25% participacion)", "interest": 9, "royalties": 10 },
+      { "country": "Emiratos Arabes Unidos", "dividends_general": 15, "dividends_subsidiary": 10, "interest": 5, "royalties": 0 },
+      { "country": "Eslovaquia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": "0/5" },
+      { "country": "Eslovenia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": 5 },
+      { "country": "Estados Unidos (desde 27-11-2019)", "dividends_general": "0/15", "dividends_subsidiary": "10 (80% participacion)", "interest": "0/5", "royalties": "0/10" },
+      { "country": "Estonia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": "0/10" },
+      { "country": "Filipinas", "dividends_general": 15, "dividends_subsidiary": "10 (10% participacion)", "interest": 10, "royalties": "10/15/20" },
+      { "country": "Finlandia (nuevo)", "dividends_general": "15/0", "dividends_subsidiary": 10, "interest": 5, "royalties": 0 },
+      { "country": "Francia", "dividends_general": 15, "dividends_subsidiary": 10, "interest": 0, "royalties": "0/5" },
+      { "country": "Georgia", "dividends_general": 10, "dividends_subsidiary": 10, "interest": 0, "royalties": 0 },
+      { "country": "Grecia", "dividends_general": 10, "dividends_subsidiary": "10 (25% participacion)", "interest": 5, "royalties": "0/8" },
+      { "country": "Hong Kong", "dividends_general": 10, "dividends_subsidiary": "10 (25% participacion)", "interest": 0, "royalties": "0/5" },
+      { "country": "Hungria", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": 0 },
+      { "country": "India", "dividends_general": 15, "interest": null, "royalties": "10/20" },
+      { "country": "Indonesia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 10, "royalties": 10 },
+      { "country": "Iran", "dividends_general": 10, "dividends_subsidiary": "10 (20% participacion)", "interest": 5, "royalties": 7.5 },
+      { "country": "Irlanda", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 0, "royalties": "0/5/8/10" },
+      { "country": "Islandia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": 5 },
+      { "country": "Israel", "dividends_general": 10, "interest": null, "royalties": "5/7" },
+      { "country": "Italia", "dividends_general": 15, "interest": null, "royalties": "4/8" },
+      { "country": "Jamaica", "dividends_general": 10, "dividends_subsidiary": "10 (25% participacion)", "interest": 5, "royalties": "0/10" },
+      { "country": "Japon (nuevo)", "dividends_general": "0/5/10", "dividends_subsidiary": 10, "interest": "0/10", "royalties": "0/10" },
+      { "country": "Kazajistan", "dividends_general": 15, "dividends_subsidiary": 10, "interest": 5, "royalties": "0/10" },
+      { "country": "Kuwait", "dividends_general": 5, "dividends_subsidiary": "5 (10% participacion)", "interest": 0, "royalties": 0 },
+      { "country": "Letonia", "dividends_general": 10, "dividends_subsidiary": "10 (25% participacion)", "interest": 5, "royalties": "0/10" },
+      { "country": "Lituania", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": "0/10" },
+      { "country": "Luxemburgo", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 10, "royalties": 10 },
+      { "country": "Macedonia", "dividends_general": 15, "dividends_subsidiary": 10, "interest": 5, "royalties": 5 },
+      { "country": "Malasia", "dividends_general": 5, "dividends_subsidiary": 5, "interest": 0, "royalties": "0/5/7/10" },
+      { "country": "Malta", "dividends_general": 5, "dividends_subsidiary": "5 (25% participacion)", "interest": 0, "royalties": 0 },
+      { "country": "Marruecos", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 10, "royalties": "5/10" },
+      { "country": "Mexico (desde 27-09-2017)", "dividends_general": "10/0", "dividends_subsidiary": 10, "interest": 0, "royalties": "4.9/10" },
+      { "country": "Moldavia", "dividends_general": 10, "dividends_subsidiary": "10 (25%/50% participacion)", "interest": "0/5", "royalties": "0/5" },
+      { "country": "Nigeria", "dividends_general": 10, "dividends_subsidiary": 10, "interest": 7.5, "royalties": "3.75/7.5" },
+      { "country": "Noruega", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 10, "royalties": "0/10" },
+      { "country": "Nueva Zelanda", "dividends_general": 15, "interest": null, "royalties": 10 },
+      { "country": "Oman", "dividends_general": 10, "dividends_subsidiary": "10 (20% participacion)", "interest": 0, "royalties": 5 },
+      { "country": "Paises Bajos", "dividends_general": 15, "dividends_subsidiary": "15 (25%/50% participacion)", "interest": "5/10", "royalties": 10 },
+      { "country": "Pakistan", "dividends_general": 10, "dividends_subsidiary": "10 (25%/50% participacion)", "interest": "5/7.5", "royalties": "0/10" },
+      { "country": "Panama", "dividends_general": 10, "dividends_subsidiary": "10 (40%/80% participacion)", "interest": "5/10", "royalties": "0/5" },
+      { "country": "Paraguay", "dividends_general": "0/10", "dividends_subsidiary": "10 (50% participacion)", "interest": 5, "royalties": "0/5" },
+      { "country": "Polonia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": "0/10" },
+      { "country": "Portugal", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 10, "royalties": 5 },
+      { "country": "Reino Unido (nuevo)", "dividends_general": "10/15/0", "dividends_subsidiary": 10, "interest": 0, "royalties": 0 },
+      { "country": "Republica Dominicana", "dividends_general": 10, "dividends_subsidiary": "10 (75% participacion)", "interest": 0, "royalties": "0/10" },
+      { "country": "Rumania (nuevo)", "dividends_general": "0/5", "dividends_subsidiary": 10, "interest": 0, "royalties": "0/3" },
+      { "country": "Federacion Rusa", "dividends_general": "5/10/15", "interest": null, "royalties": 5 },
+      { "country": "El Salvador", "dividends_general": 12, "dividends_subsidiary": "12 (50% participacion)", "interest": 0, "royalties": "0/10" },
+      { "country": "Senegal", "dividends_general": 10, "interest": null, "royalties": "0/10" },
+      { "country": "Serbia", "dividends_general": 10, "dividends_subsidiary": "10 (25% participacion)", "interest": 5, "royalties": "0/5/10" },
+      { "country": "Singapur", "dividends_general": 5, "dividends_subsidiary": "5 (10% participacion)", "interest": 0, "royalties": "0/5" },
+      { "country": "Sudafrica", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": "0/5" },
+      { "country": "Suecia", "dividends_general": 15, "dividends_subsidiary": "15 (50% participacion)", "interest": 10, "royalties": 15 },
+      { "country": "Suiza", "dividends_general": "15/0", "dividends_subsidiary": "0/10 (25% participacion)", "interest": "0/10", "royalties": "0/5/10" },
+      { "country": "Tailandia", "dividends_general": 10, "dividends_subsidiary": "0 (participacion significativa)", "interest": null, "royalties": "5/8/10/15" },
+      { "country": "Trinidad y Tobago", "dividends_general": 10, "dividends_subsidiary": "10 (25%/50% participacion)", "interest": "0/5", "royalties": "0/8" },
+      { "country": "Tunez", "dividends_general": 15, "dividends_subsidiary": "15 (50% participacion)", "interest": 5, "royalties": "5/10" },
+      { "country": "Turquia", "dividends_general": 15, "dividends_subsidiary": "15 (25% participacion)", "interest": 5, "royalties": "10/15" },
+      { "country": "Uruguay", "dividends_general": 5, "dividends_subsidiary": "5 (75% participacion)", "interest": 0, "royalties": "0/5/10" },
+      { "country": "Uzbekistan", "dividends_general": 10, "dividends_subsidiary": "10 (25% participacion)", "interest": 5, "royalties": 5 },
+      { "country": "Venezuela", "dividends_general": 10, "dividends_subsidiary": "10 (25% participacion)", "interest": 0, "royalties": "0/4.95/10" },
+      { "country": "Vietnam", "dividends_general": 15, "dividends_subsidiary": "15 (25%/50% participacion)", "interest": "7/10", "royalties": 10 }
+    ]
+  },
+
+  "recovery_excess_withholding": {
+    "description": "Cuando el pais fuente retiene mas del tipo previsto en el CDI, el exceso no es deducible en Espana. El contribuyente debe reclamar la devolucion del exceso al pais fuente.",
+    "source": "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/residentes-rentas-procedentes-extranjero.html",
+    "steps": [
+      "1. Identificar el tipo maximo de retencion del CDI aplicable para el tipo de renta y pais",
+      "2. Si la retencion efectiva en origen supera el tipo del CDI, el exceso se reclama al pais fuente (no a Espana)",
+      "3. En la declaracion de IRPF espanola, deducir como maximo el tipo del CDI (o el TME espanol si es menor)",
+      "4. Presentar solicitud de devolucion ante la administracion tributaria del pais fuente, aportando certificado de residencia fiscal espanola",
+      "5. El certificado de residencia fiscal se solicita a AEAT (formulario de convenio cumplimentado)",
+      "6. Plazo general: 4 anos desde el final del periodo de declaracion e ingreso de la retencion"
+    ],
+    "spanish_certificate": {
+      "description": "Certificado de residencia fiscal en Espana necesario para aplicar tipos reducidos del CDI",
+      "issuer": "AEAT",
+      "procedure": "Solicitud de certificado de residencia fiscal en Espana a efectos de aplicacion de CDI",
+      "url": "https://sede.agenciatributaria.gob.es"
+    },
+    "non_treaty_countries": {
+      "description": "Si no existe CDI con el pais fuente, la retencion integra se puede deducir en Espana con el limite del art. 80 (menor entre impuesto pagado fuera y TME espanol aplicado a la base liquidable extranjera). No hay mecanismo de devolucion especifico del exceso — simplemente se pierde el exceso que supere el limite."
+    },
+    "excess_as_expense": {
+      "description": "La parte del impuesto satisfecho en el extranjero que no genere derecho a deduccion en la cuota tiene la consideracion de gasto deducible del rendimiento",
+      "source": "art. 80 LIRPF in fine"
+    }
+  },
+
+  "worked_example_2025": {
+    "source": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/deducciones-cuota-liquida-total/deduccion-doble-imposicion-internacional/ejemplo-deduccion-doble-imposicion-internacional.html",
+    "description": "Ejemplo del Manual AEAT IRPF 2025 — contribuyente de 30 anos, soltero, residente en Malaga",
+    "data": {
+      "base_imponible_general": 36000,
+      "base_imponible_ahorro": 12000,
+      "reduccion_base_general": 4800,
+      "base_liquidable_general": 31200,
+      "base_liquidable_ahorro": 12000,
+      "deducciones_cuota_general": 1500,
+      "foreign_income_general": {
+        "rendimiento_neto": 6000,
+        "impuesto_pagado_extranjero": 1100
+      },
+      "foreign_income_ahorro": {
+        "rendimientos_capital_mobiliario_neto": 6000,
+        "ganancia_patrimonial": 6000,
+        "impuesto_pagado_extranjero": 1080
+      }
+    },
+    "calculation_steps": {
+      "step1_cuotas_integras": {
+        "estatal_general": 3235.50,
+        "autonomica_general": 3194.75,
+        "estatal_ahorro": 1200,
+        "autonomica_ahorro": 1200,
+        "total_cuota_integra_general": 6430.25,
+        "total_cuota_integra_ahorro": 2400,
+        "total_cuota_integra": 8830.25
+      },
+      "step2_cuota_liquida": {
+        "cuota_integra_total": 8830.25,
+        "deducciones": 1500,
+        "cuota_liquida": 7330.25
+      },
+      "step3_limit_a_impuesto_extranjero": {
+        "general": 1100,
+        "ahorro": 1080,
+        "total": 2180
+      },
+      "step4_tme_general": {
+        "formula": "7330.25 x (6430.25 / 8830.25) / 31200 x 100",
+        "result_percent": 17.10
+      },
+      "step5_tme_ahorro": {
+        "formula": "7330.25 x (2400 / 8830.25) / 12000 x 100",
+        "result_percent": 16.60
+      },
+      "step6_base_liquidable_extranjera_general": {
+        "formula": "(31200 x 6000) / 36000",
+        "result": 5200
+      },
+      "step7_limit_b_cuota_espanola_sobre_renta_extranjera": {
+        "general": { "formula": "5200 x 17.10%", "result": 889.20 },
+        "ahorro": { "formula": "6000 x 16.60%", "result": 996 },
+        "total": 1885.20
+      },
+      "step8_deduction_applied": {
+        "limit_a": 2180,
+        "limit_b": 1885.20,
+        "deduction": 1885.20,
+        "breakdown": {
+          "general_component": 889.20,
+          "ahorro_component": 996
+        },
+        "rule": "Se aplica la MENOR de las dos cantidades"
+      }
+    }
+  },
+
+  "obligation_to_file": {
+    "description": "Los contribuyentes con derecho a aplicar la deduccion por doble imposicion internacional estan obligados a declarar, con independencia de la cuantia y naturaleza de las rentas obtenidas",
+    "source": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c01-campana-declaracion-renta/quienes-estan-obligados-presentar-declaracion-irpf/delimitacion-obligacion-declarar-irpf.html"
+  },
+
+  "carry_forward": {
+    "description": "La LIRPF no contempla expresamente un mecanismo de carry-forward (arrastre a ejercicios futuros) de la deduccion por doble imposicion internacional no aplicada, a diferencia de lo que si prevee la Ley del Impuesto sobre Sociedades (art. 31.2 LIS). Sin embargo, la deduccion puede aplicarse aunque los impuestos extranjeros correspondan a periodos impositivos distintos al de imputacion de la renta en Espana.",
+    "note": "Este es un punto donde la normativa IRPF difiere de la normativa IS. En IS, la deduccion no aplicada puede arrastrarse 10 anos. En IRPF no hay prevision similar explicita.",
+    "source": "art. 80 LIRPF, comparativa con art. 31.2 LIS"
+  },
+
+  "art_7p_exemption": {
+    "description": "Alternativa a la deduccion por doble imposicion: exencion del art. 7.p LIRPF para rendimientos del trabajo obtenidos en el extranjero (hasta 60.100 EUR anuales) si se cumplen requisitos. Ambos mecanismos (exencion 7.p y deduccion art. 80) son incompatibles para la misma renta — el contribuyente debe elegir.",
+    "max_exempt": 60100,
+    "requirements": [
+      "Que los trabajos se realicen efectivamente en el extranjero",
+      "Que se realicen para una empresa o entidad no residente o un establecimiento permanente en el extranjero",
+      "Que en el pais donde se realicen los trabajos exista un impuesto de naturaleza identica o analoga al IRPF (no tiene que existir CDI)",
+      "Que el pais no sea territorio calificado como paraiso fiscal"
+    ],
+    "source": "art. 7.p LIRPF"
+  }
+}

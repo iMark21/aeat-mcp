@@ -1,0 +1,177 @@
+{
+  "verified_date": "2026-03-20",
+  "source": "AEAT Sede Electronica — sede.agenciatributaria.gob.es",
+  "forms": [
+    {
+      "modelo": "100",
+      "name": "IRPF. Declaracion anual",
+      "periodicity": "annual",
+      "who": ["asalariados", "autonomos"],
+      "description": "Declaracion anual del Impuesto sobre la Renta de las Personas Fisicas. Recoge todos los rendimientos (trabajo, actividades economicas, capital mobiliario e inmobiliario, ganancias patrimoniales) y deducciones del contribuyente. Plazo: abril a junio del ejercicio siguiente.",
+      "filing_period": "Abril-Junio del ano siguiente al ejercicio",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/irpf.html"
+    },
+    {
+      "modelo": "102",
+      "name": "IRPF. Segundo plazo",
+      "periodicity": "annual",
+      "who": ["asalariados", "autonomos"],
+      "description": "Ingreso del segundo plazo de la declaracion anual de Renta, si el contribuyente opto por fraccionar el pago (60% primer plazo en junio, 40% segundo plazo en noviembre).",
+      "filing_period": "Hasta el 5 de noviembre del ano siguiente al ejercicio",
+      "source": "AEAT Calendario Contribuyente 2026 — Noviembre, hasta el 5"
+    },
+    {
+      "modelo": "111",
+      "name": "Retenciones e ingresos a cuenta. Rendimientos del trabajo y de actividades economicas, premios y determinadas ganancias patrimoniales e imputaciones de renta",
+      "periodicity": "quarterly",
+      "who": ["autonomos"],
+      "description": "Autoliquidacion de las retenciones e ingresos a cuenta practicados sobre rendimientos del trabajo, de actividades profesionales, de actividades agricolas y ganaderas y premios. Los autonomos que tengan trabajadores contratados o paguen a profesionales deben presentarlo trimestralmente (o mensualmente si son gran empresa).",
+      "filing_period": "Trimestral: 1-20 de abril, julio, octubre y enero (Q anterior). Mensual grandes empresas: 1-20 del mes siguiente.",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/GH01.shtml"
+    },
+    {
+      "modelo": "115",
+      "name": "Retenciones e ingresos a cuenta. Rentas o rendimientos procedentes del arrendamiento o subarrendamiento de inmuebles urbanos",
+      "periodicity": "quarterly",
+      "who": ["autonomos"],
+      "description": "Autoliquidacion de las retenciones practicadas sobre alquileres de locales u oficinas pagados por el autonomo o empresa. Se presenta cuando se paga alquiler de un inmueble urbano destinado a la actividad economica.",
+      "filing_period": "Trimestral: 1-20 de abril, julio, octubre y enero (Q anterior). Mensual grandes empresas.",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/GH02.shtml"
+    },
+    {
+      "modelo": "123",
+      "name": "Retenciones e ingresos a cuenta. Determinados rendimientos del capital mobiliario o determinadas rentas",
+      "periodicity": "quarterly",
+      "who": ["autonomos"],
+      "description": "Autoliquidacion de retenciones sobre rendimientos del capital mobiliario: intereses de prestamos, dividendos y otras rentas de capital distribuidas por la entidad pagadora.",
+      "filing_period": "Trimestral: 1-20 de abril, julio, octubre y enero (Q anterior). Mensual grandes empresas.",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/GH04.shtml"
+    },
+    {
+      "modelo": "130",
+      "name": "IRPF. Empresarios y profesionales en estimacion directa. Pago fraccionado",
+      "periodicity": "quarterly",
+      "who": ["autonomos"],
+      "description": "Pago fraccionado trimestral del IRPF para autonomos que tributan en estimacion directa normal o simplificada. Se calcula como el 20% del rendimiento neto de la actividad desde el inicio del ano, deduciendo los pagos fraccionados anteriores del mismo periodo y las retenciones soportadas. Si no resulta cantidad a ingresar, debe presentarse declaracion negativa.",
+      "filing_period": "Trimestral: 1-20 de abril, julio, octubre. Q4: 1-30 de enero del ano siguiente.",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/G601.shtml"
+    },
+    {
+      "modelo": "131",
+      "name": "IRPF. Actividades economicas en estimacion objetiva (modulos). Pago fraccionado",
+      "periodicity": "quarterly",
+      "who": ["autonomos"],
+      "description": "Pago fraccionado trimestral del IRPF para autonomos que tributan en estimacion objetiva (modulos). Se calcula aplicando los indices de rendimiento sobre los signos o modulos de la actividad.",
+      "filing_period": "Trimestral: 1-20 de abril, julio, octubre. Q4: 1-30 de enero del ano siguiente.",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/G602.shtml"
+    },
+    {
+      "modelo": "180",
+      "name": "Retenciones e ingresos a cuenta sobre arrendamientos de inmuebles urbanos. Resumen anual",
+      "periodicity": "annual",
+      "who": ["autonomos"],
+      "description": "Declaracion resumen anual de las retenciones practicadas durante el ano sobre alquileres de inmuebles urbanos (complementa las declaraciones trimestrales del modelo 115).",
+      "filing_period": "Del 1 al 31 de enero del ano siguiente (o primer dia habil de febrero si el 31 es festivo)",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/GI02.shtml"
+    },
+    {
+      "modelo": "190",
+      "name": "Retenciones e ingresos a cuenta. Rendimientos del trabajo y de actividades economicas, premios y determinadas ganancias patrimoniales. Resumen anual",
+      "periodicity": "annual",
+      "who": ["autonomos"],
+      "description": "Declaracion resumen anual de las retenciones practicadas durante el ano sobre rendimientos del trabajo, actividades economicas, premios y ganancias patrimoniales (complementa las declaraciones trimestrales del modelo 111). Detalla cada perceptor y las retenciones aplicadas.",
+      "filing_period": "Del 1 al 31 de enero del ano siguiente (o primer dia habil de febrero si el 31 es festivo)",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/GI01.shtml"
+    },
+    {
+      "modelo": "200",
+      "name": "Impuesto sobre Sociedades. Declaracion anual",
+      "periodicity": "annual",
+      "who": ["sociedades"],
+      "description": "Declaracion anual del Impuesto sobre Sociedades. Deben presentarlo todas las entidades con personalidad juridica (S.L., S.A., cooperativas, etc.) que tengan residencia fiscal en Espana. Se liquida el tipo impositivo sobre la base imponible (beneficios menos ajustes, compensaciones y deducciones).",
+      "filing_period": "25 dias naturales siguientes a los 6 meses posteriores al cierre del ejercicio. Para ejercicios coincidentes con el ano natural: 1-25 de julio.",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/G402.shtml"
+    },
+    {
+      "modelo": "202",
+      "name": "Impuesto sobre Sociedades. Pago fraccionado a cuenta",
+      "periodicity": "quarterly",
+      "who": ["sociedades"],
+      "description": "Pago fraccionado a cuenta del Impuesto sobre Sociedades. Se presenta por las entidades que tuvieron cuota positiva en la ultima declaracion del IS presentada (o que tributan por el articulo 40.3 LIS). Tres pagos al ano.",
+      "filing_period": "1-20 de abril, octubre y diciembre de cada ano",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/G404.shtml"
+    },
+    {
+      "modelo": "303",
+      "name": "IVA. Autoliquidacion",
+      "periodicity": "quarterly",
+      "who": ["autonomos"],
+      "description": "Autoliquidacion trimestral del Impuesto sobre el Valor Anadido. Los sujetos pasivos calculan la diferencia entre el IVA repercutido (ventas/servicios) y el IVA soportado deducible (compras/gastos) para determinar el resultado a ingresar o a compensar. Mensual para grandes empresas, REDEME e inscritos en SII.",
+      "filing_period": "Trimestral: 1-20 de abril, julio, octubre. Q4: 1-30 de enero del ano siguiente. Mensual: 1-30 del mes siguiente (febrero: hasta ultimo dia).",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/iva/presentar-declaracion-iva-modelo-303/plazo-presentacion-modelo-303.html"
+    },
+    {
+      "modelo": "347",
+      "name": "Declaracion anual de operaciones con terceras personas",
+      "periodicity": "annual",
+      "who": ["autonomos", "sociedades"],
+      "description": "Declaracion informativa anual que deben presentar las personas fisicas o juridicas que hayan realizado operaciones con un mismo tercero que en su conjunto superen los 3.005,06 euros durante el ano natural. No incluye operaciones ya declaradas en el modelo 349 ni las sujetas a retencion e ingreso a cuenta.",
+      "filing_period": "Del 1 de febrero al 2 de marzo del ano siguiente",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/GI34.shtml"
+    },
+    {
+      "modelo": "349",
+      "name": "IVA. Declaracion recapitulativa de operaciones intracomunitarias",
+      "periodicity": "quarterly",
+      "who": ["autonomos", "sociedades"],
+      "description": "Declaracion informativa recapitulativa de entregas y adquisiciones intracomunitarias de bienes y prestaciones de servicios. Obligatoria para quienes realicen operaciones intracomunitarias. Puede ser mensual si se superan determinados umbrales (50.000 euros en entregas intracomunitarias).",
+      "filing_period": "Trimestral: 1-20 de abril, julio, octubre y enero. Mensual: 1-20 del mes siguiente.",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/G603.shtml"
+    },
+    {
+      "modelo": "390",
+      "name": "IVA. Declaracion resumen anual",
+      "periodicity": "annual",
+      "who": ["autonomos"],
+      "description": "Declaracion resumen anual del IVA que complementa las autoliquidaciones trimestrales o mensuales del modelo 303. Contiene el total de operaciones realizadas durante el ano natural desglosadas por tipo impositivo y regimen de deduccion. Exonerados de presentarla los inscritos en el SII (Suministro Inmediato de Informacion).",
+      "filing_period": "Del 1 al 30 de enero del ano siguiente",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/G605.shtml"
+    },
+    {
+      "modelo": "714",
+      "name": "Impuesto sobre el Patrimonio. Declaracion y documento de ingreso",
+      "periodicity": "annual",
+      "who": ["todos"],
+      "description": "Declaracion anual del Impuesto sobre el Patrimonio. Grava el patrimonio neto de las personas fisicas (bienes y derechos menos cargas y deudas) que supere el minimo exento (700.000 euros a nivel estatal, puede variar por CCAA). La vivienda habitual esta exenta hasta 300.000 euros. Obligatorio para patrimonios netos superiores a 2.000.000 euros o cuando la cuota resulte a ingresar.",
+      "filing_period": "Se presenta conjuntamente con la Renta: abril a junio del ano siguiente al ejercicio",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/G611.shtml"
+    },
+    {
+      "modelo": "718",
+      "name": "Impuesto Temporal de Solidaridad de las Grandes Fortunas",
+      "periodicity": "annual",
+      "who": ["todos"],
+      "description": "Impuesto complementario al Impuesto sobre el Patrimonio que grava los patrimonios netos de personas fisicas superiores a 3.000.000 euros. Es de naturaleza estatal, no cedido a las CCAA. Se presenta obligatoriamente por via electronica. En la seccion 1 (Base Imponible) debe indicarse el numero de referencia del Impuesto sobre el Patrimonio (modelo 714) del mismo ejercicio.",
+      "filing_period": "Del 1 al 31 de julio del ano siguiente al ejercicio",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/GC62.shtml"
+    },
+    {
+      "modelo": "720",
+      "name": "Declaracion informativa sobre bienes y derechos situados en el extranjero",
+      "periodicity": "annual",
+      "who": ["todos"],
+      "description": "Declaracion informativa anual obligatoria para personas fisicas y juridicas residentes fiscales en Espana que posean bienes o derechos en el extranjero que superen 50.000 euros en cualquiera de las tres categorias: cuentas bancarias, valores/derechos/seguros, e inmuebles. No genera tributacion directa pero su incumplimiento acarrea sanciones. Tras la reforma (Ley 5/2022), el regimen sancionador fue suavizado.",
+      "filing_period": "Del 1 de enero al 31 de marzo del ano siguiente",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/GI35.shtml"
+    },
+    {
+      "modelo": "721",
+      "name": "Declaracion informativa sobre monedas virtuales situadas en el extranjero",
+      "periodicity": "annual",
+      "who": ["todos"],
+      "description": "Declaracion informativa anual para residentes fiscales en Espana que posean monedas virtuales (criptomonedas) en plataformas de intercambio situadas en el extranjero cuyo saldo a 31 de diciembre supere los 50.000 euros. Introducida por la Ley 11/2021 de medidas de prevencion y lucha contra el fraude fiscal.",
+      "filing_period": "Del 1 de enero al 31 de marzo del ano siguiente",
+      "source": "AEAT — sede.agenciatributaria.gob.es/Sede/procedimientoini/GI39.shtml"
+    }
+  ]
+}

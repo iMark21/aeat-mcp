@@ -1,0 +1,674 @@
+{
+  "chapter": "Rendimientos del trabajo",
+  "chapter_number": 3,
+  "year": 2025,
+  "source": "Manual Practico Renta 2025 — AEAT (sede.agenciatributaria.gob.es)",
+  "verified_date": "2026-03-20",
+  "definition": {
+    "concept": "Todas las contraprestaciones o utilidades, dinerarias o en especie, que deriven directa o indirectamente del trabajo personal o de una relacion laboral o estatutaria y no tengan el caracter de rendimientos de actividades economicas",
+    "source": "art. 17 LIRPF"
+  },
+  "income_types": {
+    "by_nature": {
+      "source": "art. 17.1 LIRPF",
+      "items": [
+        {
+          "letter": "a",
+          "concept": "Sueldos y salarios",
+          "includes": [
+            "salario base",
+            "pagas extraordinarias",
+            "complementos salariales (antiguedad, peligrosidad, responsabilidad, incentivos, etc.)",
+            "horas extraordinarias"
+          ],
+          "source": "art. 17.1.a LIRPF"
+        },
+        {
+          "letter": "a",
+          "concept": "Prestaciones por desempleo",
+          "includes": [
+            "prestacion contributiva",
+            "subsidio por desempleo"
+          ],
+          "note": "Excepto modalidad de pago unico exenta (art. 7.n LIRPF)",
+          "source": "art. 17.1.a LIRPF"
+        },
+        {
+          "letter": "a",
+          "concept": "Remuneraciones en concepto de gastos de representacion",
+          "source": "art. 17.1.a LIRPF"
+        },
+        {
+          "letter": "a",
+          "concept": "Dietas y asignaciones para gastos de viaje",
+          "note": "Excepto las exceptuadas de gravamen segun art. 9 RIRPF",
+          "source": "art. 17.1.a LIRPF"
+        },
+        {
+          "letter": "a",
+          "concept": "Contribuciones de promotores de planes de pensiones",
+          "includes": [
+            "contribuciones a planes de pensiones",
+            "contribuciones a planes de pensiones de empleo europeos (Directiva UE 2016/2341)"
+          ],
+          "source": "art. 17.1.a LIRPF"
+        },
+        {
+          "letter": "a",
+          "concept": "Contribuciones empresariales para compromisos por pensiones",
+          "note": "Cuando sean imputadas a los beneficiarios (voluntaria o legalmente)",
+          "source": "art. 17.1.a LIRPF"
+        }
+      ]
+    },
+    "by_legal_provision": {
+      "source": "art. 17.2 LIRPF",
+      "items": [
+        {
+          "letter": "a",
+          "concept": "Prestaciones de sistemas publicos de prevision social",
+          "includes": [
+            "pensiones de la Seguridad Social",
+            "Clases Pasivas",
+            "prestaciones por incapacidad, jubilacion, accidente, enfermedad, viudedad",
+            "prestaciones de mutualidades generales obligatorias de funcionarios",
+            "colegios de huerfanos e instituciones similares"
+          ],
+          "source": "art. 17.2.a LIRPF"
+        },
+        {
+          "letter": "b",
+          "concept": "Prestaciones por razon de cargo",
+          "includes": [
+            "asignaciones, dietas y gastos de viaje de parlamentarios",
+            "retribuciones de miembros de asambleas legislativas autonomicas"
+          ],
+          "source": "art. 17.2.b LIRPF"
+        },
+        {
+          "letter": "c",
+          "concept": "Rendimientos derivados de cursos, conferencias, coloquios, seminarios y similares",
+          "note": "Tambien elaboracion de obras literarias, artisticas o cientificas cuando se cede el derecho de explotacion",
+          "source": "art. 17.2.c LIRPF"
+        },
+        {
+          "letter": "d",
+          "concept": "Rendimientos de obras literarias, artisticas o cientificas",
+          "note": "Solo cuando se ceda el derecho a su explotacion",
+          "source": "art. 17.2.d LIRPF"
+        },
+        {
+          "letter": "e",
+          "concept": "Retribuciones de administradores y miembros de consejos de administracion",
+          "source": "art. 17.2.e LIRPF"
+        },
+        {
+          "letter": "f",
+          "concept": "Pensiones compensatorias y anualidades por alimentos del conyuge",
+          "note": "Percibidas del conyuge por decision judicial",
+          "source": "art. 17.2.f LIRPF"
+        },
+        {
+          "letter": "g",
+          "concept": "Derechos especiales de contenido economico de fundadores o promotores de sociedades",
+          "note": "Como remuneracion de servicios personales",
+          "source": "art. 17.2.g LIRPF"
+        },
+        {
+          "letter": "h",
+          "concept": "Becas no exentas",
+          "note": "Las no comprendidas en el art. 7.j LIRPF",
+          "source": "art. 17.2.h LIRPF"
+        },
+        {
+          "letter": "i",
+          "concept": "Retribuciones por colaboraciones humanitarias o de asistencia social",
+          "source": "art. 17.2.i LIRPF"
+        },
+        {
+          "letter": "j",
+          "concept": "Rendimientos de relaciones laborales de caracter especial",
+          "includes": [
+            "alta direccion",
+            "artistas en espectaculos publicos",
+            "representantes de comercio",
+            "deportistas profesionales",
+            "penados en instituciones penitenciarias",
+            "discapacitados en centros especiales de empleo"
+          ],
+          "source": "art. 17.2.j LIRPF"
+        },
+        {
+          "letter": "k",
+          "concept": "Aportaciones a patrimonios protegidos de personas con discapacidad",
+          "source": "art. 17.2.k LIRPF"
+        },
+        {
+          "letter": "l",
+          "concept": "Retribuciones por gestion de fondos vinculados al emprendimiento e innovacion",
+          "note": "Carried interest — retribucion derivada de la gestion de entidades de capital riesgo, fondos de emprendimiento, etc.",
+          "source": "art. 17.2.l LIRPF"
+        }
+      ]
+    }
+  },
+  "estimated_income_and_related_parties": {
+    "estimated_income": {
+      "rule": "Los rendimientos del trabajo se presumen retribuidos salvo prueba en contrario. Si no hay prueba, se valoran a valor normal de mercado",
+      "source": "arts. 6.5 y 40 LIRPF"
+    },
+    "related_party_operations": {
+      "rule": "Operaciones entre contribuyente y entidades vinculadas se valoran a valor de mercado (arm's length)",
+      "linked_relationships": [
+        "Entidad y socios/accionistas (participacion >= 25%)",
+        "Entidad y administradores/consejeros",
+        "Entidad y conyuges/parientes hasta 3er grado de socios o administradores",
+        "Entidades del mismo grupo"
+      ],
+      "exception": "Las retribuciones por funciones de administrador/consejero quedan excluidas de la regla de operaciones vinculadas (art. 18.2 LIS)",
+      "source": "art. 41 LIRPF, art. 18 LIS 27/2014"
+    }
+  },
+  "exempt_diets_and_travel": {
+    "source": "arts. 17.1.d LIRPF y 9 RIRPF",
+    "note": "Corresponde al pagador acreditar la realidad de los desplazamientos",
+    "transportation": {
+      "concept": "Gastos de locomocion",
+      "source": "art. 9 RIRPF, Orden HFP/792/2023",
+      "rules": [
+        {
+          "type": "Transporte publico",
+          "exempt": "Importe justificado mediante factura o documento equivalente (sin limite)"
+        },
+        {
+          "type": "Vehiculo propio",
+          "exempt": "0.26 euros/km recorrido",
+          "note": "Desde 17 julio 2023 (Orden HFP/792/2023). Antes: 0.19 euros/km"
+        },
+        {
+          "type": "Peajes y aparcamiento",
+          "exempt": "Importe justificado (sin limite)"
+        }
+      ],
+      "condition": "Solo desplazamientos fuera del centro de trabajo habitual. NO cubre trayecto residencia-trabajo"
+    },
+    "meals_and_accommodation": {
+      "concept": "Gastos de manutencion y estancia",
+      "source": "art. 9 RIRPF",
+      "spain": {
+        "with_overnight": {
+          "meals": "53.34 euros/dia",
+          "accommodation": "Importe justificado (sin limite diario fijo)"
+        },
+        "without_overnight": {
+          "meals": "26.67 euros/dia",
+          "accommodation": null
+        }
+      },
+      "abroad": {
+        "with_overnight": {
+          "meals": "91.35 euros/dia",
+          "accommodation": "Importe justificado (sin limite diario fijo)"
+        },
+        "without_overnight": {
+          "meals": "48.08 euros/dia",
+          "accommodation": null
+        }
+      },
+      "special_rules": {
+        "transport_drivers": "15 euros/dia sin justificacion para gastos de estancia (vehiculos de mercancias por carretera)",
+        "mobile_workers": "Se aplican las mismas cuantias pero sin necesidad de desplazamiento fuera del municipio",
+        "abroad_civil_servants": "Se aplica el regimen de excesos sobre lo que corresponderia en Espana (RD 462/2002)"
+      }
+    }
+  },
+  "in_kind_income": {
+    "definition": {
+      "concept": "Constituyen retribuciones en especie la utilizacion, consumo u obtencion, para fines particulares, de bienes, derechos o servicios de forma gratuita o por precio inferior al normal de mercado, aun cuando no supongan un gasto real para quien las conceda",
+      "source": "art. 42.1 LIRPF"
+    },
+    "not_in_kind": {
+      "concept": "Supuestos que NO constituyen retribuciones en especie",
+      "source": "art. 42.2 LIRPF",
+      "items": [
+        {
+          "concept": "Entrega de acciones o participaciones a trabajadores de empresas emergentes",
+          "condition": "Hasta 50,000 euros anuales, sin requisito de oferta en mismas condiciones",
+          "source": "art. 42.3.f LIRPF (startups)"
+        },
+        {
+          "concept": "Gastos de estudio y formacion profesional del trabajador",
+          "condition": "Exigidos por el desarrollo de actividades o caracteristicas del puesto de trabajo",
+          "source": "art. 42.2 LIRPF"
+        },
+        {
+          "concept": "Gastos por seguros de accidente laboral o responsabilidad civil del trabajador",
+          "source": "art. 42.2 LIRPF"
+        },
+        {
+          "concept": "Cantidades destinadas a actualizacion, capacitacion o reciclaje del personal",
+          "source": "art. 42.2 LIRPF"
+        }
+      ]
+    },
+    "exempt_in_kind": {
+      "source": "art. 42.3 LIRPF",
+      "items": [
+        {
+          "letter": "a",
+          "concept": "Entregas de productos a precios rebajados en comedores de empresa, economatos, formulas indirectas (vales comida, tarjetas)",
+          "limit": "11 euros/dia laborable",
+          "conditions": [
+            "Solo dias laborables del empleado",
+            "No acumulable con dietas de manutencion exentas",
+            "Vales/tarjetas: intransferibles, nominativos, numerados, sin reembolso",
+            "Solo en establecimientos de hosteleria",
+            "Empleador debe llevar lista con numero, fecha y nominal"
+          ],
+          "source": "arts. 42.3.a LIRPF y 45 RIRPF"
+        },
+        {
+          "letter": "b",
+          "concept": "Utilizacion de bienes destinados a servicios sociales y culturales del personal empleado",
+          "limit": null,
+          "conditions": [
+            "Espacios e instalaciones autorizados por la Administracion competente",
+            "Educacion infantil de primer ciclo para hijos de empleados"
+          ],
+          "source": "art. 42.3.b LIRPF"
+        },
+        {
+          "letter": "c",
+          "concept": "Primas de seguros de enfermedad satisfechas por el empleador",
+          "limit": "500 euros/ano por persona (trabajador, conyuge y descendientes)",
+          "limit_disabled": "1,500 euros/ano por persona con discapacidad",
+          "conditions": [
+            "Cobertura de enfermedad para el trabajador",
+            "Puede extenderse a conyuge y descendientes sin limite de edad"
+          ],
+          "source": "arts. 42.3.c LIRPF y 46 RIRPF"
+        },
+        {
+          "letter": "d",
+          "concept": "Prestacion de servicio de educacion preescolar, infantil, primaria, secundaria obligatoria, bachillerato y FP",
+          "limit": null,
+          "conditions": [
+            "Por centros educativos autorizados",
+            "Para hijos de empleados",
+            "Gratuito o por precio inferior al de mercado",
+            "No compatible con deduccion por maternidad (art. 81 LIRPF) por los mismos gastos"
+          ],
+          "source": "arts. 42.3.b y 42.3.d LIRPF"
+        },
+        {
+          "letter": "e",
+          "concept": "Transporte colectivo de empleados (residencia habitual - centro de trabajo)",
+          "limit": "1,500 euros/ano por trabajador",
+          "limit_monthly": "136.36 euros/mes",
+          "conditions": [
+            "Transporte publico colectivo",
+            "Puede ser mediante pago directo a la entidad de transporte (abono transportes)",
+            "O tarjetas/medios de pago electronicos: nominativos, intransferibles, numerados, sin reembolso",
+            "Solo para adquisicion de titulos de transporte publico",
+            "Reembolso en metalico tributa como salario"
+          ],
+          "source": "arts. 42.3.e LIRPF y 46 bis RIRPF"
+        },
+        {
+          "letter": "f",
+          "concept": "Entrega de acciones o participaciones de la empresa a trabajadores",
+          "limit": "12,000 euros/ano por trabajador",
+          "limit_startups": "50,000 euros/ano para empresas emergentes",
+          "conditions": [
+            "General: oferta en las mismas condiciones para todos los trabajadores de la empresa o grupo",
+            "Mantenimiento minimo de 3 anos",
+            "Trabajador y familiares hasta 2o grado no pueden poseer > 5% del capital",
+            "Startups: no se exige oferta en mismas condiciones, pero debe ajustarse a politica retributiva general",
+            "Startup: empresa emergente segun Ley 28/2022 (innovacion, registro espanol, < 5-7 anos, sin dividendos, 60% plantilla espanola)"
+          ],
+          "source": "arts. 42.3.f LIRPF y 43 RIRPF"
+        }
+      ]
+    },
+    "valuation_rules": {
+      "general_rule": {
+        "formula": "Valor normal en el mercado del bien, derecho o servicio",
+        "ingreso_a_cuenta": "Se anade al valor de la retribucion salvo que haya sido repercutido al trabajador",
+        "rendimiento_integro": "Valoracion + Ingreso a cuenta no repercutido",
+        "source": "arts. 43.1 y 43.2 LIRPF, art. 102 RIRPF"
+      },
+      "special_rules": [
+        {
+          "concept": "Utilizacion de vivienda",
+          "valuation": "10% del valor catastral",
+          "valuation_revised": "5% del valor catastral (si revisado en el periodo impositivo o los 10 anteriores)",
+          "valuation_no_catastral": "5% del 50% del mayor entre: valor comprobado por la Administracion o precio de adquisicion",
+          "max": "10% de las restantes contraprestaciones del trabajo",
+          "source": "art. 43.1.1.a LIRPF"
+        },
+        {
+          "concept": "Utilizacion de vehiculo (sin entrega)",
+          "valuation": "20% anual del coste de adquisicion para el pagador (incluidos gastos e impuestos)",
+          "valuation_not_owned": "20% anual del valor de mercado (como si fuera nuevo)",
+          "efficient_vehicle_reductions": [
+            {
+              "reduction_pct": 15,
+              "condition": "CO2 <= 120 g/km y valor mercado <= 25,000 euros",
+              "source": "art. 48 bis RIRPF"
+            },
+            {
+              "reduction_pct": 20,
+              "condition": "CO2 <= 120 g/km, hibrido o combustible alternativo, valor mercado <= 35,000 euros",
+              "source": "art. 48 bis RIRPF"
+            },
+            {
+              "reduction_pct": 30,
+              "condition": "Electrico puro (BEV), electrico autonomia extendida (E-REV) o hibrido enchufable (PHEV) con >= 15 km autonomia, valor mercado <= 40,000 euros",
+              "source": "art. 48 bis RIRPF"
+            }
+          ],
+          "note": "Valoracion en proporcion a la disponibilidad del vehiculo para fines particulares, con independencia del uso efectivo",
+          "source": "art. 43.1.1.b LIRPF"
+        },
+        {
+          "concept": "Entrega de vehiculo",
+          "valuation": "Coste de adquisicion para el pagador, incluidos gastos e impuestos (IVA, matriculacion, aranceles)",
+          "note": "Si previamente usado por el trabajador, se descuenta la valoracion anual ya tributada",
+          "source": "art. 43.1.1.b LIRPF"
+        },
+        {
+          "concept": "Prestamos a tipo de interes inferior al legal del dinero",
+          "valuation": "Diferencia entre el interes legal del dinero y el interes pagado por el trabajador",
+          "interest_legal_2025": "3.25%",
+          "note": "Solo prestamos concedidos desde 1 enero 1992",
+          "source": "art. 43.1.1.c LIRPF, DA 42a Ley 31/2022"
+        },
+        {
+          "concept": "Manutencion, hospedaje, viajes de turismo y similares",
+          "valuation": "Coste para el empleador, incluidos tributos que graven la operacion",
+          "source": "art. 43.1.1.d LIRPF"
+        },
+        {
+          "concept": "Primas de seguros (excepto accidente laboral y enfermedad)",
+          "valuation": "Coste para el empleador, incluidos tributos que graven la operacion",
+          "source": "art. 43.1.1.d LIRPF"
+        },
+        {
+          "concept": "Contribuciones a planes de pensiones y compromisos por pensiones",
+          "valuation": "Importe de las contribuciones o cantidades satisfechas e imputadas al perceptor",
+          "source": "art. 43.1.1.e LIRPF"
+        },
+        {
+          "concept": "Derechos especiales de fundadores/promotores como remuneracion de servicios",
+          "valuation": "Minimo 35% del valor del capital equivalente para derechos sobre porcentaje de beneficios",
+          "max_duration": "10 anos",
+          "max_amount": "10% de los beneficios netos",
+          "source": "art. 47 RIRPF"
+        },
+        {
+          "concept": "Regla cautelar de valoracion",
+          "rule": "La valoracion no puede ser inferior al precio ofertado al publico",
+          "efficient_vehicle_transfer_reduction": "Hasta 30% de reduccion en transmision de vehiculos energeticamente eficientes",
+          "source": "arts. 43.1.1.f LIRPF y 48 RIRPF"
+        }
+      ]
+    }
+  },
+  "gross_income_reductions": {
+    "note": "Se aplican sobre los rendimientos integros ANTES de deducir gastos",
+    "items": [
+      {
+        "id": "A",
+        "concept": "Reduccion por rendimientos con periodo de generacion superior a 2 anos u obtenidos de forma notoriamente irregular",
+        "percentage": 30,
+        "max_base": 300000,
+        "source": "art. 18.2 LIRPF, art. 12 RIRPF",
+        "requirements": [
+          "Periodo de generacion superior a 2 anos, O calificados como notoriamente irregulares (art. 12 RIRPF)",
+          "Imputacion en un unico periodo impositivo",
+          "No haber aplicado esta reduccion en los 5 periodos impositivos anteriores para rendimientos del mismo tipo",
+          "No percibirse de forma fraccionada (excepto indemnizaciones por extincion laboral si anos generacion / periodos fraccionamiento > 2)"
+        ],
+        "irregular_items_art12_rirpf": [
+          "Cantidades satisfechas por la empresa por traslado a otro centro de trabajo (exceso sobre lo exceptuado de gravamen)",
+          "Indemnizaciones de la Seguridad Social o Clases Pasivas por lesiones no invalidantes",
+          "Prestaciones por lesiones no invalidantes o incapacidad permanente, en cualquiera de sus grados",
+          "Prestaciones por fallecimiento y gastos por sepelio o entierro (exceso sobre lo exento)",
+          "Cantidades satisfechas en compensacion o reparacion de complementos salariales, pensiones o anualidades de duracion indefinida",
+          "Cantidades satisfechas por extincion de comun acuerdo de la relacion laboral",
+          "Premios literarios, artisticos o cientificos que no gocen de exencion en el impuesto"
+        ],
+        "severance_limits_post_2013": {
+          "note": "Para extinciones de relacion laboral desde 1 enero 2013",
+          "table": [
+            { "income_range": "Hasta 700,000 euros", "max_reduction_base": 300000 },
+            { "income_range": "De 700,000.01 a 1,000,000 euros", "max_reduction_base_formula": "300,000 - (rendimiento_total - 700,000)" },
+            { "income_range": "Mas de 1,000,000 euros", "max_reduction_base": 0 }
+          ],
+          "scope": "Suma de rendimientos del trabajo del pagador (misma empresa o grupo) en el periodo y los 5 anteriores"
+        },
+        "stock_options_pre_2015": {
+          "note": "Rendimientos derivados de opciones de compra de acciones concedidas antes de 1 enero 2015",
+          "limit_formula": "22,100 euros x numero de anos de generacion",
+          "doubled_if": "Acciones mantenidas >= 3 anos desde ejercicio de la opcion y ofrecidas en iguales condiciones a todos los trabajadores"
+        }
+      },
+      {
+        "id": "B",
+        "concept": "Prestaciones en forma de capital derivadas de regimenes publicos de prevision social",
+        "percentage": 30,
+        "source": "art. 18.3 LIRPF, art. 12.3 RIRPF",
+        "requirements": [
+          "Percibidas en forma de capital (pago unico)",
+          "Transcurridos mas de 2 anos desde la primera aportacion",
+          "Excepcion: no se exige plazo de 2 anos para prestaciones por invalidez"
+        ],
+        "qualifying_systems": [
+          "Seguridad Social",
+          "Clases Pasivas",
+          "Mutualidades generales obligatorias de funcionarios",
+          "Colegios de huerfanos e instituciones similares"
+        ],
+        "note": "En prestaciones mixtas (renta + capital), la reduccion solo se aplica a la parte percibida en forma de capital"
+      },
+      {
+        "id": "C",
+        "concept": "Regimen transitorio de reducciones para prestaciones en forma de capital de sistemas privados de prevision social",
+        "percentage": 40,
+        "source": "DT 12a LIRPF",
+        "note": "Desde 1 enero 2007, las prestaciones en forma de capital de sistemas privados NO tienen derecho a la reduccion general del 30%. Se aplica un regimen transitorio del 40% para aportaciones anteriores a 2007",
+        "requirements": [
+          "Aportaciones realizadas antes de 1 enero 2007",
+          "Prestacion percibida en forma de capital"
+        ],
+        "qualifying_systems": [
+          "Planes de pensiones",
+          "Mutualidades de prevision social",
+          "Planes de prevision asegurados",
+          "Seguros colectivos de compromisos por pensiones de empresa"
+        ]
+      },
+      {
+        "id": "D",
+        "concept": "Reduccion por rendimientos de actividades artisticas obtenidos de manera excepcional",
+        "percentage": 30,
+        "max_base": 150000,
+        "source": "DA 60a LIRPF",
+        "requirements": [
+          "Rendimientos derivados de elaboracion de obras literarias, artisticas o cientificas, o de relaciones laborales especiales de artistas, audiovisual o musica",
+          "No pueden beneficiarse de la reduccion del art. 18.2 LIRPF",
+          "Los rendimientos integros deben superar el 130% de la media de rendimientos de la misma categoria en los 3 periodos impositivos anteriores"
+        ],
+        "calculation": "30% x (rendimientos integros - 130% de la media de los 3 periodos anteriores), con maximo de 150,000 euros"
+      },
+      {
+        "id": "E",
+        "concept": "Reduccion especial XXXVII Copa America Barcelona",
+        "percentage": 65,
+        "source": "DF 36a Ley 31/2022",
+        "requirements": [
+          "Persona fisica que adquiere residencia fiscal en Espana por desplazamiento para la Copa America",
+          "Rendimientos del trabajo de la entidad organizadora o equipos participantes"
+        ],
+        "note": "Reduccion especifica y temporal"
+      }
+    ]
+  },
+  "deductible_expenses": {
+    "source": "art. 19 LIRPF",
+    "note": "Se deducen de los rendimientos integros (ya reducidos si procede) para obtener el rendimiento neto",
+    "items": [
+      {
+        "concept": "Cotizaciones a la Seguridad Social o a mutualidades generales obligatorias de funcionarios",
+        "amount": "Importe integro (sin limite)",
+        "casilla": "0012",
+        "source": "art. 19.2.a LIRPF"
+      },
+      {
+        "concept": "Detracciones por derechos pasivos",
+        "amount": "Importe integro (sin limite)",
+        "casilla": "0012",
+        "source": "art. 19.2.a LIRPF"
+      },
+      {
+        "concept": "Cotizaciones a colegios de huerfanos o instituciones similares",
+        "amount": "Importe integro (sin limite)",
+        "casilla": "0012",
+        "source": "art. 19.2.a LIRPF"
+      },
+      {
+        "concept": "Cuotas satisfechas a sindicatos",
+        "amount": "Importe integro (sin limite)",
+        "casilla": "0014",
+        "source": "art. 19.2.d LIRPF"
+      },
+      {
+        "concept": "Cuotas satisfechas a colegios profesionales",
+        "amount": "Maximo 500 euros/ano",
+        "condition": "La colegiacion debe tener caracter obligatorio para el desempeno del trabajo",
+        "casilla": "0015",
+        "source": "art. 19.2.d LIRPF"
+      },
+      {
+        "concept": "Gastos de defensa juridica",
+        "amount": "Maximo 300 euros/ano",
+        "condition": "Derivados directamente de litigios con el empleador por la relacion laboral (gastos de letrados)",
+        "casilla": "0016",
+        "source": "art. 19.2.e LIRPF"
+      },
+      {
+        "concept": "Otros gastos deducibles",
+        "base_amount": 2000,
+        "increment_mobility": {
+          "amount": 2000,
+          "total_with_base": 4000,
+          "condition": "Desempleados inscritos en oficina de empleo que acepten puesto en municipio distinto con cambio de residencia habitual",
+          "duration": "Ano del cambio de residencia y el siguiente"
+        },
+        "increment_disability_33_65": {
+          "amount": 3500,
+          "total_with_base": 5500,
+          "condition": "Trabajador activo con grado de discapacidad >= 33% y < 65%"
+        },
+        "increment_disability_65_plus": {
+          "amount": 7750,
+          "total_with_base": 9750,
+          "condition": "Trabajador activo con grado de discapacidad >= 65% o que acredite necesitar ayuda de terceras personas o movilidad reducida"
+        },
+        "accumulation": "Los incrementos por movilidad y discapacidad son acumulables. Total maximo posible: 2,000 + 2,000 + 7,750 = 11,750 euros",
+        "global_limit": "El total de otros gastos deducibles no puede superar los rendimientos integros del trabajo menos los restantes gastos deducibles",
+        "casilla": "0019",
+        "source": "art. 19.2.f LIRPF"
+      }
+    ]
+  },
+  "work_income_reduction": {
+    "concept": "Reduccion por obtencion de rendimientos del trabajo",
+    "source": "art. 20 LIRPF",
+    "note": "Se aplica DESPUES de calcular el rendimiento neto (integros - gastos) para obtener el rendimiento neto reducido",
+    "requirements": [
+      "Rendimientos netos del trabajo inferiores a 19,747.50 euros",
+      "Rentas distintas de las del trabajo (excluidas las exentas) no superiores a 6,500 euros",
+      "El resultado del rendimiento neto reducido no puede ser negativo"
+    ],
+    "table": [
+      {
+        "net_income_range": "Hasta 14,852.00 euros",
+        "reduction": 7302
+      },
+      {
+        "net_income_range": "De 14,852.01 a 17,673.52 euros",
+        "reduction_formula": "7,302 - [1.75 x (rendimiento_neto_trabajo - 14,852)]"
+      },
+      {
+        "net_income_range": "De 17,673.53 a 19,747.50 euros",
+        "reduction_formula": "2,364.34 - [1.14 x (rendimiento_neto_trabajo - 17,673.52)]"
+      },
+      {
+        "net_income_range": "Mas de 19,747.50 euros",
+        "reduction": 0
+      }
+    ],
+    "casilla": "0020"
+  },
+  "calculation_schema": {
+    "phase_1_gross_income": {
+      "formula": "Rendimientos integros dinerarios + Rendimientos en especie (valoracion + ingreso a cuenta no repercutido) - Reducciones art. 18.2/18.3 LIRPF = Rendimiento integro computable",
+      "casilla_dinerarios": "0001",
+      "casilla_especie": "0010",
+      "casilla_reduccion_irregulares": "0002",
+      "note": "Ingresos dinerarios se computan por su importe bruto devengado, sin descontar retenciones ni gastos. Moneda extranjera al tipo BCE."
+    },
+    "phase_2_net_income": {
+      "formula": "Rendimiento integro computable - Gastos deducibles (art. 19 LIRPF) = Rendimiento neto del trabajo",
+      "casilla": "0022",
+      "expenses_casillas": ["0012", "0014", "0015", "0016", "0019"]
+    },
+    "phase_3_reduced_net_income": {
+      "formula": "Rendimiento neto del trabajo - Reduccion por obtencion de rendimientos del trabajo (art. 20 LIRPF) = Rendimiento neto reducido",
+      "casilla": "0025",
+      "note": "El resultado no puede ser negativo"
+    }
+  },
+  "individualization": {
+    "rule": "Los rendimientos del trabajo se atribuyen a la persona que, con su trabajo personal, haya generado el derecho a percibirlos",
+    "pensions": "Las pensiones y haberes pasivos se atribuyen integramente a la persona en cuyo favor esten reconocidos",
+    "source": "art. 11.2 LIRPF"
+  },
+  "temporal_attribution": {
+    "general_rule": "Se imputan al periodo impositivo en que son exigibles por su perceptor",
+    "source": "art. 14.1.a LIRPF",
+    "special_cases": [
+      {
+        "case": "Pendientes de resolucion judicial",
+        "rule": "Se imputan al periodo en que la resolucion judicial sea firme. Si el cobro es posterior, autoliquidacion rectificativa sin sancion ni intereses",
+        "source": "art. 14.2.a LIRPF"
+      },
+      {
+        "case": "Atrasos (cobro extemporaneo)",
+        "rule": "Se imputan al periodo en que fueron exigibles, mediante autoliquidacion rectificativa sin sancion ni intereses ni recargos",
+        "source": "art. 14.2.b LIRPF"
+      },
+      {
+        "case": "Derechos de autor cedidos",
+        "rule": "El contribuyente puede optar por imputar los anticipos a cuenta como rendimientos a medida que se devengan los derechos (retencion del 7% desde 7 diciembre 2023)",
+        "source": "art. 14.2.c LIRPF"
+      },
+      {
+        "case": "Rendimientos estimados",
+        "rule": "Se imputan al periodo en que se entendio realizado el trabajo o servicio",
+        "source": "art. 14.2.d LIRPF"
+      },
+      {
+        "case": "Acciones/participaciones de empresas emergentes",
+        "rule": "Se imputan cuando: (1) las acciones coticen en bolsa, o (2) salgan del patrimonio del contribuyente. Si no ocurre en 10 anos, imputacion obligatoria al ano 10",
+        "source": "art. 14.2.m LIRPF"
+      },
+      {
+        "case": "Prestaciones de planes de pensiones",
+        "rule": "Se imputan al periodo de su cobro efectivo, con independencia de cuando se produzca la contingencia",
+        "source": "art. 14.2.f LIRPF"
+      }
+    ]
+  }
+}

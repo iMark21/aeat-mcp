@@ -1,0 +1,360 @@
+{
+  "chapter": "Obligacion de declarar",
+  "chapter_number": 1,
+  "section": "1.1",
+  "year": 2025,
+  "source": "Manual Practico Renta 2025 — AEAT (sede.agenciatributaria.gob.es)",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c01-campana-declaracion-renta/quienes-estan-obligados-presentar-declaracion-irpf.html",
+  "verified_date": "2026-03-20",
+  "legal_basis": {
+    "primary": "art. 96 LIRPF (Ley 35/2006)",
+    "regulation": "art. 61 RIRPF (RD 439/2007)",
+    "related": [
+      "art. 97 LIRPF (autoliquidacion)",
+      "art. 96.3 LIRPF (obligacion siempre para autonomos)",
+      "DA 50 Ley 35/2006 (obligacion beneficiarios IMV)"
+    ]
+  },
+  "general_rule": "Estan obligados a declarar todos los contribuyentes personas fisicas residentes en Espana, salvo los que obtengan exclusivamente rentas que no superen los limites establecidos en el art. 96 LIRPF",
+
+  "non_obligation_thresholds": {
+    "description": "No tendran que declarar los contribuyentes que obtengan rentas procedentes exclusivamente de las siguientes fuentes, en tributacion individual o conjunta, siempre que no superen los limites indicados",
+    "note_general": "Los limites NO se amplian en tributacion conjunta",
+    "note_exempt_income": "No se computan las rentas exentas del art. 7 LIRPF para determinar la obligacion de declarar",
+
+    "rule_1_by_income_type": {
+      "description": "Limites independientes por tipo de renta (art. 96.2 LIRPF)",
+
+      "rendimientos_trabajo": {
+        "threshold_single_payer": {
+          "amount": 22000,
+          "currency": "EUR",
+          "period": "anual",
+          "conditions": [
+            "Rentas procedentes de un unico pagador",
+            "Tambien aplica con varios pagadores si la suma del segundo y restantes pagadores no excede de 1.500 EUR anuales",
+            "Tambien aplica a prestaciones pasivas (pensiones SS, clases pasivas, prestaciones planes de pensiones, seguros colectivos, mutualidades de prevision social, planes de prevision social empresarial, planes de prevision asegurados) cuando el tipo de retencion se haya determinado por la AEAT a solicitud del contribuyente (modelo 146)"
+          ],
+          "source": "art. 96.2.1 LIRPF"
+        },
+        "threshold_multiple_payers": {
+          "amount": 15876,
+          "currency": "EUR",
+          "period": "anual",
+          "conditions": [
+            "Rendimientos del trabajo procedentes de mas de un pagador, cuando la suma del segundo y restantes pagadores por orden de cuantia supere 1.500 EUR anuales",
+            "Tambien aplica cuando se perciban pensiones compensatorias del conyuge o anualidades por alimentos no exentas",
+            "Tambien aplica cuando el pagador no este obligado a retener (ej: pensiones del extranjero)",
+            "Tambien aplica cuando se perciban rendimientos del trabajo sujetos a tipo fijo de retencion (art. 80.1.3 y 4 RIRPF: administradores, cursos, conferencias)"
+          ],
+          "source": "art. 96.2.1 LIRPF",
+          "transitional_note": "Para rendimientos del trabajo devengados entre el 1 y el 22 de enero de 2025, el umbral del segundo pagador era 2.500 EUR (anterior a la reforma por Real Decreto-ley 1/2025)"
+        },
+        "what_counts_as_trabajo": [
+          "Sueldos y salarios",
+          "Prestaciones por desempleo (no en pago unico)",
+          "Pensiones de la Seguridad Social (jubilacion, viudedad, incapacidad — no absoluta/gran invalidez)",
+          "Pensiones de Clases Pasivas",
+          "Prestaciones de planes de pensiones",
+          "Prestaciones de mutualidades de prevision social",
+          "Prestaciones de planes de prevision asegurados",
+          "Prestaciones de planes de prevision social empresarial",
+          "Prestaciones de seguros colectivos de dependencia",
+          "Pensiones compensatorias y anualidades por alimentos no exentas"
+        ]
+      },
+
+      "capital_mobiliario_and_ganancias": {
+        "threshold": {
+          "amount": 1600,
+          "currency": "EUR",
+          "period": "anual",
+          "condition": "conjuntamente"
+        },
+        "includes": [
+          "Rendimientos del capital mobiliario sometidos a retencion o ingreso a cuenta (dividendos, intereses, seguros de vida, operaciones de capitalizacion)",
+          "Ganancias patrimoniales sometidas a retencion o ingreso a cuenta (transmision de acciones y participaciones de IIC — fondos de inversion, transmision de derechos de suscripcion — desde 01-01-2017, premios)"
+        ],
+        "excludes": [
+          "Ganancias patrimoniales procedentes de transmisiones o reembolsos de acciones o participaciones de IIC en las que la base de retencion no proceda determinarla por la cuantia a integrar en BI"
+        ],
+        "source": "art. 96.2.2 LIRPF"
+      },
+
+      "rentas_inmobiliarias_imputadas_letras_subvenciones": {
+        "threshold": {
+          "amount": 1000,
+          "currency": "EUR",
+          "period": "anual",
+          "condition": "conjuntamente"
+        },
+        "includes": [
+          "Rentas inmobiliarias imputadas (art. 85 LIRPF) — inmuebles urbanos no arrendados ni afectos a actividades economicas, distintos de la vivienda habitual y suelo no edificado",
+          "Rendimientos de Letras del Tesoro",
+          "Subvenciones para adquisicion de viviendas de proteccion oficial o de precio tasado",
+          "Demas ganancias patrimoniales derivadas de ayudas publicas"
+        ],
+        "source": "art. 96.2.3 LIRPF"
+      },
+
+      "rendimientos_trabajo_en_especie": {
+        "note": "Los rendimientos del trabajo en especie estan sujetos a ingreso a cuenta pero el trabajador no soporta retencion directa. A efectos de la obligacion de declarar, los rendimientos en especie y sus ingresos a cuenta computan dentro del limite de rendimientos del trabajo (22.000 o 15.876 EUR)",
+        "source": "art. 96.2.1 LIRPF, art. 99.2 LIRPF"
+      }
+    },
+
+    "rule_2_mixed_income": {
+      "description": "Limite conjunto aplicable como comprobacion independiente (art. 96.2.4 LIRPF)",
+      "threshold": {
+        "amount": 1000,
+        "currency": "EUR",
+        "period": "anual",
+        "condition": "conjuntamente"
+      },
+      "includes": [
+        "Rendimientos integros del trabajo",
+        "Rendimientos integros del capital (mobiliario e inmobiliario)",
+        "Rendimientos integros de actividades economicas (salvo autonomos)",
+        "Ganancias patrimoniales"
+      ],
+      "additional_condition": {
+        "description": "Ademas, las perdidas patrimoniales deben ser inferiores a 500 EUR",
+        "losses_threshold": {
+          "amount": 500,
+          "currency": "EUR",
+          "period": "anual"
+        }
+      },
+      "source": "art. 96.2.4 LIRPF"
+    }
+  },
+
+  "always_obligated": {
+    "description": "Contribuyentes obligados a declarar en todo caso, con independencia de la cuantia de sus rentas",
+
+    "autonomos_reta": {
+      "description": "Todas las personas fisicas que en cualquier momento del periodo impositivo hubieran estado de alta como trabajadores por cuenta propia en el Regimen Especial de Trabajadores Autonomos (RETA) o en el Regimen Especial de los Trabajadores del Mar",
+      "effective_date": "2023-01-01",
+      "includes": [
+        "Trabajadores autonomos",
+        "Familiares colaboradores dados de alta en RETA"
+      ],
+      "excludes": [
+        "Trabajadores por cuenta ajena encuadrados en el Regimen Especial del Mar",
+        "Religiosos e integrantes de instituciones de vida consagrada de la Iglesia Catolica (Orden TAS/820/2004)"
+      ],
+      "source": "art. 96.3 LIRPF (introducido por RDL 13/2022)"
+    },
+
+    "deduccion_vivienda_habitual": {
+      "description": "Contribuyentes que tengan derecho a la deduccion por inversion en vivienda habitual (regimen transitorio) y deseen aplicarla",
+      "source": "art. 96.2 LIRPF"
+    },
+
+    "deduccion_doble_imposicion_internacional": {
+      "description": "Contribuyentes que tengan derecho a la deduccion por doble imposicion internacional y deseen aplicarla",
+      "source": "art. 96.2 LIRPF"
+    },
+
+    "aportaciones_patrimonio_protegido": {
+      "description": "Contribuyentes que realicen aportaciones a patrimonios protegidos de personas con discapacidad y deseen aplicar la reduccion",
+      "source": "art. 96.2 LIRPF, art. 54 LIRPF"
+    },
+
+    "planes_pensiones": {
+      "description": "Contribuyentes que realicen aportaciones a planes de pensiones, planes de prevision asegurados, planes de prevision social empresarial, seguros de dependencia o mutualidades de prevision social, y deseen reducir la base imponible",
+      "source": "art. 96.2 LIRPF, arts. 51-53 LIRPF"
+    },
+
+    "ingreso_minimo_vital": {
+      "description": "Todas las personas integrantes de la unidad de convivencia que perciban el Ingreso Minimo Vital estan obligadas a presentar declaracion, incluidos todos los miembros de la unidad de convivencia aunque individualmente no superen los limites",
+      "source": "DA 50 Ley 35/2006 (introducida por Ley 19/2021)",
+      "note": "La obligacion alcanza a todos los integrantes de la unidad de convivencia, no solo al titular de la prestacion"
+    },
+
+    "solicitud_devolucion": {
+      "description": "Contribuyentes que soliciten la devolucion derivada de la normativa del tributo",
+      "includes": [
+        "Devoluciones por exceso de retenciones o pagos a cuenta",
+        "Deduccion por maternidad (art. 81 LIRPF)",
+        "Deducciones por familia numerosa, descendientes o ascendientes con discapacidad (art. 81 bis LIRPF)"
+      ],
+      "source": "art. 96.2 LIRPF"
+    }
+  },
+
+  "special_cases": {
+    "fallecimiento": {
+      "description": "En caso de fallecimiento del contribuyente durante el ejercicio, sus herederos estan obligados a presentar la declaracion del fallecido correspondiente al periodo 1 de enero hasta la fecha de fallecimiento, si concurren las circunstancias de obligacion de declarar",
+      "note": "Los limites de obligacion de declarar no se reducen proporcionalmente al periodo de generacion de rentas",
+      "source": "art. 96 LIRPF"
+    },
+
+    "no_residentes_con_obligacion": {
+      "description": "Los contribuyentes no residentes en Espana no estan sujetos al IRPF sino al IRNR. Esta seccion solo aplica a residentes fiscales en Espana",
+      "source": "art. 8 LIRPF"
+    },
+
+    "ceuta_melilla": {
+      "description": "Los contribuyentes residentes en Ceuta o Melilla aplican las mismas reglas de obligacion de declarar, pero tienen acceso a la deduccion especial del 60% (art. 68.4 LIRPF). Si desean aplicar dicha deduccion, deben presentar declaracion",
+      "source": "art. 68.4 LIRPF"
+    },
+
+    "tributacion_conjunta": {
+      "description": "En tributacion conjunta, los limites de la obligacion de declarar se aplican individualmente a cada miembro de la unidad familiar. Si cualquier miembro esta obligado individualmente, la unidad familiar debe declarar",
+      "note": "Los umbrales NO se duplican en tributacion conjunta",
+      "source": "art. 96 LIRPF, art. 82 LIRPF"
+    },
+
+    "pensiones_extranjero": {
+      "description": "Cuando se percibe una pension del extranjero, el pagador no esta obligado a practicar retencion (no opera en Espana), por lo que aplica el limite inferior de 15.876 EUR y no el de 22.000 EUR",
+      "source": "art. 96.2.1 LIRPF"
+    }
+  },
+
+  "summary_table": {
+    "description": "Cuadro resumen de contribuyentes NO obligados a declarar (salvo autonomos y perceptores IMV, que siempre deben declarar)",
+    "rows": [
+      {
+        "income_type": "Rendimientos del trabajo",
+        "threshold_eur": 22000,
+        "conditions": "Un unico pagador. Tambien si hay varios pagadores pero el segundo y restantes no superan 1.500 EUR"
+      },
+      {
+        "income_type": "Rendimientos del trabajo",
+        "threshold_eur": 15876,
+        "conditions": "Mas de un pagador (segundo y restantes > 1.500 EUR). Pensiones compensatorias. Pagador no obligado a retener. Tipo fijo de retencion"
+      },
+      {
+        "income_type": "Rendimientos capital mobiliario + ganancias patrimoniales (con retencion)",
+        "threshold_eur": 1600,
+        "conditions": "Conjuntamente. Sometidos a retencion o ingreso a cuenta"
+      },
+      {
+        "income_type": "Rentas inmobiliarias imputadas + Letras del Tesoro + subvenciones vivienda + ayudas publicas",
+        "threshold_eur": 1000,
+        "conditions": "Conjuntamente"
+      },
+      {
+        "income_type": "Rendimientos trabajo + capital + actividades economicas + ganancias (mixto)",
+        "threshold_eur": 1000,
+        "conditions": "Conjuntamente, y ademas perdidas patrimoniales < 500 EUR"
+      }
+    ]
+  },
+
+  "examples_obligated": [
+    {
+      "id": 1,
+      "description": "Asalariado con un solo pagador que percibe mas de 22.000 EUR brutos anuales",
+      "type": "rendimientos_trabajo",
+      "threshold_exceeded": "22.000 EUR"
+    },
+    {
+      "id": 2,
+      "description": "Trabajador que cambio de empresa y percibio rendimientos de dos pagadores, el segundo pagador supera 1.500 EUR, y el total supera 15.876 EUR",
+      "type": "rendimientos_trabajo",
+      "threshold_exceeded": "15.876 EUR"
+    },
+    {
+      "id": 3,
+      "description": "Pensionista que percibe pension de jubilacion de la SS y pension de un plan de pensiones, segundo pagador > 1.500 EUR, y total > 15.876 EUR",
+      "type": "rendimientos_trabajo",
+      "threshold_exceeded": "15.876 EUR"
+    },
+    {
+      "id": 4,
+      "description": "Propietario de inmuebles urbanos no arrendados (distinto de vivienda habitual) con rentas inmobiliarias imputadas que, junto con rendimientos de Letras del Tesoro, superan 1.000 EUR",
+      "type": "rentas_inmobiliarias_imputadas",
+      "threshold_exceeded": "1.000 EUR"
+    },
+    {
+      "id": 5,
+      "description": "Contribuyente con actividades economicas (incluidas agricolas y ganaderas) con rendimientos que, junto con otras rentas, superan 1.000 EUR en el limite mixto",
+      "type": "actividades_economicas",
+      "threshold_exceeded": "1.000 EUR"
+    },
+    {
+      "id": 6,
+      "description": "Contribuyente con perdidas patrimoniales iguales o superiores a 500 EUR",
+      "type": "perdidas_patrimoniales",
+      "threshold_exceeded": "500 EUR (perdidas)"
+    },
+    {
+      "id": 7,
+      "description": "Autonomo dado de alta en RETA en cualquier momento del ejercicio, independientemente de sus ingresos (incluso con ingresos cero)",
+      "type": "autonomo_reta",
+      "threshold_exceeded": "no aplica — obligacion absoluta"
+    },
+    {
+      "id": 8,
+      "description": "Beneficiario del Ingreso Minimo Vital y todos los miembros de su unidad de convivencia",
+      "type": "ingreso_minimo_vital",
+      "threshold_exceeded": "no aplica — obligacion absoluta"
+    }
+  ],
+
+  "casillas_relevantes": {
+    "note": "El Modelo 100 no tiene una casilla especifica para 'obligacion de declarar' — los limites se comprueban contra las casillas de rendimientos integros",
+    "casillas": [
+      {
+        "casilla": "0003",
+        "description": "Rendimientos integros del trabajo (total)",
+        "relevance": "Comparar contra 22.000 o 15.876 EUR"
+      },
+      {
+        "casilla": "0022",
+        "description": "Rendimientos integros del capital mobiliario a integrar en la base del ahorro",
+        "relevance": "Suma con ganancias para comparar contra 1.600 EUR"
+      },
+      {
+        "casilla": "0358",
+        "description": "Ganancias patrimoniales sometidas a retencion (base del ahorro)",
+        "relevance": "Suma con capital mobiliario para comparar contra 1.600 EUR"
+      },
+      {
+        "casilla": "0075",
+        "description": "Rentas inmobiliarias imputadas",
+        "relevance": "Suma con Letras del Tesoro y subvenciones para comparar contra 1.000 EUR"
+      },
+      {
+        "casilla": "0555",
+        "description": "Cuota diferencial",
+        "relevance": "Si es negativa, el contribuyente puede tener derecho a devolucion (motivo para declarar voluntariamente)"
+      }
+    ]
+  },
+
+  "voluntary_filing": {
+    "description": "Los contribuyentes no obligados a declarar pueden presentar declaracion voluntaria si les resulta favorable (cuota diferencial negativa = derecho a devolucion)",
+    "common_cases": [
+      "Retenciones excesivas sobre rendimientos del trabajo",
+      "Derecho a deduccion por maternidad (cheque bebe) no percibido anticipadamente",
+      "Derecho a deducciones por familia numerosa o descendientes/ascendientes con discapacidad",
+      "Aportaciones a planes de pensiones con derecho a reduccion"
+    ],
+    "source": "art. 96 LIRPF (ultimo parrafo)"
+  },
+
+  "historical_evolution": {
+    "note": "Umbrales relevantes para el ejercicio 2025",
+    "changes_2025": [
+      {
+        "change": "Umbral del segundo pagador reducido de 2.500 EUR a 1.500 EUR",
+        "effective": "2025-01-23 (rendimientos devengados desde esa fecha)",
+        "source": "Real Decreto-ley 1/2025",
+        "transitional": "Para rendimientos devengados entre 01-01-2025 y 22-01-2025, aplica el umbral anterior de 2.500 EUR"
+      },
+      {
+        "change": "Obligacion para todos los autonomos en RETA se mantiene",
+        "effective": "2023-01-01",
+        "source": "art. 96.3 LIRPF (introducido por RDL 13/2022)"
+      },
+      {
+        "change": "Umbral de rendimientos del trabajo para multiples pagadores subio a 15.876 EUR (antes 15.000 EUR)",
+        "effective": "2024-01-01",
+        "source": "Ley 31/2022"
+      }
+    ]
+  }
+}

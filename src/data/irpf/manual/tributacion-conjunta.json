@@ -1,0 +1,223 @@
+{
+  "year": 2025,
+  "chapter": "2 (Cuestiones generales)",
+  "title": "Tributacion individual y opcion por la tributacion conjunta",
+  "source": "AEAT Manual Practico Renta 2025, Capitulo 2 — Tributacion individual y opcion por la tributacion conjunta",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c02-irpf-cuestiones-generales/sujecion-irpf-aspectos-personales/tributacion-individual-opcion-tributacion-conjunta.html",
+  "verified_date": "2026-03-20",
+  "legal_basis": "Arts. 82-84 Ley 35/2006 (LIRPF)",
+
+  "general_rule": {
+    "concept": "Con caracter general, la declaracion del IRPF se presenta de forma individual. No obstante, las personas integradas en una unidad familiar pueden optar por presentar declaracion conjunta.",
+    "source": "art. 82 LIRPF"
+  },
+
+  "unidad_familiar": {
+    "title": "Composicion de la unidad familiar",
+    "determination_date": "La determinacion de los miembros de la unidad familiar se realizara atendiendo a la situacion existente el dia 31 de diciembre de cada ano.",
+    "majority_age": 18,
+
+    "modalidades": [
+      {
+        "id": "modalidad_1",
+        "name": "Unidad familiar biparental (matrimonio)",
+        "description": "Integrada por ambos conyuges no separados legalmente y, si los hubiere, los hijos menores (con excepcion de los que, con el consentimiento de los padres, vivan independientes) y los hijos mayores de edad incapacitados judicialmente sujetos a patria potestad prorrogada o rehabilitada.",
+        "members": [
+          "Ambos conyuges no separados legalmente",
+          "Hijos menores de 18 anos (salvo que vivan independientes con consentimiento paterno)",
+          "Hijos mayores de edad judicialmente incapacitados sujetos a patria potestad prorrogada o rehabilitada",
+          "Hijos mayores de edad con discapacidad sujetos a curatela representativa por resolucion judicial"
+        ],
+        "reduction": {
+          "amount": 3400,
+          "description": "Reduccion de 3.400 euros anuales en la base imponible"
+        },
+        "source": "art. 82.1.1 LIRPF"
+      },
+      {
+        "id": "modalidad_2",
+        "name": "Unidad familiar monoparental",
+        "description": "En defecto de matrimonio o en caso de separacion legal, la formada por el padre o la madre y todos los hijos que convivan con uno u otro y que reunan los requisitos de la Modalidad 1.",
+        "members": [
+          "Padre o madre (solo uno de ellos)",
+          "Todos los hijos que convivan con dicho progenitor y reunan los requisitos de la Modalidad 1"
+        ],
+        "reduction": {
+          "amount": 2150,
+          "description": "Reduccion de 2.150 euros anuales en la base imponible"
+        },
+        "restriction": "No procede esta reduccion cuando el contribuyente conviva con el padre o la madre de alguno de los hijos de la unidad familiar.",
+        "source": "art. 82.1.2 LIRPF"
+      }
+    ],
+
+    "special_cases": {
+      "parejas_de_hecho": "En caso de parejas no casadas con hijos comunes, solo uno de los miembros puede formar unidad familiar con todos los hijos. El otro debera tributar individualmente.",
+      "custodia_compartida": "En caso de custodia compartida, cualquiera de los dos progenitores (pero solo uno) puede formar unidad familiar con los hijos comunes.",
+      "nadie_puede_pertenecer_a_dos": "Nadie puede formar parte de dos unidades familiares al mismo tiempo.",
+      "hijos_18_durante_ejercicio": "Si un hijo cumple 18 anos durante el ejercicio 2025, deja de pertenecer a la unidad familiar a efectos del IRPF 2025 (situacion a 31/12)."
+    },
+    "source": "art. 82 LIRPF"
+  },
+
+  "opcion_por_tributacion_conjunta": {
+    "title": "Ejercicio de la opcion",
+    "rules": [
+      {
+        "rule": "La opcion por la tributacion conjunta debera abarcar a la totalidad de los miembros de la unidad familiar.",
+        "consequence": "Si un miembro de la unidad familiar presenta declaracion individual, los restantes deberan tributar tambien de forma individual."
+      },
+      {
+        "rule": "La opcion ejercitada para un periodo impositivo no vincula para ejercicios sucesivos.",
+        "note": "Se puede cambiar de individual a conjunta (o viceversa) cada ano."
+      },
+      {
+        "rule": "La opcion puede modificarse dentro del plazo reglamentario de presentacion de la declaracion.",
+        "note": "Durante la campana de Renta, se puede cambiar la opcion presentando nueva declaracion."
+      }
+    ],
+    "source": "art. 83.2 LIRPF"
+  },
+
+  "caracteristicas_tributacion_conjunta": {
+    "title": "Reglas y caracteristicas de la tributacion conjunta",
+
+    "acumulacion_rentas": {
+      "description": "Las rentas de cualquier tipo obtenidas por todos y cada uno de los miembros de la unidad familiar se someteran a gravamen acumuladamente.",
+      "consequence": "Al acumularse las rentas, la progresividad de la escala general puede elevar el tipo efectivo comparado con la tributacion individual.",
+      "source": "art. 84.1 LIRPF"
+    },
+
+    "escalas_de_gravamen": {
+      "description": "Se aplican las mismas escalas de gravamen (general y del ahorro) que en tributacion individual. No se elevan, duplican ni modifican los tramos por tributar conjuntamente.",
+      "source": "art. 84 LIRPF"
+    },
+
+    "minimo_personal": {
+      "amount": 5550,
+      "description": "El minimo del contribuyente sera de 5.550 euros anuales con independencia del numero de miembros de la unidad familiar. Es decir, en tributacion conjunta matrimonial, el minimo personal es 5.550 EUR (no 11.100 EUR).",
+      "exception_minimos_familiares": "Los minimos por descendientes y por discapacidad se aplican segun las reglas generales (no se duplican por tributar conjuntamente).",
+      "source": "arts. 57, 84.2.4 LIRPF"
+    },
+
+    "limites_no_se_amplian": {
+      "description": "La declaracion conjunta no supone la ampliacion de ninguno de los limites que afectan a determinadas partidas deducibles. Los limites maximos de reduccion y deduccion son los mismos que en individual, salvo que la ley disponga otra cosa expresamente.",
+      "source": "art. 84.2.3 LIRPF"
+    },
+
+    "responsabilidad_solidaria": {
+      "description": "Todos los miembros de la unidad familiar que presenten declaracion conjunta quedaran conjunta y solidariamente obligados al pago de la deuda tributaria resultante.",
+      "consequence": "La AEAT puede dirigirse contra cualquiera de los miembros para exigir el pago total de la deuda.",
+      "source": "art. 84.6 LIRPF"
+    },
+
+    "obligacion_declarar": {
+      "description": "La determinacion de la obligacion de declarar se realiza aplicando los criterios de tributacion individual a cada miembro, sin elevar ni multiplicar los umbrales por numero de miembros de la unidad familiar.",
+      "source": "art. 84.2.1 LIRPF"
+    },
+
+    "bases_liquidables_negativas": {
+      "description": "Las bases liquidables negativas de ejercicios anteriores de cualquiera de los miembros de la unidad familiar pueden compensarse con las rentas positivas de la declaracion conjunta, con independencia de si en dichos ejercicios se tributo individual o conjuntamente.",
+      "source": "art. 84.5 LIRPF"
+    },
+
+    "perdidas_patrimoniales": {
+      "description": "Las perdidas patrimoniales pendientes de compensacion de cualquier miembro de la unidad familiar pueden compensarse en la declaracion conjunta.",
+      "source": "art. 84.5 LIRPF"
+    }
+  },
+
+  "reducciones_base_imponible": {
+    "title": "Reducciones por tributacion conjunta",
+    "application_order": "La reduccion se aplica primero a la base imponible general. Si hay remanente, se aplica a la base imponible del ahorro, sin que en ningun caso la base liquidable resultante pueda ser negativa como consecuencia de esta reduccion.",
+
+    "modalidad_1_matrimonio": {
+      "amount": 3400,
+      "description": "3.400 euros anuales para unidad familiar de Modalidad 1 (matrimonio no separado legalmente + hijos).",
+      "source": "art. 84.2.4 LIRPF"
+    },
+
+    "modalidad_2_monoparental": {
+      "amount": 2150,
+      "description": "2.150 euros anuales para unidad familiar de Modalidad 2 (padre/madre + hijos sin matrimonio o en separacion legal).",
+      "restriction": "No aplica si el contribuyente convive con el padre o la madre de alguno de los hijos de su unidad familiar.",
+      "source": "art. 84.2.4 LIRPF"
+    },
+
+    "casillas": {
+      "reduccion_tributacion_conjunta": "0470"
+    }
+  },
+
+  "when_is_it_advantageous": {
+    "title": "Cuando conviene la tributacion conjunta",
+    "favorable_cases": [
+      {
+        "case": "Un conyuge no tiene ingresos o tiene ingresos muy bajos",
+        "explanation": "En individual, el conyuge sin ingresos no puede aprovechar su minimo personal. En conjunta, la reduccion de 3.400 EUR compensa parcialmente la acumulacion de rentas."
+      },
+      {
+        "case": "Familias monoparentales con hijos sin ingresos",
+        "explanation": "La reduccion de 2.150 EUR reduce la base imponible del progenitor."
+      },
+      {
+        "case": "Miembros con bases liquidables negativas de ejercicios anteriores",
+        "explanation": "Las bases negativas de un miembro pueden compensarse con rentas positivas de otro en conjunta."
+      },
+      {
+        "case": "Ambos conyuges tienen perdidas patrimoniales significativas",
+        "explanation": "Pueden compensarse entre si en declaracion conjunta."
+      }
+    ],
+    "unfavorable_cases": [
+      {
+        "case": "Ambos conyuges tienen ingresos significativos",
+        "explanation": "La acumulacion de rentas eleva el tipo marginal efectivo. La reduccion de 3.400 EUR raramente compensa la mayor progresividad."
+      },
+      {
+        "case": "Uno de los conyuges tiene rendimientos de actividades economicas con gastos deducibles",
+        "explanation": "Los limites de deduccion no se amplian en conjunta, por lo que se pierde capacidad deductiva."
+      }
+    ],
+    "recommendation": "Se recomienda simular ambas opciones (individual y conjunta) en el borrador de Renta Web antes de presentar la declaracion. El sistema de AEAT permite comparar el resultado.",
+    "source": "Practica habitual — no hay norma que imponga opcion"
+  },
+
+  "common_mistakes": [
+    {
+      "mistake": "Creer que la reduccion se aplica a cada miembro",
+      "explanation": "La reduccion de 3.400 o 2.150 EUR se aplica UNA sola vez a la declaracion conjunta, no por cada miembro."
+    },
+    {
+      "mistake": "Pensar que el minimo personal se duplica en conjunta matrimonial",
+      "explanation": "El minimo del contribuyente es 5.550 EUR tanto en individual como en conjunta. No se multiplica por el numero de miembros."
+    },
+    {
+      "mistake": "Aplicar reduccion monoparental conviviendo con el otro progenitor",
+      "explanation": "La reduccion de 2.150 EUR no aplica si el contribuyente convive con el padre o la madre de alguno de los hijos de la unidad familiar (pareja de hecho con hijos comunes)."
+    },
+    {
+      "mistake": "No considerar la responsabilidad solidaria",
+      "explanation": "En conjunta, ambos conyuges responden solidariamente de la deuda tributaria total. Si hay deudas tributarias, pueden afectar al otro conyuge."
+    },
+    {
+      "mistake": "Creer que la opcion es irrevocable durante todo el ejercicio",
+      "explanation": "La opcion puede modificarse durante el plazo de presentacion de la declaracion. No vincula para ejercicios futuros."
+    },
+    {
+      "mistake": "Olvidar que las parejas de hecho no pueden acogerse a Modalidad 1",
+      "explanation": "Solo los matrimonios (no parejas de hecho) forman unidad familiar de Modalidad 1 con reduccion de 3.400 EUR. Las parejas no casadas con hijos pueden usar Modalidad 2 (uno de los progenitores + hijos), con reduccion de 2.150 EUR."
+    }
+  ],
+
+  "related_provisions": {
+    "pension_compensatoria": {
+      "description": "En tributacion conjunta, la pension compensatoria entre conyuges no genera reduccion (ya que ambos declaran conjuntamente). La reduccion del art. 55 LIRPF solo aplica en individual.",
+      "source": "art. 55 LIRPF"
+    },
+    "anualidades_alimentos_hijos": {
+      "description": "Las anualidades por alimentos a hijos fijadas por decision judicial no se someten a la escala separada del art. 64 LIRPF en tributacion conjunta (ya que los hijos forman parte de la unidad familiar).",
+      "source": "art. 64 LIRPF"
+    }
+  }
+}

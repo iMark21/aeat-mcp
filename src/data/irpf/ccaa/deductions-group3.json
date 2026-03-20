@@ -1,0 +1,1853 @@
+{
+  "year": 2025,
+  "verified_date": "2026-03-20",
+  "source": "AEAT Manual Practico Renta 2025, Parte 2",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html",
+  "ccaa": {
+    "murcia": {
+      "name": "Comunidad Autonoma de la Region de Murcia",
+      "code": "MU",
+      "normativa": "Decreto Legislativo 1/2010, de 5 de noviembre",
+      "deductions": [
+        {
+          "id": "mu_vivienda_jovenes",
+          "name": "Inversion en vivienda habitual por jovenes de edad igual o inferior a 40 anos",
+          "percentage": 5,
+          "max_deduction": 300,
+          "max_base": 9040,
+          "income_limit": {
+            "individual": 40000,
+            "note": "Suma base imponible general + ahorro < 40.000; base ahorro <= 1.800"
+          },
+          "requirements": [
+            "Residencia habitual en la Region de Murcia",
+            "Edad igual o inferior a 40 anos a fecha de devengo",
+            "Vivienda de nueva construccion (primera transmision) o rehabilitacion cualificada",
+            "Ocupacion continuada durante 3 anos"
+          ],
+          "incompatible_with": ["mu_vivienda_familias_numerosas"],
+          "source": "art. 1.Tres DLeg 1/2010"
+        },
+        {
+          "id": "mu_donativos_patrimonio_cultural",
+          "name": "Donativos para la proteccion del patrimonio cultural y actividades culturales, artisticas, sociales, cientificas y deportivas",
+          "percentage": 50,
+          "max_deduction": null,
+          "requirements": [
+            "Donaciones dinerarias puras y simples",
+            "Destinadas a entidades sin animo de lucro con fines culturales, cientificos, deportivos o medioambientales",
+            "Administracion regional, entidades publicas, universidades, centros de investigacion",
+            "Certificacion de la entidad beneficiaria"
+          ],
+          "incompatible_with": ["Creditos fiscales del art. 12 Ley 4/2022"],
+          "source": "art. 1.Tres bis DLeg 1/2010, Ley 4/2022"
+        },
+        {
+          "id": "mu_donativos_investigacion_biomedica",
+          "name": "Donativos para investigacion biomedica",
+          "percentage": 50,
+          "max_deduction": null,
+          "requirements": [
+            "Donaciones dinerarias puras y simples",
+            "Destinadas a la CA de Murcia, universidades publicas de Murcia, o entidades sin animo de lucro con objeto principal de investigacion biomedica",
+            "Certificacion de la entidad beneficiaria",
+            "Transferencia bancaria obligatoria"
+          ],
+          "incompatible_with": ["Creditos fiscales del art. 12 Ley 4/2022"],
+          "source": "art. 1.Tres ter DLeg 1/2010"
+        },
+        {
+          "id": "mu_donaciones_bienes_patrimonio",
+          "name": "Donaciones de bienes inscritos en el Inventario de Patrimonio Cultural",
+          "percentage": 15,
+          "max_deduction": null,
+          "base_calculation": "Valor contable del bien transmitido o valor segun normas del Impuesto sobre el Patrimonio, sin superar el valor normal de mercado",
+          "requirements": [
+            "Donaciones puras y simples de bienes inscritos en el Inventario de Patrimonio Cultural de Murcia",
+            "Destinadas a la Administracion regional, corporaciones locales, universidades o centros de investigacion",
+            "Entidades sin animo de lucro con fines exclusivamente culturales"
+          ],
+          "incompatible_with": ["Creditos fiscales del art. 12 Ley 4/2022"],
+          "source": "art. 1.Tres quater DLeg 1/2010"
+        },
+        {
+          "id": "mu_gastos_guarderia",
+          "name": "Gastos de guarderia",
+          "percentage": 20,
+          "max_deduction_per_child": 1000,
+          "max_deduction_split": 500,
+          "income_limit": {
+            "individual": 30000,
+            "joint": 50000,
+            "note": "Suma base imponible general + ahorro"
+          },
+          "requirements": [
+            "Hijos en primer ciclo de educacion infantil",
+            "Centros autorizados por la autoridad educativa regional",
+            "Gastos elegibles: custodia, preinscripcion, matricula, alimentacion, ropa exclusiva del centro",
+            "Reducir base por becas y ayudas publicas"
+          ],
+          "source": "art. 1.Cuatro DLeg 1/2010"
+        },
+        {
+          "id": "mu_ahorro_agua",
+          "name": "Inversiones en dispositivos domesticos de ahorro de agua",
+          "percentage": 20,
+          "max_deduction": 60,
+          "max_base": 300,
+          "requirements": [
+            "Inversiones en vivienda habitual del contribuyente",
+            "Reconocimiento previo de la Administracion regional",
+            "Dispositivos de ahorro de agua segun Ley 6/2006"
+          ],
+          "source": "art. 1.Cuatro DLeg 1/2010"
+        },
+        {
+          "id": "mu_energias_renovables",
+          "name": "Inversion en instalaciones de recursos energeticos renovables",
+          "percentage_by_income": {
+            "individual": [
+              { "up_to": 34999.99, "percentage": 50 },
+              { "from": 35000, "up_to": 44999.99, "percentage": 37.5 },
+              { "from": 45000, "up_to": 59999.99, "percentage": 25 },
+              { "from": 60000, "percentage": 0 }
+            ],
+            "joint": [
+              { "up_to": 49999.99, "percentage": 50 },
+              { "from": 50000, "up_to": 74999.99, "percentage": 37.5 },
+              { "from": 75000, "up_to": 94999.99, "percentage": 25 },
+              { "from": 95000, "percentage": 0 }
+            ]
+          },
+          "max_deduction": 7000,
+          "carryforward_years": 2,
+          "requirements": [
+            "Instalacion en propiedades de la Region de Murcia",
+            "Sistemas de energia renovable para autoconsumo exclusivo",
+            "Factura de instalador profesional",
+            "Pago mediante tarjeta, transferencia o cheque (no efectivo)",
+            "Multiples propietarios: prorrateo proporcional"
+          ],
+          "source": "art. 1.Cinco DLeg 1/2010"
+        },
+        {
+          "id": "mu_inversion_entidades_nueva_creacion",
+          "name": "Inversion en acciones o participaciones sociales de nuevas entidades o de reciente creacion",
+          "percentage": 20,
+          "max_deduction": 4000,
+          "requirements": [
+            "Participacion del inversor (incluyendo conyuge y parientes hasta 3er grado) no superior al 40%",
+            "Entidad con domicilio social en la Region de Murcia durante 3 anos",
+            "Entidad con actividad economica real (no gestion de patrimonio)",
+            "Minimo 1 empleado a tiempo completo en Regimen General de SS",
+            "Mantenimiento de acciones/participaciones minimo 3 anos",
+            "No ocupar cargos directivos durante 10 anos",
+            "Formalizacion en escritura publica"
+          ],
+          "incompatible_with": ["mu_inversion_mab", "mu_inversion_economia_social"],
+          "source": "art. 1.Seis DLeg 1/2010"
+        },
+        {
+          "id": "mu_inversion_mab",
+          "name": "Inversion en acciones de entidades que cotizan en el segmento de expansion del Mercado Alternativo Bursatil",
+          "percentage": 20,
+          "max_deduction": 10000,
+          "requirements": [
+            "Participacion no superior al 10% del capital",
+            "Mantenimiento minimo 2 anos",
+            "Domicilio social y fiscal de la entidad en la Region de Murcia",
+            "Entidad no dedicada principalmente a gestion de patrimonio",
+            "Formalizacion en escritura publica",
+            "Comunicacion previa a la Administracion regional"
+          ],
+          "incompatible_with": ["mu_inversion_entidades_nueva_creacion", "mu_inversion_economia_social"],
+          "source": "art. 1.Siete DLeg 1/2010"
+        },
+        {
+          "id": "mu_material_escolar",
+          "name": "Gastos de adquisicion de material escolar y libros de texto",
+          "fixed_amount_per_child": 120,
+          "income_limit": {
+            "non_large_family": {
+              "individual": 20000,
+              "joint": 40000
+            },
+            "large_family": {
+              "individual": 33000,
+              "joint": 53000
+            },
+            "note": "Suma base imponible general + ahorro"
+          },
+          "requirements": [
+            "Hijos en 2o ciclo de educacion infantil, primaria o ESO",
+            "Hijos que den derecho al minimo por descendientes",
+            "Reducir por becas y ayudas publicas",
+            "Si ambos padres tienen derecho: se reparte a partes iguales"
+          ],
+          "source": "art. 1.Ocho DLeg 1/2010"
+        },
+        {
+          "id": "mu_nacimiento_adopcion",
+          "name": "Nacimiento o adopcion",
+          "amounts": {
+            "first_child": 100,
+            "second_child": 200,
+            "third_and_subsequent": 300
+          },
+          "income_limit": {
+            "individual": 30000,
+            "joint": 50000,
+            "note": "Suma base imponible general + ahorro"
+          },
+          "requirements": [
+            "Hijo nacido o adoptado en el periodo impositivo",
+            "Si ambos padres conviven y tributan individualmente: 50% cada uno",
+            "Tributacion conjunta: importe completo",
+            "Orden del hijo determinado por numero total de hijos del contribuyente"
+          ],
+          "source": "art. 1.Nueve DLeg 1/2010"
+        },
+        {
+          "id": "mu_discapacidad",
+          "name": "Contribuyentes con discapacidad",
+          "fixed_amount": 150,
+          "income_limit": {
+            "max": 40000,
+            "note": "Suma base imponible general + ahorro, individual o conjunta"
+          },
+          "requirements": [
+            "Grado de discapacidad igual o superior al 33%",
+            "Acreditacion conforme al art. 72 del Reglamento IRPF"
+          ],
+          "source": "art. 1.Diez DLeg 1/2010"
+        },
+        {
+          "id": "mu_conciliacion_hijos",
+          "name": "Conciliacion - cuidado de hijos dependientes",
+          "percentage": 20,
+          "percentage_of": "cuotas ingresadas al empleado del hogar en SS",
+          "max_deduction": 400,
+          "income_limit": {
+            "max": 34000,
+            "note": "Suma base imponible general + ahorro"
+          },
+          "requirements": [
+            "Al menos un hijo menor de 12 anos con derecho a minimo por descendiente",
+            "Contribuyente dado de alta como empleador de hogar en SS",
+            "Empleado dado de alta en Sistema Especial de Empleados de Hogar",
+            "Contribuyente y/o conyuge con rendimientos del trabajo o actividades economicas"
+          ],
+          "source": "art. 1.Once DLeg 1/2010"
+        },
+        {
+          "id": "mu_conciliacion_mayores",
+          "name": "Conciliacion - cuidado de ascendientes mayores de 65 anos",
+          "percentage": 20,
+          "percentage_of": "cuotas ingresadas al empleado del hogar en SS",
+          "max_deduction": 400,
+          "income_limit": {
+            "max": 34000,
+            "note": "Suma base imponible general + ahorro"
+          },
+          "requirements": [
+            "Al menos un ascendiente mayor de 65 anos",
+            "Contribuyente dado de alta como empleador de hogar",
+            "Empleado en Sistema Especial de Empleados de Hogar",
+            "Cuotas computables desde que el ascendiente cumple 65"
+          ],
+          "combined_max": 800,
+          "combined_note": "Maximo total si se aplican ambas deducciones de conciliacion con personas distintas",
+          "source": "art. 1.Once DLeg 1/2010"
+        },
+        {
+          "id": "mu_acogimiento_no_remunerado",
+          "name": "Acogimiento no remunerado de mayores de 65 anos o personas con discapacidad",
+          "fixed_amount": 600,
+          "requirements": [
+            "Persona acogida mayor de 65 anos o con discapacidad >= 33%",
+            "Convivencia superior a 183 dias al ano",
+            "Acogimiento no remunerado",
+            "No recibir ayudas de la Administracion Regional para el acogimiento",
+            "Mayores de 65: no parentesco de consanguinidad o afinidad hasta 4o grado",
+            "Certificado de la autoridad regional competente",
+            "Certificado de empadronamiento acreditando convivencia",
+            "Varios contribuyentes para la misma persona: reparto a partes iguales"
+          ],
+          "source": "art. 1.Doce DLeg 1/2010"
+        },
+        {
+          "id": "mu_alquiler_vivienda",
+          "name": "Arrendamiento de vivienda habitual",
+          "percentage": 10,
+          "max_deduction": 300,
+          "income_limit": {
+            "note": "Base liquidable general menos minimo personal y familiar < 40.000; base ahorro <= 1.800"
+          },
+          "requirements": [
+            "Edad <= 40 anos, O familia numerosa, O discapacidad >= 65%",
+            "Vivienda en la Region de Murcia ocupada efectivamente",
+            "Contrato de arrendamiento con Impuesto de Transmisiones liquidado",
+            "No ser propietario de otra vivienda (>50%)",
+            "No simultanear con deduccion por inversion en vivienda",
+            "Pago por tarjeta, transferencia, cheque nominativo o ingreso (no efectivo)"
+          ],
+          "source": "art. 1.Trece DLeg 1/2010"
+        },
+        {
+          "id": "mu_mujeres_trabajadoras",
+          "name": "Mujeres trabajadoras",
+          "amounts": {
+            "first_child": 300,
+            "second_child": 350,
+            "third_and_subsequent": 400,
+            "per_dependent_person": 400
+          },
+          "income_limit": {
+            "individual": 20000,
+            "joint": 40000,
+            "note": "Suma base imponible general + ahorro"
+          },
+          "requirements": [
+            "Mujeres dadas de alta en SS o mutualidad (por cuenta ajena o propia)",
+            "Hijos menores de 18 anos",
+            "Personas dependientes: mayores de 75 anos o cualquier edad con discapacidad >= 65%",
+            "Convivencia minima 183 dias al ano para personas dependientes",
+            "Importe calculado proporcionalmente a los dias de alta laboral",
+            "Un mismo hijo o dependiente no puede generar mas de una cuantia"
+          ],
+          "source": "art. 1.Catorce DLeg 1/2010"
+        },
+        {
+          "id": "mu_vivienda_familias_numerosas",
+          "name": "Adquisicion o ampliacion de vivienda habitual para familias numerosas",
+          "percentage": {
+            "general_category": 10,
+            "special_category": 15
+          },
+          "max_base": 5000,
+          "max_application_years": 15,
+          "requirements": [
+            "Residencia habitual en la Region de Murcia",
+            "Familia numerosa legalmente reconocida (Ley 40/2003)",
+            "Nueva vivienda con superficie superior en >10% a la anterior",
+            "Venta de la vivienda anterior en plazo de 5 anos",
+            "Adquisicion dentro de 5 anos desde obtencion del titulo de familia numerosa o nacimiento/adopcion",
+            "Mantenimiento del titulo de familia numerosa anualmente"
+          ],
+          "incompatible_with": ["mu_vivienda_jovenes"],
+          "source": "art. 1.Quince DLeg 1/2010"
+        },
+        {
+          "id": "mu_familia_monoparental",
+          "name": "Familia monoparental",
+          "fixed_amount": 303,
+          "income_limit": {
+            "taxpayer_max": 35240,
+            "descendant_income_max": 8000,
+            "note": "Suma base imponible general + ahorro del contribuyente; rentas anuales del descendiente < 8.000 (excluidas exentas)"
+          },
+          "requirements": [
+            "Contribuyente con descendientes a cargo",
+            "No convivencia con personas no emparentadas (excepto ascendientes)",
+            "Hijos menores, adoptados o con discapacidad",
+            "Convivencia minima 183 dias al ano"
+          ],
+          "source": "art. 1.Dieciseis DLeg 1/2010"
+        },
+        {
+          "id": "mu_idiomas",
+          "name": "Gastos de ensenanza de idiomas",
+          "percentage": 15,
+          "max_deduction_per_child": 300,
+          "income_limit": {
+            "individual": 25000,
+            "joint": 40000,
+            "note": "Suma base imponible general + ahorro"
+          },
+          "requirements": [
+            "Gastos extraescolares de aprendizaje de idiomas extranjeros",
+            "Hijos en 2o ciclo de educacion infantil, primaria, ESO, bachillerato o ciclos formativos",
+            "Hijos con derecho al minimo por descendientes",
+            "Si ambos padres conviven: reparto a partes iguales en tributacion individual"
+          ],
+          "source": "art. 1.Diecisiete DLeg 1/2010"
+        },
+        {
+          "id": "mu_internet",
+          "name": "Gastos de acceso a Internet",
+          "percentage": 30,
+          "max_deduction": 300,
+          "requirements": [
+            "Residencia habitual en municipios de la Region de Murcia con menos de 15.000 habitantes",
+            "Cuotas de alta y mensuales de linea de alta velocidad",
+            "Uso exclusivo residencial (no vinculado a actividad economica)",
+            "Solo en el ejercicio de contratacion",
+            "No aplicable si se cambia de proveedor de un ejercicio anterior",
+            "Una sola vez por vivienda y contribuyente"
+          ],
+          "source": "art. 1.Dieciocho DLeg 1/2010"
+        },
+        {
+          "id": "mu_vehiculo_electrico",
+          "name": "Gastos de adquisicion de vehiculos electricos",
+          "percentage_by_income": {
+            "individual": [
+              { "up_to": 34999.99, "percentage": 30 },
+              { "from": 35000, "up_to": 44999.99, "percentage": 22.5 },
+              { "from": 45000, "up_to": 59999.99, "percentage": 15 },
+              { "from": 60000, "percentage": 0 }
+            ],
+            "joint": [
+              { "up_to": 49999.99, "percentage": 30 },
+              { "from": 50000, "up_to": 74999.99, "percentage": 22.5 },
+              { "from": 75000, "up_to": 94999.99, "percentage": 15 },
+              { "from": 95000, "percentage": 0 }
+            ]
+          },
+          "max_deduction": 7000,
+          "max_vehicle_price": {
+            "M1_passenger": 45000,
+            "M1_BEV_8_9_seats": 53000,
+            "L3e_L4e_L5e_motorcycle": 10000,
+            "L1e_moped": 3000
+          },
+          "carryforward_years": 3,
+          "requirements": [
+            "Domicilio fiscal en la Region de Murcia",
+            "Un solo vehiculo por ejercicio y contribuyente",
+            "Vehiculo nuevo, primera matriculacion en Espana, o de demostracion (max 18 meses)",
+            "Mantenimiento de la propiedad minimo 5 anos (2 anos para renting)"
+          ],
+          "source": "art. 1.Diecinueve DLeg 1/2010"
+        },
+        {
+          "id": "mu_recarga_vehiculo_electrico",
+          "name": "Gastos de instalacion de infraestructuras de recarga de vehiculos electricos",
+          "percentage": 100,
+          "max_deduction": 4000,
+          "carryforward_years": 3,
+          "requirements": [
+            "Instalacion en propiedad del contribuyente o garaje comunitario",
+            "Vehiculo para uso particular",
+            "Contribuyente propietario de la infraestructura",
+            "Mantenimiento minimo 2 anos desde instalacion",
+            "Base: cantidades pagadas incluidos gastos y tributos, reducidas por subvenciones (excepto Programa 2 del RD 266/2021)",
+            "Una infraestructura por periodo impositivo y contribuyente"
+          ],
+          "source": "art. 1.Veinte DLeg 1/2010"
+        },
+        {
+          "id": "mu_optica",
+          "name": "Cristales graduados, lentes de contacto y soluciones de limpieza",
+          "percentage": 30,
+          "max_deduction": 100,
+          "requirements": [
+            "Hijos menores de 12 anos en el momento de la compra",
+            "Hijos con derecho al minimo por descendientes",
+            "Gastos en cristales graduados, lentillas y soluciones de limpieza"
+          ],
+          "source": "art. 1.Veintiuno DLeg 1/2010"
+        },
+        {
+          "id": "mu_deporte",
+          "name": "Gastos asociados a la practica del deporte y actividades saludables",
+          "percentage": {
+            "general": 30,
+            "over_65": 100
+          },
+          "max_deduction": 150,
+          "income_limit": {
+            "individual": 25000,
+            "joint": 40000,
+            "note": "Suma base imponible general + ahorro"
+          },
+          "eligible_expenses": [
+            "Cuotas de gimnasios y centros deportivos",
+            "Cuotas de federaciones deportivas",
+            "Servicios de entrenadores titulados",
+            "Clases de pilates y yoga"
+          ],
+          "requirements": [
+            "Justificacion mediante factura conforme al RD 1619/2012",
+            "Contribuyente, conyuge o descendientes con derecho a minimo",
+            "No incluye cuotas periodicas de clubes sociales o entidades deportivas sin animo de lucro"
+          ],
+          "source": "art. 1.Veintidos DLeg 1/2010"
+        },
+        {
+          "id": "mu_enfermedades_raras",
+          "name": "Gastos asociados a enfermedades raras",
+          "percentage": 100,
+          "max_deduction": 300,
+          "requirements": [
+            "Gastos de tratamiento y cuidado de pacientes con enfermedades raras",
+            "Aplicable al contribuyente, conyuge y descendientes/ascendientes con derecho a minimos",
+            "Justificacion mediante factura"
+          ],
+          "source": "art. 1.Veintitres DLeg 1/2010"
+        },
+        {
+          "id": "mu_inversion_economia_social",
+          "name": "Inversion en entidades de economia social",
+          "percentage": 20,
+          "max_deduction": 4000,
+          "holding_period_years": 5,
+          "requirements": [
+            "Entidad del ambito de la economia social (Ley 5/2011)",
+            "Domicilio social y fiscal en la Region de Murcia",
+            "Minimo 1 empleado a tiempo completo en Regimen General de SS",
+            "Participacion del inversor (incluyendo conyuge y parientes hasta 3er grado) no superior al 40%",
+            "Formalizacion en escritura publica"
+          ],
+          "incompatible_with": ["mu_inversion_entidades_nueva_creacion", "mu_inversion_mab"],
+          "source": "art. 1.Veinticuatro DLeg 1/2010"
+        },
+        {
+          "id": "mu_veterinario",
+          "name": "Gastos veterinarios",
+          "percentage": 30,
+          "max_deduction": 100,
+          "income_limit": {
+            "individual": 25000,
+            "joint": 40000,
+            "note": "Suma base imponible general + ahorro"
+          },
+          "requirements": [
+            "Gastos veterinarios de animales domesticos",
+            "Justificacion mediante factura"
+          ],
+          "source": "art. 1.Veinticinco DLeg 1/2010"
+        },
+        {
+          "id": "mu_regimen_transitorio_vivienda",
+          "name": "Regimen transitorio de la deduccion por inversion en vivienda habitual",
+          "rates": {
+            "general": {
+              "percentage": 2,
+              "description": "Cantidades satisfechas por adquisicion de vivienda de nueva construccion"
+            },
+            "reduced_income": {
+              "percentage": 3,
+              "description": "Cantidades satisfechas cuando base liquidable general menos minimo personal y familiar < 24.200 y base ahorro <= 1.800"
+            }
+          },
+          "requirements": [
+            "Contribuyentes que aplicaron la deduccion en periodos 1998-2000",
+            "Vivienda de nueva construccion",
+            "Contribuyentes que aplicaron deduccion en periodos 2001-2012 pueden acogerse a la deduccion de jovenes <= 40 anos"
+          ],
+          "compatible_with": ["mu_vivienda_familias_numerosas"],
+          "source": "DT DLeg 1/2010"
+        }
+      ]
+    },
+    "la_rioja": {
+      "name": "Comunidad Autonoma de La Rioja",
+      "code": "LR",
+      "normativa": "Ley 10/2017, de 27 de octubre",
+      "deductions": [
+        {
+          "id": "lr_nacimiento_adopcion",
+          "name": "Nacimiento y adopcion de hijos",
+          "amounts": {
+            "first_child": 600,
+            "second_child": 750,
+            "third_and_subsequent": 900,
+            "multiple_birth_extra": 60
+          },
+          "income_limit": null,
+          "requirements": [
+            "Hijo nacido o adoptado en el periodo impositivo que conviva con el contribuyente a 31 de diciembre",
+            "Si ambos padres declaran individualmente: reparto a partes iguales",
+            "Tributacion conjunta: importe completo"
+          ],
+          "source": "art. 32.1 Ley 10/2017"
+        },
+        {
+          "id": "lr_vivienda_pequenos_municipios",
+          "name": "Adquisicion, construccion o rehabilitacion de vivienda habitual en pequenos municipios",
+          "percentage": 5,
+          "max_base": 9040,
+          "max_deduction": 452,
+          "requirements": [
+            "Residencia habitual en La Rioja",
+            "Adquisicion, rehabilitacion o construccion iniciada despues del 01-01-2017",
+            "Vivienda habitual del contribuyente",
+            "Ubicacion en municipios pequenos de La Rioja designados (Anexo 1)",
+            "Valor del patrimonio verificado al final del ejercicio debe superar el del inicio en al menos el importe de las inversiones",
+            "Indicar codigo del municipio en casilla [1067]"
+          ],
+          "incompatible_with": ["lr_intereses_hipotecarios"],
+          "source": "art. 32.2 Ley 10/2017"
+        },
+        {
+          "id": "lr_escuelas_infantiles_pequenos_municipios",
+          "name": "Gastos en escuelas infantiles (0-3 anos) en pequenos municipios",
+          "percentage": 30,
+          "max_deduction_per_child": 600,
+          "income_limit": {
+            "individual": 18030,
+            "joint": 30050,
+            "savings_max": 1800,
+            "note": "Base liquidable general y del ahorro"
+          },
+          "requirements": [
+            "Residencia en municipios pequenos de La Rioja (Anexo 1)",
+            "Convivencia con el hijo con derecho a minimo por descendiente",
+            "Padres que trabajen fuera del hogar durante el periodo de custodia",
+            "Gastos elegibles: preinscripcion, matricula, asistencia, alimentacion",
+            "Casilla [1071] para codigo municipal, [1070] para NIF del centro/cuidador"
+          ],
+          "source": "art. 32.3 Ley 10/2017"
+        },
+        {
+          "id": "lr_acogimiento_familiar",
+          "name": "Menores en acogimiento familiar o guarda con fines de adopcion",
+          "amounts": {
+            "over_183_days": 300,
+            "between_90_182_days": 150
+          },
+          "income_limit": null,
+          "requirements": [
+            "Menor en acogimiento familiar de urgencia, temporal, permanente o guarda con fines de adopcion",
+            "Formalizado por autoridad judicial o administrativa de La Rioja",
+            "Residencia habitual en La Rioja",
+            "Multiples menores con estancias < 90 dias: aplica si total supera 90 dias",
+            "Tributacion conjunta: 50% cada conyuge",
+            "No aplicable en el ejercicio de la adopcion"
+          ],
+          "source": "art. 32.4 Ley 10/2017"
+        },
+        {
+          "id": "lr_hijo_0_3_pequenos_municipios",
+          "name": "Hijo de 0 a 3 anos - residentes en pequenos municipios",
+          "monthly_amount": 100,
+          "income_limit": null,
+          "requirements": [
+            "Residencia o traslado a municipios pequenos de La Rioja durante el periodo impositivo",
+            "Residencia minima de 3 anos consecutivos desde el mes en que se inicia la deduccion",
+            "Hijo de 0 a 3 anos con derecho al minimo por descendiente",
+            "Requisitos verificados el ultimo dia de cada mes",
+            "Si ambos padres declaran individualmente: reparto a partes iguales",
+            "Casilla [1162] para codigo del municipio"
+          ],
+          "source": "art. 32.5 Ley 10/2017"
+        },
+        {
+          "id": "lr_hijo_0_3_escuelas_infantiles",
+          "name": "Hijo de 0 a 3 anos en escuelas infantiles de La Rioja",
+          "percentage": 20,
+          "max_deduction_per_child": 600,
+          "income_limit": {
+            "individual": 18030,
+            "joint": 30050,
+            "savings_max": 1800,
+            "note": "Base liquidable general y del ahorro"
+          },
+          "requirements": [
+            "Residencia habitual en La Rioja",
+            "Convivencia con el hijo con derecho a minimo por descendiente",
+            "Hijo matriculado en centro de educacion infantil autorizado de La Rioja",
+            "Gastos elegibles: preinscripcion, matricula, asistencia, alimentacion",
+            "No incluye gastos tratados como retribuciones en especie exentas",
+            "Casilla [1076] para NIF del prestador del servicio"
+          ],
+          "source": "art. 32.6 Ley 10/2017"
+        },
+        {
+          "id": "lr_vehiculo_electrico",
+          "name": "Adquisicion de vehiculos electricos nuevos",
+          "percentage": 15,
+          "max_deduction": {
+            "general": 300,
+            "electric_bicycle": 225
+          },
+          "max_vehicle_price": 50000,
+          "income_limit": null,
+          "requirements": [
+            "Una sola vez por persona en el ejercicio de matriculacion",
+            "Vehiculo no destinado a actividad profesional/empresarial",
+            "Solo el comprador que figure en la documentacion de venta",
+            "Categorias elegibles: N1 (furgonetas ligeras), L1e, L2e (ciclomotores), bicicletas electricas con bateria de litio",
+            "Bicicletas electricas conforme a norma UNE-EN 15194:2009"
+          ],
+          "source": "art. 32.7 Ley 10/2017"
+        },
+        {
+          "id": "lr_fijacion_poblacion_rural",
+          "name": "Fomentar la fijacion de poblacion ocupada en el medio rural",
+          "fixed_amount": 1000,
+          "duration_years": 3,
+          "income_limit": null,
+          "requirements": [
+            "Residencia habitual en un municipio de La Rioja",
+            "Inicio de actividad por cuenta propia en el sector agrario a partir del 01-01-2025",
+            "No ser autonomo colaborador ni socio de sociedad de capital",
+            "No haber cesado en actividad agraria por cuenta propia en los 2 anos anteriores",
+            "Mantenimiento de requisitos durante 12, 24 y 36 meses desde alta",
+            "Importes no aplicados: arrastre hasta 3 ejercicios siguientes"
+          ],
+          "source": "art. 32.8 Ley 10/2017"
+        },
+        {
+          "id": "lr_internet_jovenes",
+          "name": "Acceso a Internet para jovenes emancipados",
+          "percentage": {
+            "general": 30,
+            "single_parent_or_small_municipality": 40
+          },
+          "income_limit": {
+            "individual": 18030,
+            "joint": 30050,
+            "savings_max": 1800,
+            "note": "Base liquidable general y del ahorro"
+          },
+          "requirements": [
+            "Menor de 36 anos a fin del periodo impositivo",
+            "Contrato con minimo 6 meses de antelacion al cierre del ejercicio",
+            "Contrato a nombre del contribuyente",
+            "Nueva contratacion (no simple cambio de proveedor)",
+            "No vinculado a actividades economicas",
+            "Una sola deduccion por vivienda y contribuyente",
+            "Municipio pequeno: indicar codigo en casilla [1204]"
+          ],
+          "source": "art. 32.9 Ley 10/2017"
+        },
+        {
+          "id": "lr_suministros_jovenes",
+          "name": "Suministro de luz y gas de uso domestico para jovenes emancipados",
+          "percentage": {
+            "general": 15,
+            "small_municipality": 20,
+            "single_parent": 25
+          },
+          "income_limit": {
+            "individual": 18030,
+            "joint": 30050,
+            "savings_max": 1800,
+            "note": "Base liquidable general y del ahorro"
+          },
+          "requirements": [
+            "Menor de 36 anos a fin del periodo impositivo",
+            "Vivienda habitual en propiedad o alquiler",
+            "Contrato con minimo 6 meses de antelacion al cierre del ejercicio",
+            "Contrato a nombre del contribuyente",
+            "Nueva contratacion (no simple cambio de titularidad)",
+            "No actividad economica en la vivienda",
+            "Una sola deduccion por vivienda y contribuyente",
+            "Municipio pequeno: indicar codigo en casilla [1205]"
+          ],
+          "source": "art. 32.10 Ley 10/2017"
+        },
+        {
+          "id": "lr_vivienda_jovenes_menores_36",
+          "name": "Inversion en vivienda habitual de jovenes menores de 36 anos",
+          "percentage": 15,
+          "max_base": 9000,
+          "income_limit": {
+            "individual": 18030,
+            "joint": 30050,
+            "savings_max": 1800,
+            "note": "Base liquidable general y del ahorro"
+          },
+          "requirements": [
+            "Vivienda en La Rioja como residencia habitual",
+            "Menor de 36 anos a 31 de diciembre",
+            "Adquisicion a partir del 01-01-2013",
+            "Ocupacion continuada durante 3 anos",
+            "Valor del patrimonio verificado al final debe superar el del inicio",
+            "No incluye gastos de conservacion, reparacion ni mejoras"
+          ],
+          "incompatible_with": ["lr_intereses_hipotecarios", "lr_rehabilitacion_vivienda"],
+          "source": "art. 32.11 Ley 10/2017"
+        },
+        {
+          "id": "lr_alquiler_jovenes",
+          "name": "Arrendamiento de vivienda habitual para menores de 36 anos",
+          "percentage": {
+            "general": 10,
+            "small_municipality": 20
+          },
+          "max_deduction": {
+            "general": 300,
+            "small_municipality": 400
+          },
+          "income_limit": {
+            "individual": 18030,
+            "joint": 30050,
+            "savings_max": 1800,
+            "note": "Base liquidable general y del ahorro"
+          },
+          "requirements": [
+            "Menor de 36 anos (al menos un conyuge en tributacion conjunta)",
+            "Vivienda habitual en La Rioja ocupada efectivamente",
+            "Contrato de arrendamiento registrado mediante ITP",
+            "No simultanear con deduccion por inversion en vivienda",
+            "Justificacion documental: contrato, transferencias, recibos"
+          ],
+          "source": "art. 32.12 Ley 10/2017"
+        },
+        {
+          "id": "lr_bicicletas",
+          "name": "Adquisicion de bicicletas de pedaleo no asistido",
+          "percentage": 15,
+          "max_deduction_per_vehicle": 50,
+          "max_vehicles_per_family": 2,
+          "income_limit": null,
+          "requirements": [
+            "Justificacion documental mediante factura",
+            "Solo el comprador que figure en la factura",
+            "Matrimonios en gananciales: reparto a partes iguales"
+          ],
+          "source": "art. 32.13 Ley 10/2017"
+        },
+        {
+          "id": "lr_rehabilitacion_vivienda",
+          "name": "Obras de rehabilitacion de vivienda habitual",
+          "percentage": {
+            "under_36_general": 5,
+            "under_36_low_income": 7,
+            "over_36": 2
+          },
+          "max_base": 9040,
+          "income_limit_for_7pct": {
+            "individual": 18030,
+            "joint": 30050,
+            "savings_max": 1800
+          },
+          "requirements": [
+            "Obras terminadas antes del 01-01-2017",
+            "Pagos realizados antes del 01-01-2013",
+            "Vivienda en La Rioja como residencia habitual",
+            "Cumplir requisitos de la normativa estatal vigente a 31-12-2012",
+            "Verificacion patrimonial al final del periodo"
+          ],
+          "incompatible_with": ["lr_vivienda_jovenes_menores_36"],
+          "source": "art. 32.11 DT Ley 10/2017"
+        },
+        {
+          "id": "lr_vivienda_jovenes_transitorio",
+          "name": "Adquisicion o construccion de vivienda habitual para jovenes (regimen transitorio)",
+          "percentage": {
+            "general": 3,
+            "low_income": 5
+          },
+          "max_base": 9040,
+          "income_limit_for_5pct": {
+            "individual": 18030,
+            "joint": 30050,
+            "savings_max": 1800
+          },
+          "requirements": [
+            "Menor de 36 anos a fin del periodo impositivo",
+            "Vivienda habitual en La Rioja",
+            "Adquisicion/construccion iniciada antes del 01-01-2013",
+            "Construccion terminada en 4 anos desde inicio de inversiones",
+            "Ampliaciones terminadas antes del 01-01-2017",
+            "Haber aplicado la deduccion en un periodo anterior al 01-01-2013"
+          ],
+          "incompatible_with": ["lr_vivienda_jovenes_menores_36"],
+          "source": "DT Ley 10/2017"
+        },
+        {
+          "id": "lr_segunda_vivienda_rural",
+          "name": "Adquisicion o rehabilitacion de segunda vivienda en el medio rural",
+          "percentage": 8,
+          "max_deduction": 450.76,
+          "max_base": 9040,
+          "requirements": [
+            "Residencia habitual en La Rioja",
+            "Segunda residencia en municipio elegible (Anexo 2), distinto al de residencia habitual",
+            "Adquisicion o pagos de rehabilitacion anteriores al 01-01-2013",
+            "Obras de rehabilitacion terminadas antes del 01-01-2017",
+            "Casilla [1064] para codigo del municipio"
+          ],
+          "source": "DT Ley 10/2017"
+        },
+        {
+          "id": "lr_vivienda_discapacidad",
+          "name": "Obras de adecuacion de vivienda habitual para personas con discapacidad",
+          "percentage": 15,
+          "max_base": 9040,
+          "requirements": [
+            "Contribuyente con condicion legal de persona con discapacidad",
+            "Vivienda en La Rioja como residencia habitual",
+            "Obras de adecuacion conforme al art. 68.1.4o LIRPF (redaccion a 31-12-2012)",
+            "Pagos realizados antes del 01-01-2013",
+            "Obras terminadas antes del 01-01-2017",
+            "Informe tecnico de la autoridad competente confirmando necesidad",
+            "Haber aplicado la deduccion estatal de inversion en vivienda en un periodo anterior a 2013"
+          ],
+          "source": "DT Ley 10/2017"
+        },
+        {
+          "id": "lr_donaciones_mecenazgo_actividades",
+          "name": "Donaciones para promocion y estimulo de actividades de fomento del mecenazgo",
+          "percentage": 15,
+          "max_deduction": 500,
+          "max_percentage_of_quota": 30,
+          "requirements": [
+            "Donaciones irrevocables, puras y simples",
+            "Destinadas a actividades culturales, cientificas, deportivas, derechos humanos, inclusion social, medio ambiente, etc.",
+            "Actividades en el territorio de La Rioja",
+            "Conforme a la Ley 3/2021 de mecenazgo"
+          ],
+          "incompatible_with": ["lr_donaciones_empresas_culturales", "lr_donaciones_bienes_culturales_autores"],
+          "source": "art. 32.14.a) Ley 10/2017"
+        },
+        {
+          "id": "lr_donaciones_patrimonio_historico",
+          "name": "Donaciones para investigacion, conservacion y restauracion del patrimonio historico de La Rioja",
+          "percentage": 15,
+          "max_deduction": 500,
+          "max_percentage_of_quota": 30,
+          "requirements": [
+            "Donaciones para investigacion, conservacion, restauracion, rehabilitacion, consolidacion, difusion, exposicion y adquisicion de bienes del patrimonio historico",
+            "Bienes de la Administracion Publica de La Rioja o bienes de interes cultural registrados",
+            "Donaciones en especie valoradas conforme a la Ley 49/2002"
+          ],
+          "incompatible_with": ["lr_donaciones_empresas_culturales", "lr_donaciones_bienes_culturales_autores"],
+          "source": "art. 32.14.b) Ley 10/2017"
+        },
+        {
+          "id": "lr_donaciones_empresas_culturales",
+          "name": "Donaciones a empresas culturales",
+          "percentage": 20,
+          "max_deduction": 500,
+          "max_percentage_of_quota": 30,
+          "requirements": [
+            "Empresas culturales con fondos propios inferiores a 300.000 EUR",
+            "Domicilio fiscal en La Rioja",
+            "Actividades elegibles: cinematografia, artes escenicas, musica, artes visuales, libros, patrimonio cultural, folklore riojano, artes aplicadas"
+          ],
+          "incompatible_with": ["lr_donaciones_mecenazgo_actividades", "lr_donaciones_patrimonio_historico"],
+          "source": "art. 32.14.c) Ley 10/2017"
+        },
+        {
+          "id": "lr_donaciones_bienes_culturales_autores",
+          "name": "Donacion de bienes culturales por autores, creadores y herederos",
+          "percentage": 20,
+          "max_deduction": 500,
+          "max_percentage_of_quota": 30,
+          "requirements": [
+            "Donaciones irrevocables y gratuitas de bienes culturales de calidad garantizada",
+            "Autores, creadores o herederos",
+            "Destinadas a instituciones culturales de La Rioja",
+            "Tambien aplica a derechos de usufructo o deposito temporal sin contraprestacion",
+            "Valoracion conforme a la Ley 49/2002"
+          ],
+          "incompatible_with": ["lr_donaciones_mecenazgo_actividades", "lr_donaciones_patrimonio_historico"],
+          "source": "art. 32.14.d) Ley 10/2017"
+        },
+        {
+          "id": "lr_conservacion_patrimonio",
+          "name": "Cantidades invertidas en conservacion, restauracion, rehabilitacion o consolidacion del patrimonio historico",
+          "percentage": 15,
+          "max_deduction": 500,
+          "requirements": [
+            "Bienes propiedad del contribuyente o en usufructo",
+            "Bienes inscritos en el Registro General del Patrimonio Cultural, Historico y Artistico de La Rioja",
+            "No aplica a gastos de inversion empresarial",
+            "Aplicacion combinada con donaciones no puede generar cuota autonomica negativa"
+          ],
+          "source": "art. 32.15 Ley 10/2017"
+        },
+        {
+          "id": "lr_deporte",
+          "name": "Fomentar el ejercicio fisico y la practica deportiva",
+          "percentage": {
+            "general": 30,
+            "over_65_or_disabled_33pct": 100
+          },
+          "max_deduction": 300,
+          "income_limit": null,
+          "eligible_expenses": [
+            "Servicios de gimnasios e instalaciones deportivas",
+            "Servicios de entidades inscritas en el Registro de Deporte de La Rioja",
+            "Clases de practica deportiva o educacion fisica",
+            "Licencias federativas de federaciones riojanas"
+          ],
+          "requirements": [
+            "Servicios prestados en territorio de La Rioja",
+            "Justificacion mediante factura completa u ordinaria (no simplificada)",
+            "Contribuyente, conyuge y descendientes con derecho a minimos",
+            "Varios contribuyentes: reparto a partes iguales"
+          ],
+          "source": "art. 32.17 Ley 10/2017"
+        },
+        {
+          "id": "lr_ela",
+          "name": "Destinada a enfermos de ELA",
+          "percentage": 50,
+          "max_deduction": 2000,
+          "income_limit": null,
+          "eligible_expenses": [
+            "Servicios de profesionales sanitarios",
+            "Tratamientos medicos prescritos",
+            "Gastos para paliar sintomas de la enfermedad"
+          ],
+          "requirements": [
+            "Contribuyente, conyuge o descendientes con derecho a minimo",
+            "Justificacion mediante factura completa u ordinaria (no simplificada)",
+            "Varios contribuyentes: reparto a partes iguales de importes y limites"
+          ],
+          "source": "art. 32.18 Ley 10/2017"
+        },
+        {
+          "id": "lr_organizaciones_agrarias",
+          "name": "Cuotas satisfechas a organizaciones profesionales agrarias",
+          "percentage": 100,
+          "max_deduction": 100,
+          "income_limit": null,
+          "requirements": [
+            "Cuotas de inscripcion, periodicas y extraordinarias",
+            "Organizacion constituida conforme a la Ley 19/1977",
+            "Certificacion de la organizacion con cuotas anuales satisfechas"
+          ],
+          "source": "art. 32.19 Ley 10/2017"
+        },
+        {
+          "id": "lr_celiaca",
+          "name": "Enfermedad celiaca diagnosticada",
+          "fixed_amount": 250,
+          "income_limit": null,
+          "requirements": [
+            "Contribuyente, conyuge o descendientes/ascendientes con derecho a minimos familiares",
+            "Diagnostico definitivo segun criterios cientificos",
+            "Certificado medico con identificacion completa, numero de colegiado, especialidad, fecha de emision y de diagnostico",
+            "Varios contribuyentes para la misma persona: reparto a partes iguales"
+          ],
+          "source": "art. 32.20 Ley 10/2017"
+        },
+        {
+          "id": "lr_intereses_hipotecarios",
+          "name": "Paliar la subida de intereses de prestamos hipotecarios destinados a vivienda habitual",
+          "percentage": 15,
+          "max_base": 5000,
+          "applicable_years": [2023, 2024, 2025],
+          "requirements": [
+            "Vivienda en La Rioja como residencia habitual",
+            "Adquisicion posterior al 01-01-2013",
+            "Incluye adquisicion, rehabilitacion y adecuacion por discapacidad",
+            "Base: intereses pagados reducidos por coberturas de riesgo de tipo de interes"
+          ],
+          "incompatible_with": ["lr_vivienda_pequenos_municipios", "lr_vivienda_jovenes_menores_36", "Deduccion estatal por inversion en vivienda"],
+          "source": "Ley 10/2017"
+        }
+      ]
+    },
+    "valenciana": {
+      "name": "Comunitat Valenciana",
+      "code": "VC",
+      "normativa": "Ley 13/1997, de 23 de diciembre",
+      "income_thresholds_common": {
+        "note": "Muchas deducciones comparten los mismos umbrales de renta",
+        "full_deduction": {
+          "individual": 27000,
+          "joint": 44000
+        },
+        "max_limit": {
+          "individual": 30000,
+          "joint": 47000
+        },
+        "reduction_formula": "deduccion x [100 x (1 - (base - umbral_completo) / 3.000)] / 100"
+      },
+      "deductions": [
+        {
+          "id": "vc_nacimiento_adopcion",
+          "name": "Nacimiento, adopcion, delegacion de guarda o acogimiento familiar",
+          "amounts_pre_june2025": {
+            "per_child": 300,
+            "per_foster": 300
+          },
+          "amounts_post_may2025": {
+            "first_child": 600,
+            "second_child": 750,
+            "third_and_subsequent": 900,
+            "first_foster": 600,
+            "second_foster": 750,
+            "third_and_subsequent_foster": 900,
+            "foster_min_days": 183
+          },
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "source": "art. 4.Uno.a) y b) Ley 13/1997"
+        },
+        {
+          "id": "vc_nacimiento_multiple",
+          "name": "Nacimiento o adopcion multiples",
+          "fixed_amount": 246,
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Parto o adopcion multiple (2 o mas hijos en misma fecha)",
+            "Hijos con derecho al minimo por descendientes"
+          ],
+          "source": "art. 4.Uno.c) Ley 13/1997"
+        },
+        {
+          "id": "vc_nacimiento_discapacidad",
+          "name": "Nacimiento, adopcion o acogimiento de personas con discapacidad",
+          "amounts": {
+            "single_child_disabled": 246,
+            "with_disabled_sibling": 303
+          },
+          "disability_requirement": "fisica/sensorial >= 65% o intelectual/mental >= 33% permanente",
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "source": "art. 4.Uno.d) Ley 13/1997"
+        },
+        {
+          "id": "vc_familia_numerosa_monoparental",
+          "name": "Familia numerosa o monoparental",
+          "amounts": {
+            "general_category": 330,
+            "special_category": 660
+          },
+          "income_limit": {
+            "general": { "individual": 30000, "joint": 47000, "full_at": { "individual": 27000, "joint": 44000 } },
+            "special": { "individual": 35000, "joint": 58000, "full_at": { "individual": 31000, "joint": 54000 } }
+          },
+          "source": "art. 4.Uno.e) Ley 13/1997"
+        },
+        {
+          "id": "vc_guarderia",
+          "name": "Cantidades destinadas a custodia no ocasional en guarderias y centros de primer ciclo de educacion infantil",
+          "percentage": 15,
+          "max_deduction_per_child": 297,
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Padres con rendimientos del trabajo o actividades economicas",
+            "Hijos menores de 3 anos",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "incompatible_with": ["vc_contratacion_empleado_hogar"],
+          "source": "art. 4.Uno.f) Ley 13/1997"
+        },
+        {
+          "id": "vc_conciliacion",
+          "name": "Conciliacion del trabajo con la vida familiar",
+          "fixed_amount_per_child": 460,
+          "age_range": "3-5 anos",
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Madre/tutora dada de alta en SS o mutualidad",
+            "Hijo con derecho al minimo por descendiente",
+            "Prorrateo mensual por cumplimiento de requisitos",
+            "Limite: cuotas SS por hijo entre 3 anos y dia anterior al 5o cumpleanos"
+          ],
+          "incompatible_with": ["vc_contratacion_empleado_hogar"],
+          "source": "art. 4.Uno.g) Ley 13/1997"
+        },
+        {
+          "id": "vc_discapacidad_65_plus",
+          "name": "Contribuyentes con discapacidad, edad >= 65 anos",
+          "fixed_amount": 197,
+          "requirements": [
+            "Edad >= 65 anos a 31 de diciembre",
+            "Discapacidad >= 33%",
+            "No percibir prestaciones exentas del IRPF"
+          ],
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "source": "art. 4.Uno.h) Ley 13/1997"
+        },
+        {
+          "id": "vc_ascendientes_mayores",
+          "name": "Ascendientes mayores de 75 anos o mayores de 65 con discapacidad",
+          "fixed_amount_per_ascendant": 197,
+          "requirements": [
+            "Ascendientes > 75 anos, O > 65 anos con discapacidad >= 65% (o intelectual/mental >= 33% permanente)",
+            "Convivencia minima 6 meses al ano",
+            "Rentas del ascendiente < 8.000 EUR/ano (excluidas exentas)",
+            "Declaracion del ascendiente < 1.800 EUR en rendimientos sujetos"
+          ],
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "source": "art. 4.Uno.i) Ley 13/1997"
+        },
+        {
+          "id": "vc_contratacion_empleado_hogar",
+          "name": "Contratacion indefinida de personas afiliadas en el Sistema Especial de Empleados de Hogar",
+          "percentage": 50,
+          "percentage_of": "cuotas SS del empleado de hogar satisfechas",
+          "max_deduction": {
+            "children_1": 660,
+            "children_2_or_single_parent": 1100,
+            "ascendants_1": 330,
+            "ascendants_2": 550
+          },
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Contrato indefinido para cuidado de hijos < 5 anos o ascendientes dependientes",
+            "Contribuyente con rendimientos del trabajo o actividades economicas"
+          ],
+          "incompatible_with": ["vc_guarderia", "vc_conciliacion"],
+          "source": "art. 4.Uno.j) Ley 13/1997"
+        },
+        {
+          "id": "vc_rentas_arrendamiento",
+          "name": "Obtencion de rentas derivadas de arrendamientos de vivienda",
+          "percentage": 5,
+          "max_base": 3300,
+          "requirements": [
+            "Renta mensual no superior al precio de referencia de alquiler privado de la CV",
+            "Contrato de arrendamiento de vivienda conforme a LAU",
+            "Contrato iniciado en el periodo impositivo",
+            "Deposito de fianza en la Generalitat antes de fin del periodo",
+            "Inmueble destinado a residencia habitual permanente del inquilino"
+          ],
+          "source": "art. 4.Uno.k) Ley 13/1997"
+        },
+        {
+          "id": "vc_primera_vivienda_jovenes",
+          "name": "Primera adquisicion de vivienda habitual por contribuyentes de edad <= 35 anos",
+          "percentage": 5,
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Primera adquisicion de vivienda habitual",
+            "Edad <= 35 anos a 31 de diciembre",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario",
+            "Excluye intereses",
+            "Incremento patrimonial >= importe de la inversion"
+          ],
+          "incompatible_with": ["vc_vivienda_ayudas_publicas"],
+          "source": "art. 4.Uno.l) Ley 13/1997"
+        },
+        {
+          "id": "vc_vivienda_discapacidad",
+          "name": "Adquisicion de vivienda habitual por personas con discapacidad",
+          "percentage": 5,
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "disability_requirement": "fisica/sensorial >= 65% o intelectual/mental >= 33% permanente",
+          "requirements": [
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario",
+            "Excluye intereses",
+            "Incremento patrimonial >= importe de la inversion"
+          ],
+          "incompatible_with": ["vc_vivienda_ayudas_publicas"],
+          "source": "art. 4.Uno.m) Ley 13/1997"
+        },
+        {
+          "id": "vc_vivienda_ayudas_publicas",
+          "name": "Cantidades destinadas a adquisicion o rehabilitacion de vivienda habitual procedentes de ayudas publicas",
+          "fixed_amount": 112,
+          "alternative": "Tipo medio autonomico x importe de la ayuda publica",
+          "requirements": [
+            "Ayudas de la Generalitat con fondos propios o del Estado",
+            "Fondos efectivamente aplicados en el periodo impositivo",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario",
+            "Incremento patrimonial >= importe de la inversion"
+          ],
+          "incompatible_with": ["vc_primera_vivienda_jovenes", "vc_vivienda_discapacidad"],
+          "source": "art. 4.Uno.n) Ley 13/1997"
+        },
+        {
+          "id": "vc_alquiler_vivienda",
+          "name": "Arrendamiento de la vivienda habitual",
+          "rates": [
+            { "condition": "general", "percentage": 20, "max": 800 },
+            { "condition": "1 condicion (edad<=35, discapacidad>=65%, o violencia de genero)", "percentage": 25, "max": 950 },
+            { "condition": "2+ condiciones", "percentage": 30, "max": 1100 }
+          ],
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario",
+            "Contrato posterior al 23-04-1998 con duracion minima 1 ano",
+            "Vivienda habitual ocupada por el contribuyente",
+            "No poseer otra vivienda en un radio de 50 km (>= 6 meses/ano)",
+            "Prorrateo por dias del contrato"
+          ],
+          "source": "art. 4.Uno.o) Ley 13/1997"
+        },
+        {
+          "id": "vc_alquiler_distinto_municipio",
+          "name": "Arrendamiento de vivienda en municipio distinto por razon de trabajo",
+          "percentage": 10,
+          "max_deduction": 224,
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Vivienda en la CV a mas de 50 km de la residencia anterior",
+            "Pagos no reembolsados por el empleador",
+            "Prorrateo por dias de vigencia del contrato"
+          ],
+          "source": "art. 4.Uno.p) Ley 13/1997"
+        },
+        {
+          "id": "vc_energias_renovables",
+          "name": "Cantidades invertidas en instalaciones de autoconsumo o de generacion de energia termica renovable",
+          "percentage": {
+            "primary_residence": 40,
+            "secondary_residence": 20
+          },
+          "max_base_per_dwelling": 8800,
+          "carryforward_years": 4,
+          "eligible_installations": [
+            "Autoconsumo electrico registrado",
+            "Generacion fotovoltaica o eolica aislada",
+            "Energia termica solar, biomasa o geotermica"
+          ],
+          "requirements": [
+            "Instalaciones en territorio de la CV",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario",
+            "No incluye instalaciones obligatorias por CTE",
+            "Excluye intereses, seguros y gastos de mantenimiento"
+          ],
+          "source": "art. 4.Uno.q) Ley 13/1997"
+        },
+        {
+          "id": "vc_donaciones_ecologicas",
+          "name": "Donaciones con finalidad ecologica",
+          "rates": {
+            "first_250": { "percentage": 20 },
+            "rest": { "percentage": 25 }
+          },
+          "requirements": [
+            "Donaciones a la Generalitat, entidades locales, entidades publicas o entidades sin animo de lucro con fines medioambientales",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.r) Ley 13/1997"
+        },
+        {
+          "id": "vc_donaciones_patrimonio_cultural",
+          "name": "Donaciones de bienes integrantes del patrimonio cultural valenciano",
+          "rates": {
+            "first_250": { "percentage": 20 },
+            "rest": { "percentage": 25 }
+          },
+          "requirements": [
+            "Bienes inscritos en el Inventario General del Patrimonio Cultural Valenciano",
+            "Destinadas a entidades sin animo de lucro, administraciones, universidades, centros de investigacion",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.r) Ley 13/1997"
+        },
+        {
+          "id": "vc_donativos_conservacion_patrimonio",
+          "name": "Donativos para conservacion, reparacion y restauracion de bienes del patrimonio cultural",
+          "rates": {
+            "first_250": { "percentage": 20 },
+            "rest": { "percentage": 25 }
+          },
+          "requirements": [
+            "Bienes inscritos en el Inventario General del Patrimonio Cultural Valenciano",
+            "Destinados a programas de conservacion, reparacion o restauracion",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.r) Ley 13/1997"
+        },
+        {
+          "id": "vc_conservacion_patrimonio_titulares",
+          "name": "Cantidades destinadas por los titulares a la conservacion, reparacion y restauracion de bienes del patrimonio cultural",
+          "rates": {
+            "first_250": { "percentage": 20 },
+            "rest": { "percentage": 25 }
+          },
+          "requirements": [
+            "Gastos del propietario en conservacion, reparacion y restauracion de bienes del Inventario General del Patrimonio Cultural Valenciano",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.q) Ley 13/1997"
+        },
+        {
+          "id": "vc_donaciones_lengua_valenciana",
+          "name": "Donaciones destinadas al fomento de la lengua valenciana",
+          "rates": {
+            "first_250": { "percentage": 20 },
+            "rest": { "percentage": 25 }
+          },
+          "requirements": [
+            "Donaciones dinerarias destinadas a fomento de la lengua valenciana",
+            "Destinadas a la Generalitat, entidades locales, universidades, centros educativos o entidades del Censo de entidades promotoras del valenciano",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.r) Ley 13/1997"
+        },
+        {
+          "id": "vc_donaciones_culturales_cientificas_deportivas",
+          "name": "Donaciones o cesiones de uso o comodatos para fines culturales, cientificos o deportivos no profesionales",
+          "rates": {
+            "first_250_general": { "percentage": 20 },
+            "rest": { "percentage": 25 }
+          },
+          "valuation_rules": {
+            "monetary": "importe efectivo",
+            "non_monetary": "valor contable o valor en IP",
+            "usufruct_real_estate": "4% del valor catastral por ano",
+            "loan_of_use": "4% del valor del bien, prorrateo por dias"
+          },
+          "requirements": [
+            "Proyectos o actividades declarados de interes social",
+            "Beneficiarios conforme a la Ley 20/2018",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.r) Ley 13/1997, Ley 20/2018"
+        },
+        {
+          "id": "vc_dos_descendientes",
+          "name": "Contribuyentes con dos o mas descendientes",
+          "percentage": 10,
+          "percentage_of": "cuota integra autonomica tras restar otras deducciones autonomicas",
+          "income_limit": {
+            "aggregate_max": 30000,
+            "note": "Suma de bases imponibles de todos los miembros de la unidad familiar y descendientes"
+          },
+          "source": "art. 4.Uno.t) Ley 13/1997"
+        },
+        {
+          "id": "vc_incremento_costes_financiacion",
+          "name": "Incremento de los costes de financiacion ajena en la adquisicion de vivienda habitual",
+          "percentage": 50,
+          "percentage_of": "diferencia positiva entre intereses del ejercicio y del anterior",
+          "max_deduction": 100,
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Prestamo para adquisicion, rehabilitacion o adecuacion de vivienda habitual",
+            "No haber aplicado deduccion estatal por inversion en vivienda"
+          ],
+          "source": "art. 4.Uno.u) Ley 13/1997"
+        },
+        {
+          "id": "vc_material_escolar",
+          "name": "Cantidades destinadas a la adquisicion de material escolar",
+          "fixed_amount_per_child": 110,
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Hijos en centros publicos o privados concertados de la CV",
+            "Educacion Primaria, ESO o unidades de educacion especial",
+            "Contribuyente en situacion de desempleo e inscrito como demandante de empleo",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.v) Ley 13/1997"
+        },
+        {
+          "id": "vc_obras_conservacion_mejora",
+          "name": "Obras de conservacion o mejora de la calidad, sostenibilidad y accesibilidad en la vivienda habitual",
+          "rates": {
+            "general": { "percentage": 20 },
+            "accessibility_disabled_33pct": { "percentage": 50 }
+          },
+          "max_base_per_dwelling": 5500,
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Obras en vivienda habitual en propiedad o usufructo",
+            "Obras elegibles por los planes estatales de vivienda",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario (no efectivo)",
+            "No incluye garajes, jardines, piscinas ni instalaciones deportivas (excepto obras de accesibilidad)",
+            "No incluye inversiones en renovables (deduccion separada)"
+          ],
+          "source": "art. 4.Uno.w) Ley 13/1997"
+        },
+        {
+          "id": "vc_abonos_culturales",
+          "name": "Cantidades destinadas a abonos culturales",
+          "percentage": 21,
+          "max_base": 165,
+          "income_limit": {
+            "max": 50000,
+            "note": "Suma base imponible general + ahorro"
+          },
+          "requirements": [
+            "Abonos culturales de empresas o instituciones con convenio con CulturArts Generalitat",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.x) y DA 16 Ley 13/1997"
+        },
+        {
+          "id": "vc_vehiculos_nuevos",
+          "name": "Adquisicion de vehiculos nuevos pertenecientes a determinadas categorias",
+          "percentage": 10,
+          "max_base_by_type": {
+            "bicycle_conventional": 550,
+            "bicycle_cargo_family": 750,
+            "bicycle_electric": 1540,
+            "ebike_conversion_kit": 660,
+            "personal_mobility_vehicle": 495
+          },
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Vehiculos nuevos conforme a la Orden 5/2020",
+            "Un vehiculo por contribuyente y periodo impositivo",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario",
+            "Reducir base por subvenciones publicas"
+          ],
+          "source": "art. 4.Uno.y) Ley 13/1997"
+        },
+        {
+          "id": "vc_inversion_entidades",
+          "name": "Inversion en adquisicion de acciones o participaciones de entidades nuevas o de reciente creacion",
+          "rates": {
+            "general": { "percentage": 30, "max_deduction": 6600 },
+            "enhanced": { "percentage": 45, "max_deduction": 15000, "conditions": "Entidad que cumple requisitos adicionales" }
+          },
+          "holding_period_years": 3,
+          "carryforward_years": 3,
+          "requirements": [
+            "SA, SL, cooperativas de trabajo asociado o aportaciones obligatorias/voluntarias a cooperativas",
+            "Formalizacion en escritura publica (excepto cooperativas con certificacion digital)",
+            "Entidad con domicilio social y fiscal en la CV durante 3 anos",
+            "Actividad economica real (no gestion de patrimonio)",
+            "Minimo 1 empleado a tiempo completo en SS",
+            "Constituida en los 5 anos anteriores (7 para biotech/energia/estrategicos)",
+            "Aumento de plantilla >= 1 persona en 24 meses, mantenimiento otros 24 meses",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.z) Ley 13/1997"
+        },
+        {
+          "id": "vc_despoblamiento",
+          "name": "Residir habitualmente en un municipio en riesgo de despoblamiento",
+          "base_amount": 330,
+          "increments_by_children": {
+            "one": 132,
+            "two": 198,
+            "three_or_more": 264
+          },
+          "requirements": [
+            "Residencia habitual en municipio beneficiario del Fondo de Cooperacion Municipal contra el despoblamiento",
+            "Incrementos por descendientes con derecho al minimo por descendientes",
+            "Incrementos no acumulativos (se aplica el tramo correspondiente)"
+          ],
+          "incompatible_with": ["vc_nacimiento_adopcion", "vc_nacimiento_multiple", "vc_nacimiento_discapacidad"],
+          "source": "art. 4.Uno.aa) Ley 13/1997"
+        },
+        {
+          "id": "vc_fertilidad",
+          "name": "Cantidades satisfechas en tratamientos de fertilidad",
+          "fixed_amount": 100,
+          "age_range": "40-45 anos",
+          "income_limit": {
+            "individual": 30000,
+            "joint": 47000,
+            "full_at": { "individual": 27000, "joint": 44000 }
+          },
+          "requirements": [
+            "Mujer de entre 40 y 45 anos (inclusive) a la fecha de devengo",
+            "Tratamientos en centros autorizados"
+          ],
+          "source": "art. 4.Uno.ab) Ley 13/1997"
+        },
+        {
+          "id": "vc_gastos_salud",
+          "name": "Cantidades satisfechas en determinados gastos de salud",
+          "categories": [
+            {
+              "type": "Enfermedades cronicas y raras",
+              "max_deduction": 100,
+              "max_large_family": 150
+            },
+            {
+              "type": "Dano cerebral adquirido o Alzheimer",
+              "max_deduction": 100,
+              "max_large_family": 150
+            },
+            {
+              "type": "Salud bucodental (no estetica)",
+              "percentage": 30,
+              "max_deduction": 150
+            },
+            {
+              "type": "Salud mental",
+              "percentage": 30,
+              "max_deduction": 150
+            },
+            {
+              "type": "Cristales graduados y lentillas",
+              "percentage": 30,
+              "max_deduction": 100
+            }
+          ],
+          "income_limit": {
+            "scenario_A": {
+              "note": "Si no se ratifica Decreto-ley 1/2026",
+              "individual": 32000,
+              "joint": 48000,
+              "full_at": { "individual": 29000, "joint": 45000 }
+            },
+            "scenario_B": {
+              "note": "Si se ratifica Decreto-ley 1/2026",
+              "individual": 60000,
+              "joint": 78000,
+              "full_at": { "individual": 54000, "joint": 72000 }
+            }
+          },
+          "requirements": [
+            "Prestadores sanitarios registrados oficialmente",
+            "Justificacion mediante factura y comprobante de pago",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario",
+            "Excluye primas de seguros y reembolsos",
+            "Aplicable a contribuyente, conyuge y familiares dependientes"
+          ],
+          "source": "art. 4.Uno.ac) Ley 13/1997"
+        },
+        {
+          "id": "vc_deporte",
+          "name": "Cantidades satisfechas en gastos asociados a la practica deportiva y actividades saludables",
+          "percentage": {
+            "general": 30,
+            "age_65_or_disabled_33": 50,
+            "age_75_or_disabled_65": 100
+          },
+          "max_deduction": 150,
+          "income_limit": {
+            "scenario_A": {
+              "note": "Si no se ratifica Decreto-ley 1/2026",
+              "individual": 32000,
+              "joint": 48000,
+              "full_at": { "individual": 29000, "joint": 45000 }
+            },
+            "scenario_B": {
+              "note": "Si se ratifica Decreto-ley 1/2026",
+              "individual": 60000,
+              "joint": 78000,
+              "full_at": { "individual": 54000, "joint": 72000 }
+            }
+          },
+          "eligible_expenses": [
+            "Cuotas de clubes y federaciones deportivas",
+            "Equipamiento deportivo obligatorio",
+            "Servicios de entrenamiento personal",
+            "Servicios sanitarios (traumatologia, nutricion, fisioterapia, podologia)"
+          ],
+          "requirements": [
+            "Justificacion mediante factura y comprobante de pago",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario"
+          ],
+          "source": "art. 4.Uno.ad) Ley 13/1997"
+        },
+        {
+          "id": "vc_erte_covid",
+          "name": "Ayudas publicas percibidas por trabajadores afectados por ERTE o reduccion de jornada durante COVID-19",
+          "description": "Deduccion para contribuyentes que percibieron ayudas publicas por ERTE o reduccion de jornada relacionados con la pandemia de COVID-19",
+          "status": "residual",
+          "source": "DT Ley 13/1997"
+        },
+        {
+          "id": "vc_donaciones_investigacion_covid",
+          "name": "Donaciones a programas de I+D+i cientifico y tecnologico derivados del COVID-19",
+          "description": "Deduccion por donaciones a programas de investigacion, desarrollo e innovacion relacionados con la pandemia de COVID-19",
+          "status": "residual",
+          "source": "DT Ley 13/1997"
+        },
+        {
+          "id": "vc_donaciones_gastos_covid",
+          "name": "Donaciones para contribuir a la financiacion de gastos derivados del COVID-19",
+          "description": "Deduccion por donaciones destinadas a financiar gastos sanitarios y sociales derivados del COVID-19",
+          "status": "residual",
+          "source": "DT Ley 13/1997"
+        },
+        {
+          "id": "vc_dana_reparacion_vivienda",
+          "name": "DANA: cantidades destinadas a paliar danos materiales en vivienda habitual",
+          "percentage": 100,
+          "max_deduction": 2000,
+          "income_limit": {
+            "individual": 45000,
+            "joint": 60000,
+            "full_at": { "individual": 40000, "joint": 55000 }
+          },
+          "applicable_years": [2024, 2025],
+          "carryforward_years": 4,
+          "requirements": [
+            "Danos directos causados por DANA de octubre 2024",
+            "Gastos de reparacion de vivienda habitual y zonas comunes del edificio",
+            "Pago por tarjeta, transferencia, cheque o ingreso bancario",
+            "Reducir base por cantidades cubiertas por seguros o ayudas publicas",
+            "No incluye enseres domesticos ni bienes empresariales"
+          ],
+          "source": "DL 12/2024 y Ley 13/1997"
+        },
+        {
+          "id": "vc_dana_aportaciones_entidades",
+          "name": "DANA: aportaciones a fondos propios de entidades afectadas",
+          "percentage": 45,
+          "max_deduction": 9900,
+          "max_base_percentage": 30,
+          "max_base_of": "base liquidable del contribuyente",
+          "holding_period_years": 3,
+          "carryforward_years": 3,
+          "applicable_period": "13-11-2024 a 31-12-2025",
+          "requirements": [
+            "Suscripcion y desembolso de acciones o participaciones",
+            "Entidad con domicilio social y fiscal en el ambito territorial afectado, mantenido 3 anos",
+            "Entidades existentes a 12-11-2024: deben haber presentado ERTE por la DANA",
+            "Entidades nuevas: no misma actividad previamente bajo distinta titularidad",
+            "Actividad economica durante 3 anos (no gestion de patrimonio)",
+            "Minimo 1 empleado a tiempo completo durante 3 anos",
+            "Formalizacion en escritura publica"
+          ],
+          "source": "DL 12/2024 y Ley 13/1997"
+        }
+      ]
+    },
+    "ceuta": {
+      "name": "Ciudad Autonoma de Ceuta",
+      "code": "CE",
+      "normativa": "art. 68.4 LIRPF, art. 58 RIRPF",
+      "note": "Ceuta no tiene deducciones autonomicas propias. Los residentes se benefician de la deduccion estatal por rentas obtenidas en Ceuta o Melilla (art. 68.4 LIRPF)",
+      "deductions": [
+        {
+          "id": "ce_rentas_ceuta",
+          "name": "Deduccion por rentas obtenidas en Ceuta o Melilla",
+          "type": "state_deduction",
+          "percentage": 60,
+          "description": "60% de la parte de la suma de las cuotas integras estatal y autonomica que proporcionalmente corresponda a las rentas obtenidas en Ceuta o Melilla",
+          "max_limit": "60% de la suma total de cuotas integras estatal y autonomica",
+          "modalities": [
+            {
+              "id": "resident_under_3_years",
+              "name": "Residentes con menos de 3 anos de residencia",
+              "percentage": 60,
+              "applies_to": "Rentas obtenidas en Ceuta o Melilla unicamente"
+            },
+            {
+              "id": "resident_3_plus_years",
+              "name": "Residentes con 3 o mas anos de residencia",
+              "percentage": 60,
+              "applies_to": "Rentas obtenidas en Ceuta o Melilla Y fuera de ellas",
+              "condition": "Al menos 1/3 del patrimonio neto situado en Ceuta o Melilla",
+              "cap": "Rentas de fuera no pueden superar las rentas netas obtenidas en Ceuta/Melilla"
+            },
+            {
+              "id": "non_resident",
+              "name": "No residentes en Ceuta o Melilla",
+              "percentage": 60,
+              "applies_to": "Rendimientos e incrementos netos positivos obtenidos en Ceuta o Melilla",
+              "exclusions": [
+                "Rendimientos de instituciones de inversion colectiva (salvo activos locales)",
+                "Rendimientos del trabajo",
+                "Ganancias de bienes muebles",
+                "Depositos financieros"
+              ]
+            }
+          ],
+          "eligible_income_types": [
+            "Rendimientos del trabajo efectivamente realizado en el territorio",
+            "Rendimientos de inmuebles situados en Ceuta o Melilla",
+            "Rendimientos de actividades economicas efectivamente realizadas en el territorio",
+            "Ganancias patrimoniales de inmuebles o bienes muebles situados en el territorio",
+            "Rendimientos del capital mobiliario de obligaciones o prestamos con capital invertido en el territorio",
+            "Rendimientos de arrendamiento de bienes muebles, negocios o minas situados y utilizados en el territorio",
+            "Rendimientos de depositos o cuentas en instituciones financieras situadas en Ceuta o Melilla"
+          ],
+          "casilla": "0727",
+          "source": "arts. 68.4, 69.3 LIRPF, art. 58 RIRPF"
+        }
+      ]
+    },
+    "melilla": {
+      "name": "Ciudad Autonoma de Melilla",
+      "code": "ML",
+      "normativa": "art. 68.4 LIRPF, art. 58 RIRPF",
+      "note": "Melilla no tiene deducciones autonomicas propias. Los residentes se benefician de la deduccion estatal por rentas obtenidas en Ceuta o Melilla (art. 68.4 LIRPF). Misma regulacion que Ceuta.",
+      "deductions": [
+        {
+          "id": "ml_rentas_melilla",
+          "name": "Deduccion por rentas obtenidas en Ceuta o Melilla",
+          "type": "state_deduction",
+          "percentage": 60,
+          "description": "60% de la parte de la suma de las cuotas integras estatal y autonomica que proporcionalmente corresponda a las rentas obtenidas en Ceuta o Melilla",
+          "max_limit": "60% de la suma total de cuotas integras estatal y autonomica",
+          "modalities": [
+            {
+              "id": "resident_under_3_years",
+              "name": "Residentes con menos de 3 anos de residencia",
+              "percentage": 60,
+              "applies_to": "Rentas obtenidas en Ceuta o Melilla unicamente"
+            },
+            {
+              "id": "resident_3_plus_years",
+              "name": "Residentes con 3 o mas anos de residencia",
+              "percentage": 60,
+              "applies_to": "Rentas obtenidas en Ceuta o Melilla Y fuera de ellas",
+              "condition": "Al menos 1/3 del patrimonio neto situado en Ceuta o Melilla",
+              "cap": "Rentas de fuera no pueden superar las rentas netas obtenidas en Ceuta/Melilla"
+            },
+            {
+              "id": "non_resident",
+              "name": "No residentes en Ceuta o Melilla",
+              "percentage": 60,
+              "applies_to": "Rendimientos e incrementos netos positivos obtenidos en Ceuta o Melilla",
+              "exclusions": [
+                "Rendimientos de instituciones de inversion colectiva (salvo activos locales)",
+                "Rendimientos del trabajo",
+                "Ganancias de bienes muebles",
+                "Depositos financieros"
+              ]
+            }
+          ],
+          "eligible_income_types": [
+            "Rendimientos del trabajo efectivamente realizado en el territorio",
+            "Rendimientos de inmuebles situados en Ceuta o Melilla",
+            "Rendimientos de actividades economicas efectivamente realizadas en el territorio",
+            "Ganancias patrimoniales de inmuebles o bienes muebles situados en el territorio",
+            "Rendimientos del capital mobiliario de obligaciones o prestamos con capital invertido en el territorio",
+            "Rendimientos de arrendamiento de bienes muebles, negocios o minas situados y utilizados en el territorio",
+            "Rendimientos de depositos o cuentas en instituciones financieras situadas en Ceuta o Melilla"
+          ],
+          "casilla": "0727",
+          "source": "arts. 68.4, 69.3 LIRPF, art. 58 RIRPF"
+        }
+      ]
+    }
+  }
+}

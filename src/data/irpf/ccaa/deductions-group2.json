@@ -1,0 +1,2140 @@
+{
+  "year": 2025,
+  "verified_date": "2026-03-20",
+  "source": "AEAT Manual Practico Renta 2025, Parte 2",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/",
+  "ccaa": {
+    "castilla_la_mancha": {
+      "name": "Castilla-La Mancha",
+      "regulation": "Ley 8/2013, de 21 de noviembre, de Medidas Tributarias de Castilla-La Mancha",
+      "deductions": [
+        {
+          "id": "clm_nacimiento_adopcion",
+          "name": "Nacimiento o adopcion de hijos",
+          "description": "Deduccion por nacimiento o adopcion de hijos en el periodo impositivo",
+          "amounts": {
+            "first_child": 100,
+            "second_child": 500,
+            "third_or_more": 900
+          },
+          "note": "Importe por cada nacimiento/adopcion segun numero de hijos en cada parto",
+          "income_limit": {
+            "individual": 27000,
+            "joint": 36000,
+            "base": "base_imponible_general + base_imponible_ahorro (casillas 0435+0460)"
+          },
+          "requirements": [
+            "Hijo debe generar derecho al minimo por descendientes",
+            "Cumplir normas LIRPF para aplicacion del minimo por descendientes"
+          ],
+          "source": "arts. 1 y 13 Ley 8/2013"
+        },
+        {
+          "id": "clm_familia_numerosa",
+          "name": "Familia numerosa",
+          "description": "Deduccion por poseer titulo de familia numerosa a 31 de diciembre",
+          "amounts": {
+            "general_category": 200,
+            "special_category": 400,
+            "general_with_disability_65": 300,
+            "special_with_disability_65": 900
+          },
+          "note": "Importes incrementados cuando algun miembro tenga discapacidad >= 65%",
+          "income_limit": {
+            "individual": 27000,
+            "joint": 36000,
+            "base": "base_imponible_general + base_imponible_ahorro"
+          },
+          "requirements": [
+            "Titulo oficial de familia numerosa conforme Ley 40/2003",
+            "Reconocimiento vigente a 31 de diciembre del ejercicio"
+          ],
+          "incompatible_with": ["clm_alquiler_familia_numerosa"],
+          "source": "arts. 2 y 13 Ley 8/2013"
+        },
+        {
+          "id": "clm_familia_monoparental",
+          "name": "Familia monoparental",
+          "description": "Deduccion para familias monoparentales (madre o padre separado/soltero con hijos exclusivamente a su cargo)",
+          "amount": 200,
+          "income_limit": {
+            "individual": 27000,
+            "joint": 36000
+          },
+          "requirements": [
+            "Convivencia exclusiva con hijos menores o mayores con medidas de apoyo",
+            "Recibir integramente el minimo por descendientes",
+            "No percibir anualidades por alimentos"
+          ],
+          "incompatible_with": ["clm_alquiler_familia_monoparental"],
+          "source": "arts. 2 bis y 13 Ley 8/2013"
+        },
+        {
+          "id": "clm_gastos_educativos",
+          "name": "Gastos de adquisicion de libros de texto y ensenanza de idiomas",
+          "description": "Deduccion por libros de texto (100%) y otros gastos educativos (15%): idiomas, refuerzo academico, tecnologia, estudios fuera del municipio",
+          "rates": {
+            "textbooks": "100% de cantidades satisfechas",
+            "other_education": "15% de cantidades satisfechas"
+          },
+          "max_per_child": {
+            "joint_non_large_family": {
+              "income_up_to_12000": 200,
+              "income_12001_to_20000": 100,
+              "income_20001_to_25000": 75
+            },
+            "joint_large_family": {
+              "income_up_to_40000": 300
+            },
+            "individual_non_large_family": {
+              "income_up_to_6500": 100,
+              "income_6501_to_10000": 75,
+              "income_10001_to_12500": 50
+            },
+            "individual_large_family": {
+              "income_up_to_30000": 150
+            }
+          },
+          "requirements": [
+            "Reducidas por becas y ayudas percibidas",
+            "Solo progenitores con derecho al minimo por descendientes",
+            "Hijo matriculado en niveles educativos elegibles"
+          ],
+          "source": "Ley 8/2013"
+        },
+        {
+          "id": "clm_gastos_guarderia",
+          "name": "Gastos de guarderia",
+          "description": "Deduccion por gastos de custodia en guarderias o centros autorizados para hijos menores de 3 anos",
+          "percentage": 30,
+          "max_per_child": 500,
+          "max_last_year": 250,
+          "note": "250 EUR maximo en el ejercicio en que el hijo cumpla 3 anos",
+          "income_limit": {
+            "individual": 27000,
+            "joint": 36000
+          },
+          "eligible_expenses": [
+            "Preinscripcion y matricula",
+            "Asistencia general y horario ampliado",
+            "Alimentacion"
+          ],
+          "requirements": [
+            "Hijo menor de 3 anos",
+            "Centro de custodia o guarderia autorizado",
+            "Reducidas por ayudas publicas percibidas",
+            "NIF del centro en casilla 0210 del Anexo B.4"
+          ],
+          "source": "Ley 8/2013"
+        },
+        {
+          "id": "clm_discapacidad_contribuyente",
+          "name": "Discapacidad del contribuyente",
+          "description": "Deduccion por contribuyente con grado de discapacidad acreditado >= 65%",
+          "amount": 300,
+          "income_limit": {
+            "individual": 27000,
+            "joint": 36000
+          },
+          "requirements": [
+            "Grado de discapacidad acreditado >= 65%",
+            "Derecho a aplicar el minimo por discapacidad del contribuyente"
+          ],
+          "incompatible_with": ["clm_discapacidad_asc_desc", "clm_mayores_75", "clm_alquiler_discapacidad"],
+          "source": "arts. 4 y 13 Ley 8/2013"
+        },
+        {
+          "id": "clm_discapacidad_asc_desc",
+          "name": "Discapacidad de ascendientes o descendientes",
+          "description": "Deduccion por cada ascendiente o descendiente con grado de discapacidad >= 65%",
+          "amount_per_person": 300,
+          "income_limit": {
+            "individual": 27000,
+            "joint": 36000
+          },
+          "requirements": [
+            "Grado de discapacidad >= 65% acreditado",
+            "Derecho al minimo por discapacidad de ascendientes/descendientes"
+          ],
+          "incompatible_with": ["clm_discapacidad_contribuyente", "clm_cuidado_ascendientes_75"],
+          "source": "arts. 5 y 13 Ley 8/2013"
+        },
+        {
+          "id": "clm_mayores_75",
+          "name": "Contribuyentes mayores de 75 anos",
+          "description": "Deduccion para contribuyentes mayores de 75 anos",
+          "amount": 150,
+          "income_limit": {
+            "individual": 27000,
+            "joint": 36000
+          },
+          "requirements": [
+            "Mayor de 75 anos",
+            "No residir mas de 30 dias consecutivos en residencias publicas o concertadas de CLM, salvo recuperacion medica"
+          ],
+          "incompatible_with": ["clm_discapacidad_contribuyente"],
+          "note": "Incompatible con discapacidad salvo que discapacidad >= 65%, en cuyo caso prevalece la de discapacidad",
+          "source": "arts. 6.1 y 13 Ley 8/2013"
+        },
+        {
+          "id": "clm_cuidado_ascendientes_75",
+          "name": "Cuidado de ascendientes mayores de 75 anos",
+          "description": "Deduccion por cada ascendiente mayor de 75 anos que genere derecho al minimo por ascendientes",
+          "amount_per_person": 150,
+          "income_limit": {
+            "individual": 27000,
+            "joint": 36000
+          },
+          "requirements": [
+            "Ascendiente mayor de 75 anos",
+            "Derecho al minimo por ascendientes",
+            "No residir mas de 30 dias consecutivos en centros de mayores publicos/concertados de CLM"
+          ],
+          "incompatible_with": ["clm_discapacidad_asc_desc"],
+          "source": "arts. 6.2 y 13 Ley 8/2013"
+        },
+        {
+          "id": "clm_acogimiento_menores",
+          "name": "Acogimiento familiar no remunerado de menores",
+          "description": "Deduccion por acogimiento temporal, permanente o guarda con fines de adopcion de menores",
+          "amounts": {
+            "first_minor": 500,
+            "second_and_subsequent": 600
+          },
+          "income_limit": {
+            "individual": 12500,
+            "joint": 25000
+          },
+          "requirements": [
+            "Convivencia con el menor mas de 183 dias del periodo impositivo",
+            "Menores adoptados durante el periodo quedan excluidos",
+            "Certificacion oficial del acogimiento",
+            "No percibir ayudas de la administracion de CLM por el acogimiento"
+          ],
+          "source": "Ley 8/2013"
+        },
+        {
+          "id": "clm_acogimiento_mayores_65",
+          "name": "Acogimiento no remunerado de mayores de 65 anos o personas con discapacidad",
+          "description": "Deduccion por acogimiento no remunerado de mayores de 65 o personas con discapacidad >= 33%",
+          "amount_per_person": 600,
+          "income_limit": {
+            "individual": 12500,
+            "joint": 25000
+          },
+          "requirements": [
+            "Convivencia superior a 183 dias al ano",
+            "Acogimiento no remunerado",
+            "No percibir ayudas de la administracion de CLM",
+            "Para mayores de 65: no parentesco hasta 4.o grado por consanguinidad o afinidad"
+          ],
+          "source": "art. 8 Ley 8/2013"
+        },
+        {
+          "id": "clm_alquiler_menores_36",
+          "name": "Arrendamiento de vivienda habitual por menores de 36 anos",
+          "description": "Deduccion por alquiler de vivienda habitual para menores de 36 anos",
+          "rates": {
+            "standard": { "percentage": 15, "max": 450 },
+            "rural": { "percentage": 20, "max": 612, "condition": "Municipios <= 2.500 hab. o 2.501-10.000 hab. a mas de 30 km de ciudad > 50.000 hab." }
+          },
+          "income_limit": {
+            "individual": 12500,
+            "joint": 25000,
+            "base": "base_imponible_general + ahorro - minimo por descendientes"
+          },
+          "requirements": [
+            "Menor de 36 anos a 31 de diciembre",
+            "Residencia habitual en CLM",
+            "NIF del arrendador en la declaracion",
+            "Permanencia minima 3 anos continuados"
+          ],
+          "incompatible_with": ["clm_alquiler_dacion", "clm_alquiler_familia_numerosa", "clm_alquiler_familia_monoparental", "clm_alquiler_discapacidad"],
+          "source": "Ley 8/2013"
+        },
+        {
+          "id": "clm_alquiler_dacion",
+          "name": "Arrendamiento de vivienda habitual vinculado a operaciones de dacion en pago",
+          "description": "Deduccion por alquiler de vivienda vinculado a dacion en pago",
+          "percentage": 15,
+          "max": 450,
+          "income_limit": {
+            "individual": 12500,
+            "joint": 25000,
+            "base": "base_imponible_general + ahorro - minimo por descendientes"
+          },
+          "requirements": [
+            "Residencia habitual en CLM a fin del periodo",
+            "Contrato de alquiler vinculado a adquisicion de vivienda mediante dacion en pago",
+            "NIF del arrendador"
+          ],
+          "incompatible_with": ["clm_alquiler_menores_36", "clm_alquiler_familia_numerosa", "clm_alquiler_familia_monoparental", "clm_alquiler_discapacidad"],
+          "source": "arts. 9 bis y 13 Ley 8/2013"
+        },
+        {
+          "id": "clm_alquiler_familia_numerosa",
+          "name": "Arrendamiento de vivienda habitual por familias numerosas",
+          "description": "Deduccion por alquiler de vivienda habitual para familias numerosas",
+          "percentage": 15,
+          "max": 450,
+          "income_limit": {
+            "individual": 12500,
+            "joint": 25000,
+            "base": "base_imponible_general + ahorro - minimo por descendientes"
+          },
+          "requirements": [
+            "Titulo de familia numerosa (Ley 40/2003)",
+            "Residencia habitual en CLM",
+            "NIF del arrendador"
+          ],
+          "incompatible_with": ["clm_alquiler_menores_36", "clm_alquiler_dacion", "clm_alquiler_familia_monoparental", "clm_alquiler_discapacidad", "clm_familia_numerosa"],
+          "source": "arts. 9 ter y 13 Ley 8/2013"
+        },
+        {
+          "id": "clm_alquiler_familia_monoparental",
+          "name": "Arrendamiento de vivienda habitual por familias monoparentales",
+          "description": "Deduccion por alquiler de vivienda habitual para familias monoparentales",
+          "percentage": 15,
+          "max": 450,
+          "income_limit": {
+            "individual": 12500,
+            "joint": 25000,
+            "base": "base_imponible_general + ahorro - minimo por descendientes"
+          },
+          "requirements": [
+            "Familia monoparental (madre/padre separado o soltero con hijos a cargo exclusivo)",
+            "Residencia habitual en CLM"
+          ],
+          "incompatible_with": ["clm_alquiler_menores_36", "clm_alquiler_dacion", "clm_alquiler_familia_numerosa", "clm_alquiler_discapacidad", "clm_familia_monoparental"],
+          "source": "Ley 8/2013"
+        },
+        {
+          "id": "clm_alquiler_discapacidad",
+          "name": "Arrendamiento de vivienda habitual por personas con discapacidad",
+          "description": "Deduccion por alquiler de vivienda habitual para personas con discapacidad >= 65%",
+          "percentage": 15,
+          "max": 450,
+          "income_limit": {
+            "individual": 12500,
+            "joint": 25000,
+            "base": "base_imponible_general + ahorro - minimo por descendientes"
+          },
+          "requirements": [
+            "Grado de discapacidad acreditado >= 65%",
+            "Derecho al minimo por discapacidad",
+            "Residencia habitual en CLM"
+          ],
+          "incompatible_with": ["clm_alquiler_menores_36", "clm_alquiler_dacion", "clm_alquiler_familia_numerosa", "clm_alquiler_familia_monoparental", "clm_discapacidad_contribuyente"],
+          "source": "Ley 8/2013"
+        },
+        {
+          "id": "clm_donativos_cooperacion",
+          "name": "Cantidades donadas para cooperacion internacional al desarrollo y lucha contra la pobreza",
+          "description": "Deduccion por donativos monetarios a ONGs y entidades sin animo de lucro registradas en CLM",
+          "percentage": 15,
+          "max_base": "10% de la base liquidable del contribuyente",
+          "requirements": [
+            "Entidades sin animo de lucro inscritas en registros de CLM",
+            "Certificacion de la entidad donataria"
+          ],
+          "source": "art. 10 Ley 8/2013"
+        },
+        {
+          "id": "clm_donativos_investigacion",
+          "name": "Donaciones con finalidad en investigacion y desarrollo cientifico e innovacion empresarial",
+          "description": "Deduccion por donativos monetarios para investigacion cientifica y desarrollo empresarial",
+          "percentage": 15,
+          "max": "10% de la cuota integra autonomica (casilla 0546)",
+          "eligible_recipients": [
+            "Administracion de CLM y entidades dependientes con finalidad de investigacion",
+            "Entidades sin animo de lucro inscritas en registros de CLM dedicadas a investigacion"
+          ],
+          "source": "art. 11 Ley 8/2013"
+        },
+        {
+          "id": "clm_donativos_patrimonio_cultural",
+          "name": "Donaciones para conservacion, restauracion y rehabilitacion del patrimonio cultural",
+          "description": "Deduccion por donaciones de bienes culturales, cantidades para conservacion/restauracion, y donaciones de mecenazgo cultural (Ley 9/2019)",
+          "percentage": 15,
+          "max_base": "10% de la suma de bases imponibles general + ahorro (casillas 0500+0510)",
+          "eligible_activities": [
+            "Donaciones puras de bienes del Inventario de Patrimonio Cultural",
+            "Cantidades para conservacion, reparacion y restauracion de bienes culturales registrados",
+            "Donaciones con fines culturales incluidas en el plan de mecenazgo cultural (Ley 9/2019)"
+          ],
+          "incompatible_with": ["credito_fiscal_25_pct_ley_9_2019"],
+          "source": "Ley 8/2013, Ley 9/2019"
+        },
+        {
+          "id": "clm_intereses_vivienda_menores_40",
+          "name": "Gastos en intereses de financiacion ajena para adquisicion de primera vivienda habitual por menores de 40 anos",
+          "description": "Deduccion por intereses de prestamos a tipo variable para adquisicion de primera vivienda habitual",
+          "percentage": 100,
+          "max_deduction": {
+            "individual_up_to_12500": 150,
+            "individual_12501_to_27000": 100,
+            "joint_up_to_25000": 150,
+            "joint_25001_to_36000": 100
+          },
+          "income_limit": {
+            "individual": 27000,
+            "joint": 36000
+          },
+          "requirements": [
+            "Menor de 40 anos en la fecha de devengo de los intereses",
+            "Prestamo a interes variable",
+            "Primera vivienda habitual"
+          ],
+          "source": "art. 12 Ley 8/2013"
+        },
+        {
+          "id": "clm_residencia_rural",
+          "name": "Residencia habitual en zonas rurales",
+          "description": "Deduccion porcentual sobre la cuota integra autonomica por residir habitualmente en zonas rurales de CLM",
+          "rates": {
+            "extreme_depopulation_under_2000": { "percentage": 25, "of": "cuota integra autonomica" },
+            "extreme_depopulation_2000_to_4999": { "percentage": 20, "of": "cuota integra autonomica" },
+            "intense_depopulation_under_2000": { "percentage": 20, "of": "cuota integra autonomica" },
+            "intense_depopulation_2000_to_4999": { "percentage": 15, "of": "cuota integra autonomica" },
+            "at_risk_depopulation_under_2000": { "percentage": 15, "of": "cuota integra autonomica" },
+            "at_risk_depopulation_2000_to_4999": { "percentage": 10, "of": "cuota integra autonomica" },
+            "intermediate_rural_under_2000_pop_loss": { "percentage": 15, "of": "cuota integra autonomica" }
+          },
+          "requirements": [
+            "Residencia habitual en municipios de zonas rurales designadas",
+            "Presencia efectiva acreditada por empadronamiento, certificado sanitario, matricula escolar",
+            "Poblacion segun padron municipal a 1 de enero"
+          ],
+          "source": "Ley 8/2013 y Ley 2/2021"
+        },
+        {
+          "id": "clm_vivienda_rural",
+          "name": "Adquisicion o rehabilitacion de vivienda habitual en zonas rurales",
+          "description": "Deduccion por adquisicion o rehabilitacion de vivienda habitual en municipios de zonas escasamente pobladas con menos de 5.000 habitantes",
+          "percentage": 15,
+          "max_annual": 12000,
+          "max_lifetime": 180000,
+          "note": "Maximo acumulado: menor entre 180.000 EUR o coste de adquisicion/rehabilitacion menos subvenciones",
+          "requirements": [
+            "Municipio en zona escasamente poblada con < 5.000 habitantes",
+            "Adquisicion/rehabilitacion desde 1 de enero de 2021",
+            "Ocupacion como vivienda habitual en 12 meses desde adquisicion/terminacion",
+            "Patrimonio final debe exceder al patrimonio inicial en al menos la inversion"
+          ],
+          "source": "Ley 8/2013"
+        },
+        {
+          "id": "clm_traslado_vivienda",
+          "name": "Traslado de vivienda habitual por motivos laborales",
+          "description": "Deduccion por traslado de residencia habitual a municipio escasamente poblado de CLM por motivos laborales",
+          "amount": 500,
+          "duration": "Ano del traslado y el siguiente",
+          "income_limit": {
+            "individual": 22946,
+            "joint": 31485
+          },
+          "requirements": [
+            "Motivos laborales",
+            "Municipio escasamente poblado con densidad < 12.5 hab/km2",
+            "Permanencia minima: ano del traslado + 3 anos siguientes"
+          ],
+          "note": "Incumplimiento de permanencia obliga a devolver cantidades deducidas + intereses",
+          "source": "art. 12 quater y DA 2a Ley 8/2013"
+        },
+        {
+          "id": "clm_inversion_acciones",
+          "name": "Inversion en adquisicion de acciones y participaciones sociales de entidades mercantiles",
+          "description": "Deduccion por inversion en constitucion o ampliacion de capital de sociedades con sede en CLM",
+          "percentage": 20,
+          "max": 4000,
+          "holding_period_years": 3,
+          "ownership_max_pct": 40,
+          "eligible_entities": ["SA", "SRL", "SAL", "SRLL", "Cooperativas"],
+          "requirements": [
+            "Sede social y domicilio fiscal en CLM",
+            "Actividad economica real (no gestion de patrimonio)",
+            "Nuevas entidades: minimo 1 empleado a tiempo completo o 2 a tiempo parcial, alta SS 24+ meses",
+            "Ampliaciones: constituida en 3 anos previos, incremento plantilla minimo 1 persona, 24+ meses",
+            "Formalizacion en escritura publica",
+            "No ejercer funciones ejecutivas o de direccion durante 3 anos"
+          ],
+          "incompatible_with": ["clm_inversion_economia_social"],
+          "source": "Ley 8/2013"
+        },
+        {
+          "id": "clm_inversion_economia_social",
+          "name": "Inversion en entidades de economia social",
+          "description": "Deduccion por aportaciones a entidades de economia social con sede en CLM",
+          "percentage": 20,
+          "max": 4000,
+          "holding_period_years": 5,
+          "ownership_max_pct": 40,
+          "requirements": [
+            "Entidad de economia social conforme Ley 5/2011",
+            "Sede social y domicilio fiscal en CLM",
+            "Minimo 1 empleado con contrato a tiempo completo y alta en SS",
+            "Formalizacion en escritura publica",
+            "Mantenimiento de requisitos durante 5 anos"
+          ],
+          "incompatible_with": ["clm_inversion_acciones"],
+          "source": "Ley 8/2013"
+        }
+      ]
+    },
+    "castilla_y_leon": {
+      "name": "Castilla y Leon",
+      "regulation": "Decreto Legislativo 1/2013, de 12 de septiembre, Texto Refundido de las disposiciones legales de CyL en materia de tributos propios y cedidos",
+      "deductions": [
+        {
+          "id": "cyl_familia_numerosa",
+          "name": "Familia numerosa",
+          "description": "Deduccion por poseer titulo de familia numerosa en CyL",
+          "amounts": {
+            "standard": 600,
+            "four_children": 1500,
+            "five_children": 2500,
+            "six_or_more_per_additional": 1000,
+            "disability_65_supplement": 600
+          },
+          "note": "600 EUR adicionales si algun conyuge o descendiente tiene discapacidad >= 65%. Saldos no aplicados de 2022: ultimo ano de arrastre es 2025",
+          "requirements": [
+            "Titulo oficial de familia numerosa de CyL (Ley 40/2003)",
+            "Prorrateo a partes iguales entre contribuyentes"
+          ],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_nacimiento_adopcion",
+          "name": "Nacimiento o adopcion de hijos",
+          "description": "Deduccion por nacimiento o adopcion de hijos",
+          "amounts": {
+            "standard": {
+              "first_child": 1010,
+              "second_child": 1475,
+              "third_or_more": 2351
+            },
+            "rural_under_5000": {
+              "first_child": 1420,
+              "second_child": 2070,
+              "third_or_more": 3300
+            }
+          },
+          "disability_33_doubles": true,
+          "note": "Importes se duplican si el hijo tiene discapacidad >= 33%. Importes mejorados para municipios <= 5.000 habitantes",
+          "requirements": [
+            "Convivencia con el hijo a 31 de diciembre",
+            "Prorrateo 50% si ambos progenitores declaran individualmente"
+          ],
+          "incompatible_with": ["bono_nacimiento_cyl"],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_partos_multiples",
+          "name": "Partos o adopciones multiples",
+          "description": "Deduccion adicional por partos o adopciones multiples o nacimientos independientes en 12 meses",
+          "amounts": {
+            "two_children": "50% de la deduccion base por nacimiento/adopcion",
+            "three_or_more": "100% de la deduccion base por nacimiento/adopcion",
+            "additional_per_year": 901
+          },
+          "note": "901 EUR anuales durante 2 anos siguientes al ultimo parto/adopcion (para hechos de 2023/2024)",
+          "incompatible_with": ["bono_nacimiento_cyl"],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_gastos_adopcion",
+          "name": "Gastos de adopcion",
+          "description": "Deduccion por gastos derivados de la adopcion",
+          "amounts": {
+            "national": 784,
+            "international": 3625
+          },
+          "requirements": [
+            "Inscripcion en el Registro Civil durante el periodo impositivo",
+            "Hijo genere derecho al minimo por descendientes"
+          ],
+          "incompatible_with": ["bono_nacimiento_cyl"],
+          "source": "arts. 4.5 y 10 Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_cuidado_hijos_menores",
+          "name": "Cuidado de hijos menores",
+          "description": "Deduccion por cuidado de hijos menores de 4 anos",
+          "options": {
+            "domestic_employee": {
+              "percentage": 30,
+              "max": 322,
+              "description": "30% de cantidades pagadas a empleado de hogar"
+            },
+            "childcare_facility": {
+              "percentage": 100,
+              "max": 1320,
+              "description": "100% de gastos de matricula, asistencia y alimentacion en centros infantiles autorizados de CyL"
+            }
+          },
+          "income_limit": {
+            "individual": 18900,
+            "joint": 31500,
+            "base": "base_imponible_general + ahorro - minimo personal y familiar"
+          },
+          "requirements": [
+            "Hijo menor de 4 anos a 31 de diciembre",
+            "Ambos progenitores empleados por cuenta propia o ajena, dados de alta en SS",
+            "NIF del cuidador/centro en Anexo B.5"
+          ],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_ss_empleados_hogar",
+          "name": "Cuotas de Seguridad Social de empleados del hogar",
+          "description": "Deduccion por cuotas patronales a la SS del empleado de hogar",
+          "percentage": 15,
+          "max": 300,
+          "income_limit": {
+            "individual": 18900,
+            "joint": 31500,
+            "base": "base_imponible_general + ahorro - minimo personal y familiar"
+          },
+          "requirements": [
+            "Tener hijo menor de 4 anos con derecho a minimo por descendientes",
+            "NIF del empleado en Anexo B.5"
+          ],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_discapacidad",
+          "name": "Contribuyentes con discapacidad",
+          "description": "Deduccion para contribuyentes con discapacidad residentes en CyL",
+          "amounts": {
+            "age_65_plus_disability_33": 300,
+            "age_65_plus_disability_65": 656,
+            "under_65_disability_65": 300
+          },
+          "income_limit": {
+            "individual": 18900,
+            "joint": 31500,
+            "base": "base_imponible_general + ahorro - minimo personal y familiar"
+          },
+          "requirements": [
+            "Certificacion oficial de discapacidad",
+            "No ser residente en centros de atencion publica o concertada"
+          ],
+          "source": "arts. 6 y 10 Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_vivienda_jovenes_rural",
+          "name": "Adquisicion o rehabilitacion de vivienda habitual en medio rural por jovenes",
+          "description": "Deduccion por adquisicion o rehabilitacion de primera vivienda habitual por menores de 36 anos en municipios rurales",
+          "percentage": 15,
+          "max_base": 10000,
+          "income_limit": {
+            "individual": 18900,
+            "joint": 31500,
+            "base": "base_imponible_general + ahorro - minimo personal y familiar"
+          },
+          "requirements": [
+            "Menor de 36 anos a 31 de diciembre",
+            "Primera vivienda habitual (sin propiedad previa >= 50%)",
+            "Municipio <= 10.000 hab. (o <= 3.000 si esta a < 30 km de capital provincial)",
+            "Valor del inmueble < 150.000 EUR",
+            "Obra nueva o rehabilitacion",
+            "Adquisicion desde 1 de enero de 2023"
+          ],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_rehabilitacion_subvencionada",
+          "name": "Actuaciones de rehabilitacion de vivienda subvencionadas",
+          "description": "Deduccion por inversiones en rehabilitacion de vivienda habitual subvencionadas en programas de planes estatales/autonomicos",
+          "percentage": 15,
+          "max_base": 20000,
+          "eligible_activities": [
+            "Instalacion de placas solares para agua caliente (minimo 50% requisitos CTE)",
+            "Mejoras de eficiencia energetica y energias renovables",
+            "Mejoras de suministro de agua y reutilizacion de aguas grises",
+            "Adaptacion de accesibilidad para discapacidad"
+          ],
+          "requirements": [
+            "Vivienda ubicada en CyL que sea residencia habitual",
+            "Documentacion bancaria de pago de la subvencion"
+          ],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_rehabilitacion_rural_alquiler",
+          "name": "Rehabilitacion de viviendas en medio rural destinadas al alquiler",
+          "description": "Deduccion por inversiones en rehabilitacion de viviendas rurales destinadas al alquiler",
+          "percentage": 15,
+          "max_base": 20000,
+          "requirements": [
+            "Municipio <= 10.000 hab. (o <= 3.000 si a < 30 km de capital provincial)",
+            "Valor inmueble < 150.000 EUR",
+            "Alquiler efectivo a no familiares durante 5 anos minimo",
+            "Renta mensual <= 300 EUR",
+            "Fianza depositada conforme a normativa"
+          ],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_alquiler_jovenes",
+          "name": "Arrendamiento de vivienda habitual para jovenes",
+          "description": "Deduccion por alquiler de vivienda habitual para menores de 36 anos",
+          "rates": {
+            "standard": { "percentage": 20, "max": 459 },
+            "rural": { "percentage": 25, "max": 612, "condition": "Municipios < 10.000 hab. o < 3.000 a < 30 km de capital provincial" }
+          },
+          "combined_max": 612,
+          "income_limit": {
+            "individual": 18900,
+            "joint": 31500,
+            "base": "base_imponible_general + ahorro - minimo personal y familiar"
+          },
+          "requirements": [
+            "Menor de 36 anos a 31 de diciembre",
+            "Contrato de arrendamiento a nombre del solicitante"
+          ],
+          "source": "arts. 7.4, 7.5 y 10 Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_fomento_emprendimiento",
+          "name": "Fomento del emprendimiento",
+          "description": "Deduccion por inversion en acciones/participaciones de sociedades que inviertan en proyectos en CyL",
+          "percentage": 20,
+          "max": 10000,
+          "holding_period_years": 3,
+          "ownership_range": "0.5% a 45%",
+          "employment_creation": {
+            "per_workforce_addition": 100000,
+            "per_dependent_self_employed": 50000,
+            "per_family_collaborator": 50000
+          },
+          "requirements": [
+            "Sede social y domicilio fiscal en CyL",
+            "Incremento de plantilla en ano de inversion o siguiente en >= 1 persona",
+            "Mantenimiento minimo 3 anos",
+            "Certificacion de la entidad"
+          ],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_patrimonio_historico_natural",
+          "name": "Cantidades invertidas en recuperacion del patrimonio historico, cultural y natural",
+          "description": "Deduccion por inversiones en restauracion de bienes de interes cultural o en espacios naturales protegidos",
+          "percentage": 15,
+          "income_limit": {
+            "individual": 18900,
+            "joint": 31500
+          },
+          "combined_max": "10% de la suma de bases imponibles general + ahorro (casillas 0500+0510), junto con donaciones a fundaciones y donaciones I+D",
+          "requirements": [
+            "Bienes inscritos en Registro General de BIC o inventariados conforme Ley de Patrimonio Cultural de CyL",
+            "Obras autorizadas por organo competente",
+            "Para espacios naturales: autorizacion e informe favorable de la administracion"
+          ],
+          "source": "arts. 9-10 Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_donaciones_fundaciones_patrimonio",
+          "name": "Cantidades donadas a fundaciones de CyL y recuperacion del patrimonio",
+          "description": "Deduccion por donativos para rehabilitacion del patrimonio historico/cultural/natural y a fundaciones de CyL",
+          "percentage": 15,
+          "income_limit": {
+            "individual": 18900,
+            "joint": 31500
+          },
+          "combined_max": "10% de la suma de bases imponibles general + ahorro",
+          "eligible_recipients": [
+            "Administraciones publicas, Iglesia Catolica, confesiones con acuerdo de cooperacion",
+            "Fundaciones y asociaciones de restauracion del patrimonio",
+            "Fundaciones inscritas en el Registro de Fundaciones de CyL (cultural, asistencial, ecologica)"
+          ],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_donaciones_investigacion",
+          "name": "Cantidades donadas al fomento de la investigacion, desarrollo e innovacion",
+          "description": "Deduccion por donativos a universidades publicas de CyL y entidades de I+D+i",
+          "percentage": 15,
+          "combined_max": "10% de la suma de bases imponibles general + ahorro",
+          "eligible_recipients": [
+            "Universidades publicas de CyL",
+            "Fundaciones e instituciones cuya actividad principal sea I+D+i en CyL"
+          ],
+          "source": "art. 9.f) Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_movilidad_sostenible",
+          "name": "Fomento de la movilidad sostenible",
+          "description": "Deduccion por adquisicion de vehiculos electricos puros, electricos de autonomia extendida o hibridos enchufables con >= 40 km de autonomia electrica",
+          "percentage": 15,
+          "max": 4000,
+          "note": "Deducciones estatales reducen el limite de 4.000 EUR",
+          "requirements": [
+            "Precio de compra (impuestos incluidos) <= 40.000 EUR",
+            "No destinado a actividad profesional o empresarial",
+            "Mantenimiento en propiedad minimo 4 anos",
+            "Autonomia electrica medida segun procedimiento WLTP",
+            "Solo en ejercicio de matriculacion",
+            "Matricula en casilla 0943 del Anexo B.4"
+          ],
+          "source": "Decreto Legislativo 1/2013"
+        },
+        {
+          "id": "cyl_vivienda_nueva_construccion",
+          "name": "Adquisicion de vivienda de nueva construccion para residencia habitual",
+          "description": "Deduccion por adquisicion de vivienda de nueva construccion con licencia de obra entre 01-09-2011 y 31-12-2012 (regimen transitorio)",
+          "percentage": 7.5,
+          "max_base": 9040,
+          "duration": "5 anos (ano de primer pago + 4 siguientes)",
+          "requirements": [
+            "Residencia habitual en CyL",
+            "Primera vivienda (sin propiedad previa >= 50%)",
+            "Vivienda en CyL",
+            "Licencia de obra entre 01-09-2011 y 31-12-2012"
+          ],
+          "status": "transitional",
+          "source": "DT 5a Decreto Legislativo 1/2008 CyL"
+        }
+      ]
+    },
+    "cataluna": {
+      "name": "Cataluna",
+      "regulation": "Decreto Legislativo 1/2024, de 12 de marzo, Codigo tributario de Cataluna (Libro Sexto, Titulo I)",
+      "deductions": [
+        {
+          "id": "cat_nacimiento_adopcion_acogimiento",
+          "name": "Nacimiento o adopcion de hijo o hija, o acogimiento familiar",
+          "description": "Deduccion por nacimiento, adopcion o acogimiento familiar de menores",
+          "amounts": {
+            "individual": 150,
+            "joint": 300,
+            "single_parent": 300
+          },
+          "foster_care_types": ["acogimiento simple", "acogimiento permanente", "acogimiento en familia extensa", "acogimiento en familia ajena"],
+          "requirements": [
+            "Hecho causante durante el periodo impositivo",
+            "Para familias monoparentales: certificacion conforme Decreto 151/2009"
+          ],
+          "note": "La deduccion por adopcion es incompatible con la de acogimiento del mismo menor",
+          "source": "art. 612-1 DLeg 1/2024"
+        },
+        {
+          "id": "cat_viudedad",
+          "name": "Contribuyentes que hayan quedado viudos",
+          "description": "Deduccion para contribuyentes que queden viudos en 2023-2025, aplicable el ano de viudedad y los 2 siguientes",
+          "amounts": {
+            "without_dependents": 150,
+            "with_dependents": 300
+          },
+          "duration": "Ano de viudedad + 2 ejercicios siguientes",
+          "requirements": [
+            "Indicar en casilla 1936 del Anexo B.5 el ano de viudedad"
+          ],
+          "source": "art. 612-2 DLeg 1/2024"
+        },
+        {
+          "id": "cat_alquiler_vivienda",
+          "name": "Alquiler de vivienda habitual",
+          "description": "Deduccion por alquiler de vivienda habitual para contribuyentes de hasta 35 anos, desempleados, con discapacidad >= 65% o viudos >= 65 anos",
+          "percentage": 10,
+          "max": {
+            "general": 500,
+            "joint": 1000,
+            "large_or_single_parent_family": 1000
+          },
+          "income_limit": {
+            "individual": 30000,
+            "joint": 45000,
+            "base": "base_imponible_general + ahorro - minimo personal y familiar"
+          },
+          "requirements": [
+            "Cumplir al menos una condicion: <= 35 anos, desempleo >= 183 dias, discapacidad >= 65%, viudo >= 65 anos",
+            "NIF del arrendador",
+            "Justificacion documental"
+          ],
+          "source": "art. 612-3 DLeg 1/2024"
+        },
+        {
+          "id": "cat_rehabilitacion_vivienda",
+          "name": "Rehabilitacion de vivienda habitual",
+          "description": "Deduccion por obras de rehabilitacion de vivienda habitual (regimen transitorio)",
+          "percentage": 1.5,
+          "max_base": 9040,
+          "source": "art. 612-4 DLeg 1/2024"
+        },
+        {
+          "id": "cat_intereses_master_doctorado",
+          "name": "Pago de intereses de prestamos para estudios de master y doctorado",
+          "description": "Deduccion por intereses pagados de prestamos concedidos por la Agencia de Gestion de Ayudas Universitarias y de Investigacion para master y doctorado",
+          "percentage": 100,
+          "requirements": [
+            "Prestamo de la AGAUR",
+            "Numero de identificacion del prestamo en casilla 1928 del Anexo B.5",
+            "Justificacion documental"
+          ],
+          "source": "art. 612-5 DLeg 1/2024"
+        },
+        {
+          "id": "cat_donativos_lengua_catalana_occitana",
+          "name": "Donativos a entidades que fomenten el uso de la lengua catalana u occitana",
+          "description": "Deduccion por donativos a entidades que promueven el uso del catalan o el araneso",
+          "percentage": 15,
+          "max": "10% de la cuota integra autonomica (casilla 0546)",
+          "eligible_recipients": [
+            "Institut d'Estudis Catalans",
+            "Institut d'Estudis Aranesos",
+            "Entidades privadas sin animo de lucro inscritas en el censo de politica linguistica"
+          ],
+          "source": "art. 612-6 DLeg 1/2024"
+        },
+        {
+          "id": "cat_donativos_investigacion",
+          "name": "Donativos a entidades que fomenten la investigacion cientifica y la innovacion tecnologica",
+          "description": "Deduccion por donativos a universidades catalanas, centros de investigacion y entidades afines",
+          "percentage": 30,
+          "max": "10% de la cuota integra autonomica (casilla 0546)",
+          "eligible_recipients": [
+            "Universidades catalanas e institutos universitarios",
+            "Centros de investigacion promovidos o participados por la Generalitat"
+          ],
+          "source": "art. 612-7 DLeg 1/2024"
+        },
+        {
+          "id": "cat_donativos_medioambiente_patrimonio",
+          "name": "Donaciones a entidades en beneficio del medio ambiente y patrimonio",
+          "description": "Deduccion por donativos a fundaciones y asociaciones ambientales inscritas en el censo de Cataluna",
+          "percentage": 15,
+          "max": "5% de la cuota integra autonomica (casilla 0546)",
+          "source": "art. 612-8 DLeg 1/2024"
+        },
+        {
+          "id": "cat_inversion_angel_inversor",
+          "name": "Inversion como angel inversor en entidades de nueva o reciente creacion",
+          "description": "Deduccion por adquisicion de acciones/participaciones de empresas de nueva creacion con sede en Cataluna",
+          "rates": {
+            "standard": { "percentage": 40, "max": 12000 },
+            "university_research_backed": { "percentage": 50, "max": 12000 }
+          },
+          "ownership_max_pct": 35,
+          "holding_period_years": 3,
+          "entity_requirements": {
+            "types": ["SA", "SL", "SAL", "SLL"],
+            "domicile": "Cataluna",
+            "min_employees": 1,
+            "max_turnover": 1000000,
+            "activity": "economica real, no gestion de patrimonio"
+          },
+          "requirements": [
+            "No ejercer funciones ejecutivas o de direccion",
+            "Sin relacion laboral con la entidad",
+            "Formalizacion en escritura publica",
+            "Para ampliaciones: entidad constituida en 3 anos previos"
+          ],
+          "source": "DLeg 1/2024"
+        },
+        {
+          "id": "cat_obligacion_declarar_pluriempleo",
+          "name": "Obligacion de presentar declaracion por tener mas de un pagador",
+          "description": "Deduccion para contribuyentes obligados a declarar por tener rendimientos del trabajo de multiples pagadores (entre 15.876 y 22.000 EUR brutos)",
+          "calculation": "cuota_integra_autonomica (casilla 0546) - cuota_integra_estatal (casilla 0545), solo si resultado es positivo",
+          "income_range": {
+            "min_gross_work_income": 15876,
+            "max_gross_work_income": 22000,
+            "second_payer_min": 1500
+          },
+          "exclusions": [
+            "Pensionistas con procedimiento especial de retencion",
+            "Rendimientos de capital mobiliario > 1.600 EUR",
+            "Imputaciones de rentas inmobiliarias y subvenciones > 1.000 EUR",
+            "Rendimientos no sujetos a retencion"
+          ],
+          "source": "art. 612-10 DLeg 1/2024"
+        },
+        {
+          "id": "cat_alquiler_victimas_violencia",
+          "name": "Alquiler de vivienda habitual para victimas de violencia machista",
+          "description": "Deduccion por alquiler de vivienda habitual para victimas de violencia de genero (Ley 5/2008)",
+          "rates": {
+            "standard": { "percentage": 20, "max": 1000 },
+            "with_disability_65_or_minor_child": { "percentage": 25, "max": 1200 }
+          },
+          "income_limit": {
+            "individual": 30000,
+            "base": "base_imponible_general + ahorro - minimo personal y familiar"
+          },
+          "duration_max_years": 3,
+          "requirements": [
+            "Condicion de victima acreditada conforme Ley 5/2008",
+            "Titular del contrato de arrendamiento"
+          ],
+          "source": "art. 612-11 DLeg 1/2024"
+        },
+        {
+          "id": "cat_inversion_cooperativas",
+          "name": "Inversion en sociedades cooperativas agrarias y de vivienda",
+          "description": "Deduccion por aportaciones de capital (obligatorias y voluntarias) a cooperativas agrarias y de vivienda en Cataluna",
+          "percentage": 20,
+          "max": 3000,
+          "holding_period_years": 5,
+          "requirements": [
+            "Cooperativa inscrita en el Registro de Cooperativas de Cataluna",
+            "Derechos de voto <= 25%",
+            "No ser socio temporal",
+            "Certificacion de la cooperativa",
+            "Exclusion: cooperativas de vivienda para uso turistico"
+          ],
+          "carryforward": true,
+          "note": "Exceso no aplicado puede trasladarse a ejercicios futuros",
+          "source": "DLeg 1/2024"
+        },
+        {
+          "id": "cat_tramo_autonomico_vivienda",
+          "name": "Tramo autonomico de la deduccion por inversion en vivienda habitual",
+          "description": "Porcentaje autonomico de la deduccion transitoria por inversion en vivienda habitual (adquisiciones anteriores a 01-01-2013)",
+          "rates": {
+            "general": 7.5,
+            "disability_adaptation": 15,
+            "enhanced": {
+              "percentage": 9,
+              "conditions": [
+                "Vivienda adquirida antes del 30-07-2011",
+                "Y: <= 32 anos, o desempleo >= 183 dias, o discapacidad >= 65%, o tener al menos un hijo"
+              ],
+              "income_limit": {
+                "per_taxpayer": 30000,
+                "base": "base_imponible_general + ahorro - minimo personal y familiar"
+              }
+            }
+          },
+          "source": "art. 613-1 DLeg 1/2024"
+        }
+      ]
+    },
+    "extremadura": {
+      "name": "Extremadura",
+      "regulation": "Decreto Legislativo 1/2018, de 10 de abril, Texto Refundido de las disposiciones legales de Extremadura en materia de tributos cedidos",
+      "deductions": [
+        {
+          "id": "ext_trabajo_dependiente",
+          "name": "Trabajo dependiente",
+          "description": "Deduccion para perceptores de rendimientos del trabajo por cuenta ajena con ingresos reducidos",
+          "amount": 75,
+          "income_limit": {
+            "max_work_income": 12000,
+            "max_other_income": 300
+          },
+          "note": "En tributacion conjunta se aplica a cada conyuge que cumpla individualmente. Incompatible con deduccion por viudedad (se elige la mayor)",
+          "incompatible_with": ["ext_viudedad"],
+          "source": "art. 2 DLeg 1/2018"
+        },
+        {
+          "id": "ext_partos_multiples",
+          "name": "Partos multiples",
+          "description": "Deduccion por cada hijo nacido en parto multiple",
+          "amount_per_child": 300,
+          "income_limit": {
+            "general": { "individual": 19000, "joint": 24000 },
+            "rural_under_3000": { "individual": 28000, "joint": 45000 },
+            "exceptions": "Sin limite para familias numerosas o monoparentales con >= 2 hijos"
+          },
+          "requirements": [
+            "Parto multiple",
+            "Convivencia con el hijo a 31 de diciembre"
+          ],
+          "source": "arts. 3 y 12 bis DLeg 1/2018"
+        },
+        {
+          "id": "ext_acogimiento_menores",
+          "name": "Acogimiento de menores",
+          "description": "Deduccion por acogimiento familiar de menores (temporal, permanente o de urgencia)",
+          "amounts": {
+            "over_183_days": 250,
+            "between_90_and_183_days": 125
+          },
+          "note": "Importe por menor acogido segun duracion de convivencia",
+          "source": "art. 4 DLeg 1/2018"
+        },
+        {
+          "id": "ext_cuidado_familiares_discapacidad",
+          "name": "Cuidado de familiares con discapacidad",
+          "description": "Deduccion por cada ascendiente o descendiente con discapacidad >= 65% o incapacitado judicialmente que conviva con el contribuyente",
+          "amounts": {
+            "general": 150,
+            "dependency_not_received": 220
+          },
+          "note": "220 EUR si ha sido valorado para dependencia pero no recibe prestacion a 31/12",
+          "income_limit": {
+            "disabled_person_max_income": 16800,
+            "general": { "individual": 19000, "joint": 24000 },
+            "rural_under_3000": { "individual": 28000, "joint": 45000 },
+            "exceptions": "Sin limite para familias numerosas o monoparentales"
+          },
+          "requirements": [
+            "Discapacidad >= 65% o incapacitacion judicial",
+            "Convivencia ininterrumpida >= mitad del periodo impositivo"
+          ],
+          "source": "DLeg 1/2018"
+        },
+        {
+          "id": "ext_cuidado_hijos_menores_14",
+          "name": "Cuidado de hijos menores de hasta 14 anos inclusive",
+          "description": "Deduccion por gastos de custodia de hijos de hasta 14 anos en empleados de hogar o centros autorizados",
+          "percentage": 10,
+          "max_per_family_unit": 400,
+          "income_limit": {
+            "individual": 28000,
+            "joint": 45000
+          },
+          "requirements": [
+            "Hijos de hasta 14 anos a 31 de diciembre",
+            "Ambos progenitores empleados y dados de alta en SS",
+            "Empleado de hogar dado de alta en SS",
+            "Facturas para pagos a centros",
+            "Derecho al minimo por descendientes"
+          ],
+          "source": "DLeg 1/2018"
+        },
+        {
+          "id": "ext_viudedad",
+          "name": "Contribuyentes viudos",
+          "description": "Deduccion para contribuyentes viudos",
+          "amounts": {
+            "without_dependents": 100,
+            "with_dependents": 200
+          },
+          "income_limit": {
+            "general": { "individual": 19000, "joint": 24000 },
+            "rural_under_3000": { "individual": 28000, "joint": 45000 },
+            "exceptions": "Sin limite para familias numerosas o monoparentales"
+          },
+          "incompatible_with": ["ext_trabajo_dependiente"],
+          "note": "Incompatible con deduccion por trabajo dependiente; se puede elegir la de mayor importe",
+          "source": "DLeg 1/2018"
+        },
+        {
+          "id": "ext_vivienda_jovenes_victimas",
+          "name": "Adquisicion o rehabilitacion de vivienda habitual para jovenes y victimas del terrorismo",
+          "description": "Deduccion por adquisicion o rehabilitacion de vivienda habitual nueva para menores de 36 anos o victimas del terrorismo",
+          "rates": {
+            "general": 3,
+            "rural_under_3000": 5
+          },
+          "note": "Porcentaje del 5% para adquisiciones desde 01-01-2015 en municipios < 3.000 hab.",
+          "max_base": 9040,
+          "income_limit": {
+            "general": { "individual": 19000, "joint": 24000 },
+            "rural_under_3000": { "individual": 28000, "joint": 45000 },
+            "exceptions": "Sin limite para familias numerosas o monoparentales"
+          },
+          "requirements": [
+            "Menor de 36 anos (o victima del terrorismo sin limite de edad)",
+            "Primera vivienda habitual",
+            "Vivienda nueva (primera transmision tras declaracion de obra nueva, en 3 anos)"
+          ],
+          "source": "DLeg 1/2018"
+        },
+        {
+          "id": "ext_alquiler_vivienda",
+          "name": "Arrendamiento de vivienda habitual",
+          "description": "Deduccion por alquiler de vivienda habitual en Extremadura",
+          "percentage": 30,
+          "max": {
+            "standard": 1000,
+            "rural_under_3000": 1500
+          },
+          "income_limit": {
+            "individual": 28000,
+            "joint": 45000
+          },
+          "requirements": [
+            "Cumplir al menos una condicion: < 36 anos, familia numerosa/monoparental, discapacidad >= 65%, incapacitacion judicial",
+            "Residencia habitual en Extremadura",
+            "ITP pagado o exencion documentada",
+            "No titular de inmueble a < 75 km"
+          ],
+          "source": "DLeg 1/2018"
+        },
+        {
+          "id": "ext_arrendadores_viviendas_vacias",
+          "name": "Arrendadores de viviendas vacias",
+          "description": "Deduccion por puesta en alquiler de viviendas previamente vacias en Extremadura",
+          "percentage": 100,
+          "of": "rendimiento neto reducido del arrendamiento",
+          "max": 1200,
+          "requirements": [
+            "Vivienda en Extremadura previamente vacia >= 1 ano",
+            "Destino a vivienda habitual del arrendatario",
+            "Duracion minima del contrato: 3 anos",
+            "Propietario de maximo 3 viviendas residenciales",
+            "Declarar rendimientos del capital inmobiliario"
+          ],
+          "source": "DLeg 1/2018"
+        },
+        {
+          "id": "ext_rehabilitacion_rural_alquiler",
+          "name": "Inversiones en rehabilitacion de viviendas en zonas rurales destinadas al alquiler",
+          "description": "Deduccion por rehabilitacion de viviendas en municipios < 3.000 hab. para destinarlas al alquiler",
+          "percentage": 15,
+          "max_annual": 9040,
+          "max_lifetime": 180000,
+          "requirements": [
+            "Municipio < 3.000 habitantes",
+            "Destino a alquiler como vivienda habitual de no familiares durante 5 anos minimo",
+            "Renta <= 30% de la renta media de los hogares del municipio (segun INE)",
+            "No dedicarse a promocion inmobiliaria o alquiler como actividad principal"
+          ],
+          "source": "DLeg 1/2018"
+        },
+        {
+          "id": "ext_material_escolar",
+          "name": "Compra de material escolar",
+          "description": "Deduccion por compra de material escolar para hijos en edad escolar obligatoria (6-15 anos)",
+          "amount_per_child": 15,
+          "income_limit": {
+            "general": { "individual": 19000, "joint": 24000 },
+            "rural_under_3000": { "individual": 28000, "joint": 45000 },
+            "exceptions": "Sin limite para familias numerosas o monoparentales"
+          },
+          "requirements": [
+            "Hijos en edad de escolarizacion obligatoria a 31 de diciembre",
+            "Derecho al minimo por descendientes"
+          ],
+          "source": "arts. 10 y 12 bis DLeg 1/2018"
+        },
+        {
+          "id": "ext_inversion_acciones",
+          "name": "Inversion en adquisicion de acciones y participaciones sociales",
+          "description": "Deduccion por inversion en constitucion o ampliacion de capital de sociedades con sede en Extremadura",
+          "percentage": 20,
+          "max": 4000,
+          "holding_period_years": 3,
+          "ownership_max_pct": 40,
+          "eligible_entities": ["SA", "SRL", "SAL", "SRLL", "Cooperativas"],
+          "requirements": [
+            "Sede social y domicilio fiscal en Extremadura",
+            "Actividad economica real",
+            "Nuevas: minimo 1 empleado a tiempo completo o 2 a tiempo parcial, alta SS 24+ meses",
+            "Ampliaciones: constituida en 3 anos previos, incremento plantilla >= 1, 24+ meses",
+            "Formalizacion en escritura publica",
+            "No funciones ejecutivas o de direccion"
+          ],
+          "source": "DLeg 1/2018"
+        },
+        {
+          "id": "ext_vivienda_rural",
+          "name": "Adquisicion o rehabilitacion de vivienda habitual en zonas rurales",
+          "description": "Deduccion por adquisicion o rehabilitacion de vivienda habitual en municipios < 3.000 habitantes",
+          "percentage": 10,
+          "max_annual": 9040,
+          "max_lifetime": 180000,
+          "requirements": [
+            "Municipio < 3.000 habitantes",
+            "Adquisicion/rehabilitacion desde 1 de enero de 2022",
+            "Ocupacion como vivienda habitual en 12 meses"
+          ],
+          "incompatible_with": ["ext_vivienda_jovenes_victimas"],
+          "source": "DLeg 1/2018"
+        },
+        {
+          "id": "ext_residencia_municipios_pequenos",
+          "name": "Residir habitualmente en municipios de menos de 3.000 habitantes",
+          "description": "Deduccion porcentual sobre la cuota integra autonomica por residencia en municipios < 3.000 hab.",
+          "percentage": 15,
+          "of": "cuota integra autonomica",
+          "income_limit": {
+            "individual": 28000,
+            "joint": 45000
+          },
+          "requirements": [
+            "Residencia habitual en municipio o entidad local menor < 3.000 hab. de Extremadura"
+          ],
+          "source": "art. 11 ter DLeg 1/2018"
+        },
+        {
+          "id": "ext_intereses_vivienda_jovenes",
+          "name": "Intereses de financiacion ajena para vivienda habitual de jovenes",
+          "description": "Deduccion por intereses hipotecarios pagados por menores de 36 anos para adquisicion de primera vivienda habitual",
+          "percentage": 25,
+          "max_base": 1000,
+          "income_limit": {
+            "individual": 28000,
+            "joint": 45000
+          },
+          "requirements": [
+            "Menor de 36 anos",
+            "Primera vivienda habitual en Extremadura"
+          ],
+          "compatible_with": ["ext_vivienda_jovenes_victimas"],
+          "incompatible_with": ["ext_vivienda_rural"],
+          "source": "arts. 11 quater y 12 DLeg 1/2018"
+        },
+        {
+          "id": "ext_donativos_culturales_deportivos",
+          "name": "Donaciones a entidades culturales, artisticas y mecenazgo deportivo",
+          "description": "Deduccion por donativos a entidades culturales/artisticas y a deportistas con domicilio fiscal en Extremadura",
+          "percentage": 20,
+          "max": 500,
+          "note": "Limite combinado de 500 EUR para ambas categorias",
+          "eligible_activities": [
+            "Cinematografia, audiovisual, artes escenicas, musica, artes visuales",
+            "Ediciones literarias, fonograficas, patrimonio cultural",
+            "Folklore, tradiciones populares, artes aplicadas",
+            "Deportistas que practican deporte de forma habitual y voluntaria (Ley 39/2022)"
+          ],
+          "requirements": [
+            "Donaciones puras, simples e irrevocables, formalizadas por escrito",
+            "No donaciones si donante es socio/participe con >= 50% en la entidad"
+          ],
+          "source": "art. 11 quinquies DLeg 1/2018"
+        },
+        {
+          "id": "ext_traslado_residencia",
+          "name": "Traslado de residencia habitual a Extremadura",
+          "description": "Deduccion por traslado de residencia habitual a Extremadura desde otra comunidad",
+          "rates": {
+            "general": { "percentage": 50, "of": "cuota integra autonomica" },
+            "under_36": { "percentage": 75, "of": "cuota integra autonomica" }
+          },
+          "duration": "Ano del traslado + 2 anos siguientes (3 anos total)",
+          "requirements": [
+            "Trasladar residencia habitual a Extremadura desde 1 de enero de 2025",
+            "Mantener residencia en Extremadura durante minimo 3 anos continuados"
+          ],
+          "source": "art. 11 sexies DLeg 1/2018"
+        },
+        {
+          "id": "ext_ayudas_ela_subsidios",
+          "name": "Obtencion de ayudas y subvenciones para personas con ELA",
+          "description": "Deduccion por ayudas/subvenciones publicas de la administracion extremena para personas diagnosticadas con ELA integradas en la base imponible general",
+          "calculation": "tipos medios de gravamen aplicados al importe de la subvencion incluida en base imponible general",
+          "source": "art. 11 septies DLeg 1/2018"
+        },
+        {
+          "id": "ext_enfermos_ela",
+          "name": "Enfermos de Esclerosis Lateral Amiotrofica (ELA) y familiares",
+          "description": "Deduccion directa para enfermos de ELA y sus familiares convivientes o dependientes",
+          "amount": 2000,
+          "note": "2.000 EUR por contribuyente. Si multiples contribuyentes reclaman por el mismo paciente, se prorratean (excepto el propio enfermo que recibe la cantidad integra)",
+          "requirements": [
+            "Diagnostico de ELA acreditado",
+            "Familiares: conyuge, pareja de hecho, descendientes o ascendientes convivientes o dependientes"
+          ],
+          "source": "art. 11 octies DLeg 1/2018"
+        }
+      ]
+    },
+    "galicia": {
+      "name": "Galicia",
+      "regulation": "Decreto Legislativo 1/2011, de 28 de julio, Texto Refundido de las disposiciones legales de Galicia en materia de tributos cedidos",
+      "deductions": [
+        {
+          "id": "gal_nacimiento_adopcion",
+          "name": "Nacimiento o adopcion de hijos",
+          "description": "Deduccion por nacimiento o adopcion aplicable en el ano del hecho causante y los 2 siguientes",
+          "amounts": {
+            "income_up_to_22000": {
+              "first_child": 360,
+              "second_child": 1200,
+              "third_or_more": 2400
+            },
+            "income_22001_to_31000": {
+              "per_child": 300
+            },
+            "multiple_births": {
+              "per_child": 360
+            }
+          },
+          "income_limit_extended": 31000,
+          "note_income_base": "base_imponible_general + ahorro - minimo personal y familiar",
+          "rural_boost": "20% adicional para municipios < 5.000 hab. o municipios fusionados",
+          "disability_33_doubles": true,
+          "duration": "Ano del hecho causante + 2 ejercicios siguientes",
+          "source": "art. 5 DLeg 1/2011"
+        },
+        {
+          "id": "gal_familias_dos_hijos",
+          "name": "Familias con dos hijos",
+          "description": "Deduccion para familias con exactamente dos hijos que generen derecho al minimo por descendientes",
+          "amounts": {
+            "standard": 250,
+            "with_disability_65": 500
+          },
+          "incompatible_with": ["gal_familia_numerosa"],
+          "source": "art. 5.Tres.1 DLeg 1/2011"
+        },
+        {
+          "id": "gal_familia_numerosa",
+          "name": "Familia numerosa",
+          "description": "Deduccion por poseer titulo de familia numerosa a fecha de devengo del IRPF",
+          "amounts": {
+            "general_category": 250,
+            "special_category": 400,
+            "per_additional_child_from_3rd": 250,
+            "general_with_disability_65": 500,
+            "special_with_disability_65": 800,
+            "per_additional_child_disability_65": 500
+          },
+          "incompatible_with": ["gal_familias_dos_hijos"],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_acogimiento_menores",
+          "name": "Acogimiento de menores",
+          "description": "Deduccion por acogimiento familiar de menores formalizado por la Xunta de Galicia",
+          "amount_per_minor": 300,
+          "foster_types": ["urgencia", "temporal", "permanente", "guarda con fines de adopcion"],
+          "note": "No aplica si la guarda con fines de adopcion culmina en adopcion en el mismo ejercicio",
+          "source": "art. 5.4 DLeg 1/2011"
+        },
+        {
+          "id": "gal_cuidado_hijos_menores",
+          "name": "Cuidado de hijos menores",
+          "description": "Deduccion por gastos de cuidado de hijos menores de 3 anos en empleados de hogar o centros infantiles",
+          "percentage": 30,
+          "max": {
+            "one_child": 400,
+            "two_or_more": 600
+          },
+          "income_limit": {
+            "individual": 22000,
+            "joint": 31000,
+            "base": "base_imponible_general + ahorro - minimo personal y familiar"
+          },
+          "requirements": [
+            "Hijos menores de 3 anos a 31 de diciembre",
+            "Ambos progenitores trabajando por cuenta propia o ajena",
+            "Empleado de hogar dado de alta en Sistema Especial de Empleados de Hogar"
+          ],
+          "source": "art. 5 DLeg 1/2011"
+        },
+        {
+          "id": "gal_discapacidad_65_mas",
+          "name": "Contribuyentes con discapacidad >= 65 anos que precisen ayuda de terceras personas",
+          "description": "Deduccion por cantidades pagadas a terceros para cuidado de contribuyentes >= 65 anos con discapacidad >= 65%",
+          "percentage": 10,
+          "max": 600,
+          "income_limit": {
+            "individual": 22000,
+            "joint": 31000,
+            "base": "base_imponible_general + ahorro - minimo personal y familiar"
+          },
+          "requirements": [
+            "Edad >= 65 anos",
+            "Discapacidad >= 65% o equivalente",
+            "Necesitar ayuda de terceras personas",
+            "No residir en centros de atencion publica o concertada en Galicia"
+          ],
+          "source": "art. 5.6 DLeg 1/2011"
+        },
+        {
+          "id": "gal_alquiler_vivienda",
+          "name": "Alquiler de vivienda habitual",
+          "description": "Deduccion por alquiler de vivienda habitual para menores de 35 anos",
+          "rates": {
+            "standard": { "percentage": 10, "max": 300 },
+            "with_2_minor_children": { "percentage": 20, "max": 600 },
+            "with_disability_33": "importes duplicados"
+          },
+          "income_limit": {
+            "individual": 22000,
+            "base": "base_imponible_general + base_imponible_ahorro"
+          },
+          "requirements": [
+            "Edad <= 35 anos a 31 de diciembre",
+            "Contrato de arrendamiento posterior a 01-01-2003",
+            "Fianza depositada en el IGVS o queja presentada"
+          ],
+          "source": "art. 5.7 DLeg 1/2011"
+        },
+        {
+          "id": "gal_nuevas_tecnologias",
+          "name": "Gastos dirigidos al uso de nuevas tecnologias en hogares gallegos",
+          "description": "Deduccion por gastos de alta e internet de banda ancha para uso exclusivo del hogar",
+          "percentage": 30,
+          "max": 100,
+          "note": "Solo aplicable en el ejercicio de contratacion de la linea. 50 EUR maximo por conyuge en gananciales.",
+          "requirements": [
+            "Contratacion de linea de banda ancha en el periodo impositivo",
+            "Uso exclusivo del hogar (no actividad profesional)",
+            "No aplica si es cambio de operador"
+          ],
+          "source": "art. 5.Ocho DLeg 1/2011"
+        },
+        {
+          "id": "gal_inversion_entidades_nuevas",
+          "name": "Inversion en adquisicion de acciones y participaciones sociales en entidades nuevas o de reciente creacion",
+          "description": "Deduccion por adquisicion de acciones/participaciones de entidades nuevas con sede en Galicia",
+          "rates": {
+            "standard": { "percentage": 30, "max": 6000 },
+            "enhanced": { "percentage": 45, "max": 9000, "condition": "PYME innovadora certificada, IEBT, o participada por universidades/organismos investigacion" }
+          },
+          "ownership": { "min_pct": 1, "max_pct": 40 },
+          "holding_period_years": 3,
+          "requirements": [
+            "Sede social y domicilio fiscal en Galicia (3 anos minimo)",
+            "Actividad economica real durante 3 anos",
+            "Minimo 1 empleado con contrato laboral, alta en SS, residente en Galicia (3 anos minimo)",
+            "Para ampliaciones: constituida en 3 anos previos, incremento plantilla >= 1 persona 24 meses",
+            "Formalizacion en escritura publica"
+          ],
+          "source": "art. 5.Nine DLeg 1/2011"
+        },
+        {
+          "id": "gal_inversion_entidades_nuevas_financiacion",
+          "name": "Inversion en adquisicion de acciones/participaciones con financiacion",
+          "description": "Deduccion por adquisicion de capital, prestamos o garantias personales a entidades nuevas con sede en Galicia",
+          "rates": {
+            "standard": { "percentage": 30, "max": 20000 },
+            "enhanced": { "percentage": 45, "max": 35000 }
+          },
+          "ownership": { "min_pct": 1, "max_pct": 40 },
+          "holding_period_years": 3,
+          "loan_terms": "Plazo > 5 anos, amortizacion maxima anual 20%",
+          "guarantee_min_years": 5,
+          "requirements": [
+            "Mismos requisitos que inversion en entidades nuevas",
+            "No ejercer funciones ejecutivas/directivas durante 10 anos",
+            "Sin relacion laboral durante 10 anos (excepto sociedades laborales/cooperativas)"
+          ],
+          "incompatible_with": ["gal_inversion_entidades_nuevas"],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_inversion_mercado_alternativo",
+          "name": "Inversion en acciones de entidades que cotizan en segmento de expansion del mercado alternativo bursatil",
+          "description": "Deduccion por adquisicion de acciones de entidades cotizadas en segmento de expansion del mercado alternativo con sede en Galicia",
+          "percentage": 15,
+          "max": 4000,
+          "note": "Distribuida a partes iguales en 4 anos (ano de inversion + 3 siguientes)",
+          "holding_period_years": 3,
+          "ownership_max_pct": 10,
+          "requirements": [
+            "Sede social y domicilio fiscal en Galicia",
+            "Actividad no sea gestion de patrimonio mobiliario o inmobiliario",
+            "Formalizacion en escritura publica"
+          ],
+          "incompatible_with": ["gal_inversion_entidades_nuevas", "gal_inversion_agrarias", "gal_inversion_interes_publico"],
+          "source": "art. 5.11 DLeg 1/2011"
+        },
+        {
+          "id": "gal_donativos_investigacion",
+          "name": "Donaciones con finalidad en investigacion y desarrollo cientifico e innovacion tecnologica",
+          "description": "Deduccion por donativos monetarios a centros de investigacion y entidades de I+D+i gallegos",
+          "percentage": 25,
+          "max": "10% de la cuota integra autonomica del IRPF",
+          "eligible_recipients": [
+            "Centros de investigacion adscritos a universidades gallegas o promovidos por la Xunta",
+            "Entidades sin animo de lucro de I+D+i (Ley 49/2002, Reglamento UE 651/2014)"
+          ],
+          "source": "art. 5.Doce DLeg 1/2011"
+        },
+        {
+          "id": "gal_instalaciones_renovables",
+          "name": "Inversion en instalaciones de climatizacion y/o agua caliente sanitaria con energias renovables",
+          "description": "Deduccion por instalacion de sistemas de climatizacion y agua caliente sanitaria con fuentes de energia renovable en vivienda habitual",
+          "percentage": 5,
+          "max": 280,
+          "requirements": [
+            "Instalacion registrada por instalador autorizado en la Oficina Virtual de Industria (OVI)",
+            "Pagos mediante tarjeta, transferencia, cheque o deposito bancario (no efectivo)",
+            "Presentar presupuesto, factura y justificante de pago via OVI antes del plazo de declaracion",
+            "Codigo de verificacion de la OVI en casilla 1033"
+          ],
+          "incompatible_with": ["gal_eficiencia_energetica", "gal_aldeas_modelo"],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_rehabilitacion_centros_historicos",
+          "name": "Rehabilitacion de bienes inmuebles situados en centros historicos",
+          "description": "Deduccion por rehabilitacion de inmuebles de propiedad del contribuyente en centros historicos designados de Galicia",
+          "percentage": 15,
+          "max": 9000,
+          "requirements": [
+            "Inmueble ubicado en centro historico (Anexo Orden 1 de marzo de 2018)",
+            "Permisos y autorizaciones administrativas",
+            "Obras de reconstruccion estructural, fachadas, cubiertas",
+            "Coste de rehabilitacion > 25% del precio de adquisicion o valor de mercado",
+            "Certificacion municipal de ubicacion"
+          ],
+          "source": "art. 5.14 DLeg 1/2011"
+        },
+        {
+          "id": "gal_inversion_agrarias",
+          "name": "Inversion en empresas agrarias",
+          "description": "Deduccion por inversion en sociedades de fomento forestal, cooperativas agrarias y entidades de movilizacion de tierras con sede en Galicia",
+          "percentage": 20,
+          "max": 20000,
+          "holding_period_years": 5,
+          "eligible_entities": [
+            "Sociedades de fomento forestal (Ley 7/2012)",
+            "Cooperativas agrarias con actividad exclusivamente agraria",
+            "Entidades de movilizacion/recuperacion de tierras agrarias (Ley 11/2021)"
+          ],
+          "requirements": [
+            "Formalizacion en escritura publica",
+            "No funciones ejecutivas/directivas durante 10 anos",
+            "Sin relacion laboral 10 anos (excepto laborales/cooperativas)"
+          ],
+          "incompatible_with": ["gal_inversion_entidades_nuevas"],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_ayudas_incendios",
+          "name": "Subvenciones y ayudas por danos de incendios forestales (2025)",
+          "description": "Deduccion por subvenciones recibidas de la Xunta para danos de incendios forestales del verano-otono 2025 incluidas en base imponible general",
+          "calculation": "tipos medios de gravamen aplicados al importe de la subvencion incluida en base imponible general",
+          "requirements": [
+            "Ayudas del Decreto 76/2025 de 29 de agosto",
+            "Incendios forestales con PEIFOGA activado en Situacion 2",
+            "Subvencion incluida en base imponible general"
+          ],
+          "source": "art. 5.Sixteen DLeg 1/2011"
+        },
+        {
+          "id": "gal_eficiencia_energetica",
+          "name": "Obras de mejora de eficiencia energetica en edificios de viviendas o viviendas unifamiliares",
+          "description": "Deduccion por obras de mejora de eficiencia energetica con salto de al menos una letra en certificado energetico",
+          "rates": {
+            "works": { "percentage": 15, "max_base": 9000 },
+            "energy_certificate": { "percentage": 100, "max": 150 }
+          },
+          "requirements": [
+            "Permisos y autorizaciones",
+            "Reduccion de demanda energetica y mejora del rendimiento termico",
+            "Incorporacion de equipos de energias renovables",
+            "Salto minimo de 1 letra en clasificacion energetica (emisiones CO2 y consumo energia primaria no renovable)",
+            "Certificado de eficiencia energetica registrado en Galicia",
+            "Pagos no en efectivo"
+          ],
+          "incompatible_with": ["gal_instalaciones_renovables", "gal_aldeas_modelo"],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_deportistas_alto_nivel",
+          "name": "Ayudas y subvenciones para deportistas de alto nivel",
+          "description": "Deduccion por ayudas publicas de la Xunta para deportistas de alto nivel incluidas en base imponible general",
+          "calculation": "tipos medios de gravamen aplicados al importe de la ayuda incluida en base imponible general",
+          "requirements": [
+            "Ayuda de la administracion gallega o sector publico",
+            "Actividad deportiva que no genere rendimientos de actividades economicas",
+            "Condicion de deportista de alto nivel reconocida por la autoridad deportiva gallega"
+          ],
+          "source": "art. 5.19 DLeg 1/2011"
+        },
+        {
+          "id": "gal_aldeas_modelo",
+          "name": "Adquisicion o rehabilitacion de viviendas en proyectos de aldeas modelo",
+          "description": "Deduccion por adquisicion o rehabilitacion de viviendas en proyectos de aldeas modelo (Ley 11/2021)",
+          "percentage": 15,
+          "max_base": {
+            "primary_residence": 9000,
+            "other": 4500
+          },
+          "requirements": [
+            "Vivienda en proyecto de aldea modelo conforme Ley 11/2021",
+            "Adquisiciones desde 01-01-2021",
+            "Rehabilitaciones iniciadas desde 01-01-2021",
+            "Para rehabilitacion: coste > 25% del precio de adquisicion o valor de mercado"
+          ],
+          "incompatible_with": ["gal_instalaciones_renovables", "gal_eficiencia_energetica"],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_inversion_interes_publico",
+          "name": "Inversion en proyectos de interes publico especial (energias renovables)",
+          "description": "Deduccion por adquisicion de acciones/participaciones de entidades dedicadas exclusivamente a proyectos de energias renovables declarados de interes publico (Ley 2/2024)",
+          "percentage": 20,
+          "max_base": 10000,
+          "eligible_projects": [
+            "Proyectos de produccion de energia renovable con PPA competitivo",
+            "Iniciativas renovables con inversion territorial significativa",
+            "Proyectos de autoconsumo electrico renovable",
+            "Repotenciacion y modernizacion tecnologica de parques eolicos"
+          ],
+          "incompatible_with": ["gal_inversion_entidades_nuevas", "gal_inversion_entidades_nuevas_financiacion", "gal_inversion_mercado_alternativo", "gal_inversion_agrarias"],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_adecuacion_inmueble_vacio",
+          "name": "Gastos derivados de adecuacion de inmueble vacio a vivienda para arrendamiento",
+          "description": "Deduccion por gastos de adecuacion de inmuebles vacios para destinarlos a alquiler en Galicia",
+          "percentage": 15,
+          "max_base": {
+            "per_property_lifetime": 9000,
+            "per_property_annual": 3000,
+            "multiple_properties_annual": 6000
+          },
+          "carryforward_years": 4,
+          "requirements": [
+            "Inmueble en Galicia vacio >= 1 ano antes de las obras",
+            "Obras finalizadas en <= 2 anos",
+            "Alquiler en <= 6 meses tras finalizacion",
+            "Valor inmueble <= 250.000 EUR",
+            "Contrato minimo 3 anos",
+            "Arrendatario no familiar hasta 3er grado",
+            "Maximo 3 inmuebles en alquiler (sin contar vivienda habitual, garajes, trasteros)"
+          ],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_arrendamiento_viviendas_vacias",
+          "name": "Arrendamiento de viviendas vacias",
+          "description": "Deduccion por puesta en alquiler de viviendas previamente vacias en Galicia",
+          "amount_per_property": 500,
+          "note": "Aplica en el primer ejercicio en que se formaliza el arrendamiento",
+          "carryforward_years": 4,
+          "requirements": [
+            "Vivienda en Galicia vacia >= 1 ano antes de la formalizacion del contrato",
+            "Duracion efectiva >= 3 anos",
+            "Renta mensual <= 700 EUR (excluidas actualizaciones anuales)",
+            "Arrendatario no familiar hasta 3er grado",
+            "Maximo 3 viviendas (sin contar habitual, garajes, trasteros)"
+          ],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_ayudas_ela",
+          "name": "Ayudas y subvenciones para personas con diagnostico de ELA",
+          "description": "Deduccion por ayudas publicas para personas con ELA incluidas en base imponible general",
+          "calculation": "tipos medios de gravamen aplicados al importe de la subvencion incluida en base imponible general",
+          "source": "art. 5.Veinticuatro DLeg 1/2011"
+        },
+        {
+          "id": "gal_libros_texto_material_escolar",
+          "name": "Adquisicion de libros de texto y material escolar",
+          "description": "Deduccion por compra de libros de texto y material escolar para hijos en Educacion Primaria, ESO y Educacion Especial",
+          "percentage": 15,
+          "max_per_child": 105,
+          "income_limit": {
+            "per_capita_family_income": 30000,
+            "note": "Calculada sobre renta del ejercicio anterior (2024) entre numero de miembros de la unidad familiar; miembros con discapacidad >= 33% computan por 2"
+          },
+          "requirements": [
+            "Hijos matriculados en centros sostenidos con fondos publicos",
+            "Facturas emitidas entre 1 de julio y 31 de diciembre de 2025",
+            "Pagos justificados (tarjeta, transferencia, cheque, pago electronico; excepcionalmente efectivo en 2025)"
+          ],
+          "incompatible_with": ["becas_y_ayudas_publicas_mismo_material"],
+          "source": "DLeg 1/2011"
+        },
+        {
+          "id": "gal_ayudas_talidomida",
+          "name": "Ayudas recibidas por personas afectadas por la talidomida (1950-1985)",
+          "description": "Deduccion por ayudas publicas para personas afectadas por la talidomida en Espana entre 1950 y 1985 incluidas en base imponible general",
+          "calculation": "tipos medios de gravamen aplicados al importe de la ayuda publica incluida en base imponible general",
+          "note": "Aplicable desde ejercicio 2023. Se pueden solicitar rectificaciones de autoliquidaciones 2023 y 2024.",
+          "source": "art. 5.Veintiseis DLeg 1/2011"
+        }
+      ]
+    },
+    "madrid": {
+      "name": "Comunidad de Madrid",
+      "regulation": "Decreto Legislativo 1/2010, de 21 de octubre, Texto Refundido de las disposiciones legales de la Comunidad de Madrid en materia de tributos cedidos",
+      "deductions": [
+        {
+          "id": "mad_nacimiento_adopcion",
+          "name": "Nacimiento o adopcion de hijos",
+          "description": "Deduccion por nacimiento o adopcion de hijos, aplicable en el ano del hecho y los 2 siguientes",
+          "amounts": {
+            "per_child_from_2023": 721.70,
+            "per_child_before_2023": 600,
+            "multiple_birth_additional": 721.70
+          },
+          "note": "Para hechos desde 01-01-2023: 721,70 EUR. En partos/adopciones multiples: 721,70 EUR adicional por hijo extra el primer ejercicio.",
+          "duration": "Ano del hecho causante + 2 ejercicios siguientes",
+          "income_limit": {
+            "individual": 30930,
+            "joint": 37322.20,
+            "family_unit_max": 61860
+          },
+          "requirements": [
+            "Convivencia con el hijo",
+            "Prorrateo a partes iguales si ambos progenitores conviven y declaran individualmente"
+          ],
+          "compatible_with": ["mad_adopcion_internacional"],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_adopcion_internacional",
+          "name": "Adopcion internacional de ninos",
+          "description": "Deduccion por adopcion internacional de menores",
+          "amount": 721.70,
+          "note": "Si ambos adoptantes conviven: importe incrementado 50% y prorrateo a partes iguales",
+          "compatible_with": ["mad_nacimiento_adopcion"],
+          "source": "art. 5 DLeg 1/2010"
+        },
+        {
+          "id": "mad_acogimiento_familiar_menores",
+          "name": "Acogimiento familiar de menores",
+          "description": "Deduccion por acogimiento familiar de menores (urgencia, temporal, permanente o guarda con fines de adopcion)",
+          "amounts": {
+            "first_minor": 618.60,
+            "second_minor": 773.25,
+            "third_or_subsequent": 927.90
+          },
+          "income_limit": {
+            "individual": 26414.22,
+            "joint": 37322.20
+          },
+          "requirements": [
+            "Convivencia > 183 dias en el periodo impositivo",
+            "Menores adoptados durante el ejercicio quedan excluidos",
+            "Certificacion de la autoridad competente de la CM"
+          ],
+          "source": "arts. 6 y 18 DLeg 1/2010"
+        },
+        {
+          "id": "mad_acogimiento_mayores_65",
+          "name": "Acogimiento no remunerado de mayores de 65 anos y/o con discapacidad",
+          "description": "Deduccion por acogimiento no remunerado de personas >= 65 anos o con discapacidad >= 33%",
+          "amount_per_person": 1546.50,
+          "income_limit": {
+            "individual": 26414.22,
+            "joint": 37322.20
+          },
+          "requirements": [
+            "Convivencia > 183 dias al ano",
+            "Acogimiento sin contraprestacion",
+            "No percibir ayudas de la CM",
+            "Para mayores 65: sin parentesco hasta 4.o grado (excepto si discapacidad >= 33%)"
+          ],
+          "source": "arts. 7, 18.1 y 4.b DLeg 1/2010"
+        },
+        {
+          "id": "mad_cuidado_ascendientes",
+          "name": "Cuidado de ascendientes",
+          "description": "Deduccion por cuidado de ascendientes >= 65 anos o con discapacidad >= 33% que generen derecho al minimo por ascendientes",
+          "amount_per_person": 515.50,
+          "requirements": [
+            "Derecho al minimo por ascendientes",
+            "Prorrateo a partes iguales si multiples contribuyentes"
+          ],
+          "source": "art. 7 bis DLeg 1/2010"
+        },
+        {
+          "id": "mad_alquiler_vivienda",
+          "name": "Arrendamiento de vivienda habitual",
+          "description": "Deduccion por alquiler de vivienda habitual para menores de 40 anos",
+          "percentage": 30,
+          "max": 1237.20,
+          "income_limit": {
+            "individual": 26414.22,
+            "joint": 37322.20,
+            "family_unit_max": 61860
+          },
+          "requirements": [
+            "Menor de 40 anos a 31 de diciembre",
+            "Renta pagada > 20% de la suma de bases imponibles general + ahorro",
+            "Resguardo de deposito de fianza en la Agencia de Vivienda Social de la CM",
+            "Solo titular del contrato"
+          ],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_gastos_arrendamiento",
+          "name": "Gastos derivados del arrendamiento de viviendas",
+          "description": "Deduccion para propietarios por gastos de conservacion, formalizacion de contratos, seguros y certificados energeticos de viviendas en alquiler",
+          "percentage": 10,
+          "max": 154.65,
+          "requirements": [
+            "Vivienda destinada a alquiler residencial (Ley 29/1994)",
+            "Resguardo de deposito de fianza"
+          ],
+          "compatible_with": ["mad_viviendas_vacias"],
+          "source": "arts. 8 bis y 18.4.c DLeg 1/2010"
+        },
+        {
+          "id": "mad_viviendas_vacias",
+          "name": "Arrendamiento de viviendas vacias",
+          "description": "Deduccion por puesta en alquiler de viviendas previamente vacias >= 1 ano",
+          "amount_per_property": 1000,
+          "note": "Aplicable en el ejercicio de formalizacion del contrato",
+          "requirements": [
+            "Vivienda vacia >= 1 ano antes del contrato",
+            "Duracion efectiva >= 3 anos",
+            "Arrendatario no familiar hasta 3er grado",
+            "Maximo 5 inmuebles por contribuyente",
+            "Resguardo de deposito de fianza"
+          ],
+          "compatible_with": ["mad_gastos_arrendamiento"],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_donativos_fundaciones",
+          "name": "Donativos a fundaciones y clubes deportivos",
+          "description": "Deduccion por donativos a fundaciones inscritas en el Registro de la CM y a clubes deportivos elementales y basicos",
+          "percentage": 15,
+          "max_base": "10% de la base liquidable (general + ahorro)",
+          "eligible_recipients": [
+            "Fundaciones inscritas en el Registro de Fundaciones de la CM con fines culturales, asistenciales, educativos, sanitarios",
+            "Clubes deportivos elementales y basicos inscritos en el Registro de Asociaciones Deportivas de la CM"
+          ],
+          "source": "arts. 9 y 18.3 DLeg 1/2010"
+        },
+        {
+          "id": "mad_incremento_costes_financiacion",
+          "name": "Incremento de costes de financiacion ajena para la inversion en vivienda habitual",
+          "description": "Deduccion por incremento de intereses de hipoteca a tipo variable respecto a los que se habrian pagado con Euribor de diciembre 2022",
+          "percentage": 25,
+          "of": "exceso de intereses sobre los calculados con Euribor diciembre 2022",
+          "max": 300,
+          "income_limit": {
+            "formula": "30930 x numero de miembros de la unidad familiar",
+            "base": "bases imponibles general + ahorro de todos los miembros"
+          },
+          "requirements": [
+            "Vivienda habitual con precio <= 390.000 EUR (excluidos gastos e impuestos)",
+            "Hipoteca a tipo variable",
+            "Prestamo constituido antes del inicio del periodo impositivo",
+            "Calculo mensual del exceso de intereses"
+          ],
+          "incompatible_with": ["mad_intereses_vivienda_jovenes"],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_cambio_residencia_despoblacion",
+          "name": "Cambio de residencia a municipio en riesgo de despoblacion",
+          "description": "Deduccion por traslado de residencia habitual a municipio de Madrid con < 2.500 habitantes",
+          "amount": 1000,
+          "duration": "Ano del traslado + 1 ano siguiente (2 periodos)",
+          "income_limit": {
+            "formula": "30930 x numero de miembros de la unidad familiar"
+          },
+          "requirements": [
+            "Menor de 35 anos (solo en el ano del traslado)",
+            "Municipio < 2.500 hab. (segun INE a 1 de enero del ano anterior)",
+            "Adquisicion o alquiler de vivienda habitual en el municipio",
+            "Mantener residencia en el municipio: ano del traslado + 3 anos siguientes"
+          ],
+          "compatible_with": ["mad_vivienda_despoblacion"],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_vivienda_despoblacion",
+          "name": "Adquisicion de vivienda habitual en municipios en riesgo de despoblacion",
+          "description": "Deduccion por adquisicion de vivienda habitual en municipio de Madrid con < 2.500 habitantes",
+          "percentage": 10,
+          "of": "precio de adquisicion del inmueble",
+          "max_annual": 1546.50,
+          "duration": "10 anos (ano de adquisicion + 9 siguientes), a partes iguales",
+          "income_limit": {
+            "formula": "30930 x numero de miembros de la unidad familiar"
+          },
+          "requirements": [
+            "Menor de 35 anos en el momento de la adquisicion",
+            "Adquisicion desde 01-01-2024",
+            "Vivienda habitual en el municipio",
+            "Mantener residencia: ano de adquisicion + 3 anos siguientes",
+            "Ocupacion en 12 meses"
+          ],
+          "incompatible_with": ["mad_vivienda_nacimiento_adopcion"],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_gastos_educativos",
+          "name": "Gastos educativos",
+          "description": "Deduccion por gastos de escolaridad, idiomas y uniformes de hijos en etapas educativas hasta educacion basica",
+          "rates": {
+            "tuition_and_languages": 15,
+            "uniforms": 5
+          },
+          "max_per_child": {
+            "languages_and_uniforms_only": 412.40,
+            "including_tuition": 927.90,
+            "first_cycle_infant_education": 1031
+          },
+          "income_limit": {
+            "formula": "30930 x numero de miembros de la unidad familiar"
+          },
+          "non_deductible": [
+            "Comedor y transporte",
+            "Libros de texto",
+            "Campamentos de idiomas de verano",
+            "Educacion en el extranjero",
+            "Ensenanza de idiomas fuera del periodo lectivo"
+          ],
+          "requirements": [
+            "Hijo con derecho a minimo por descendientes",
+            "Convivencia con el contribuyente",
+            "Reducidas por becas y ayudas publicas"
+          ],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_cuidado_hijos_mayores_discapacitados",
+          "name": "Cuidado de hijos menores de 3 anos, mayores dependientes y personas con discapacidad",
+          "description": "Deduccion por cuotas de SS de empleado de hogar contratado para cuidado de hijos < 3 anos, mayores dependientes o personas con discapacidad >= 33%",
+          "rates": {
+            "general": { "percentage": 25, "max": 463.95 },
+            "large_family": { "percentage": 40, "max": 618.60 }
+          },
+          "income_limit": {
+            "formula": "30930 x numero de miembros de la unidad familiar",
+            "per_member_income_max": 8000
+          },
+          "requirements": [
+            "Alta como empleador en sistema de empleados del hogar >= 40 horas/mes",
+            "Para hijos < 3 anos: contribuyente y/o otro progenitor trabajando >= 183 dias/ano",
+            "Para mayores/discapacitados: contribuyente trabajando >= 183 dias o percibiendo prestaciones"
+          ],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_intereses_vivienda_jovenes",
+          "name": "Pago de intereses de prestamos para adquisicion de vivienda por menores de 30 anos",
+          "description": "Deduccion por intereses hipotecarios para adquisicion de vivienda habitual por menores de 30 anos",
+          "percentage": 25,
+          "max": 1031,
+          "requirements": [
+            "Menor de 30 anos (se aplica hasta el mes anterior a cumplir 30)",
+            "Prestamo para adquisicion de vivienda habitual"
+          ],
+          "compatible_with": ["mad_vivienda_despoblacion"],
+          "incompatible_with": ["mad_incremento_costes_financiacion"],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_intereses_prestamos_estudios",
+          "name": "Pago de intereses de prestamos para estudios universitarios",
+          "description": "Deduccion por intereses de prestamos para Grado, Master Universitario o Doctorado obtenidos de entidades de credito",
+          "percentage": 100,
+          "note": "Sin limites especificos de importe ni de renta. Prestamo de entidad de credito (Ley 10/2014). Aplica tambien a prestamos para conyuge o descendientes.",
+          "requirements": [
+            "Destino de los fondos anotado en el contrato de prestamo",
+            "Justificacion documental del destino",
+            "Entidad de credito: bancos, cajas de ahorro, cooperativas de credito, ICO"
+          ],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_vivienda_nacimiento_adopcion",
+          "name": "Adquisicion de vivienda habitual por nacimiento o adopcion de hijos",
+          "description": "Deduccion por adquisicion de vivienda habitual en los 3 anos siguientes al nacimiento/adopcion de un hijo",
+          "percentage": 10,
+          "max_annual": 1546.50,
+          "duration": "10 anos (ano de adquisicion + 9 siguientes), a partes iguales",
+          "income_limit": {
+            "formula": "30930 x numero de miembros de la unidad familiar"
+          },
+          "requirements": [
+            "Adquisicion desde 01-01-2023",
+            "Dentro de los 3 anos siguientes al nacimiento/adopcion",
+            "Vivienda habitual ocupada en 12 meses",
+            "Derecho al minimo por descendientes en el ejercicio"
+          ],
+          "incompatible_with": ["mad_vivienda_despoblacion"],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_familia_numerosa",
+          "name": "Obtencion de la condicion de familia numerosa",
+          "description": "Deduccion por obtencion del titulo de familia numerosa (reconocimientos desde 01-01-2023)",
+          "rates": {
+            "general_category": {
+              "percentage": 50,
+              "of": "cuota integra autonomica",
+              "max_individual": 6186,
+              "max_joint": 12372
+            },
+            "special_category": {
+              "percentage": 100,
+              "of": "cuota integra autonomica",
+              "max_individual": 12372,
+              "max_joint": 24744
+            }
+          },
+          "duration": "Ano de reconocimiento + 2 siguientes (3 periodos)",
+          "income_limit": {
+            "formula": "30930 x numero de miembros de la unidad familiar"
+          },
+          "requirements": [
+            "Titulo oficial de familia numerosa vigente",
+            "Reconocimiento efectivo desde 01-01-2023"
+          ],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_familias_dos_descendientes",
+          "name": "Familias con dos o mas descendientes e ingresos reducidos",
+          "description": "Deduccion para familias con >= 2 descendientes y rentas reducidas",
+          "percentage": 10,
+          "of": "cuota integra autonomica minorada por deducciones autonomicas y estatales aplicables",
+          "income_limit": {
+            "max": 24744,
+            "base": "suma de bases imponibles del contribuyente + otros declarantes por los mismos descendientes + bases de los hijos dependientes"
+          },
+          "requirements": [
+            "Minimo 2 descendientes con derecho al minimo por descendientes"
+          ],
+          "source": "art. 14 DLeg 1/2010"
+        },
+        {
+          "id": "mad_inversion_acciones",
+          "name": "Inversion en la adquisicion de acciones y participaciones sociales de nuevas entidades o de reciente creacion",
+          "description": "Deduccion por inversion en constitucion o ampliacion de capital de entidades con sede en Madrid",
+          "rates": {
+            "general": { "percentage": 40, "max": 9279 },
+            "labor_cooperatives": { "percentage": 50, "max": 12372 },
+            "university_research": { "percentage": 50, "max": 12372 }
+          },
+          "ownership_max_pct": 40,
+          "holding_period_years": 3,
+          "requirements": [
+            "Sede social en Madrid",
+            "Actividad economica real",
+            "Minimo 1 empleado a tiempo completo en SS general (excepto laborales/cooperativas)",
+            "Para ampliaciones: entidad constituida en 3 anos previos, incremento plantilla >= 1 persona, 24+ meses"
+          ],
+          "incompatible_with": ["mad_inversiones_cotizadas", "mad_inversiones_nuevos_contribuyentes"],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_autoempleo_jovenes",
+          "name": "Fomento del autoempleo de jovenes menores de 35 anos",
+          "description": "Deduccion por primera alta como autonomo/empresario en el Censo de Empresarios para menores de 35 anos",
+          "amount": 1031,
+          "requirements": [
+            "Menor de 35 anos a 31 de diciembre",
+            "Primera alta en el Censo de Empresarios, Profesionales y Retenedores",
+            "Actividad economica desarrollada principalmente en Madrid",
+            "Mantenimiento del alta >= 1 ano"
+          ],
+          "source": "art. 16 DLeg 1/2010"
+        },
+        {
+          "id": "mad_inversiones_cotizadas",
+          "name": "Inversiones realizadas en entidades cotizadas en el mercado alternativo bursatil",
+          "description": "Deduccion por inversion en acciones del segmento de expansion del Mercado Alternativo Bursatil de entidades con sede en Madrid",
+          "percentage": 20,
+          "max": 10310,
+          "holding_period_years": 2,
+          "ownership_max_pct": 10,
+          "requirements": [
+            "Sede social y domicilio fiscal en Madrid durante 2 anos post-inversion",
+            "Actividad no sea gestion de patrimonio mobiliario o inmobiliario"
+          ],
+          "incompatible_with": ["mad_inversion_acciones", "mad_inversiones_nuevos_contribuyentes"],
+          "source": "DLeg 1/2010"
+        },
+        {
+          "id": "mad_inversiones_nuevos_contribuyentes",
+          "name": "Inversiones de nuevos contribuyentes procedentes del extranjero",
+          "description": "Deduccion por inversiones en valores de renta fija o variable realizadas por nuevos residentes fiscales en Madrid procedentes del extranjero",
+          "percentage": 20,
+          "of": "valor de adquisicion (incluidos gastos e impuestos inherentes, excluidos intereses)",
+          "holding_period_years": 6,
+          "duration": "Ano de inversion + 5 siguientes",
+          "requirements": [
+            "Adquirir condicion de contribuyente IRPF desde 01-01-2024",
+            "No haber sido residente en Espana en los 5 anos anteriores",
+            "Mantener residencia en Madrid durante todo el periodo de inversion",
+            "Para participaciones no cotizadas: <= 40% de participacion, sin funciones ejecutivas, entidad no en paraiso fiscal"
+          ],
+          "incompatible_with": ["mad_inversion_acciones", "mad_inversiones_cotizadas"],
+          "note": "Se aplica despues de las demas deducciones autonomicas. Exceso trasladable a ejercicios futuros.",
+          "source": "DLeg 1/2010"
+        }
+      ]
+    }
+  }
+}

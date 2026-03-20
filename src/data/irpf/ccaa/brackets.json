@@ -1,0 +1,251 @@
+{
+  "year": 2025,
+  "verified_date": "2026-03-20",
+  "note": "Total IRPF = state brackets (irpf/2025.json general_brackets.state) + autonomous brackets (this file). Each CCAA applies its own autonomous scale to the base liquidable general. The escala complementaria (art. 74.1 LIRPF) is the default fallback, identical to the state scale in art. 63.1, but ALL 15 common-regime CCAA have approved their own scales so it only applies to Ceuta/Melilla (via DA 32.a LIRPF).",
+  "source_urls": [
+    "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico.html"
+  ],
+
+  "escala_complementaria": {
+    "note": "Escala autonomica supletoria (art. 74.1 LIRPF). Identica a la escala estatal del art. 63.1. Se aplica cuando una CCAA de regimen comun no ha aprobado su propia escala. Actualmente ninguna CCAA la usa; Ceuta y Melilla aplican la escala del art. 65 via DA 32.a.",
+    "brackets": [
+      { "from": 0, "to": 12450, "rate": 9.5 },
+      { "from": 12450, "to": 20200, "rate": 12.0 },
+      { "from": 20200, "to": 35200, "rate": 15.0 },
+      { "from": 35200, "to": 60000, "rate": 18.5 },
+      { "from": 60000, "to": 300000, "rate": 22.5 },
+      { "from": 300000, "to": null, "rate": 24.5 }
+    ],
+    "source": "Ley 35/2006, art. 74.1 (remite al art. 63.1)"
+  },
+
+  "ccaa": {
+    "andalucia": {
+      "brackets": [
+        { "from": 0, "to": 13000, "rate": 9.5 },
+        { "from": 13000, "to": 21100, "rate": 12.0 },
+        { "from": 21100, "to": 35200, "rate": 15.0 },
+        { "from": 35200, "to": 60000, "rate": 18.5 },
+        { "from": 60000, "to": null, "rate": 22.5 }
+      ],
+      "source": "Art. 23 Ley 5/2021, de 20 de octubre, de Tributos Cedidos de la Comunidad Autonoma de Andalucia",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-andalucia.html"
+    },
+
+    "aragon": {
+      "brackets": [
+        { "from": 0, "to": 13072.5, "rate": 9.5 },
+        { "from": 13072.5, "to": 21210, "rate": 12.0 },
+        { "from": 21210, "to": 36960, "rate": 15.0 },
+        { "from": 36960, "to": 52500, "rate": 18.5 },
+        { "from": 52500, "to": 60000, "rate": 20.5 },
+        { "from": 60000, "to": 80000, "rate": 23.0 },
+        { "from": 80000, "to": 90000, "rate": 24.0 },
+        { "from": 90000, "to": 130000, "rate": 25.0 },
+        { "from": 130000, "to": null, "rate": 25.5 }
+      ],
+      "source": "Art. 110-1 Texto Refundido de disposiciones de la CA de Aragon en materia de tributos cedidos, aprobado por Decreto Legislativo 1/2005, de 26 de septiembre",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-aragon.html"
+    },
+
+    "asturias": {
+      "brackets": [
+        { "from": 0, "to": 12450, "rate": 9.0 },
+        { "from": 12450, "to": 17707.2, "rate": 12.0 },
+        { "from": 17707.2, "to": 33007.2, "rate": 14.0 },
+        { "from": 33007.2, "to": 53407.2, "rate": 19.2 },
+        { "from": 53407.2, "to": 70000, "rate": 21.5 },
+        { "from": 70000, "to": 90000, "rate": 22.5 },
+        { "from": 90000, "to": 175000, "rate": 25.0 },
+        { "from": 175000, "to": null, "rate": 26.0 }
+      ],
+      "source": "Art. 2 Texto Refundido de las disposiciones legales del Principado de Asturias en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 2/2014, de 22 de octubre. Modificado por Ley 3/2025, de 19 de noviembre",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-principado-asturias.html"
+    },
+
+    "illes_balears": {
+      "brackets": [
+        { "from": 0, "to": 10000, "rate": 9.0 },
+        { "from": 10000, "to": 18000, "rate": 11.25 },
+        { "from": 18000, "to": 30000, "rate": 14.25 },
+        { "from": 30000, "to": 48000, "rate": 17.5 },
+        { "from": 48000, "to": 70000, "rate": 19.0 },
+        { "from": 70000, "to": 90000, "rate": 21.75 },
+        { "from": 90000, "to": 120000, "rate": 22.75 },
+        { "from": 120000, "to": 175000, "rate": 23.75 },
+        { "from": 175000, "to": null, "rate": 24.75 }
+      ],
+      "source": "Art. 1 Texto Refundido de las Disposiciones Legales de la CA de las Illes Balears en Materia de Tributos Cedidos por el Estado, aprobado por Decreto Legislativo 1/2014, de 6 de junio",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-illes-balears.html"
+    },
+
+    "canarias": {
+      "brackets": [
+        { "from": 0, "to": 13748, "rate": 9.0 },
+        { "from": 13748, "to": 19422, "rate": 11.5 },
+        { "from": 19422, "to": 35924, "rate": 14.0 },
+        { "from": 35924, "to": 57566, "rate": 18.5 },
+        { "from": 57566, "to": 93268, "rate": 23.5 },
+        { "from": 93268, "to": 123745, "rate": 25.0 },
+        { "from": 123745, "to": null, "rate": 26.0 }
+      ],
+      "source": "Art. 18 bis Texto Refundido de las disposiciones legales vigentes dictadas por la CA de Canarias en materia de tributos cedidos, aprobado por Decreto legislativo 1/2009, de 21 de abril. Modificado por Ley 9/2025, de 23 de diciembre",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-canarias.html"
+    },
+
+    "cantabria": {
+      "brackets": [
+        { "from": 0, "to": 13000, "rate": 8.5 },
+        { "from": 13000, "to": 21000, "rate": 11.0 },
+        { "from": 21000, "to": 35200, "rate": 14.5 },
+        { "from": 35200, "to": 60000, "rate": 18.0 },
+        { "from": 60000, "to": 90000, "rate": 22.5 },
+        { "from": 90000, "to": null, "rate": 24.5 }
+      ],
+      "source": "Art. 1 Texto Refundido de la Ley de Medidas Fiscales en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 62/2008, de 19 de junio",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-cantabria.html"
+    },
+
+    "castilla_la_mancha": {
+      "brackets": [
+        { "from": 0, "to": 12450, "rate": 9.5 },
+        { "from": 12450, "to": 20200, "rate": 12.0 },
+        { "from": 20200, "to": 35200, "rate": 15.0 },
+        { "from": 35200, "to": 60000, "rate": 18.5 },
+        { "from": 60000, "to": null, "rate": 22.5 }
+      ],
+      "source": "Art. 13 bis Ley 8/2013, de 21 de noviembre, de la CA de Castilla-La Mancha, de Medidas Tributarias",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-castilla-mancha.html"
+    },
+
+    "castilla_y_leon": {
+      "brackets": [
+        { "from": 0, "to": 12450, "rate": 9.0 },
+        { "from": 12450, "to": 20200, "rate": 12.0 },
+        { "from": 20200, "to": 35200, "rate": 14.0 },
+        { "from": 35200, "to": 53407.2, "rate": 18.5 },
+        { "from": 53407.2, "to": null, "rate": 21.5 }
+      ],
+      "source": "Art. 1 Texto Refundido de las disposiciones legales de la Comunidad de Castilla y Leon en materia de tributos propios y cedidos, aprobado por Decreto Legislativo 1/2013, de 12 de septiembre",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-castilla-leon.html"
+    },
+
+    "cataluna": {
+      "brackets": [
+        { "from": 0, "to": 12500, "rate": 9.5 },
+        { "from": 12500, "to": 22000, "rate": 12.5 },
+        { "from": 22000, "to": 33000, "rate": 16.0 },
+        { "from": 33000, "to": 53000, "rate": 19.0 },
+        { "from": 53000, "to": 90000, "rate": 21.5 },
+        { "from": 90000, "to": 120000, "rate": 23.5 },
+        { "from": 120000, "to": 175000, "rate": 24.5 },
+        { "from": 175000, "to": null, "rate": 25.5 }
+      ],
+      "source": "Art. 611-1 Decreto Legislativo 1/2024, de 12 de marzo, por el que se aprueba el libro sexto del codigo tributario de Catalunya",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-cataluna.html"
+    },
+
+    "extremadura": {
+      "brackets": [
+        { "from": 0, "to": 12450, "rate": 8.0 },
+        { "from": 12450, "to": 20200, "rate": 10.0 },
+        { "from": 20200, "to": 24200, "rate": 16.0 },
+        { "from": 24200, "to": 35200, "rate": 17.5 },
+        { "from": 35200, "to": 60000, "rate": 21.0 },
+        { "from": 60000, "to": 80200, "rate": 23.5 },
+        { "from": 80200, "to": 99200, "rate": 24.0 },
+        { "from": 99200, "to": 120200, "rate": 24.5 },
+        { "from": 120200, "to": null, "rate": 25.0 }
+      ],
+      "source": "Art. 1 Texto Refundido de las disposiciones legales de la CA de Extremadura en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2018, de 10 de abril",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-extremadura.html"
+    },
+
+    "galicia": {
+      "brackets": [
+        { "from": 0, "to": 12985.35, "rate": 9.0 },
+        { "from": 12985.35, "to": 21068.6, "rate": 11.65 },
+        { "from": 21068.6, "to": 35200, "rate": 14.9 },
+        { "from": 35200, "to": 60000, "rate": 18.4 },
+        { "from": 60000, "to": null, "rate": 22.5 }
+      ],
+      "source": "Art. 4 Texto Refundido de las disposiciones legales de la CA de Galicia en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2011, de 28 de julio",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-galicia.html"
+    },
+
+    "madrid": {
+      "brackets": [
+        { "from": 0, "to": 13362.22, "rate": 8.5 },
+        { "from": 13362.22, "to": 19004.63, "rate": 10.7 },
+        { "from": 19004.63, "to": 35425.68, "rate": 12.8 },
+        { "from": 35425.68, "to": 57320.4, "rate": 17.4 },
+        { "from": 57320.4, "to": null, "rate": 20.5 }
+      ],
+      "source": "Art. 1 Texto Refundido de las disposiciones legales de la Comunidad de Madrid en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2010, de 21 de octubre",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-madrid.html"
+    },
+
+    "murcia": {
+      "brackets": [
+        { "from": 0, "to": 12450, "rate": 9.5 },
+        { "from": 12450, "to": 20200, "rate": 11.2 },
+        { "from": 20200, "to": 34000, "rate": 13.3 },
+        { "from": 34000, "to": 60000, "rate": 17.9 },
+        { "from": 60000, "to": null, "rate": 22.5 }
+      ],
+      "source": "Art. 2 Texto refundido de las Disposiciones Legales vigentes en la Region de Murcia en materia de Tributos Cedidos, aprobado por Decreto Legislativo 1/2010, de 5 de noviembre",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-region-murcia.html"
+    },
+
+    "la_rioja": {
+      "brackets": [
+        { "from": 0, "to": 12450, "rate": 8.0 },
+        { "from": 12450, "to": 20200, "rate": 10.6 },
+        { "from": 20200, "to": 35200, "rate": 13.6 },
+        { "from": 35200, "to": 40000, "rate": 17.8 },
+        { "from": 40000, "to": 50000, "rate": 18.3 },
+        { "from": 50000, "to": 60000, "rate": 19.0 },
+        { "from": 60000, "to": 120000, "rate": 24.5 },
+        { "from": 120000, "to": null, "rate": 27.0 }
+      ],
+      "source": "Art. 31 Ley 10/2017, de 27 de octubre, por la que se consolidan las disposiciones legales de la CA de La Rioja en materia de impuestos propios y tributos cedidos. Modificada por Ley 13/2023, de 28 de diciembre",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-rioja.html"
+    },
+
+    "comunitat_valenciana": {
+      "brackets": [
+        { "from": 0, "to": 12000, "rate": 9.0 },
+        { "from": 12000, "to": 22000, "rate": 12.0 },
+        { "from": 22000, "to": 32000, "rate": 15.0 },
+        { "from": 32000, "to": 42000, "rate": 17.5 },
+        { "from": 42000, "to": 52000, "rate": 20.0 },
+        { "from": 52000, "to": 62000, "rate": 22.5 },
+        { "from": 62000, "to": 72000, "rate": 25.0 },
+        { "from": 72000, "to": 100000, "rate": 26.5 },
+        { "from": 100000, "to": 150000, "rate": 27.5 },
+        { "from": 150000, "to": 200000, "rate": 28.5 },
+        { "from": 200000, "to": null, "rate": 29.5 }
+      ],
+      "source": "Art. 2 Ley 13/1997, de 23 de diciembre, por la que se regula el tramo autonomico del IRPF",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunitat-valenciana.html"
+    },
+
+    "ceuta_y_melilla": {
+      "note": "Ceuta y Melilla no son CCAA sino Ciudades Autonomas. Aplican la escala del art. 65 LIRPF (identica a la estatal complementaria) via DA 32.a LIRPF. Adicionalmente, sus residentes tienen derecho a la deduccion del 60% de la cuota (art. 68.4 LIRPF).",
+      "brackets": [
+        { "from": 0, "to": 12450, "rate": 9.5 },
+        { "from": 12450, "to": 20200, "rate": 12.0 },
+        { "from": 20200, "to": 35200, "rate": 15.0 },
+        { "from": 35200, "to": 60000, "rate": 18.5 },
+        { "from": 60000, "to": null, "rate": 22.5 }
+      ],
+      "source": "DA 32.a Ley 35/2006 LIRPF (remite al art. 65 LIRPF)",
+      "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/especialidad-escala-autonomica-contribuyentes.html"
+    }
+  },
+
+  "regimen_foral": {
+    "note": "Navarra y Pais Vasco (Alava, Bizkaia, Gipuzkoa) tienen regimen foral propio. No aplican el IRPF estatal; tienen su propio impuesto (IRPF foral). La AEAT no incluye sus escalas en el Manual Practico. Para Navarra: Ley Foral 26/2016, de 28 de diciembre, del IRPF de Navarra. Para Pais Vasco: Norma Foral de cada Territorio Historico.",
+    "territories": ["navarra", "alava", "bizkaia", "gipuzkoa"]
+  }
+}

@@ -1,0 +1,1124 @@
+{
+  "year": 2025,
+  "verified_date": "2026-03-20",
+  "source": "AEAT Manual Practico Renta 2025, Parte 2 — Deducciones Autonomicas",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/guia-deducciones-autonomicas.html",
+  "ccaa": {
+    "andalucia": {
+      "name": "Andalucia",
+      "normativa_base": "Ley 5/2021, de 20 de octubre, de Tributos Cedidos de la Comunidad Autonoma de Andalucia",
+      "deductions": [
+        {
+          "id": "AND-01",
+          "name": "Por inversion en vivienda habitual protegida y por personas jovenes",
+          "amount_or_percentage": "6% de cantidades satisfechas",
+          "limit": "Base maxima 9040 EUR (normativa estatal vigente a 31/12/2012)",
+          "requirements": "Vivienda protegida O menor de 35 anos. Suma base liquidable general + ahorro <= 25000 EUR individual / 30000 EUR conjunta",
+          "source": "Ley 5/2021, arts. 9, 2 y DA 1a"
+        },
+        {
+          "id": "AND-02",
+          "name": "Por cantidades invertidas en el alquiler de la vivienda habitual",
+          "amount_or_percentage": "15% de cantidades satisfechas por alquiler",
+          "limit": "1200 EUR anuales (1500 EUR si discapacidad)",
+          "requirements": "Menor de 35 anos, mayor de 65 anos, o victima violencia domestica/terrorismo. Suma bases <= 25000 EUR individual / 30000 EUR conjunta. Identificar arrendador con NIF",
+          "source": "Ley 5/2021, arts. 10, 2 y DA 1a"
+        },
+        {
+          "id": "AND-03",
+          "name": "Por nacimiento, adopcion de hijos o acogimiento familiar de menores",
+          "amount_or_percentage": "200 EUR por hijo (400 EUR si municipio despoblado <3000 hab.). Partos multiples: 200 EUR adicional por hijo",
+          "limit": null,
+          "requirements": "Nacimiento/adopcion en el periodo impositivo. Acogimiento: convivencia minimo 90 dias. Si dos progenitores, se reparte a partes iguales. Municipios despoblados segun Resolucion 16/12/2024",
+          "source": "Ley 5/2021, art. 11"
+        },
+        {
+          "id": "AND-04",
+          "name": "Por adopcion de hijos en el ambito internacional",
+          "amount_or_percentage": "600 EUR por hijo adoptado",
+          "limit": null,
+          "requirements": "Adopcion internacional inscrita en Registro Civil. Suma bases <= 80000 EUR individual / 100000 EUR conjunta. Incompatible con deduccion AND-03 para mismos hijos",
+          "source": "Ley 5/2021, art. 12"
+        },
+        {
+          "id": "AND-05",
+          "name": "Por padre o madre de familia monoparental y ascendientes mayores de 75 anos",
+          "amount_or_percentage": "100 EUR por contribuyente monoparental + 100 EUR por ascendiente >75 anos conviviente",
+          "limit": null,
+          "requirements": "Familia monoparental en fecha de devengo. Suma bases <= 80000 EUR individual / 100000 EUR conjunta. Ascendientes deben dar derecho a minimo por ascendientes >75 anos",
+          "source": "Ley 5/2021, arts. 13, 4 y DT 2a"
+        },
+        {
+          "id": "AND-06",
+          "name": "Para familia numerosa",
+          "amount_or_percentage": "200 EUR categoria general / 400 EUR categoria especial",
+          "limit": null,
+          "requirements": "Titulo de familia numerosa en vigor a 31/12. Suma bases <= 25000 EUR individual / 30000 EUR conjunta. Incompatible con AND-03",
+          "source": "Ley 5/2021, arts. 14 y 5"
+        },
+        {
+          "id": "AND-07",
+          "name": "Por gastos educativos",
+          "amount_or_percentage": "15% de gastos de ensenanza escolar o extraescolar de idiomas o informatica",
+          "limit": "150 EUR anuales por descendiente",
+          "requirements": "Descendientes que den derecho a minimo por descendientes. Suma bases <= 80000 EUR individual / 100000 EUR conjunta. Justificacion mediante factura",
+          "source": "Ley 5/2021, arts. 15 y 60"
+        },
+        {
+          "id": "AND-08",
+          "name": "Para contribuyentes con discapacidad",
+          "amount_or_percentage": "150 EUR por contribuyente",
+          "limit": null,
+          "requirements": "Grado de discapacidad >= 33%. Suma bases <= 25000 EUR individual / 30000 EUR conjunta",
+          "source": "Ley 5/2021, arts. 16, 3 y DA 2a"
+        },
+        {
+          "id": "AND-09",
+          "name": "Para contribuyentes con conyuges o parejas de hecho con discapacidad",
+          "amount_or_percentage": "100 EUR por conyuge/pareja",
+          "limit": null,
+          "requirements": "Conyuge/pareja con discapacidad >= 65%. El conyuge/pareja no debe presentar declaracion individual. Suma bases <= 25000 EUR individual / 30000 EUR conjunta. Incompatible con AND-08 del conyuge",
+          "source": "Ley 5/2021, arts. 17, 3 y DA 2a"
+        },
+        {
+          "id": "AND-10",
+          "name": "Por asistencia a personas con discapacidad",
+          "amount_or_percentage": "Tipo 1: 100 EUR por persona con discapacidad (ascendientes/descendientes). Tipo 2: 20% cotizaciones SS empleada hogar, max 500 EUR",
+          "limit": "Tipo 1: sin limite especifico. Tipo 2: 500 EUR anuales",
+          "requirements": "Tipo 1: discapacitado da derecho a minimo. Bases <= 80000 EUR individual / 100000 EUR conjunta. Tipo 2: persona necesita ayuda tercera persona, alta como titular hogar en SS. Incompatible con AND-11 para misma empleada",
+          "source": "Ley 5/2021, arts. 18, 3 y DA 2a"
+        },
+        {
+          "id": "AND-11",
+          "name": "Por ayuda domestica",
+          "amount_or_percentage": "20% cotizaciones SS empleada hogar",
+          "limit": "500 EUR anuales",
+          "requirements": "Opcion A: ambos conyuges/pareja con rendimientos trabajo/actividad + hijos con derecho a minimo. Opcion B: titular/conyuge/pareja >= 75 anos. Empleada en Sistema Especial Hogar. Incompatible con AND-10 tipo 2 para misma empleada",
+          "source": "Ley 5/2021, arts. 19 y 4"
+        },
+        {
+          "id": "AND-12",
+          "name": "Por inversion en la adquisicion de acciones y participaciones sociales",
+          "amount_or_percentage": "20% cantidades invertidas (general) / 50% si entidad participada por universidades/centros investigacion",
+          "limit": "4000 EUR anuales (general) / 12000 EUR (universidades, limite independiente)",
+          "requirements": "Participacion con conyuge/parientes hasta 3er grado < 40% capital. Mantenimiento 3 anos. Sin funciones ejecutivas ni relacion laboral. Escritura publica. Entidad domiciliada en Andalucia, con actividad economica, al menos 1 empleado a tiempo completo",
+          "source": "Ley 5/2021, art. 20"
+        },
+        {
+          "id": "AND-13",
+          "name": "Por gastos de defensa juridica de la relacion laboral",
+          "amount_or_percentage": "Importe satisfecho",
+          "limit": "200 EUR (tributacion individual y conjunta)",
+          "requirements": "Gastos derivados de relacion laboral en procesos judiciales: despido, extincion contrato, reclamaciones de cantidad. Justificacion documental",
+          "source": "Ley 5/2021, arts. 21 y 60"
+        },
+        {
+          "id": "AND-14",
+          "name": "Por donativos con finalidad ecologica",
+          "amount_or_percentage": "10% de donativos dinerarios",
+          "limit": "150 EUR",
+          "requirements": "Donativos a entidades publicas andaluzas cuyo objeto exclusivo sea defensa medioambiental, o a entidades sin animo de lucro (Ley 49/2002) con mismo objeto inscritas en Andalucia. Certificado de la entidad donataria",
+          "source": "Ley 5/2021, art. 22"
+        },
+        {
+          "id": "AND-15",
+          "name": "Para fomentar el ejercicio fisico y la practica deportiva",
+          "amount_or_percentage": "15% de cuotas satisfechas",
+          "limit": "100 EUR por contribuyente",
+          "requirements": "Cuotas de gimnasios, centros deportivos, clubes, federaciones, secciones deportivas. Actividades de ejercicio fisico o practica deportiva. Para contribuyente, conyuge, pareja de hecho, y personas con derecho a minimo familiar. Justificacion documental",
+          "source": "Ley 5/2021, arts. 22 bis y 60"
+        },
+        {
+          "id": "AND-16",
+          "name": "Por gastos veterinarios de animales de compania o perros de asistencia",
+          "amount_or_percentage": "30% de gastos veterinarios elegibles",
+          "limit": "100 EUR por contribuyente",
+          "requirements": "Gastos desde 01/01/2025. Vacunaciones obligatorias, desparasitacion, esterilizacion. Animales de compania o perros de asistencia. Bases <= 80000 EUR individual / 100000 EUR conjunta. Factura de veterinario autorizado. Adquisiciones formalizadas desde 01/01/2025",
+          "source": "Ley 5/2021, art. 22 ter"
+        },
+        {
+          "id": "AND-17",
+          "name": "Para familias con enfermedad celiaca diagnosticada",
+          "amount_or_percentage": "100 EUR por miembro familiar con celiaquismo diagnosticado",
+          "limit": null,
+          "requirements": "Diagnostico mediante informe medico oficial (profesionales del SSPA/SNS o aseguradoras privadas). Contribuyente, conyuge/pareja, y personas con derecho a minimo familiar. Si varios contribuyentes, se prorratea a partes iguales",
+          "source": "Ley 5/2021, art. 22 quater"
+        }
+      ]
+    },
+    "aragon": {
+      "name": "Aragon",
+      "normativa_base": "Decreto Legislativo 1/2005, de 26 de septiembre, Texto Refundido de tributos cedidos de Aragon",
+      "deductions": [
+        {
+          "id": "ARA-01",
+          "name": "Por nacimiento o adopcion del tercer hijo o sucesivos",
+          "amount_or_percentage": "Regimen general: 500 EUR/hijo (600 EUR si bases reducidas). Regimen diferenciado (rural despoblado): 600 EUR/hijo (720 EUR si bases reducidas)",
+          "limit": null,
+          "requirements": "Tercer hijo o sucesivos nacido/adoptado en el periodo. Hijo convive con contribuyente a 31/12. Cantidades reducidas: bases liquidables - minimos personales/familiares <= 21000 EUR individual / 35000 EUR conjunta. Regimen diferenciado: nucleo rural con riesgo alto/extremo despoblacion (ISDT <100)",
+          "source": "DL 1/2005, arts. 110-2, 160-1, 160-2.1"
+        },
+        {
+          "id": "ARA-02",
+          "name": "Por nacimiento o adopcion de hijo con discapacidad >= 33%",
+          "amount_or_percentage": "200 EUR/hijo (general) / 240 EUR/hijo (regimen diferenciado rural)",
+          "limit": null,
+          "requirements": "Hijo nacido/adoptado con discapacidad >= 33% acreditada a 31/12. Compatible con ARA-01 y ARA-03. Incompatible con ARA-14 para mismo hijo",
+          "source": "DL 1/2005, arts. 110-3, 160-1, 160-2.2"
+        },
+        {
+          "id": "ARA-03",
+          "name": "Por adopcion internacional de ninos",
+          "amount_or_percentage": "600 EUR/hijo (general) / 720 EUR/hijo (regimen diferenciado rural)",
+          "limit": null,
+          "requirements": "Adopcion internacional constituida segun normativa. Deducible en periodo en que se dicta resolucion judicial. Regimen diferenciado: nucleo rural riesgo despoblacion (ISDT <100), residencia habitual 5 anos",
+          "source": "DL 1/2005, arts. 110-4, 160-1, 160-2.3"
+        },
+        {
+          "id": "ARA-04",
+          "name": "Por el cuidado de personas dependientes",
+          "amount_or_percentage": "150 EUR/persona (general) / 300 EUR/persona (regimen diferenciado rural)",
+          "limit": null,
+          "requirements": "Ascendientes >75 anos o ascendientes/descendientes con discapacidad >= 65%. Convivencia al menos la mitad del periodo impositivo. Rentas del dependiente < 8000 EUR anuales. Bases - minimos <= 21000 EUR individual / 35000 EUR conjunta",
+          "source": "DL 1/2005, arts. 110-5, 160-1, 160-2.4"
+        },
+        {
+          "id": "ARA-05",
+          "name": "Por donaciones con finalidad ecologica e investigacion y desarrollo cientifico tecnico",
+          "amount_or_percentage": "20% de donaciones dinerarias puras y simples",
+          "limit": "10% de la cuota integra autonomica (casilla 0546)",
+          "requirements": "Donatarios: C.A. Aragon/organismos publicos dependientes, o entidades sin fines lucrativos (Ley 49/2002) con objeto exclusivo defensa medioambiental o investigacion cientifico-tecnica, inscritas en Aragon",
+          "source": "DL 1/2005, art. 110-6"
+        },
+        {
+          "id": "ARA-06",
+          "name": "Por adquisicion de vivienda habitual por victimas del terrorismo",
+          "amount_or_percentage": "3% de cantidades satisfechas",
+          "limit": "Base y limites segun normativa estatal vigente a 31/12/2012",
+          "requirements": "Vivienda protegida nueva en Aragon. Condicion de victima de terrorismo, o conyuge/pareja/hijos convivientes",
+          "source": "DL 1/2005, art. 110-7"
+        },
+        {
+          "id": "ARA-07",
+          "name": "Por inversion en acciones de entidades que cotizan en el segmento de empresas en expansion del MAB",
+          "amount_or_percentage": "20% de cantidades invertidas",
+          "limit": "10000 EUR anuales",
+          "requirements": "Participacion < 10% capital. Mantenimiento minimo 2 anos. Entidad domiciliada en Aragon con actividad economica real. Acciones de nueva suscripcion. Incompatible con ARA-08 y ARA-16 para mismas inversiones",
+          "source": "DL 1/2005, art. 110-8"
+        },
+        {
+          "id": "ARA-08",
+          "name": "Por inversion en acciones o participaciones de entidades nuevas o de reciente creacion",
+          "amount_or_percentage": "20% de cantidades invertidas",
+          "limit": "4000 EUR anuales",
+          "requirements": "Entidad tipo SA, SL, SAL o SLL domiciliada en Aragon. Sin funciones ejecutivas ni relacion laboral. Mismos requisitos que art. 68.1 Ley IRPF. Incompatible con ARA-07 y ARA-16",
+          "source": "DL 1/2005, art. 110-9"
+        },
+        {
+          "id": "ARA-09",
+          "name": "Por adquisicion o rehabilitacion de vivienda habitual en nucleos rurales",
+          "amount_or_percentage": "5% cantidades satisfechas (general) / 7.5% (regimen diferenciado rural despoblado)",
+          "limit": null,
+          "requirements": "Menor de 36 anos. Primera vivienda. Municipio <3000 habitantes o nucleos rurales equivalentes. Bases - minimos <= 21000 EUR individual / 35000 EUR conjunta. Adquisicion/rehabilitacion desde 01/01/2012",
+          "source": "DL 1/2005, arts. 110-10, 160-1, 160-2.5"
+        },
+        {
+          "id": "ARA-10",
+          "name": "Por adquisicion de libros de texto y material escolar",
+          "amount_or_percentage": "100% de gastos elegibles (libros texto Primaria/ESO, material escolar, equipo informatico si curriculo digital)",
+          "limit": "Variable segun renta y tipo declaracion. Conjunta no numerosas: 100 EUR/hijo (hasta 12000), 50 EUR/hijo (12001-20000), 37.50 EUR/hijo (20001-25000). Individual no numerosas: 50 EUR/hijo (hasta 6500), 37.50 EUR/hijo (6501-10000), 25 EUR/hijo (10001-12500). Numerosas: 150 EUR/hijo conjunta, 75 EUR/hijo individual",
+          "requirements": "Descendientes con derecho a minimo. Reducir por becas/ayudas recibidas. Justificacion factura. Pago por tarjeta, transferencia o cheque. Limites renta: 12500 EUR individual / 25000 EUR conjunta (30000/40000 numerosas)",
+          "source": "DL 1/2005, arts. 110-11, 160-1, 160-2.6"
+        },
+        {
+          "id": "ARA-11",
+          "name": "Por arrendamiento de vivienda habitual vinculado a determinadas operaciones de dacion en pago",
+          "amount_or_percentage": "10% de cantidades satisfechas por alquiler",
+          "limit": "Base deduccion maxima 4800 EUR anuales",
+          "requirements": "Adjudicacion de vivienda que liquide totalmente la deuda hipotecaria. Contrato de arrendamiento con opcion de compra. Fianza depositada en organismo competente de Aragon. Bases <= 15000 EUR individual / 25000 EUR conjunta",
+          "source": "DL 1/2005, art. 110-12"
+        },
+        {
+          "id": "ARA-12",
+          "name": "Por arrendamiento de vivienda social (deduccion para arrendadores)",
+          "amount_or_percentage": "30% de la cuota integra autonomica correspondiente a rendimientos netos de capital inmobiliario",
+          "limit": null,
+          "requirements": "Poner viviendas a disposicion del Gobierno de Aragon o entidades gestoras del Plan de Vivienda Social de Aragon",
+          "source": "DL 1/2005, art. 110-13"
+        },
+        {
+          "id": "ARA-13",
+          "name": "Para mayores de 70 anos",
+          "amount_or_percentage": "75 EUR por contribuyente",
+          "limit": null,
+          "requirements": "Edad >= 70 anos. Rendimientos en la base general que no procedan exclusivamente de ganancias patrimoniales. Suma bases <= 23000 EUR individual / 35000 EUR conjunta",
+          "source": "DL 1/2005, art. 110-14"
+        },
+        {
+          "id": "ARA-14",
+          "name": "Por nacimiento o adopcion del primer y/o segundo hijo en municipios de menos de 10000 habitantes",
+          "amount_or_percentage": "Primer hijo: 100 EUR (200 EUR si rentas bajas). Segundo hijo: 150 EUR (300 EUR si rentas bajas)",
+          "limit": null,
+          "requirements": "Municipio aragones <10000 habitantes (ano actual y anterior). Hijo convive con contribuyente. Cantidades incrementadas si bases <= 23000 EUR individual / 35000 EUR conjunta. Incompatible con ARA-02 para mismo hijo",
+          "source": "DL 1/2005, art. 110-16"
+        },
+        {
+          "id": "ARA-15",
+          "name": "Por gastos de guarderia de hijos menores de 3 anos",
+          "amount_or_percentage": "15% de gastos elegibles",
+          "limit": "General: 250 EUR/hijo (125 EUR ano que cumple 3). Diferenciado rural: 300 EUR/hijo (150 EUR ano que cumple 3)",
+          "requirements": "Hijo con derecho a minimo. Centro autorizado por Educacion. Bases < 35000 EUR individual / 50000 EUR conjunta. Base ahorro < 4000 EUR. Pago tarjeta/transferencia/cheque",
+          "source": "DL 1/2005, arts. 110-17, 160-1, 160-2.7"
+        },
+        {
+          "id": "ARA-16",
+          "name": "Por inversion en entidades de la economia social",
+          "amount_or_percentage": "20% de cantidades invertidas",
+          "limit": "4000 EUR anuales",
+          "requirements": "Entidad de economia social (Ley 5/2011) domiciliada en Aragon. Participacion con familiares < 40% capital. Al menos 1 empleado a tiempo completo. Mantenimiento 5 anos. Escritura publica. Incompatible con ARA-07 y ARA-08",
+          "source": "DL 1/2005, art. 110-19"
+        },
+        {
+          "id": "ARA-17",
+          "name": "Por gastos de clases de apoyo o refuerzo",
+          "amount_or_percentage": "25% de gastos elegibles",
+          "limit": "Variable segun renta. Conjunta no numerosas: 200/100/80 EUR/hijo segun tramo. Individual: 100/80/50 EUR/hijo. Numerosas: 300 EUR/hijo. Renta maxima: 12500 EUR individual / 25000 EUR conjunta (30000/40000 numerosas)",
+          "requirements": "Clases de refuerzo en materias de Educacion Infantil, Basica Obligatoria o FP Basica. Impartidas por centros educativos o autonomos. Factura obligatoria. Pago tarjeta/transferencia/cheque",
+          "source": "DL 1/2005, art. 110-21"
+        },
+        {
+          "id": "ARA-18",
+          "name": "Por gastos de formacion para la autonomia y vida independiente de menores con discapacidad",
+          "amount_or_percentage": "25% de gastos elegibles",
+          "limit": "Variable segun renta (misma tabla que ARA-17). Numerosas: 300 EUR/hijo. Renta maxima: 12500 EUR individual / 25000 EUR conjunta (30000/40000 numerosas)",
+          "requirements": "Descendientes menores de 18 anos con discapacidad >= 65%. Actividades formativas de autonomia y vida independiente. Reducir por ayudas publicas. Factura obligatoria",
+          "source": "DL 1/2005, art. 110-22"
+        },
+        {
+          "id": "ARA-19",
+          "name": "Por residencia en determinados municipios (nucleos rurales con riesgo extremo de despoblacion)",
+          "amount_or_percentage": "600 EUR por contribuyente",
+          "limit": null,
+          "requirements": "Residencia habitual en nucleos rurales de Rango X (riesgo extremo despoblacion). Bases < 35000 EUR individual / 50000 EUR conjunta. Base ahorro < 4000 EUR. Residencia durante el ejercicio y 4 anos siguientes",
+          "source": "DL 1/2005, arts. 160-1 y 160-2.8"
+        }
+      ]
+    },
+    "asturias": {
+      "name": "Principado de Asturias",
+      "normativa_base": "Decreto Legislativo 2/2014, de 22 de octubre, Texto Refundido de tributos cedidos del Principado de Asturias",
+      "deductions": [
+        {
+          "id": "AST-01",
+          "name": "Por acogimiento no remunerado de mayores de 65 anos",
+          "amount_or_percentage": "500 EUR por persona acogida",
+          "limit": null,
+          "requirements": "Persona acogida >65 anos, convivencia >183 dias/ano. Sin relacion de parentesco hasta 3er grado. Sin subvenciones publicas. Documentacion de servicios sociales. Bases <= 26000 EUR individual / 37000 EUR conjunta",
+          "source": "DL 2/2014, art. 3"
+        },
+        {
+          "id": "AST-02",
+          "name": "Por adquisicion o adecuacion de vivienda habitual para contribuyentes con discapacidad",
+          "amount_or_percentage": "3% de cantidades satisfechas",
+          "limit": "Base maxima 15000 EUR anuales",
+          "requirements": "Discapacidad >= 65% (contribuyente, conyuge, ascendientes o descendientes convivientes). Obras de accesibilidad y comunicacion sensorial. Rentas familiares del discapacitado < 35000 EUR. Certificacion oficial de necesidad",
+          "source": "DL 2/2014, art. 4"
+        },
+        {
+          "id": "AST-03",
+          "name": "Por inversion en vivienda habitual que tenga la consideracion de protegida",
+          "amount_or_percentage": "100% de gastos efectivos incurridos",
+          "limit": "5000 EUR (ano adquisicion/rehabilitacion) / 1000 EUR (anos posteriores)",
+          "requirements": "Vivienda con calificacion de protegida. Justificacion documental (facturas). Cantidades no deducidas pueden trasladarse a 3 periodos siguientes",
+          "source": "DL 2/2014, art. 6"
+        },
+        {
+          "id": "AST-04",
+          "name": "Por arrendamiento de vivienda habitual",
+          "amount_or_percentage": "General: 10% (max 500 EUR). Colectivos especiales (jovenes <=35, familias numerosas, monoparentales, victimas violencia genero): 30% (max 1500 EUR). Zonas despoblamiento: 30% (max 1500 EUR)",
+          "limit": "500 EUR general / 1500 EUR colectivos especiales y zonas despoblamiento",
+          "requirements": "Vivienda habitual arrendada. Bases <= 35000 EUR individual / 45000 EUR conjunta",
+          "source": "DL 2/2014, art. 7"
+        },
+        {
+          "id": "AST-05",
+          "name": "Por adopcion internacional de menores",
+          "amount_or_percentage": "1500 EUR por menor adoptado",
+          "limit": null,
+          "requirements": "Adopcion internacional segun Ley 54/2007. Menor convive con contribuyente. Inscripcion en Registro Civil o resolucion judicial/administrativa",
+          "source": "DL 2/2014, art. 9"
+        },
+        {
+          "id": "AST-06",
+          "name": "Por partos multiples o dos o mas adopciones constituidas en la misma fecha",
+          "amount_or_percentage": "1000 EUR por hijo nacido/adoptado",
+          "limit": null,
+          "requirements": "Parto multiple o 2+ adopciones en misma fecha. Hijo convive con progenitor a 31/12. Si dos contribuyentes, se reparte a partes iguales",
+          "source": "DL 2/2014, art. 10"
+        },
+        {
+          "id": "AST-07",
+          "name": "Para familias numerosas",
+          "amount_or_percentage": "1000 EUR categoria general / 2000 EUR categoria especial",
+          "limit": null,
+          "requirements": "Titulo oficial de familia numerosa. Convivencia con miembros unidad familiar a 31/12. Bases <= 35000 EUR individual / 45000 EUR conjunta (familias 1-2 ascendientes y 2 hijos)",
+          "source": "DL 2/2014, art. 11"
+        },
+        {
+          "id": "AST-08",
+          "name": "Para familias monoparentales",
+          "amount_or_percentage": "500 EUR",
+          "limit": null,
+          "requirements": "Hijos menores convivientes con rentas < 8000 EUR/ano. Bases + pensiones compensatorias exentas <= 45000 EUR. Sin convivencia con persona no relacionada (excepto ascendientes). Convivencia minimo 183 dias",
+          "source": "DL 2/2014, art. 12"
+        },
+        {
+          "id": "AST-09",
+          "name": "Por acogimiento familiar de menores",
+          "amount_or_percentage": "500 EUR (>= 183 dias convivencia) / 250 EUR (90-182 dias convivencia)",
+          "limit": null,
+          "requirements": "Acogimiento familiar de urgencia, temporal o permanente. Excluido preadoptivo. Si varios contribuyentes, se prorratea a partes iguales",
+          "source": "DL 2/2014, art. 13"
+        },
+        {
+          "id": "AST-10",
+          "name": "Por certificacion de la gestion forestal sostenible",
+          "amount_or_percentage": "30% de cantidades invertidas en obtencion de la certificacion",
+          "limit": "1000 EUR por contribuyente",
+          "requirements": "Propietario de montes en Asturias. Haber obtenido certificacion de gestion forestal sostenible. Base deduccion excluye subvenciones recibidas",
+          "source": "DL 2/2014, art. 14"
+        },
+        {
+          "id": "AST-11",
+          "name": "Por gastos de descendientes en centros de 0 a 3 anos",
+          "amount_or_percentage": "General: 15% (max 500 EUR/hijo). Zonas despoblamiento: 30% (max 1000 EUR/hijo)",
+          "limit": "500 EUR/hijo general / 1000 EUR/hijo zonas despoblamiento",
+          "requirements": "Convivencia con menor. Hijos biologicos, adoptados o acogidos. General: bases <= 26000 EUR individual / 37000 EUR conjunta. Despoblamiento: bases <= 35000/45000 EUR. Reducir por ayudas Asturias. Incompatible con AST-20",
+          "source": "DL 2/2014, art. 14 bis"
+        },
+        {
+          "id": "AST-12",
+          "name": "Por adquisicion de libros de texto y material escolar",
+          "amount_or_percentage": "100% de gastos (Primaria y ESO)",
+          "limit": "Variable segun renta. Individual: 50/37.50/25 EUR/hijo. Conjunta: 100/75/50 EUR/hijo. Numerosas: 150 EUR conjunta / 75 EUR individual. Bases max: 26000 individual / 37000 conjunta",
+          "requirements": "Descendientes con derecho a minimo. Factura obligatoria. Reducir por becas/ayudas. Prorrateo si varios contribuyentes",
+          "source": "DL 2/2014, art. 14 ter"
+        },
+        {
+          "id": "AST-13",
+          "name": "Por nacimiento o adopcion del segundo y sucesivos hijos en municipios en riesgo de despoblacion",
+          "amount_or_percentage": "300 EUR por hijo",
+          "limit": null,
+          "requirements": "Segundo hijo y sucesivos. Convivencia a 31/12. Residencia habitual en municipios con riesgo de despoblacion (Decreto 83/2025). Bases <= 35000 EUR individual / 45000 EUR conjunta",
+          "source": "DL 2/2014, art. 14 quater"
+        },
+        {
+          "id": "AST-14",
+          "name": "Por establecimiento como autonomo en municipios en riesgo de despoblamiento",
+          "amount_or_percentage": "1000 EUR por contribuyente",
+          "limit": null,
+          "requirements": "Residencia habitual en municipio despoblado/crisis demografica. Inicio actividad por cuenta propia en Asturias durante el periodo. Mantenimiento actividad minimo 1 ano. Bases <= 35000 EUR individual / 45000 EUR conjunta. Excluidos autonomos colaboradores y socios de sociedades de capital",
+          "source": "DL 2/2014, art. 14 quinquies"
+        },
+        {
+          "id": "AST-15",
+          "name": "Por gastos de transporte publico para residentes en concejos en riesgo de despoblamiento",
+          "amount_or_percentage": "100% abono transporte (max 100 EUR contribuyente). 10% gastos transporte por dependiente estudiante (max 300 EUR/dependiente)",
+          "limit": "100 EUR contribuyente + 300 EUR/dependiente estudiante",
+          "requirements": "Residencia en municipio despoblado (Decreto 83/2025). Dependientes estudian fuera de su municipio (ESO, FP, universidad). Bases <= 35000 EUR individual / 45000 EUR conjunta. Factura obligatoria",
+          "source": "DL 2/2014, art. 14 sexies"
+        },
+        {
+          "id": "AST-16",
+          "name": "Por gastos de formacion de trabajadores en I+D y actividades cientificas o tecnicas",
+          "amount_or_percentage": "100% de gastos de formacion satisfechos",
+          "limit": "2000 EUR por contribuyente",
+          "requirements": "Formacion academica finalizada en los 3 anos anteriores. Residencia habitual en Asturias mantenida minimo 3 anos. Contrato laboral o alta en SS/mutualidad. Deduccion unica en ano de incorporacion al mercado laboral. Incompatible con AST-17",
+          "source": "DL 2/2014, art. 14 septies"
+        },
+        {
+          "id": "AST-17",
+          "name": "Por traslado del domicilio fiscal a Asturias por motivos laborales",
+          "amount_or_percentage": "15% de gastos de traslado",
+          "limit": "1000 EUR general / 2000 EUR trabajos altamente especializados (I+D, cientifico, tecnico)",
+          "requirements": "Sin residencia en Asturias en los 4 anos anteriores. Mantenimiento residencia minimo 3 anos tras traslado. Contrato laboral o alta SS. Gastos elegibles: viaje, mudanza, escolarizacion hijos, vivienda. Aplicable ano traslado + 3 siguientes. Incompatible con AST-16",
+          "source": "DL 2/2014, art. 14 octies"
+        },
+        {
+          "id": "AST-18",
+          "name": "Por adquisicion o rehabilitacion de vivienda habitual para determinados colectivos",
+          "amount_or_percentage": "Zonas despoblamiento: 5% base (10% si <=35 anos, numerosa o monoparental). Otros municipios (<=35 anos): 5%. Base maxima 10000 EUR",
+          "limit": "Base maxima 10000 EUR",
+          "requirements": "Zonas despoblamiento (Decreto 83/2025): domicilio fiscal >= 3 anos. Otros municipios: <=35 anos y valor vivienda <=250000 EUR. Bases <= 35000 EUR individual / 45000 EUR conjunta. Factura o justificacion documental",
+          "source": "DL 2/2014, art. 14 decies"
+        },
+        {
+          "id": "AST-19",
+          "name": "Por adquisicion de vehiculos electricos",
+          "amount_or_percentage": "15% del coste de adquisicion",
+          "limit": "Base maxima 50000 EUR por vehiculo",
+          "requirements": "Vehiculos nuevos electricos, hibridos enchufables o pila de combustible. Categorias M1, N1, L6e, L7e, L3e-L5e. Un vehiculo por contribuyente. No uso actividad economica. Base reducida por subvenciones publicas. Ejercicios 2024-2025",
+          "source": "DL 2/2014, art. 14 undecies"
+        },
+        {
+          "id": "AST-20",
+          "name": "Por cuidado de descendientes o adoptados hasta 25 anos de edad",
+          "amount_or_percentage": "600 EUR por hijo elegible",
+          "limit": null,
+          "requirements": "Descendiente con derecho a minimo por descendiente (art. 58 IRPF). Convivencia a fecha devengo. Hasta 25 anos (prorrateo ano que cumple 26). Bases <= 35000 EUR individual / 45000 EUR conjunta. Incompatible con AST-11",
+          "source": "DL 2/2014, art. 14 duodecies"
+        },
+        {
+          "id": "AST-21",
+          "name": "Por emancipacion de jovenes hasta 35 anos de edad",
+          "amount_or_percentage": "100% de gastos de emancipacion",
+          "limit": "1000 EUR por contribuyente",
+          "requirements": "Menor de 36 anos. Dejar de convivir con ascendientes y trasladarse a nueva vivienda habitual en Asturias (propiedad o alquiler). Perdida si regresa al hogar familiar en 3 anos. Bases <= 35000 EUR individual / 45000 EUR conjunta. Gastos elegibles: mobiliario, transporte, alquiler/compra vivienda",
+          "source": "DL 2/2014, art. 14 terdecies"
+        },
+        {
+          "id": "AST-22",
+          "name": "Por obtencion de ayudas y subvenciones otorgadas a enfermos de ELA",
+          "amount_or_percentage": "Resultado de aplicar tipos medios de gravamen al importe de la ayuda integrada en base imponible",
+          "limit": null,
+          "requirements": "Haber integrado la ayuda/subvencion del Principado de Asturias a enfermos de ELA en la base imponible general",
+          "source": "DL 2/2014, art. 14 quaterdecies"
+        },
+        {
+          "id": "AST-23",
+          "name": "Por gastos derivados del arrendamiento de viviendas (deduccion para arrendadores)",
+          "amount_or_percentage": "Gastos deducibles: reparacion/conservacion, formalizacion contrato, seguros, certificado energetico",
+          "limit": "500 EUR anuales (por contribuyente individual en tributacion conjunta)",
+          "requirements": "Arrendamiento de vivienda habitual del inquilino. Renta no supere valor superior del Sistema de Referencia (SERPAVI). Gastos deducibles solo meses de contrato vigente",
+          "source": "DL 2/2014, art. 14 quindecies"
+        },
+        {
+          "id": "AST-24",
+          "name": "Por gastos vitales de contribuyentes menores de 35 anos",
+          "amount_or_percentage": "Gastos de vivienda, suministros, educacion, transporte, tecnologia, deporte, cultura",
+          "limit": "Hasta 25 anos: 2000 EUR. 26-30 anos: 1500 EUR. 31-35 anos: 1000 EUR",
+          "requirements": "Menor de 36 anos. Edad determinada en fecha del gasto. Bases <= 28000 EUR anuales. Factura o justificacion documental. Tributacion conjunta: cada miembro aplica su limite",
+          "source": "DL 2/2014, art. 14 sexdecies"
+        },
+        {
+          "id": "AST-25",
+          "name": "Por descendientes en caso de fallecimiento de progenitor a consecuencia de accidente laboral",
+          "amount_or_percentage": "1000 EUR anuales por descendiente elegible",
+          "limit": null,
+          "requirements": "Fallecimiento del otro progenitor por accidente laboral. Descendiente con derecho a minimo por descendiente (art. 58 IRPF). Solo descendientes comunes con el fallecido. Aplicable desde 1 de enero del ejercicio",
+          "source": "DL 2/2014, art. 14 septendecies"
+        },
+        {
+          "id": "AST-26",
+          "name": "Por inversion en adquisicion de acciones y participaciones sociales de nuevas entidades o de reciente creacion",
+          "amount_or_percentage": "30% de cantidades invertidas",
+          "limit": "6000 EUR anuales (por persona en tributacion conjunta)",
+          "requirements": "Participacion con familiares < 40% capital. Mantenimiento 3 anos. Entidad domiciliada en Asturias, microempresa o pyme. Actividad economica real. Al menos 1 empleado a tiempo completo. Entidad nueva o ampliacion capital en entidad creada hace <3 anos",
+          "source": "DL 2/2014, art. 14 octodecies"
+        },
+        {
+          "id": "AST-27",
+          "name": "Por gastos derivados de enfermedad celiaca diagnosticada",
+          "amount_or_percentage": "100 EUR por miembro familiar afectado",
+          "limit": "100 EUR por persona. Prorrateo si varios contribuyentes",
+          "requirements": "Diagnostico por informe medico oficial (salud publica o aseguradora privada). Contribuyente, conyuge (conjunta), personas con derecho a minimo familiar. Bases <= 35000 EUR individual / 45000 EUR conjunta",
+          "source": "DL 2/2014, art. 14 nonadecies"
+        }
+      ]
+    },
+    "illes_balears": {
+      "name": "Illes Balears",
+      "normativa_base": "Decreto Legislativo 1/2014, de 6 de junio, Texto Refundido de tributos cedidos de la Comunidad Autonoma de les Illes Balears",
+      "deductions": [
+        {
+          "id": "BAL-01",
+          "name": "Por determinadas inversiones de mejora de la sostenibilidad de la vivienda habitual",
+          "amount_or_percentage": "50% de cantidades invertidas",
+          "limit": "Base maxima 10000 EUR anuales",
+          "requirements": "Vivienda en Illes Balears (propietario o inquilino). Mejora de calidad y sostenibilidad: energias renovables, ahorro agua, reutilizacion. Mejora minimo 1 nivel calificacion energetica. Certificados antes/despues (RD 390/2021). Bases <= 33000 EUR individual / 52800 EUR conjunta",
+          "source": "DL 1/2014, art. 3"
+        },
+        {
+          "id": "BAL-02",
+          "name": "Por arrendamiento de la vivienda habitual",
+          "amount_or_percentage": "15% (max 530 EUR) para <36 o >65 anos. 20% (max 650 EUR) para <30, discapacidad >=33%, numerosa, monoparental 2+ hijos, o autonomo >=183 dias",
+          "limit": "530 EUR (15%) / 650 EUR (20%)",
+          "requirements": "Contrato >= 1 ano, vivienda habitual ocupada. Sin otra propiedad a <70km durante >=50% del periodo. Bases <= 33000 EUR individual / 52800 EUR conjunta (numerosas/monoparentales: 39600/63360; especiales: 42900/68640)",
+          "source": "DL 1/2014, art. 3 bis"
+        },
+        {
+          "id": "BAL-03",
+          "name": "Por subvenciones y ayudas por declaracion de zona afectada gravemente por emergencia de proteccion civil",
+          "amount_or_percentage": "Resultado de aplicar tipo medio de gravamen al importe integrado en base imponible",
+          "limit": null,
+          "requirements": "Ayudas publicas de la CAIB integradas en base imponible general. Danos por emergencias declaradas como zona gravemente afectada por Consejo de Ministros (Ley 17/2015, art. 23)",
+          "source": "DL 1/2014, art. 3 ter"
+        },
+        {
+          "id": "BAL-04",
+          "name": "Por gastos de adquisicion de libros de texto",
+          "amount_or_percentage": "100% de gastos en libros de texto",
+          "limit": "220 EUR/hijo (general) / 350 EUR/hijo (colectivos: <30, discapacidad >=33%, numerosa, monoparental 2+ hijos, autonomo >=183 dias)",
+          "requirements": "Libros curriculo oficial (ESO, Bachillerato, FP). Descendientes con derecho a minimo. Factura obligatoria. Bases <= 33000 EUR individual / 52800 EUR conjunta (numerosas: 39600-42900 / 63360-68640)",
+          "source": "DL 1/2014, art. 4"
+        },
+        {
+          "id": "BAL-05",
+          "name": "Por gastos de aprendizaje extraescolar de idiomas extranjeros",
+          "amount_or_percentage": "15% de gastos",
+          "limit": "110 EUR por hijo",
+          "requirements": "Hijos en segundo ciclo infantil hasta FP. Clases extraescolares de idiomas extranjeros (academias, escuelas oficiales). Excluidos estudios en el extranjero y campamentos. Bases <= 33000 EUR individual / 52800 EUR conjunta",
+          "source": "DL 1/2014, art. 4 bis"
+        },
+        {
+          "id": "BAL-06",
+          "name": "Por cursar estudios de educacion superior fuera de la isla de residencia habitual",
+          "amount_or_percentage": "1800 EUR por descendiente",
+          "limit": "50% de la cuota integra autonomica (casilla 0546)",
+          "requirements": "Descendiente economicamente dependiente. Estudios fuera de la isla: universidad, ensenanzas artisticas superiores, FP superior, diseno, deporte. Minimo 1 curso completo o 30 creditos. Rentas descendiente < 8000 EUR. Bases <= 33000 EUR individual / 52800 EUR conjunta",
+          "source": "DL 1/2014, art. 4 ter"
+        },
+        {
+          "id": "BAL-07",
+          "name": "Por arrendamiento de bienes inmuebles destinados a vivienda - primas de seguros de credito",
+          "amount_or_percentage": "75% de primas de seguros de impago de alquiler",
+          "limit": "440 EUR anuales",
+          "requirements": "Contrato arrendamiento >= 1 ano mismo inquilino. Fianza depositada en IBAVI. Rendimientos declarados como capital inmobiliario. Bases <= 52800 EUR individual / 84480 EUR conjunta",
+          "source": "DL 1/2014, art. 4 quater.1"
+        },
+        {
+          "id": "BAL-08",
+          "name": "Por arrendamiento de bienes inmuebles destinados a vivienda - otros gastos",
+          "amount_or_percentage": "50% de gastos elegibles (seguro danos, reparacion/mantenimiento, comunidad, tributos, formalizacion, certificado energetico)",
+          "limit": "1500 EUR anuales (1800 EUR si arrendamiento a administracion publica)",
+          "requirements": "Vivienda en Illes Balears. Contrato >= 1 ano. Fianza en IBAVI. Rendimientos como capital inmobiliario. Vivienda no arrendada en 2 ejercicios anteriores. Renta max 15 EUR/m2/mes. Bases <= 52800 EUR individual / 84480 EUR conjunta. Aplicacion unica en primer ejercicio elegible",
+          "source": "DL 1/2014, art. 4 quater.2"
+        },
+        {
+          "id": "BAL-09",
+          "name": "Por arrendamiento de vivienda en Illes Balears derivado del traslado temporal por motivos laborales",
+          "amount_or_percentage": "15% de gastos de alquiler",
+          "limit": "440 EUR anuales",
+          "requirements": "Alquiler vivienda habitual por traslado temporal entre islas. Fianza en IBAVI. Arrendador identificado con NIF. Bases <= 33000 EUR individual / 52800 EUR conjunta. Duracion maxima 3 anos",
+          "source": "DL 1/2014, art. 4 quinquies"
+        },
+        {
+          "id": "BAL-10",
+          "name": "Para compensar gastos derivados de vivienda ocupada ilegalmente o suspension lanzamiento",
+          "amount_or_percentage": "40% de gastos elegibles (IBI, basuras, suministros, comunidad, mantenimiento, procedimientos judiciales)",
+          "limit": "500 EUR por declaracion",
+          "requirements": "Propietario de la vivienda. Vivienda (no local comercial). Gastos proporcionales al tiempo de ocupacion ilegal. Bases <= 33000 EUR individual / 52800 EUR conjunta. No aplicable si contribuyente fallecido antes de 25/07/2025",
+          "source": "DL 1/2014, art. 4 sexties"
+        },
+        {
+          "id": "BAL-11",
+          "name": "Por donaciones a entidades destinadas a investigacion, desarrollo tecnologico o innovacion",
+          "amount_or_percentage": "25% de donativos dinerarios",
+          "limit": "15% de la cuota integra autonomica",
+          "requirements": "Donatarios: Administracion CAIB, UIB, entidades sin fines lucrativos (Ley 49/2002) con objeto I+D+i inscritas en Registro, o entidades parcialmente exentas IS. Certificado de la entidad donataria",
+          "source": "DL 1/2014, art. 5"
+        },
+        {
+          "id": "BAL-12",
+          "name": "Por donaciones, cesiones de uso o comodato y convenios de colaboracion - mecenazgo cultural, cientifico y tecnologico",
+          "amount_or_percentage": "15% (limite 660 EUR) para donaciones generales. 25% (limite 1200 EUR) para donaciones a administracion CAIB/entes publicos para proyectos culturales propios",
+          "limit": "660 EUR (15%) / 1200 EUR (25%). Limite global unico",
+          "requirements": "Cesiones <1 ano: prorrateo por dias. Cesiones >1 ano: maximo 3 periodos impositivos. Bases <= 33000 EUR individual / 52800 EUR conjunta (para 15%). Sin umbral para 25%",
+          "source": "DL 1/2014, art. 5 bis"
+        },
+        {
+          "id": "BAL-13",
+          "name": "Por donaciones, cesiones de uso o comodato y convenios de colaboracion - mecenazgo deportivo",
+          "amount_or_percentage": "15% de donaciones, cesiones, comodato o convenios",
+          "limit": "660 EUR anuales (global todas actividades mecenazgo deportivo)",
+          "requirements": "Cumplimiento Ley 6/2015 de mecenazgo deportivo. Cesiones <1 ano: prorrateo. Cesiones >1 ano: max 3 periodos. Bases <= 33000 EUR individual / 52800 EUR conjunta",
+          "source": "DL 1/2014, art. 5 ter"
+        },
+        {
+          "id": "BAL-14",
+          "name": "Por donaciones a entidades que fomenten la lengua catalana",
+          "amount_or_percentage": "15% de donativos dinerarios",
+          "limit": "10% de la cuota integra autonomica",
+          "requirements": "Donatarios: Administracion CAIB, UIB, centros investigacion, entidades sin fines lucrativos con objeto fomento lengua catalana inscritas en Registro. Certificado entidad. Incompatible con BAL-12 para mismos importes",
+          "source": "DL 1/2014, art. 5 quater"
+        },
+        {
+          "id": "BAL-15",
+          "name": "Por donaciones a entidades del tercer sector",
+          "amount_or_percentage": "25% de donativos dinerarios",
+          "limit": "Base maxima 165 EUR anuales",
+          "requirements": "Entidades sin fines lucrativos (Ley 3/2018 de tercer sector accion social) inscritas en Registro de Familias y Asuntos Sociales. Certificado de donacion",
+          "source": "DL 1/2014, art. 5 quinquies"
+        },
+        {
+          "id": "BAL-16",
+          "name": "Para declarantes con discapacidad fisica, psiquica o sensorial o con descendientes con esta condicion",
+          "amount_or_percentage": "88 EUR (fisica/sensorial 33-64%) / 165 EUR (fisica/sensorial >=65%) / 165 EUR (psiquica >=33%)",
+          "limit": null,
+          "requirements": "Grado discapacidad reconocido. Bases <= 33000 EUR individual / 52800 EUR conjunta",
+          "source": "DL 1/2014, art. 6"
+        },
+        {
+          "id": "BAL-17",
+          "name": "Por gastos relativos a descendientes o acogidos menores de 6 anos por conciliacion",
+          "amount_or_percentage": "40% (max 660 EUR) general. 50% (max 900 EUR) colectivos especiales (<36, discapacidad >=33%, numerosa, monoparental, autonomo >=183 dias)",
+          "limit": "660 EUR general / 900 EUR colectivos especiales",
+          "requirements": "Hijos 0-6 anos. Gastos guarderia (0-3), custodia/comedor/extraescolares (3-6), servicio domestico cuidador. Rendimientos trabajo o actividad economica. Pago tarjeta/transferencia/cheque. Bases <= 33000 EUR individual / 52800 EUR conjunta (numerosas: 39600-42900 / 63360-68640). Incompatible con BAL-20",
+          "source": "DL 1/2014, art. 6 bis"
+        },
+        {
+          "id": "BAL-18",
+          "name": "Por nacimiento",
+          "amount_or_percentage": "1er hijo: 800 EUR / 2o: 1000 EUR / 3o: 1200 EUR / 4o+: 1400 EUR",
+          "limit": null,
+          "requirements": "Residencia fiscal en Illes Balears ano anterior. Hijo con derecho a minimo. Convivencia con contribuyente. Bases <= 52800 EUR individual / 84480 EUR conjunta (numerosas/monoparentales: 63360/101376). Superando limites: 50% deduccion. Incompatible con ayudas regionales nacimiento. Se aplica primera entre deducciones autonomicas",
+          "source": "DL 1/2014, art. 6 ter"
+        },
+        {
+          "id": "BAL-19",
+          "name": "Por adopcion",
+          "amount_or_percentage": "1er hijo: 800 EUR / 2o: 1000 EUR / 3o: 1200 EUR / 4o+: 1400 EUR",
+          "limit": null,
+          "requirements": "Adopcion inscrita en Registro Civil durante el ejercicio. Hijo con derecho a minimo. No aplicable adopcion de hijo del conyuge. Bases <= 33000 EUR individual / 52800 EUR conjunta (numerosas: 39600/63360). Incompatible con ayudas regionales adopcion. Se aplica primera entre deducciones autonomicas",
+          "source": "DL 1/2014, art. 6 quater"
+        },
+        {
+          "id": "BAL-20",
+          "name": "Por determinados gastos relativos a personas mayores de 65 anos o con discapacidad",
+          "amount_or_percentage": "40% de gastos elegibles",
+          "limit": "660 EUR por beneficiario",
+          "requirements": "Beneficiarios: >65 anos, <65 con discapacidad >=33%, familiares dependientes. Gastos: residencias, centros de dia, contratacion cuidador domestico. Pago tarjeta/transferencia/cheque. Cuidadores en SS. Bases <= 33000 EUR individual / 52800 EUR conjunta. Compatible con BAL-21. Incompatible con BAL-17",
+          "source": "DL 1/2014, art. 6 quinquies"
+        },
+        {
+          "id": "BAL-21",
+          "name": "Por gastos derivados de la esclerosis lateral amiotrofica (ELA)",
+          "amount_or_percentage": "100% de gastos elegibles",
+          "limit": "3500 EUR (limite conjunto para todos contribuyentes que deduzcan por misma persona)",
+          "requirements": "Contribuyente, descendientes o ascendientes con ELA. Descendientes/ascendientes con derecho a minimo (arts. 58-59). Excluidos primas seguro y gastos no relacionados con ELA. Factura obligatoria. Bases <= 52800 EUR individual / 84480 EUR conjunta",
+          "source": "DL 1/2014, art. 6 sexties"
+        },
+        {
+          "id": "BAL-22",
+          "name": "Por inversion en adquisicion de acciones o participaciones de nuevas entidades o de reciente creacion",
+          "amount_or_percentage": "30% general / 50% entidades vinculadas a investigacion/universidades",
+          "limit": "6000 EUR anuales (12000 EUR entidades investigacion)",
+          "requirements": "Participacion con familiares < 40% capital/votos. Entidad domiciliada en Illes Balears. No gestion patrimonio ni inmobiliaria. >= 1 empleado local a tiempo completo. Facturacion <= 2000000 EUR. Mantenimiento 4 anos. Escritura publica. Deduccion aplicable ano inversion + 2 siguientes",
+          "source": "DL 1/2014, art. 7"
+        },
+        {
+          "id": "BAL-23",
+          "name": "Por fomento del autoempleo",
+          "amount_or_percentage": "1000 EUR por contribuyente",
+          "limit": null,
+          "requirements": "Primera alta en Censo de Empresarios, Profesionales y Retenedores. Actividad principal en Illes Balears. Mantenimiento alta minimo 1 ano. Bases <= 33000 EUR individual / 52800 EUR conjunta",
+          "source": "DL 1/2014, art. 7 bis"
+        },
+        {
+          "id": "BAL-24",
+          "name": "Por ocupacion de plazas declaradas de dificil cobertura en Illes Balears",
+          "amount_or_percentage": "40% de gastos elegibles (vivienda, transporte interinsular)",
+          "limit": "Variable segun categoria e isla. Empleados generales: 2000/1000 EUR. Policia Nacional/Guardia Civil Mallorca: 1400/700 EUR. Policia/GC Formentera: 2600/1300 EUR. Segun tramo renta",
+          "requirements": "Percibir complemento de dificil o muy dificil cobertura durante todo o >50% del ejercicio. Gastos elegibles: adquisicion/alquiler vivienda, intereses hipoteca, transporte aereo/maritimo interinsular. Bases <= 52800 EUR individual / 84480 EUR conjunta. Prorrateo si destino en varias islas",
+          "source": "DL 1/2014, art. 7 ter"
+        }
+      ]
+    },
+    "canarias": {
+      "name": "Canarias",
+      "normativa_base": "Decreto Legislativo 1/2009, de 21 de abril, Texto Refundido de tributos cedidos de la Comunidad Autonoma de Canarias",
+      "deductions": [
+        {
+          "id": "CAN-01",
+          "name": "Por donativos con finalidad ecologica",
+          "amount_or_percentage": "10% de donativos dinerarios puros y simples",
+          "limit": "Menor de 150 EUR o 10% cuota integra autonomica (casilla 0546)",
+          "requirements": "Donatarios: entidades publicas canarias con objeto defensa medioambiental, o entidades sin fines lucrativos (Ley 49/2002) con objeto exclusivo proteccion medioambiental inscritas en Canarias",
+          "source": "DL 1/2009, art. 3"
+        },
+        {
+          "id": "CAN-02",
+          "name": "Por donaciones para la rehabilitacion o conservacion del patrimonio historico de Canarias",
+          "amount_or_percentage": "20% de cantidades donadas",
+          "limit": "Menor de 150 EUR o 10% cuota integra autonomica",
+          "requirements": "Bienes inscritos en Registro Canario de Bienes de Interes Cultural o inventariados (Ley Patrimonio Historico 1999). Entidades beneficiarias: administraciones publicas, instituciones religiosas, fundaciones/asociaciones (Ley 49/2002)",
+          "source": "DL 1/2009, art. 4"
+        },
+        {
+          "id": "CAN-03",
+          "name": "Por donaciones con fines culturales, deportivos, de investigacion o docencia",
+          "amount_or_percentage": "15% de donativos dinerarios",
+          "limit": "Topes por categoria: 50000 EUR (administracion publica, universidades), 3000 EUR (empresas culturales/investigacion). Limite global: 5% cuota integra autonomica",
+          "requirements": "Donativos monetarios a administracion publica, universidades, empresas culturales (cine, artes, musica, editorial), empresas investigacion, centros docencia. Empresas privadas: activos < 300000 EUR",
+          "source": "DL 1/2009, art. 4 bis"
+        },
+        {
+          "id": "CAN-04",
+          "name": "Por donaciones a entidades sin animo de lucro",
+          "amount_or_percentage": "Hasta 150 EUR: 20%. Exceso sobre 150 EUR: 15% (17.5% si donacion recurrente a misma entidad 2 anos previos)",
+          "limit": "Base deduccion <= 10% base liquidable",
+          "requirements": "Entidades acogidas a Ley 49/2002. No acumulable con otras deducciones autonomicas por donaciones ecologicas o culturales/deportivas a mismas entidades",
+          "source": "DL 1/2009, art. 4 ter"
+        },
+        {
+          "id": "CAN-05",
+          "name": "Por cantidades destinadas a restauracion, rehabilitacion o reparacion de bienes inmuebles de interes cultural",
+          "amount_or_percentage": "10% de cantidades dedicadas a obras elegibles",
+          "limit": "10% cuota integra autonomica. Limite conjunto con inversion vivienda, rehabilitacion energetica y accesibilidad discapacidad: 15% cuota integra autonomica",
+          "requirements": "Inmueble inscrito en Registro Canario de Bienes de Interes Cultural. Obras autorizadas por autoridades competentes. Inmueble en territorio canario. Base reducida por subvenciones publicas exentas",
+          "source": "DL 1/2009, arts. 6 y 14 quater"
+        },
+        {
+          "id": "CAN-06",
+          "name": "Por gastos de estudios de educacion superior",
+          "amount_or_percentage": "1800 EUR (estudios fuera de la isla, sin alternativa publica) / 1920 EUR (si base < 37062 EUR) / 900 EUR (cambio residencia en misma isla)",
+          "limit": "40% de la cuota integra autonomica",
+          "requirements": "Descendientes solteros <25 anos. Estudios superiores (Ley 2/2006). Curso completo o minimo 30 creditos. Rentas descendiente <= 8000 EUR. Bases <= 46455 EUR individual / 61770 EUR conjunta",
+          "source": "DL 1/2009, art. 7"
+        },
+        {
+          "id": "CAN-07",
+          "name": "Por gastos de estudios no superiores",
+          "amount_or_percentage": "100% de gastos (libros, material, transporte, uniformes, comedor)",
+          "limit": "133 EUR primer hijo + 66 EUR por cada hijo adicional",
+          "requirements": "Hijos en educacion infantil, primaria/secundaria o bachillerato. Hijos biologicos, adoptados o tutelados/acogidos. Factura obligatoria. Bases <= 46455 EUR individual / 61770 EUR conjunta. Reducir por ayudas publicas exentas",
+          "source": "DL 1/2009, art. 7 bis"
+        },
+        {
+          "id": "CAN-08",
+          "name": "Por trasladar la residencia habitual a otra isla del archipielago por motivos laborales",
+          "amount_or_percentage": "300 EUR por ejercicio fiscal (ano traslado + siguiente)",
+          "limit": "No puede exceder cuota autonomica correspondiente a rendimientos trabajo y actividades economicas",
+          "requirements": "Traslado entre islas por empleo o actividad economica. Permanencia en isla destino: ano traslado + 3 anos siguientes. Bases <= 46455 EUR individual / 61770 EUR conjunta",
+          "source": "DL 1/2009, art. 8"
+        },
+        {
+          "id": "CAN-09",
+          "name": "Por inversion en adquisicion de acciones y participaciones sociales de nuevas entidades o de reciente creacion",
+          "amount_or_percentage": "20% (general, max 4000 EUR) / 30% (universidades/centros investigacion o cooperativas laborales, max 6000 EUR)",
+          "limit": "4000 EUR general / 6000 EUR universidades-cooperativas",
+          "requirements": "Participacion con familiares < 40% capital. Sin funciones ejecutivas ni relacion laboral. Mantenimiento 3 anos. Entidad domiciliada en Canarias con actividad economica. Minimo 1 empleado tiempo completo (nueva entidad) o incremento plantilla (ampliacion)",
+          "source": "DL 1/2009, art. 9"
+        },
+        {
+          "id": "CAN-10",
+          "name": "Por nacimiento o adopcion de hijos",
+          "amount_or_percentage": "1o-2o hijo: 265 EUR / 3o: 530 EUR / 4o: 796 EUR / 5o+: 928 EUR. Hijos discapacidad >=65%: 600 EUR adicional (1o-2o) / 1100 EUR adicional (3o+)",
+          "limit": null,
+          "requirements": "Hijo nacido/adoptado conviviendo con contribuyente. Bases <= 46455 EUR individual / 61770 EUR conjunta. Discapacidad fisica, psiquica o sensorial >=65%. Compatible con deduccion familia numerosa",
+          "source": "DL 1/2009, art. 10"
+        },
+        {
+          "id": "CAN-11",
+          "name": "Para contribuyentes con discapacidad y mayores de 65 anos",
+          "amount_or_percentage": "400 EUR (discapacidad >=33%) + 160 EUR (>65 anos). Ambas cantidades compatibles y acumulables",
+          "limit": null,
+          "requirements": "Circunstancias personales en fecha de devengo. Bases <= 46455 EUR individual / 61770 EUR conjunta",
+          "source": "DL 1/2009, art. 11"
+        },
+        {
+          "id": "CAN-12",
+          "name": "Por acogimiento de menores",
+          "amount_or_percentage": "330 EUR por menor acogido",
+          "limit": null,
+          "requirements": "Acogimiento familiar de urgencia, temporal o permanente. Convivencia durante todo el ano (prorrateo por dias si menor). No aplica si adopcion en el periodo. Si varios contribuyentes, prorrateo a partes iguales",
+          "source": "DL 1/2009, art. 11 bis"
+        },
+        {
+          "id": "CAN-13",
+          "name": "Para familias monoparentales",
+          "amount_or_percentage": "133 EUR",
+          "limit": null,
+          "requirements": "Padre/madre soltero/a con hijos dependientes. Rentas dependientes < 8000 EUR anuales. Sin convivencia con persona no vinculada (excepto ascendientes). Convivencia minimo 183 dias. Bases <= 46455 EUR individual / 61770 EUR conjunta",
+          "source": "DL 1/2009, art. 11 ter"
+        },
+        {
+          "id": "CAN-14",
+          "name": "Por gastos de custodia en guarderias",
+          "amount_or_percentage": "18% de cantidades satisfechas",
+          "limit": "530 EUR anuales por menor <3 anos",
+          "requirements": "Descendientes <3 anos conviviendo con contribuyente. Guarderia autorizada. Factura segun RD 1619/2012. Bases <= 46455 EUR individual / 61770 EUR conjunta. Reducir por ayudas publicas exentas. Declarar NIF guarderia",
+          "source": "DL 1/2009, art. 12"
+        },
+        {
+          "id": "CAN-15",
+          "name": "Para familia numerosa",
+          "amount_or_percentage": "General: 597 EUR / Especial: 796 EUR. Con dependiente discapacidad >=65%: General 1326 EUR / Especial 1459 EUR",
+          "limit": null,
+          "requirements": "Titulo oficial familia numerosa a fecha devengo. Convivencia con miembros de la unidad familiar. Clasificacion segun Ley 40/2003. Compatible con CAN-10",
+          "source": "DL 1/2009, art. 13"
+        },
+        {
+          "id": "CAN-16",
+          "name": "Por inversion en vivienda habitual",
+          "amount_or_percentage": "Base general <26035 EUR: 5% (5.5% si <40 anos). Base general 26035-46455 EUR: 3.5% (4% si <40 anos)",
+          "limit": "Base deduccion maxima 6000 EUR/contribuyente. Limite conjunto con otras deducciones vivienda: 15% cuota integra autonomica",
+          "requirements": "Adquisicion, construccion, rehabilitacion o ampliacion vivienda habitual. Construccion: completada en 4 anos. Base reducida por ayudas publicas exentas. Excepcion erupcion volcanica La Palma",
+          "source": "DL 1/2009, arts. 14 y 14 quater"
+        },
+        {
+          "id": "CAN-17",
+          "name": "Por obras de rehabilitacion energetica de la vivienda habitual",
+          "amount_or_percentage": "12% de cantidades satisfechas",
+          "limit": "Base maxima 7000 EUR/contribuyente. 10% cuota integra autonomica. Limite conjunto vivienda: 15% cuota integra autonomica",
+          "requirements": "Propietario de vivienda habitual. Mejora eficiencia energetica, rendimiento termico, energias renovables, ahorro agua. Certificacion energetica (RD 390/2021). Pago tarjeta/transferencia/cheque. Factura obligatoria. Excluidos garajes, jardines, piscinas, muebles",
+          "source": "DL 1/2009, arts. 14 bis y 14 quater"
+        },
+        {
+          "id": "CAN-18",
+          "name": "Por obras de adecuacion de vivienda habitual para personas con discapacidad",
+          "amount_or_percentage": "14% de gastos (18% si beneficiario tambien >65 anos)",
+          "limit": "Base maxima 15000 EUR/contribuyente. Limite conjunto vivienda: 15% cuota integra autonomica",
+          "requirements": "Discapacidad >=65% (contribuyente o familiar conviviente). Obras estrictamente necesarias para accesibilidad y comunicacion sensorial, certificadas por organismo competente. Rentas familiares del discapacitado < 35735 EUR. Base reducida por subvenciones publicas",
+          "source": "DL 1/2009, arts. 14 ter y 14 quater"
+        },
+        {
+          "id": "CAN-19",
+          "name": "Por alquiler de vivienda habitual",
+          "amount_or_percentage": "24% de cantidades satisfechas",
+          "limit": "740 EUR (general) / 760 EUR (<40 o >=75 anos)",
+          "requirements": "Alquiler >10% bases conjuntas. Contrato >= 1 ano vivienda habitual. Contribuyente es firmante del contrato. Declarar NIF arrendador, referencia catastral. Bases <= 46455 EUR individual / 61770 EUR conjunta. Reducir por ayudas publicas",
+          "source": "DL 1/2009, art. 15"
+        },
+        {
+          "id": "CAN-20",
+          "name": "Por arrendamiento de vivienda habitual vinculado a operaciones de dacion en pago",
+          "amount_or_percentage": "25% de cantidades satisfechas por alquiler",
+          "limit": "1200 EUR anuales",
+          "requirements": "Transferencia vivienda a entidad financiera por impago hipoteca. Contrato arrendamiento con opcion compra. Bases <= 46455 EUR individual / 61770 EUR conjunta. Reducir por ayudas publicas",
+          "source": "DL 1/2009, art. 15 bis"
+        },
+        {
+          "id": "CAN-21",
+          "name": "Por gastos derivados de adecuacion de inmueble destinado a arrendamiento (deduccion arrendador)",
+          "amount_or_percentage": "10% de gastos elegibles (reparacion, formalizacion contrato, seguros, certificado energetico)",
+          "limit": "150 EUR por inmueble arrendado",
+          "requirements": "Facturas segun RD 1619/2012. Reducir por ayudas publicas exentas. Incompatible con CAN-22 para mismos importes",
+          "source": "DL 1/2009, art. 15 ter"
+        },
+        {
+          "id": "CAN-22",
+          "name": "Por gastos de primas de seguros de credito para cubrir impagos de alquiler (deduccion arrendador)",
+          "amount_or_percentage": "75% de primas de seguro de credito",
+          "limit": "150 EUR anuales",
+          "requirements": "Contrato >= 1 ano. Fianza depositada en organismo canario. Rendimientos declarados como capital inmobiliario. Renta mensual <= 800 EUR. Al corriente obligaciones tributarias. Declarar NIF inquilino. Incompatible con CAN-21 para mismos importes",
+          "source": "DL 1/2009, art. 15 quater"
+        },
+        {
+          "id": "CAN-23",
+          "name": "Por puesta de viviendas en el mercado de arrendamiento de viviendas habituales",
+          "amount_or_percentage": "1000 EUR por vivienda",
+          "limit": "Maximo 5 viviendas por contribuyente (excluidos garajes y trasteros)",
+          "requirements": "Propietario o usufructuario. Contrato arrendamiento efectivo >= 3 anos. Inquilino no puede ser conyuge ni pariente hasta 3er grado. No actividad economica. Viviendas nuevas: arrendadas en 6 meses desde adquisicion. Deduccion unica por vivienda en primer periodo de arrendamiento",
+          "source": "DL 1/2009, art. 16"
+        },
+        {
+          "id": "CAN-24",
+          "name": "Para contribuyentes desempleados",
+          "amount_or_percentage": "120 EUR",
+          "limit": null,
+          "requirements": "Desempleo >6 meses del periodo impositivo. Percibir prestaciones por desempleo. Rendimientos trabajo entre 15876 y 22000 EUR. Base general + ahorro (excluyendo rendimientos trabajo) <= 1600 EUR",
+          "source": "DL 1/2009, art. 16 bis"
+        },
+        {
+          "id": "CAN-25",
+          "name": "Por gastos de enfermedad",
+          "amount_or_percentage": "12% de honorarios profesionales medicos (excluidos farmaceuticos) y equipos adaptacion deficiencias fisicas (gafas, lentillas)",
+          "limit": "Bases <= 46455 EUR individual: 500 EUR (+100 EUR si >65 o discapacidad >=65%). Bases > 46455 EUR: 150 EUR. Conjunta <= 61770: 700 EUR. Conjunta > 61770: 150 EUR/contribuyente",
+          "requirements": "Gastos medicos: prevencion, diagnostico, tratamiento, odontologia, embarazo, accidentes, discapacidad. Excluidos cirugia estetica, primas seguros, reembolsos. Factura obligatoria. Declarar NIF profesional. Reducir por ayudas publicas exentas",
+          "source": "DL 1/2009, art. 16 ter"
+        },
+        {
+          "id": "CAN-26",
+          "name": "Por familiares dependientes con discapacidad",
+          "amount_or_percentage": "a) 600 EUR por ascendiente/descendiente con discapacidad >=65%. b) 20% cotizaciones SS empleada hogar cuidadora (max 500 EUR)",
+          "limit": "a) Sin limite especifico. b) 500 EUR anuales",
+          "requirements": "Discapacidad >=65%. Bases <= 46455 EUR individual / 61770 EUR conjunta. Para b): declarar NIF empleada. Reducir por ayudas publicas. Ambas deducciones a) y b) compatibles para mismo dependiente",
+          "source": "DL 1/2009, art. 16 quater"
+        },
+        {
+          "id": "CAN-27",
+          "name": "Por cuotas satisfechas a la Seguridad Social por contratacion de empleadas del hogar",
+          "amount_or_percentage": "20% de cotizaciones SS por empleadas del hogar",
+          "limit": "500 EUR anuales (independientemente del numero de empleadas)",
+          "requirements": "Requisito A: derecho minimo por descendientes + rendimientos trabajo/actividad. Requisito B: >= 75 anos. Requisito C: >65 con discapacidad (>=65% fisica/sensorial/organica o >=33% cognitiva/psicosocial). Atribucion al empleador (o partes iguales si gananciales). Declarar NIF empleada. Reducir por ayudas publicas exentas",
+          "source": "DL 1/2009, art. 16 quinquies"
+        }
+      ]
+    },
+    "cantabria": {
+      "name": "Cantabria",
+      "normativa_base": "Decreto Legislativo 62/2008, de 19 de junio, Texto Refundido de la Ley de Medidas Fiscales en materia de tributos cedidos de Cantabria",
+      "deductions": [
+        {
+          "id": "CTB-01",
+          "name": "Por arrendamiento de vivienda habitual por jovenes, mayores de 65 anos y personas con discapacidad",
+          "amount_or_percentage": "10% de cantidades satisfechas por alquiler",
+          "limit": "300 EUR individual / 600 EUR conjunta",
+          "requirements": "Menor de 36 anos, o >= 65 anos, o discapacidad >= 65%. Alquiler > 10% de las rentas. Pago tarjeta/transferencia/cheque (no efectivo). Incompatible con CTB-11 para mismo inmueble",
+          "source": "DL 62/2008, art. 2.1"
+        },
+        {
+          "id": "CTB-02",
+          "name": "Por cuidado de familiares (descendientes <3, ascendientes >70, personas con discapacidad >=65%)",
+          "amount_or_percentage": "100 EUR por familiar. 200 EUR si hijo <3 con discapacidad >=65%",
+          "limit": null,
+          "requirements": "Hijos <3 anos, padres/abuelos >70 anos, o familiares con discapacidad >=65%. Convivencia >183 dias/ano (excepto hijos <3). Rentas familiares max 6000 EUR (discapacitados: 1.5x IPREM ~12600 EUR). Incompatible con CTB-10 para mismos hijos <3 (excepto discapacitados)",
+          "source": "DL 62/2008, art. 2.2"
+        },
+        {
+          "id": "CTB-03",
+          "name": "Por obras de mejora en viviendas",
+          "amount_or_percentage": "15% de cantidades satisfechas",
+          "limit": "1000 EUR individual / 1500 EUR conjunta. Adicional 500 EUR si discapacidad >=65%",
+          "requirements": "Vivienda en Cantabria. Obras de rehabilitacion, eficiencia energetica, accesibilidad, energias renovables, instalaciones. Pago tarjeta/transferencia/cheque (no efectivo). Excluidos inmuebles actividad economica, garajes, jardines, piscinas. Cantidades no deducidas: trasladables 2 ejercicios siguientes. Incompatible con deducciones estatales vivienda/eficiencia energetica",
+          "source": "DL 62/2008, art. 2.3"
+        },
+        {
+          "id": "CTB-04",
+          "name": "Por donativos a fundaciones, Fondo Cantabria Coopera o asociaciones que apoyen a personas con discapacidad",
+          "amount_or_percentage": "15% fundaciones / 12% Fondo Cantabria Coopera / 15% asociaciones discapacidad",
+          "limit": "10% de suma base liquidable general + ahorro (casillas 0500 + 0510). Limite conjunto con otras donaciones",
+          "requirements": "Fundaciones inscritas en Registro de Cantabria. Fondo Cantabria Coopera. Asociaciones Ley 49/2002 con objeto discapacidad. Incompatible con CTB-16 para mismos importes",
+          "source": "DL 62/2008, art. 2.4"
+        },
+        {
+          "id": "CTB-05",
+          "name": "Por acogimiento familiar de menores",
+          "amount_or_percentage": "240 EUR por menor acogido",
+          "limit": "1200 EUR maximo (5 menores simultaneos)",
+          "requirements": "Acogimiento familiar administrativo o judicial (urgencia, temporal, permanente). Sin relacion de parentesco ni adopcion durante el periodo. Si tributacion individual, prorrateo entre ambos acogedores",
+          "source": "DL 62/2008, art. 2.5"
+        },
+        {
+          "id": "CTB-06",
+          "name": "Por inversion en adquisicion de acciones y participaciones sociales de entidades nuevas o de reciente creacion",
+          "amount_or_percentage": "15% de cantidades invertidas",
+          "limit": "1000 EUR anuales",
+          "requirements": "SA, SL, SAL o SLL. PYME segun Recomendacion CE 2003. Participacion con familiares < 40% capital/votos. Mantenimiento 3 anos. Domicilio social en Cantabria. Actividad economica real. >= 1 empleado tiempo completo residente Cantabria. Sin funciones ejecutivas ni relacion laboral. Escritura publica. Incompatible con CTB-16 para mismas inversiones",
+          "source": "DL 62/2008, art. 2.6"
+        },
+        {
+          "id": "CTB-07",
+          "name": "Por gastos de enfermedad",
+          "amount_or_percentage": "10% de gastos y honorarios profesionales medicos",
+          "limit": "500 EUR individual / 700 EUR conjunta. Adicional 100 EUR si discapacidad >=65%",
+          "requirements": "Servicios medicos, odontologicos, embarazo/parto, accidentes, discapacidad. Solo gastos no cubiertos por SS, mutualidades o seguros. Bases - minimos personales/familiares < 22946 EUR individual / 31485 EUR conjunta. Pago tarjeta/transferencia/cheque (no efectivo). Factura obligatoria",
+          "source": "DL 62/2008, art. 2.7"
+        },
+        {
+          "id": "CTB-08",
+          "name": "Por gastos de guarderia",
+          "amount_or_percentage": "15% de gastos de guarderia",
+          "limit": "300 EUR anuales por hijo <3 anos",
+          "requirements": "Hijos biologicos o adoptados <3 anos. Factura obligatoria. Pago tarjeta/transferencia/cheque (no efectivo). Incompatible con CTB-12 (guarderia zonas despoblacion)",
+          "source": "DL 62/2008, art. 2.8"
+        },
+        {
+          "id": "CTB-09",
+          "name": "Para familias monoparentales",
+          "amount_or_percentage": "200 EUR",
+          "limit": null,
+          "requirements": "Padre/madre separado/a legalmente o no casado/a con hijos dependientes. Hijos menores, incapacitados judicialmente o bajo curatela representativa. Bases - minimos personales/familiares < 31485 EUR",
+          "source": "DL 62/2008, art. 2.9"
+        },
+        {
+          "id": "CTB-10",
+          "name": "Por nacimiento o adopcion de hijos",
+          "amount_or_percentage": "1400 EUR por nacimiento o adopcion",
+          "limit": null,
+          "requirements": "Hechos desde 01/01/2024. Aplicable 3 ejercicios consecutivos (ano del hecho + 2 siguientes). Tributacion conjunta: se divide a partes iguales. Compatible con deduccion maternidad estatal. Compatible con CTB-02 solo para hijos <3 con discapacidad >=65%. Incompatible con CTB-02 para demas hijos",
+          "source": "DL 62/2008, art. 2.10"
+        },
+        {
+          "id": "CTB-11",
+          "name": "Por arrendamiento de viviendas situadas en municipios en riesgo de despoblamiento",
+          "amount_or_percentage": "20% de cantidades satisfechas por alquiler",
+          "limit": "600 EUR individual / 1200 EUR conjunta",
+          "requirements": "Vivienda habitual en municipio con riesgo de despoblamiento (Orden PRE/1/2025). Pago tarjeta/transferencia/cheque (no efectivo). Incompatible con CTB-01 para mismo inmueble",
+          "source": "DL 62/2008, art. 2.11.1"
+        },
+        {
+          "id": "CTB-12",
+          "name": "Por gastos de guarderia en municipios en riesgo de despoblamiento",
+          "amount_or_percentage": "30% de gastos de guarderia",
+          "limit": "600 EUR anuales por hijo <3 anos",
+          "requirements": "Residencia habitual en municipio riesgo despoblamiento (Orden PRE/1/2025). Factura obligatoria. Pago tarjeta/transferencia/cheque (no efectivo). Incompatible con CTB-08",
+          "source": "DL 62/2008, art. 2.11.2"
+        },
+        {
+          "id": "CTB-13",
+          "name": "Por gastos de traslado de residencia a municipio en riesgo de despoblamiento por motivos laborales",
+          "amount_or_percentage": "500 EUR",
+          "limit": "No puede exceder cuota autonomica de rendimientos trabajo/actividad. Conjunta: max 1000 EUR con limite unico conjunto",
+          "requirements": "Traslado desde cualquier lugar de Espana a municipio despoblado de Cantabria (Orden PRE/1/2025). Por empleo (cuenta ajena o propia). Permanencia: ano traslado + 3 anos siguientes. Aplicable 2 ejercicios consecutivos",
+          "source": "DL 62/2008, art. 2.11.3"
+        },
+        {
+          "id": "CTB-14",
+          "name": "Por gastos de traslado por razon de estudios en municipios en riesgo de despoblamiento",
+          "amount_or_percentage": "200 EUR por hijo",
+          "limit": null,
+          "requirements": "Residencia en municipio riesgo despoblamiento (Orden PRE/1/2025). Hijos que cursan bachillerato, FP o universidad fuera del municipio. Menores de 25 anos. Rentas hijos < 8000 EUR anuales. Tributacion conjunta: prorrateo entre progenitores",
+          "source": "DL 62/2008, art. 2.11.4"
+        },
+        {
+          "id": "CTB-15",
+          "name": "Por residencia habitual en municipio en riesgo de despoblamiento",
+          "amount_or_percentage": "20% de la cuota integra autonomica",
+          "limit": "500 EUR maximo",
+          "requirements": "Menor de 40 anos a fecha de devengo. Residencia habitual durante todo el ano natural en municipio elegible (Orden PRE/1/2025). Tributacion conjunta: cada conyuge puede aplicar individualmente",
+          "source": "DL 62/2008, art. 2.11.5"
+        },
+        {
+          "id": "CTB-16",
+          "name": "Por inversiones o donaciones a entidades de la economia social establecidas en Cantabria",
+          "amount_or_percentage": "20% aportaciones como socio + 50% donaciones irrevocables actividades economicas + 25% donaciones irrevocables actividades promocion",
+          "limit": "3000 EUR anuales (limite combinado)",
+          "requirements": "Entidad economia social (Ley 5/2011) domiciliada en Cantabria. Participacion con familiares < 40% capital. >= 1 empleado con contrato laboral. Mantenimiento requisitos 3 anos. Participaciones: mantenimiento 5 anos. Escritura publica o certificado donacion. Pago tarjeta/transferencia/cheque (no efectivo). Incompatible con CTB-04 y CTB-06 para mismos importes",
+          "source": "DL 62/2008, art. 2.12"
+        },
+        {
+          "id": "CTB-17",
+          "name": "Por gastos de educacion",
+          "amount_or_percentage": "100% libros de texto educacion obligatoria + 15% gastos ensenanza idiomas extraescolares",
+          "limit": "200 EUR por unidad familiar (combinado)",
+          "requirements": "Factura obligatoria. Pago tarjeta/transferencia/cheque (no efectivo). Tributacion conjunta: prorrateo entre progenitores",
+          "source": "DL 62/2008, art. 2.13"
+        },
+        {
+          "id": "CTB-18",
+          "name": "Por ayuda domestica",
+          "amount_or_percentage": "20% de cotizaciones SS empleada hogar",
+          "limit": "300 EUR anuales",
+          "requirements": "Opcion A: pareja con hijos menores + ambos con rendimientos trabajo/actividad. Opcion B: familia monoparental con hijos menores + rendimientos. Opcion C: >= 75 anos. Empleada en Sistema Especial Hogar SS. Afiliacion en Cantabria. Si ambos conyuges son empleadores: deduccion por 1 sola empleada",
+          "source": "DL 62/2008, art. 2.14"
+        },
+        {
+          "id": "CTB-19",
+          "name": "Por inversiones de nuevos contribuyentes procedentes del extranjero",
+          "amount_or_percentage": "20% del valor de adquisicion (incluyendo gastos y tributos, excluyendo intereses)",
+          "limit": null,
+          "requirements": "Residente no espanol que traslada residencia a Cantabria. Sin residencia fiscal en Espana en 5 anos anteriores. Inversiones elegibles: inmuebles no residenciales, valores representativos prestamos, participaciones entidades. Mantenimiento 6 anos. Se aplica ano inversion + 5 siguientes. Incompatible con CTB-06 para mismas inversiones",
+          "source": "DL 62/2008, art. 2.15"
+        },
+        {
+          "id": "CTB-20",
+          "name": "Para compensar gastos de desplazamiento y permanencia de nuevos residentes en Cantabria",
+          "amount_or_percentage": "General: 10% gastos (max 1000 EUR/ano). Traslado laboral: 25% gastos (max 1500 EUR/ano)",
+          "limit": "1000 EUR (general) / 1500 EUR (laboral) por ano",
+          "requirements": "Traslado desde otra CCAA o Ceuta/Melilla. Sin residencia en Cantabria 4 anos anteriores. Permanencia minima 3 anos. Gastos elegibles: viaje/mudanza, escolarizacion hijos, alquiler/adquisicion vivienda + suministros. Aplicable ano traslado + 3 siguientes. Cantidades no deducidas: trasladables 4 anos adicionales",
+          "source": "DL 62/2008, art. 2.16"
+        },
+        {
+          "id": "CTB-21",
+          "name": "Por arrendamiento de viviendas vacias",
+          "amount_or_percentage": "500 EUR por vivienda",
+          "limit": "Maximo 3 viviendas por contribuyente",
+          "requirements": "Propietario/usufructuario de vivienda vacia >= 1 ano antes del contrato. Contrato arrendamiento >= 3 anos. Inquilino no puede ser conyuge/pariente hasta 3er grado. Renta mensual <= 1000 EUR (primer ano, sin suministros ni tasas). Prorrateo segun porcentaje propiedad. Deduccion en ejercicio de formalizacion del contrato",
+          "source": "DL 62/2008, art. 2.17"
+        }
+      ]
+    }
+  }
+}

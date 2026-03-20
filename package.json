@@ -1,0 +1,55 @@
+{
+  "name": "aeat-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Spanish AEAT tax reference data — IRPF brackets, VAT rates, fiscal calendar, tax form catalog, and more. 100% official sources (BOE, AEAT).",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "aeat-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && cp -r src/data dist/",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "aeat",
+    "spain",
+    "tax",
+    "irpf",
+    "iva",
+    "vat",
+    "fiscal",
+    "hacienda",
+    "autonomos"
+  ],
+  "author": "iMark Apps",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iMark21/aeat-mcp.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  }
+}

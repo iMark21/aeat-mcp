@@ -1,0 +1,218 @@
+{
+  "year": 2025,
+  "chapter": "11 (Monedas virtuales)",
+  "title": "Tributacion de criptomonedas y monedas virtuales",
+  "source": "AEAT Manual Practico Renta 2025, Capitulo 11 — Monedas virtuales",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c11-ganancias-perdidas-patrimoniales/monedas-virtuales.html",
+  "verified_date": "2026-03-20",
+
+  "definition": {
+    "concept": "Representacion digital de valor no emitida ni garantizada por un banco central o autoridad publica, no necesariamente asociada a una moneda legalmente establecida y que no posee estatuto juridico de moneda o dinero, pero que es aceptada como medio de cambio y puede ser transferida, almacenada o negociada electronicamente.",
+    "fiscal_nature": "Bienes inmateriales, computables por unidades o fracciones de unidades, que no tienen la naturaleza juridica de dinero de curso legal, pero que pueden ser intercambiados por otros bienes, servicios o dinero de curso legal. Habitualmente se adquieren o transmiten a cambio de moneda de curso legal.",
+    "each_type_separate_asset": true,
+    "each_type_separate_asset_reason": "Cada tipo de moneda virtual constituye un activo separado debido a protocolos distintos, ambito de aceptacion, liquidez y valoracion diferentes.",
+    "legal_references": [
+      "art. 1.5 Ley 10/2010, de 28 de abril (transpone Directiva UE 2018/843)",
+      "Reglamento (UE) 2023/1114 (MiCA) — define 'criptoactivo' de forma mas amplia",
+      "Reglamento (UE) 2023/1113 — amplia definicion, aplicable desde 30-12-2024"
+    ],
+    "source": "art. 1.5 Ley 10/2010"
+  },
+
+  "compraventa": {
+    "title": "Compra y venta de monedas virtuales: tributacion del inversor",
+    "description": "Las personas fisicas contribuyentes del IRPF pueden comprar y vender monedas virtuales y cuando dichas operaciones no se realicen en el ambito de una actividad economica pueden dar lugar a una ganancia o perdida patrimonial por la diferencia entre el valor de transmision y el valor de adquisicion.",
+    "classification": "Ganancia o perdida patrimonial",
+    "integration": "base_del_ahorro (renta del ahorro)",
+    "calculation": {
+      "formula": "Ganancia/Perdida = Valor de transmision - Valor de adquisicion",
+      "valor_transmision": "Importe en euros recibidos, o valor de mercado si fuera inferior. Menos gastos directos de la operacion (comisiones de exchange).",
+      "valor_adquisicion": "Importe en euros pagados, ajustado por el tipo de cambio en la fecha de adquisicion. Mas gastos inherentes a la adquisicion.",
+      "source": "art. 35 LIRPF"
+    },
+    "timing": "La ganancia o perdida se reconoce cuando el contribuyente entrega las monedas conforme al contrato de venta, con independencia del momento del cobro efectivo.",
+    "casillas": {
+      "identificacion_moneda_virtual": "1802",
+      "clave_tipo_operacion": "1803",
+      "valor_transmision": "1804",
+      "valor_adquisicion": "1806",
+      "ganancia_o_perdida": "1626"
+    },
+    "tax_rates": [
+      { "from": 0, "to": 6000, "rate": 19 },
+      { "from": 6000, "to": 50000, "rate": 21 },
+      { "from": 50000, "to": 200000, "rate": 23 },
+      { "from": 200000, "to": 300000, "rate": 27 },
+      { "from": 300000, "to": null, "rate": 30 }
+    ],
+    "tax_rates_source": "arts. 66.1, 76 LIRPF. Tramo >300K: 30% total desde 2025 (Ley 7/2024)",
+    "source": "arts. 33.1, 37.1.l), 46, 49 LIRPF"
+  },
+
+  "permuta": {
+    "title": "Permuta o intercambio entre criptomonedas",
+    "description": "El intercambio de una criptomoneda por otra distinta constituye una permuta (art. 1.538 Codigo Civil) y genera una ganancia o perdida patrimonial computable.",
+    "is_taxable_event": true,
+    "calculation": {
+      "formula": "Ganancia/Perdida = Mayor de (valor de mercado de la moneda entregada, valor de mercado de la moneda recibida) - Valor de adquisicion de la moneda entregada",
+      "new_acquisition_value": "El valor de adquisicion de la criptomoneda recibida es el valor de transmision determinado en el calculo anterior.",
+      "source": "art. 37.1.h) LIRPF"
+    },
+    "integration": "base_del_ahorro (renta del ahorro)",
+    "timing": "Se reconoce en el momento del intercambio.",
+    "important": "Cada permuta entre criptomonedas distintas es un hecho imponible independiente, aunque no se haya obtenido moneda de curso legal.",
+    "source": "art. 37.1.h) LIRPF, art. 1.538 CC"
+  },
+
+  "fifo_rule": {
+    "title": "Regla FIFO (First In, First Out)",
+    "description": "Cuando se transmiten monedas virtuales de un mismo tipo que hubieran sido adquiridas en diferentes momentos y a diferentes valores, se entiende que las transmitidas son las adquiridas en primer lugar.",
+    "application": "Se aplica de forma separada para cada tipo de moneda virtual (Bitcoin, Ethereum, etc.).",
+    "important": "No se puede elegir libremente que lotes vender. El criterio FIFO es obligatorio.",
+    "source": "art. 37.2 LIRPF (aplicacion analogica de la regla de valores homogeneos)"
+  },
+
+  "staking": {
+    "title": "Staking (deposito o custodia de monedas virtuales)",
+    "description": "Los rendimientos derivados del deposito o custodia de monedas virtuales (staking) se consideran rendimientos del capital mobiliario de la base imponible del ahorro.",
+    "classification": "Rendimientos del capital mobiliario",
+    "integration": "base_del_ahorro",
+    "casilla": "0027",
+    "tax_rates": "Mismos tramos que base del ahorro (19%-30%)",
+    "source": "Informador de Renta AEAT (consulta 9.2.2), art. 25 LIRPF por analogia"
+  },
+
+  "mineria": {
+    "title": "Mineria de criptomonedas",
+    "classification_rules": [
+      {
+        "scenario": "Con ordenacion de medios materiales y/o humanos",
+        "classification": "Rendimientos de actividades economicas",
+        "integration": "base_general",
+        "obligations": "Darse de alta en el IAE (epigrafe correspondiente), presentar pagos fraccionados (Modelo 130), IVA (si procede), etc.",
+        "source": "art. 27 LIRPF"
+      },
+      {
+        "scenario": "Sin ordenacion de medios (actividad pasiva/residual)",
+        "classification": "Ganancia patrimonial NO derivada de transmision de elementos patrimoniales",
+        "integration": "base_general",
+        "casilla": "0304 (otras ganancias patrimoniales)",
+        "source": "art. 33.1 LIRPF"
+      }
+    ],
+    "key_distinction": "El factor determinante es si el contribuyente ordena activamente medios materiales y/o humanos para la mineria, o si simplemente recibe recompensas de forma pasiva.",
+    "source": "Informador de Renta AEAT (consulta 9.2.2)"
+  },
+
+  "nfts": {
+    "title": "Tokens No Fungibles (NFTs)",
+    "aeat_specific_guidance": false,
+    "general_treatment": "AEAT no ha publicado guia especifica sobre NFTs en el Manual Practico Renta. El termino 'token' es mas amplio que criptomoneda ya que puede representar no solo un medio de pago sino tambien propiedad, una accion, un activo financiero, etc. En ausencia de regulacion especifica, la tributacion se determina segun la naturaleza economica de la operacion.",
+    "probable_treatment": {
+      "creation_and_sale": "Si se ordena medios materiales/humanos: actividad economica. Si es puntual: ganancia patrimonial.",
+      "purchase_and_resale": "Ganancia o perdida patrimonial por diferencia entre valor transmision y valor adquisicion (base del ahorro si hay transmision).",
+      "royalties_on_secondary_sales": "Rendimiento de capital mobiliario (cesion de derechos) si el smart contract asigna royalties al creador."
+    },
+    "disclaimer": "Este apartado refleja la aplicacion de principios generales de la LIRPF. NO existe guia especifica de AEAT sobre NFTs en el Manual Renta 2025. Consultas vinculantes de la DGT pueden abordar casos concretos.",
+    "source": "Principios generales LIRPF (arts. 25, 27, 33)"
+  },
+
+  "defi": {
+    "title": "Finanzas Descentralizadas (DeFi)",
+    "aeat_specific_guidance": false,
+    "general_notes": "AEAT no ha publicado guia especifica sobre operaciones DeFi (liquidity pools, yield farming, airdrops, lending/borrowing) en el Manual Practico Renta 2025.",
+    "probable_treatments": {
+      "liquidity_pools": "La aportacion de tokens a un pool puede generar una permuta gravable si se reciben LP tokens distintos. Las recompensas pueden ser rendimiento del capital mobiliario o ganancia patrimonial segun su naturaleza.",
+      "airdrops": "Ganancia patrimonial no derivada de transmision (base general), valorada al valor de mercado en el momento de recepcion.",
+      "lending": "Intereses recibidos: rendimiento del capital mobiliario (base del ahorro).",
+      "yield_farming": "Depende de la estructura: si implica intercambio de tokens, cada operacion es un hecho imponible."
+    },
+    "disclaimer": "Este apartado NO contiene reglas oficiales de AEAT. Refleja la aplicacion de principios generales tributarios a operaciones DeFi. Se recomienda consultar con la DGT para casos concretos.",
+    "source": "Principios generales LIRPF — NO hay guia especifica AEAT/DGT publicada"
+  },
+
+  "perdidas_no_recuperables": {
+    "title": "Perdidas por creditos impagados en monedas virtuales",
+    "description": "Las perdidas por creditos total o parcialmente incobrables de monedas virtuales se rigen por el art. 14.2.k) LIRPF.",
+    "triggering_events": [
+      "Aprobacion judicial de modificacion de deuda (concurso)",
+      "Conclusion de procedimiento concursal sin cobro",
+      "Transcurso de un ano en procedimiento de ejecucion sin satisfaccion del credito"
+    ],
+    "integration": "base_general (renta general, arts. 45-48 LIRPF)",
+    "source": "art. 14.2.k) LIRPF"
+  },
+
+  "anti_abuse_rules": {
+    "recompra_2_meses": {
+      "description": "Si se transmiten criptomonedas cotizadas en mercados regulados con perdida y se readquieren monedas homogeneas en los 2 meses anteriores o posteriores, la perdida NO computa. Se difiere hasta transmision definitiva.",
+      "window": "2 meses antes o despues",
+      "applies_to": "Criptoactivos admitidos a negociacion en mercados regulados (ej: ETF crypto si aplicable)",
+      "source": "art. 33.5.f) LIRPF"
+    },
+    "recompra_1_ano_no_cotizadas": {
+      "description": "Para criptomonedas no admitidas a negociacion en mercados regulados (la mayoria), la perdida NO computa si se readquieren monedas del mismo tipo en el ano anterior o posterior.",
+      "window": "1 ano antes o despues",
+      "applies_to": "La mayoria de criptomonedas (no cotizan en mercados regulados oficiales)",
+      "source": "art. 33.5.f) LIRPF"
+    },
+    "note": "La aplicacion concreta de las reglas anti-abuso a criptomonedas depende de si se consideran valores homogeneos admitidos a negociacion. La interpretacion mayoritaria es que la mayoria de criptomonedas NO cotizan en mercados regulados, por lo que la ventana seria de 1 ano."
+  },
+
+  "obligaciones_informativas": {
+    "modelo_721": {
+      "title": "Modelo 721 — Declaracion informativa sobre monedas virtuales situadas en el extranjero",
+      "who_must_file": "Residentes fiscales en Espana (personas fisicas, juridicas y establecimientos permanentes) que sean titulares, beneficiarios, autorizados o de alguna otra forma ostenten poder de disposicion sobre monedas virtuales custodiadas en el extranjero a 31 de diciembre.",
+      "threshold": {
+        "initial_filing": "Solo obligatorio cuando el valor conjunto de todos los tipos de monedas virtuales en el extranjero supere 50.000 EUR a 31 de diciembre.",
+        "subsequent_filings": "Obligatorio en anos posteriores solo cuando el saldo conjunto haya aumentado mas de 20.000 EUR respecto a la ultima declaracion presentada.",
+        "if_exceeded": "Si se supera el umbral de 50.000 EUR, se deben informar TODAS las monedas virtuales, no solo las que excedan el limite."
+      },
+      "what_is_declared": "Saldos de cada tipo de moneda virtual a 31 de diciembre, expresados en unidades de moneda virtual y su valoracion en euros.",
+      "foreign_definition": "Monedas virtuales custodiadas por personas o entidades que proporcionan servicios para salvaguardar claves criptograficas privadas en nombre de terceros.",
+      "self_custody_excluded": true,
+      "self_custody_note": "Las monedas virtuales en wallets de autocustodia (cold wallets, wallets donde el contribuyente controla las claves privadas) estan EXCLUIDAS de la obligacion de informar en el Modelo 721.",
+      "filing_deadline": "Del 1 de enero al 31 de marzo del ano siguiente al que se refiere la informacion.",
+      "legal_basis": "DA 18 Ley 58/2003 (LGT), Orden HFP/886/2023 de 26 de julio",
+      "source": "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/GI55.shtml"
+    },
+    "modelos_172_173": {
+      "title": "Modelos 172 y 173 — Obligaciones informativas para intermediarios",
+      "modelo_172": "Declaracion informativa sobre saldos en monedas virtuales — presentada por los intermediarios (exchanges, custodios) residentes en Espana.",
+      "modelo_173": "Declaracion informativa sobre operaciones con monedas virtuales — presentada por los intermediarios sobre las operaciones de adquisicion, transmision, permuta y transferencia de monedas virtuales.",
+      "who_presents": "Las personas y entidades residentes en Espana y establecimientos permanentes que proporcionen servicios de intermediacion o salvaguarda de claves criptograficas.",
+      "legal_basis": "Ley 11/2021 de 9 de julio (modifico la LGT), Orden HFP/887/2023 de 26 de julio",
+      "note": "Estos modelos son presentados por los intermediarios, NO por los inversores particulares directamente."
+    }
+  },
+
+  "impuesto_patrimonio": {
+    "title": "Monedas virtuales en el Impuesto sobre el Patrimonio",
+    "description": "Las monedas virtuales forman parte del patrimonio bruto del contribuyente y deben declararse en el Impuesto sobre el Patrimonio.",
+    "valuation": "Valor de mercado a 31 de diciembre del ejercicio.",
+    "source": "art. 24 LIP, Manual Practico Patrimonio 2025 — Capitulo 3, apartado 14"
+  },
+
+  "common_mistakes": [
+    {
+      "mistake": "No declarar permutas entre criptomonedas",
+      "explanation": "Cada intercambio cripto-a-cripto es un hecho imponible que genera ganancia o perdida patrimonial, aunque no se haya obtenido euros."
+    },
+    {
+      "mistake": "Ignorar la regla FIFO",
+      "explanation": "El contribuyente no puede elegir que lotes vender. Se aplica FIFO obligatoriamente para cada tipo de moneda."
+    },
+    {
+      "mistake": "No declarar recompensas de staking",
+      "explanation": "Las recompensas de staking son rendimientos del capital mobiliario sujetos a tributacion en el momento de su recepcion."
+    },
+    {
+      "mistake": "Confundir valor de adquisicion tras permuta",
+      "explanation": "El valor de adquisicion de la criptomoneda recibida en una permuta es el valor de transmision de la operacion, no el precio original pagado."
+    },
+    {
+      "mistake": "No presentar Modelo 721 con criptomonedas en exchanges extranjeros",
+      "explanation": "Si el valor conjunto supera 50.000 EUR a 31/12, es obligatorio informar aunque las ganancias no se hayan materializado."
+    }
+  ]
+}
