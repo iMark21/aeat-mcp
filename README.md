@@ -36,9 +36,17 @@ Si este proyecto te resulta útil, dale una estrella en GitHub. Ayuda a que más
 
 ## Instalación
 
+### Requisito
+
+- [Node.js](https://nodejs.org/) 18 o superior instalado
+
+No necesitas clonar ni compilar nada. `npx` descarga y ejecuta el servidor automáticamente.
+
 ### Claude Desktop
 
-Añade a tu `claude_desktop_config.json`:
+1. Abre Claude Desktop
+2. Ve a **Claude** (menú superior) > **Settings** > **Developer** > **Edit Config**
+3. Se abrirá un archivo JSON. Añade `"mcpServers"` para que quede así:
 
 ```json
 {
@@ -51,13 +59,50 @@ Añade a tu `claude_desktop_config.json`:
 }
 ```
 
+Si el archivo ya tenía contenido (por ejemplo `"preferences"`), añade `"mcpServers"` al mismo nivel, separado por coma:
+
+```json
+{
+  "preferences": {
+    "menuBarEnabled": false
+  },
+  "mcpServers": {
+    "aeat": {
+      "command": "npx",
+      "args": ["-y", "aeat-mcp"]
+    }
+  }
+}
+```
+
+4. Guarda el archivo y **reinicia Claude Desktop** (cierra y abre la app)
+5. En la ventana de chat verás un icono de herramientas (martillo) — al pulsarlo deberían aparecer las 10 herramientas del servidor AEAT
+
 ### Claude Code
 
 ```bash
 claude mcp add aeat-mcp -- npx -y aeat-mcp
 ```
 
-### VS Code / Cursor
+### Cursor
+
+1. Ve a **Settings** (Cmd+,) > busca **MCP**
+2. Añade un servidor con comando `npx` y argumentos `-y aeat-mcp`
+
+O añade a `.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "aeat": {
+      "command": "npx",
+      "args": ["-y", "aeat-mcp"]
+    }
+  }
+}
+```
+
+### VS Code (Copilot)
 
 Añade a `.vscode/mcp.json`:
 
@@ -72,7 +117,16 @@ Añade a `.vscode/mcp.json`:
 }
 ```
 
-Reinicia la aplicación después de añadir la configuración. No hace falta instalar nada más: `npx` descarga y ejecuta el servidor automáticamente.
+### Windsurf
+
+1. Ve a **Settings** > **MCP Servers** > **Add Server**
+2. Comando: `npx`, argumentos: `-y aeat-mcp`
+
+### ChatGPT y otros asistentes
+
+ChatGPT no soporta MCP de forma nativa por ahora. Alternativa:
+
+- Usa [MCP Bridge](https://github.com/nicobailon/mcp-chatgpt-bridge) para conectar servidores MCP con ChatGPT
 
 ---
 
