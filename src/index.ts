@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { createRequire } from "module";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { registerVatRatesTool } from "./tools/get_vat_rates.js";
@@ -13,9 +14,12 @@ import { registerSearchTaxRulesTool } from "./tools/search_tax_rules.js";
 import { registerSearchCasillasTool } from "./tools/search_casillas.js";
 import { registerCcaaDeductionsTool } from "./tools/get_ccaa_deductions.js";
 
+const require = createRequire(import.meta.url);
+const { version } = require("../package.json") as { version: string };
+
 const server = new McpServer({
   name: "aeat-mcp",
-  version: "0.2.0",
+  version,
   description:
     "Spanish AEAT tax reference data for AI agents. " +
     "IRPF brackets, VAT rates, economic indicators, fiscal calendar, and more. " +
