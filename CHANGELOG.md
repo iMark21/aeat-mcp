@@ -6,7 +6,7 @@ Versioning: [Semantic Versioning](https://semver.org/)
 
 ---
 
-## [Unreleased]
+## [1.1.0] — 2026-03-22
 
 ### Added
 - `get_ss_rates` tool — Social Security contribution rates (Regimen General) for 2025 and 2026. Returns worker-side rates (contingencias comunes, desempleo, FP, MEI), contribution bases (max/min), and solidarity surcharge tranches. Sources: Orden PJC/178/2025 (BOE-A-2025-3780) and RDL 3/2026 (BOE-A-2026-2548). 14 new tests.
