@@ -1,6 +1,6 @@
 {
   "name": "aeat-mcp",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "MCP server for Spanish AEAT tax reference data — IRPF brackets, VAT rates, fiscal calendar, tax form catalog, and more. 100% official sources (BOE, AEAT).",
   "type": "module",
   "main": "dist/index.js",
