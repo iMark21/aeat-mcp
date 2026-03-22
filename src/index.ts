@@ -18,9 +18,6 @@ import { registerSsRatesTool } from "./tools/get_ss_rates.js";
 const require = createRequire(import.meta.url);
 const { version } = require("../package.json") as { version: string };
 
-const require = createRequire(import.meta.url);
-const { version } = require("../package.json") as { version: string };
-
 const server = new McpServer({
   name: "aeat-mcp",
   version,
