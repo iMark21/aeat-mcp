@@ -1,0 +1,80 @@
+{
+  "year": 2025,
+  "regime": "general",
+  "verified_date": "2026-03-22",
+  "source": "Orden PJC/178/2025, de 25 de febrero (BOE-A-2025-3780)",
+  "note": "Cuotas a cargo del trabajador, Regimen General. Tipo total = sum de los conceptos individuales.",
+
+  "worker_rates": {
+    "contingencias_comunes": {
+      "rate": 4.70,
+      "source": "Art. 2, tipo total 28,30% — trabajador: 4,70%"
+    },
+    "desempleo": {
+      "indefinido": {
+        "rate": 1.55,
+        "source": "Art. 14 Orden PJC/178/2025"
+      },
+      "temporal": {
+        "rate": 1.60,
+        "source": "Art. 14 Orden PJC/178/2025 — contratos de duracion determinada"
+      }
+    },
+    "formacion_profesional": {
+      "rate": 0.10,
+      "source": "Art. 19 Orden PJC/178/2025"
+    },
+    "mei": {
+      "rate": 0.13,
+      "full_name": "Mecanismo de Equidad Intergeneracional",
+      "source": "Art. 127 bis LGSS. Art. 3 Orden PJC/178/2025 — trabajador: 0,13%"
+    },
+    "totals": {
+      "indefinido": 6.48,
+      "temporal": 6.53,
+      "note": "contingencias_comunes(4.70) + desempleo + fp(0.10) + mei(0.13)"
+    }
+  },
+
+  "contribution_bases": {
+    "general": {
+      "max_monthly": 4909.50,
+      "max_annual": 58914.00,
+      "note": "Base maxima mensual x 12. Orden PJC/178/2025, art. 4.",
+      "source": "Orden PJC/178/2025, art. 4"
+    },
+    "min_by_group": {
+      "group_1": 1929.00,
+      "group_2": 1599.60,
+      "group_3": 1391.70,
+      "groups_4_to_7": 1381.20,
+      "groups_8_to_11_daily": 46.04,
+      "source": "Orden PJC/178/2025, art. 4 — bases minimas mensuales"
+    }
+  },
+
+  "solidarity_surcharge": {
+    "description": "Cotizacion adicional de solidaridad sobre retribuciones que superen la base maxima (Ley 21/2021, DT 38a LGSS)",
+    "tranches": [
+      {
+        "from_monthly": 4909.51,
+        "to_monthly": 5400.45,
+        "worker_rate": 0.15,
+        "employer_rate": 0.92
+      },
+      {
+        "from_monthly": 5400.46,
+        "to_monthly": 7364.25,
+        "worker_rate": 0.17,
+        "employer_rate": 1.03
+      },
+      {
+        "from_monthly": 7364.26,
+        "to_monthly": null,
+        "worker_rate": 0.19,
+        "employer_rate": 1.15
+      }
+    ],
+    "source": "Orden PJC/178/2025, art. 5"
+  }
+}

@@ -352,3 +352,87 @@ describe("Source citation integrity", () => {
     expect(superred.source).toContain("RDL 4/2024");
   });
 });
+
+// ============================================
+// SS RATES DATA TESTS
+// ============================================
+describe("SS rates data 2025", () => {
+  const data = loadJson("ss/2025.json");
+
+  it("year is 2025", () => {
+    expect(data.year).toBe(2025);
+  });
+
+  it("contingencias comunes worker rate is 4.70%", () => {
+    expect(data.worker_rates.contingencias_comunes.rate).toBe(4.70);
+  });
+
+  it("MEI rate is 0.13% in 2025", () => {
+    expect(data.worker_rates.mei.rate).toBe(0.13);
+  });
+
+  it("desempleo indefinido is 1.55%", () => {
+    expect(data.worker_rates.desempleo.indefinido.rate).toBe(1.55);
+  });
+
+  it("desempleo temporal is 1.60%", () => {
+    expect(data.worker_rates.desempleo.temporal.rate).toBe(1.60);
+  });
+
+  it("formacion profesional is 0.10%", () => {
+    expect(data.worker_rates.formacion_profesional.rate).toBe(0.10);
+  });
+
+  it("total indefinido is 6.48%", () => {
+    expect(data.worker_rates.totals.indefinido).toBe(6.48);
+  });
+
+  it("total temporal is 6.53%", () => {
+    expect(data.worker_rates.totals.temporal).toBe(6.53);
+  });
+
+  it("base maxima annual is 58914 EUR (4909.50/mes x 12)", () => {
+    expect(data.contribution_bases.general.max_monthly).toBe(4909.50);
+    expect(data.contribution_bases.general.max_annual).toBe(58914.00);
+  });
+
+  it("source cites Orden PJC/178/2025", () => {
+    expect(data.source).toContain("PJC/178/2025");
+    expect(data.source).toContain("BOE-A-2025-3780");
+  });
+
+  it("solidarity surcharge has 3 tranches", () => {
+    expect(data.solidarity_surcharge.tranches).toHaveLength(3);
+  });
+});
+
+describe("SS rates data 2026", () => {
+  const data = loadJson("ss/2026.json");
+
+  it("year is 2026", () => {
+    expect(data.year).toBe(2026);
+  });
+
+  it("MEI rate is 0.15% in 2026 (increased from 0.13% by RDL 3/2026)", () => {
+    expect(data.worker_rates.mei.rate).toBe(0.15);
+    expect(data.worker_rates.mei.source).toContain("RDL 3/2026");
+  });
+
+  it("total indefinido is 6.50%", () => {
+    expect(data.worker_rates.totals.indefinido).toBe(6.50);
+  });
+
+  it("total temporal is 6.55%", () => {
+    expect(data.worker_rates.totals.temporal).toBe(6.55);
+  });
+
+  it("base maxima monthly is 5101.20 EUR (RDL 3/2026)", () => {
+    expect(data.contribution_bases.general.max_monthly).toBe(5101.20);
+    expect(data.contribution_bases.general.max_annual).toBe(61214.40);
+  });
+
+  it("source cites RDL 3/2026", () => {
+    expect(data.source).toContain("3/2026");
+    expect(data.source).toContain("BOE-A-2026-2548");
+  });
+});
