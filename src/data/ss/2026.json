@@ -1,0 +1,58 @@
+{
+  "year": 2026,
+  "regime": "general",
+  "verified_date": "2026-03-22",
+  "source": "Real Decreto-ley 3/2026, de 3 de febrero (BOE-A-2026-2548)",
+  "note": "Cuotas a cargo del trabajador, Regimen General. El RDL 3/2026 actualiza bases y sube MEI de 0,13% a 0,15%.",
+
+  "worker_rates": {
+    "contingencias_comunes": {
+      "rate": 4.70,
+      "source": "Art. 2 Orden cotizacion SS — tipo trabajador sin cambios respecto a 2025"
+    },
+    "desempleo": {
+      "indefinido": {
+        "rate": 1.55,
+        "source": "Orden cotizacion SS 2026 — sin cambios respecto a 2025"
+      },
+      "temporal": {
+        "rate": 1.60,
+        "source": "Orden cotizacion SS 2026 — contratos de duracion determinada"
+      }
+    },
+    "formacion_profesional": {
+      "rate": 0.10,
+      "source": "Orden cotizacion SS 2026"
+    },
+    "mei": {
+      "rate": 0.15,
+      "full_name": "Mecanismo de Equidad Intergeneracional",
+      "source": "RDL 3/2026, de 3 de febrero (BOE-A-2026-2548) — sube de 0,13% a 0,15%"
+    },
+    "totals": {
+      "indefinido": 6.50,
+      "temporal": 6.55,
+      "note": "contingencias_comunes(4.70) + desempleo + fp(0.10) + mei(0.15)"
+    }
+  },
+
+  "contribution_bases": {
+    "general": {
+      "max_monthly": 5101.20,
+      "max_annual": 61214.40,
+      "note": "Actualizada por RDL 3/2026 (revalorizacion pensiones). Base maxima mensual x 12.",
+      "source": "RDL 3/2026, de 3 de febrero (BOE-A-2026-2548)"
+    },
+    "min_by_group": {
+      "note": "Pendiente de publicacion Orden cotizacion 2026. Se estima actualizacion conforme al IPC.",
+      "group_1_estimated": 1929.00,
+      "source": "Estimado — Orden cotizacion 2026 pendiente de BOE a fecha 2026-03-22"
+    }
+  },
+
+  "solidarity_surcharge": {
+    "description": "Cotizacion adicional de solidaridad sobre retribuciones que superen la base maxima",
+    "note": "Tramos actualizados proporcionalmente a la nueva base maxima. Pendiente confirmacion Orden cotizacion 2026.",
+    "source": "DT 38a LGSS — RDL 3/2026"
+  }
+}

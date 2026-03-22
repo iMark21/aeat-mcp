@@ -13,6 +13,10 @@ import { registerTaxFormInfoTool } from "./tools/get_tax_form_info.js";
 import { registerSearchTaxRulesTool } from "./tools/search_tax_rules.js";
 import { registerSearchCasillasTool } from "./tools/search_casillas.js";
 import { registerCcaaDeductionsTool } from "./tools/get_ccaa_deductions.js";
+import { registerSsRatesTool } from "./tools/get_ss_rates.js";
+
+const require = createRequire(import.meta.url);
+const { version } = require("../package.json") as { version: string };
 
 const require = createRequire(import.meta.url);
 const { version } = require("../package.json") as { version: string };
@@ -38,6 +42,7 @@ registerTaxFormInfoTool(server);
 registerSearchTaxRulesTool(server);
 registerSearchCasillasTool(server);
 registerCcaaDeductionsTool(server);
+registerSsRatesTool(server);
 
 // Start server
 const transport = new StdioServerTransport();
