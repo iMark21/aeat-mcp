@@ -5,7 +5,7 @@
   "year": 2025,
   "source": "Manual Practico Renta 2025 — AEAT (sede.agenciatributaria.gob.es)",
   "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c02-irpf-cuestiones-generales/sujecion-irpf-aspectos-materiales/delimitacion-negativa-hecho-imponible-rentas-sujetas/rentas-exentas-articulo-7-ley-irpf.html",
-  "verified_date": "2026-03-20",
+  "verified_date": "2026-04-12",
   "legal_basis": {
     "primary": "art. 7 LIRPF (Ley 35/2006)",
     "regulation": "arts. 1-6 RIRPF (RD 439/2007)",
@@ -874,5 +874,22 @@
       "Para anualidades por alimentos: marcar como exentas para el hijo, pero aplicar escala separada para el pagador (art. 64 LIRPF)",
       "Los premios de loterias (DA 33) NO se integran en la base imponible — tratamiento separado"
     ]
+  },
+
+  "exenciones_especiales_2025": {
+    "description": "Exenciones introducidas por RDL 16/2025, de 23 de diciembre, aplicables al ejercicio 2025",
+    "dana_valencia": {
+      "name": "Exencion de ayudas por DANA Comunitat Valenciana",
+      "description": "Estan exentas las ayudas excepcionales por danos personales concedidas en el marco de la emergencia por DANA en la Comunitat Valenciana",
+      "effective_from": "29-10-2024",
+      "normativa_ayudas": "Decretos 172/2024 y 176/2024 del Consell de la Generalitat Valenciana",
+      "source": "RDL 16/2025, art. 20"
+    },
+    "incendios_forestales": {
+      "name": "Exencion de ayudas por incendios forestales",
+      "description": "Estan exentas las ayudas excepcionales por danos personales concedidas a personas afectadas por incendios forestales declarados como zona afectada gravemente por emergencia de proteccion civil",
+      "effective_from": "26-08-2025",
+      "source": "RDL 16/2025, art. 16"
+    }
   }
 }

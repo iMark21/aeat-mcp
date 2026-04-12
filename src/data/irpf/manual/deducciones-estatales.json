@@ -4,7 +4,7 @@
   "title": "Deducciones generales de la cuota",
   "source": "AEAT Manual Practico Renta 2025, Capitulo 16",
   "source_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/introduccion/deducciones-generales-autonomicas-aplicables.html",
-  "verified_date": "2026-03-20",
+  "verified_date": "2026-04-12",
 
   "general_rule": "La aplicacion de deducciones generales y autonomicas no puede dar lugar a cuota liquida negativa",
 
@@ -232,36 +232,36 @@
       "id": "eficiencia_energetica_20",
       "name": "Obras de reduccion demanda calefaccion/refrigeracion (20%)",
       "status": "active_temporal",
-      "description": "Deduccion por obras que reduzcan al menos un 7% la demanda de calefaccion y refrigeracion de la vivienda",
+      "description": "Deduccion por obras que reduzcan al menos un 7% la demanda de calefaccion y refrigeracion de la vivienda. Prorrogada por RDL 16/2025",
       "percentage": 20,
       "max_base": 5000,
       "max_deduction": 1000,
-      "valid_period": "06-10-2021 a 31-12-2025",
+      "valid_period": "06-10-2021 a 31-12-2026",
       "requirements": [
         "Certificado de eficiencia energetica posterior a las obras que acredite reduccion >= 7% en demanda calefaccion/refrigeracion",
         "Certificado expedido por tecnico competente y registrado segun RD 390/2021",
-        "Vivienda habitual del contribuyente, o vivienda arrendada/destinada a arrendamiento antes de 31-12-2027"
+        "Vivienda habitual del contribuyente, o vivienda arrendada/destinada a arrendamiento antes de 31-12-2028"
       ],
       "exclusions": "Plazas garaje, trasteros, jardines, piscinas, instalaciones deportivas, zonas afectas a actividad economica",
       "deduction_period": "Ejercicio en que se expide el certificado posterior a las obras",
-      "source": "DA 50 LIRPF"
+      "source": "DA 50 LIRPF, modificada por RDL 16/2025"
     },
     {
       "id": "eficiencia_energetica_40",
       "name": "Obras de mejora consumo energia primaria no renovable (40%)",
       "status": "active_temporal",
-      "description": "Deduccion por obras que reduzcan al menos un 30% el consumo de energia primaria no renovable, o alcancen calificacion A o B",
+      "description": "Deduccion por obras que reduzcan al menos un 30% el consumo de energia primaria no renovable, o alcancen calificacion A o B. Prorrogada por RDL 16/2025",
       "percentage": 40,
       "max_base": 7500,
       "max_deduction": 3000,
-      "valid_period": "06-10-2021 a 31-12-2025",
+      "valid_period": "06-10-2021 a 31-12-2026",
       "requirements": [
         "Certificado de eficiencia energetica que acredite reduccion >= 30% consumo energia primaria no renovable O calificacion energetica A o B",
         "Certificado expedido dentro de los 2 anos siguientes al certificado anterior a las obras",
-        "Vivienda habitual o arrendada/destinada a arrendamiento antes de 31-12-2027"
+        "Vivienda habitual o arrendada/destinada a arrendamiento antes de 31-12-2028"
       ],
       "exclusions": "Plazas garaje, trasteros, jardines, piscinas, zonas afectas a actividad economica",
-      "source": "DA 50 LIRPF"
+      "source": "DA 50 LIRPF, modificada por RDL 16/2025"
     },
     {
       "id": "eficiencia_energetica_60",
@@ -277,20 +277,20 @@
       "requirements": [
         "Obras en edificio de uso predominante residencial",
         "Certificado que acredite reduccion >= 30% consumo energia primaria no renovable O calificacion A o B",
-        "Certificado antes de 01-01-2026"
+        "Certificado antes de 01-01-2028"
       ],
       "casillas": "1677, 1777-1778",
-      "source": "DA 50 LIRPF, RD 390/2021"
+      "source": "DA 50 LIRPF, modificada por RDL 16/2025. RD 390/2021"
     },
     {
       "id": "vehiculo_electrico",
       "name": "Adquisicion de vehiculo electrico enchufable o pila de combustible",
       "status": "active_temporal",
-      "description": "Deduccion por adquisicion de vehiculos electricos enchufables y de pila de combustible nuevos",
+      "description": "Deduccion por adquisicion de vehiculos electricos enchufables y de pila de combustible nuevos. Prorrogada por RDL 16/2025",
       "percentage": 15,
       "max_base": 20000,
       "max_deduction": 3000,
-      "valid_period": "30-06-2023 a 31-12-2025",
+      "valid_period": "30-06-2023 a 31-12-2026",
       "requirements": [
         "Vehiculo nuevo (no matriculado previamente)",
         "Enchufable (BEV/PHEV) o pila de combustible (FCEV)",
@@ -306,11 +306,11 @@
       "id": "punto_recarga_electrico",
       "name": "Instalacion de punto de recarga para vehiculos electricos",
       "status": "active_temporal",
-      "description": "Deduccion por instalacion de sistema de recarga de baterias para vehiculos electricos en inmueble del contribuyente",
+      "description": "Deduccion por instalacion de sistema de recarga de baterias para vehiculos electricos en inmueble del contribuyente. Prorrogada por RDL 16/2025",
       "percentage": 15,
       "max_base": 4000,
       "max_deduction": 600,
-      "valid_period": "30-06-2023 a 31-12-2025",
+      "valid_period": "30-06-2023 a 31-12-2026",
       "requirements": [
         "Instalacion en inmueble propiedad del contribuyente",
         "No afecta a actividad economica",

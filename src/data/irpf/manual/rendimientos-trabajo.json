@@ -3,7 +3,7 @@
   "chapter_number": 3,
   "year": 2025,
   "source": "Manual Practico Renta 2025 — AEAT (sede.agenciatributaria.gob.es)",
-  "verified_date": "2026-03-20",
+  "verified_date": "2026-04-12",
   "definition": {
     "concept": "Todas las contraprestaciones o utilidades, dinerarias o en especie, que deriven directa o indirectamente del trabajo personal o de una relacion laboral o estatutaria y no tengan el caracter de rendimientos de actividades economicas",
     "source": "art. 17 LIRPF"
@@ -670,5 +670,15 @@
         "source": "art. 14.2.f LIRPF"
       }
     ]
+  },
+
+  "reduccion_rendimientos_excepcionales_artisticos": {
+    "year_from": 2025,
+    "description": "Nueva reduccion aplicable a rendimientos integros del trabajo de caracter excepcional procedentes de la elaboracion de obras literarias, artisticas o cientificas, asi como a rendimientos de relaciones laborales especiales de artistas en artes escenicas, audiovisuales y musicales, y de personas que realizan actividades tecnicas o auxiliares relacionadas",
+    "conditions": [
+      "Rendimientos de caracter excepcional (no recurrentes)",
+      "No puede aplicarse simultaneamente la reduccion por irregularidad del art. 18.2 LIRPF"
+    ],
+    "source": "Ley 5/2025, de 24 de julio. Modificacion del art. 18 LIRPF"
   }
 }
