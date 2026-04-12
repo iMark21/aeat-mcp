@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "verified_date": "2026-03-20",
+  "verified_date": "2026-04-12",
   "source": "AEAT Calendario del Contribuyente 2026 — sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026.html",
   "deadlines": [
     {
@@ -29,7 +29,7 @@
     },
     {
       "date_start": "2026-01-01",
-      "date_end": "2026-01-20",
+      "date_end": "2026-01-30",
       "modelo": "130",
       "description": "IRPF. Pago fraccionado empresarios y profesionales en estimacion directa, Q4 2025",
       "who": "autonomos",
