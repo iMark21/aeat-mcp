@@ -1,0 +1,6 @@
+schema_version: 2
+project_id: aeat-mcp
+mode: standalone
+vertical: other-bets
+org: imark
+exceptions: []
